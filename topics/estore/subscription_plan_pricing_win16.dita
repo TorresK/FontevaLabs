@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_zfv_fwp_k5">
+ <title>Subscription Plan Pricing for Items </title>
+ <abstract>System Admins can link multiple subscription plans with different prices to a single
+  subscription item. </abstract>
+ <conbody>
+  <p>Prior to linking additional subscription plans to the same subscription item, System Admins
+   must create a custom price rule for each plan. </p>
+  <p><image href="../../assets/screenshots/estore/subscription_item_custom_price_rule_win16.png"
+    width="700" id="image_yjv_pjw_m5"/></p>
+  <p>On the Subscription Item record, navigate to the Subscription Plans related list and click
+   Manage Subscription Plans. </p>
+  <p><image href="../../assets/screenshots/estore/manage_subscription_plans_win16.png" width="700"
+    id="image_shl_jkw_m5"/></p>
+  <p>Best practices recommend setting the item's default subscription plan to the plan with the
+   highest price. </p>
+  <p><image href="../../assets/screenshots/estore/setting_default_subscription_plan_win16.png"
+    width="700" id="image_ch1_vnw_m5"/></p>
+  <p>For <b>Community Portal</b> users, the price of the default subscription plan is displayed in
+   the Store and on its related Item Detail page. </p>
+  <p><image href="../../assets/screenshots/estore/subscription_item_detail_page_win16.png"
+    width="700" id="image_pcc_mzw_m5"/></p>
+  <p>Once the item is added to the cart, </p>
+ </conbody>
+</concept>

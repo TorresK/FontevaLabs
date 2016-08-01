@@ -1,0 +1,82 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+<head><meta name="description" content="Badges can be automatically assigned and unassigned to both Accounts and Contacts based on assignment. When a Sales Order is posted, the system will check all related items. If any of the related ..."></meta><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><meta name="copyright" content="(C) Copyright 2005"></meta><meta name="DC.rights.owner" content="(C) Copyright 2005"></meta><meta name="DC.Type" content="task"></meta><meta name="DC.Title" content="Badge Assignment Automation"></meta><meta name="DC.Relation" scheme="URI" content="estore_customizations.html"></meta><meta name="DC.Format" content="XHTML"></meta><meta name="DC.Identifier" content="task_ocl_tly_sr"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/commonltr.css"><!----></link><title>Badge Assignment Automation</title><!--  Generated with Oxygen version 17.1, build number 2016032212.  --><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_topic.css"><!----></link><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/skins/skin.css"><!----></link><script type="text/javascript"><!--
+          
+          var prefix = "index.html";
+          
+          --></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-1.8.2.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="oxygen-webhelp/resources/js/webhelp_topic.js"><!----></script></head>
+<body onload="highlightSearchTerm()" class="frmBody" id="task_ocl_tly_sr">
+<table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td width="75%"><a class="navheader_parent_path" href="estore_customizations.html" title="Customizations">Customizations</a></td><td><div class="navheader">
+<span class="navparent"><a class="link" href="estore_customizations.html" title="Customizations"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Customizations</span></a></span>  </div></td></tr></tbody></table>
+
+    <h1 class="title topictitle1">Badge Assignment Automation</h1>
+
+    
+    <div class="body taskbody"><div class="abstract">Badges can be automatically assigned and unassigned to both Accounts and Contacts
+        based on assignment. When a Sales Order is posted, the system will check all related items.
+        If any of the related items has a <em class="ph i">Badge Workflow</em> related list, the system will create
+        Badges automatically depending on the <strong class="ph b">Badge Workflow Type</strong>. <div class="note note"><span class="notetitle">Note:</span> If assigned to an
+            Account, all Contacts under that Account will automatically be assigned a
+        Badge.</div>
+</div>
+<div class="section prereq p">
+            <ul class="ul">
+                <li class="li">An active Badge Type record</li>
+
+                <li class="li">An active Item record to assign the Badge</li>
+
+            </ul>
+
+        </div>
+
+        <ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd">From the Badge Type record, navigate to the <em class="ph i">Workflow</em> related list and
+                    click the <strong class="ph b">New Badge Workflow</strong> button.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Enter the <strong class="ph b">Badge Workflow Name</strong>.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Select an item to assign the Badge to from the <strong class="ph b">Item</strong> lookup.</span>
+                <div class="itemgroup info"> The <strong class="ph b">Badge Type</strong> field auto-populates with the name of the Badge Type
+                    record for which the workflow is being created.</div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Select the <strong class="ph b">Type</strong>:</span>
+                <ul class="ul choices" id="task_ocl_tly_sr__choices_n4p_fqn_ts">
+                    <li class="li choice"><strong class="ph b">Line Contact</strong>-Assigns the Badge to the purchasing customer as
+                        defined in the <strong class="ph b">Contact</strong> lookup on the Sales Order Line.</li>
+
+                    <li class="li choice"><strong class="ph b">Assigned Contacts</strong>-Grants the Badge to all active and assigned
+                        contacts.</li>
+
+                    <li class="li choice"><strong class="ph b">Line Account</strong>-Assigns the Badge to the purchasing account as
+                        defined in the <strong class="ph b">Account</strong> lookup on the Sales Order Line.</li>
+
+                </ul>
+
+                <div class="itemgroup info"><img class="image" id="task_ocl_tly_sr__image_ktg_2wn_ts" src="../../assets/screenshots/estore/badge_workflow.png" width="600"></img></div>
+                <div class="itemgroup info">Optionally, select the <strong class="ph b">Auto Expire</strong> checkbox to automatically unassign
+                    the Badge from the Contact record when the Assignment record becomes
+                    inactive.</div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Create a new Sales Order for an account or contact with a Sales Order Line for
+                    the item that the Badge is to be assigned.</span>
+                <div class="itemgroup info">Complete the purchase of the item, which will close and post the sales
+                    order.</div>
+            </li>
+</ol>
+
+        <div class="section result">The Badge is assigned to the specified Account or Contact record and is displayed in
+            the <em class="ph i">Badges</em> related list. </div>
+
+    </div>
+
+<div class="related-links"></div>
+<div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="estore_customizations.html" title="Customizations"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Customizations</span></a></span>  </div><div class="footer">WebHelp output generated by<a class="oxyFooter" href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"></img></span><span class="xmlauthor">XML Author</span></a></div>
+</body>
+</html>

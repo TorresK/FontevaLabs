@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_i43_s4w_yr">
+ <title>Event Registration for Portal and Public Users</title>
+ <abstract>Once staff users configure the UI and enable publishing in the <b>Community Portal</b>,
+  the event is ready for portal and public registration.</abstract>
+ <conbody>
+  <p>The primary difference between authenticated portal users and unauthenticated portal users is
+   that authenticated portal users enjoy the benefit of their user information autopopulating on the
+   event registration UI. Additionally, authenticated users have saved payment methods, providing
+   them with a swifter registration process. Unauthenticated portal users do not have <b>Community
+    Portal</b> access, but can register for an event via <b>Guest Checkout</b>.</p>
+  <p>After registering for the intended event, and building their own agenda, portal and public
+   users enter the payment information on the <i>Checkout</i> page. A successful payment generates
+   an email that provides users with the opportunity to further customize their event experience
+   through the <b>Agenda Builder</b>.</p>
+  <p> </p>
+ </conbody>
+</concept>

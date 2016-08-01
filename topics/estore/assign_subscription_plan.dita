@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_blf_2zk_rs">
+    <title>Assigning a Subscription Plan to an Item</title>
+    <shortdesc>A Subscription Plan defines a time length for the subscription or membership item.
+        Items belonging to an Item Class with<b> Is Subscription</b> enabled must have a
+        Subscription Plan assigned. </shortdesc>
+    <taskbody>
+        <prereq>
+            <ul id="ul_vln_hz1_ts">
+                <li><xref href="creating_catalogs_task.dita#task_yrs_bln_js">Create a
+                    Catalog</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the Subscription Item record and click the <b>Manage Subscription
+                        Plans</b> button on the <i>Subscription Plans</i> related list.</cmd>
+            </step>
+            <step>
+                <cmd>Enable the <b>Select</b> and <b>Default</b> checkboxes associated to the
+                    Subscription Plan and click <b>Save</b>.</cmd>
+                <info>Click <b>Default</b> to designate the selected Subscription plan. There must
+                    be one default subscription plan enabled for each subscription item.</info>
+            </step>
+            <step>
+                <cmd>Click <b>Save</b>.</cmd>
+            </step>
+        </steps>
+        <result>The Subscription Plan is assigned to a subscription item. </result>
+        <postreq>
+            <ul id="ul_nn2_3pm_ss">
+                <li><xref href="managing_subscriptions.dita#task_asr_ppm_ss">Manage Subscriptions in
+                        the Community Portal</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

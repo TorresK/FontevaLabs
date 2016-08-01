@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_yys_rwh_1s">
+    <title>Creating Speakers</title>
+    <abstract>System Admins and staff users can add one or more speakers to a schedule item for
+        Conference style events.</abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_mcw_jdp_rt">
+                <li><xref href="schedule_items_task.dita#task_qsp_4gy_rr">Create the Speaker
+                        Schedule Item</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Speakers</b> tab in the <b>Events</b> app and click
+                        <b>New</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Event</b> using the lookup.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Speaker Name</b>, <b>Expertise Topic</b>, and <b>Status</b>.</cmd>
+                <info><b>Status</b> field must be set to <b>Accepted</b> in order for the Speaker
+                    details to display in the <b>Community Portal</b>.</info>
+            </step>
+            <step>
+                <cmd>Enter the <b>Large Profile Photo URL</b> to display a photo of the scheduled
+                    Speaker in the <b>Community Portal</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the Speaker's <b>Bio</b> and click <b>Save</b>.</cmd>
+                <info><image href="../../../assets/screenshots/events/speaker_details_sfc_win16.png"
+                        width="600" id="image_hqp_wfp_wt"/></info>
+            </step>
+            <step>
+                <cmd>Navigate to the <i>Schedule</i> related list on the Speaker record and click
+                    the <b>New</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Speaker Name</b>, use the picklist to select the Speaker's
+                        <b>Role</b>, and use the lookup to select the related <b>Schedule Item</b>.
+                    Click <b>Save</b>.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/events/speaker_schedule_item_sfc_win16.png"
+                        width="600" id="image_dh3_kgp_wt"/></info>
+            </step>
+        </steps>
+        <result>The Speaker is successfully added to the schedule item.</result>
+    </taskbody>
+</task>

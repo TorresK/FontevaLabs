@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_lgx_hbn_vt">
+  <title>Overview </title>
+  <body>
+    <simpletable frame="none" relcolwidth="1.36* 3.02* 1.0* 1.41* 3.77*" id="simpletable_mnk_lc4_vt">
+            <strow>
+                <stentry><image href="../../assets/screenshots/introduction/Setup_72-1.png"
+                        id="image_ith_rbl_b5"/></stentry>
+                <stentry><b>Getting Started</b><ul id="ul_smp_zc4_vt">
+                        <li><xref href="system_requirements.dita#concept_iz5_mxg_tt">System
+                                Requirements</xref></li>
+                        <li><xref
+                                                  href="../communities/themes/creating_themes_task.dita#task_oqw_zgj_ks"
+                                                  >Modifying the Theme</xref></li>
+                        <li><xref
+                                href="../communities/enabling_portal_users_task.dita#task_m5t_3sq_3r"
+                                >Enabling Community Portal Users </xref></li>
+                    </ul></stentry>
+                <stentry/>
+                <stentry><image href="../../assets/screenshots/introduction/Event_72.png"
+                        id="image_zrt_vc4_vt"/></stentry>
+                <stentry><b>Events</b><ul>
+                                                <li><xref
+                                                  href="../events/event_setup/event_setup_concept_win16.dita#concept_ftz_15q_wt"
+                                                  >Event Setup</xref>
+                                                </li>
+                                                <li><xref
+                                                  href="../events/event_setup/creating_event_task.dita#task_oft_s1b_rr"
+                                                  >Creating an Event</xref></li>
+                                                <li><xref
+                                                  href="../events/event_registration/add_to_passbook.dita#concept_yvw_q5h_jt"
+                                                  >Add to Passbook</xref></li>
+                                        </ul></stentry>
+            </strow>
+            <strow>
+                <stentry><image href="../../assets/screenshots/introduction/Accounting_72.png"
+                        id="image_rjq_pc4_vt"/></stentry>
+                <stentry><b>Accounting</b><ul id="ul_wtt_cd4_vt">
+                        <li><xref
+                                href="../accounting/business_groups/bg_setup_task.dita#task_scm_ytg_kr"
+                                >Creating a Business Group</xref></li>
+                        <li><xref
+                                href="../accounting/business_groups/bg_glaccounts_task.dita#task_fys_vtv_kr"
+                                >Adding a Chart of Accounts</xref></li>
+                        <li><xref
+                                href="../accounting/business_groups/bg_paymentgateway_task.dita#task_rc1_52w_kr"
+                                >Connecting to a Payment Gateway</xref></li>
+                    </ul></stentry>
+                <stentry/>
+                <stentry><image href="../../assets/screenshots/introduction/GiftInKind_72.png"
+                        id="image_r2p_wc4_vt"/></stentry>
+                <stentry><b>Fundraising</b><ul>
+                        <li><xref href="../donations/donations_cp_task.dita#task_wd3_5tm_cs"
+                                >Creating a Donation Campaign Page</xref></li>
+                        <li><xref href="../donations/campaign_options.dita#concept_cvg_dll_js"
+                                >Donation Campaign Options</xref></li>
+                    </ul></stentry>
+            </strow>
+            <strow>
+                <stentry><image href="../../assets/screenshots/introduction/ePayment_72.png"
+                        id="image_vcn_qc4_vt"/></stentry>
+                <stentry><b>eBusiness</b><ul id="ul_ec3_gd4_vt">
+                        <li><xref
+                                href="../ebusiness/accounts_contacts_users_overview.dita#concept_srp_51q_kr"
+                                >Creating Accounts and Contacts</xref></li>
+                        <li><xref href="../ebusiness/creating_invoices_task.dita#task_dxk_zyt_cs"
+                                >Creating and Posting an Invoice</xref></li>
+                        <li><xref href="../ebusiness/refund_creating_task.dita#task_dnk_npv_wr"
+                                >Creating a Refund</xref></li>
+                    </ul></stentry>
+                <stentry/>
+                <stentry><image href="../../assets/screenshots/introduction/FormBuilder_72.png"
+                        id="image_rvd_xc4_vt"/></stentry>
+                <stentry><b>Form Builder</b><ul>
+                        <li><xref href="../form_builder/creating_forms.dita#task_jdk_12p_yr"
+                                >Creating Forms</xref></li>
+                                                <li><xref
+                                                  href="../form_builder/advanced_form_building_task.dita#task_e3q_14t_xs"
+                                                  >Creating Forms with Enhanced Data
+                                                  Bindings</xref></li>
+                    </ul></stentry>
+            </strow>
+            <strow>
+                <stentry><image href="../../assets/screenshots/introduction/eStore_72.png"
+                        id="image_scd_rc4_vt"/></stentry>
+                <stentry><b>eStore</b><ul id="ul_cgj_vd4_vt">
+                        <li><xref href="../estore/shipping_introduction.dita#concept_vlp_cxn_ht"
+                                >Shipping</xref></li>
+                        <li><xref href="../estore/subscriptions_intro.dita#concept_mbk_hst_js"
+                                >Subscriptions</xref></li>
+                        <li><xref href="../estore/taxes_overview_concept.dita#concept_snc_vzb_wr"
+                                >Taxes</xref></li>
+                    </ul></stentry>
+                <stentry/>
+                <stentry><image href="../../assets/screenshots/introduction/Framework_72.png"
+                        id="image_zns_xc4_vt"/></stentry>
+                <stentry><b>Spark</b><ul>
+                                                <li><xref
+                                                  href="../framework/spark_toolkit.dita#concept_ost_srg_2v"
+                                                  >Spark Toolkit</xref></li>
+                                                <li><xref
+                                                  href="../framework/spark_registered_app.dita#concept_skp_cp5_q5"
+                                                  >Managing Registered Apps</xref></li>
+                        <li><xref href="../framework/rollup_summary_task.dita#task_f5m_xbl_ls"
+                                                  /></li>
+                    </ul></stentry>
+            </strow>
+            <strow>
+                <stentry><image href="../../assets/screenshots/introduction/CommunityGroup_72.png"
+                        id="image_ybf_vc4_vt"/></stentry>
+                <stentry><b>Communities</b><ul id="ul_p14_c24_vt">
+                        <li><xref href="../communities/sites/sites_concept.dita#concept_kwb_srp_ks"
+                                >Creating a Site</xref>
+                        </li>
+                        <li><xref
+                                href="../communities/social%20logins/social_login_intro.dita#concept_j3w_hnk_rs"
+                                >Configuring Auth. Providers for Single Sign-On</xref></li>
+                        <li><xref
+                                href="../communities/community_groups/homepage.dita#concept_yzk_ydy_rr"
+                                >Community Groups</xref></li>
+                    </ul></stentry>
+                <stentry/>
+                <stentry><image href="../../assets/screenshots/introduction/EmailPreferences_72.png"
+                        id="image_ztq_qpq_b5"/></stentry>
+                <stentry><b>System Configurations</b><ul id="ul_zkl_tyk_b5">
+                        <li><xref
+                                href="../system_configurations/field_sets_task.dita#task_op1_4ll_zt"
+                                >Creating Field Sets</xref></li>
+                        <li><xref
+                                href="../system_configurations/creating_buttons.dita#task_bdb_1dt_zt"
+                                >Creating Buttons</xref></li>
+                    </ul></stentry>
+            </strow>
+                        <strow>
+                                <stentry/>
+                                <stentry/>
+                                <stentry/>
+                                <stentry><image
+                                                href="../../assets/screenshots/introduction/admin-marketplace.png"
+                                                id="image_dfq_kjq_35"/></stentry>
+                                <stentry><b>Marketplace Extensions</b><ul id="ul_ygf_wjj_35">
+                                                <li><xref
+                                                  href="../marketplace_extensions/uk_dd_overview.dita#concept_bzb_grt_qv"
+                                                  >UK Direct Debit</xref></li>
+                                                <li><xref
+                                                  href="../marketplace_extensions/configuring_multi_currency_win16.dita#task_drf_rdv_1v"
+                                                  >Multi-Currency</xref></li>
+                                                <li><xref
+                                                  href="../marketplace_extensions/subscription_add_ons_overview.dita#concept_fnn_ldl_rv"
+                                                  >Subscription Add-Ons</xref></li>
+                                        </ul></stentry>
+                        </strow>
+        </simpletable>
+  </body>
+</topic>

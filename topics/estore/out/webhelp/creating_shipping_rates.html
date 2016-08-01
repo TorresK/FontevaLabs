@@ -1,0 +1,116 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+<head><meta name="description" content="Shipping Rates display in the checkout screen when a customer selects an item that requires shipping. The Shipping Rate is calculated based upon: Shipping Carrier Delivery Method Shipping Region ..."></meta><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><meta name="copyright" content="(C) Copyright 2005"></meta><meta name="DC.rights.owner" content="(C) Copyright 2005"></meta><meta name="DC.Type" content="task"></meta><meta name="DC.Title" content="Creating a Shipping Rate"></meta><meta name="DC.Relation" scheme="URI" content="shipping_introduction.html"></meta><meta name="DC.Format" content="XHTML"></meta><meta name="DC.Identifier" content="ShippingRates"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/commonltr.css"><!----></link><title>Creating a Shipping Rate</title><!--  Generated with Oxygen version 17.1, build number 2016032212.  --><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_topic.css"><!----></link><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/skins/skin.css"><!----></link><script type="text/javascript"><!--
+          
+          var prefix = "index.html";
+          
+          --></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-1.8.2.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="oxygen-webhelp/resources/js/webhelp_topic.js"><!----></script></head>
+<body onload="highlightSearchTerm()" class="frmBody" id="ShippingRates">
+<table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td width="75%"><a class="navheader_parent_path" href="shipping_introduction.html" title="Shipping">Shipping</a></td><td><div class="navheader">
+<span class="navparent"><a class="link" href="shipping_introduction.html" title="Shipping"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Shipping</span></a></span>  </div></td></tr></tbody></table>
+
+    <h1 class="title topictitle1">Creating a Shipping Rate</h1>
+
+    
+    <div class="body taskbody"><div class="abstract">Shipping Rates display in the checkout screen when a customer selects an item that
+        requires shipping. The Shipping Rate is calculated based upon:  <ul class="ul" id="ul_fk5_j5v_ht">
+            <li class="li">Shipping Carrier</li>
+
+            <li class="li">Delivery Method</li>
+
+            <li class="li">Shipping Region</li>
+
+            <li class="li">Minimum and Maximum Item Weights or Item Value<p class="p"><strong class="ph b">Users can set up multiple
+                        Shipping Rates or define a single Flat Rate per item or a Flat Rate per
+                        order.</strong></p>
+</li>
+
+        </ul>
+</div>
+
+        <div class="section prereq p">
+            <ul class="ul" id="ShippingRates__ul_ky2_c5v_ht">
+                <li class="li"><a class="xref" href="creating_shipping_method_carrier.html#task_xz1_dqv_ht">Create the
+                        Shipping Carrier and Delivery Method</a></li>
+
+                <li class="li"><a class="xref" href="creating_shipping_region.html#task_dmf_nrv_ht">Create the Shipping
+                        Region</a></li>
+
+            </ul>
+
+        </div>
+
+        <ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd">Navigate to the <strong class="ph b">Items</strong> tab in the <strong class="ph b">eStore</strong> app and click
+                    <strong class="ph b">New</strong>.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Enter the <strong class="ph b">Name</strong> for the Shipping Rate and enter a <strong class="ph b">Display
+                    Name</strong>.</span>
+                <div class="itemgroup info">The <strong class="ph b">Display Name</strong> appears on the <strong class="ph b">eStore</strong> checkout screen and on
+                    the customer's receipt. </div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Identify the <strong class="ph b">Shipping Carrier</strong> using the <strong class="ph b">Item Class</strong> lookup.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Enter the cost of shipping applied to the item in the <strong class="ph b">Item Price</strong>
+                    field.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Select the <strong class="ph b">Business Group</strong> and check the <strong class="ph b">Is Active</strong> and <strong class="ph b">Is
+                        Shipping Rate</strong> checkboxes.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Select the <strong class="ph b">Shipping Method</strong> associated with the new Shipping Rate using
+                    the lookup.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Select the <strong class="ph b">Shipping Region</strong>.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Enter the shipping item's <strong class="ph b">Minimum Weight</strong> and <strong class="ph b">Maximum
+                    Weight</strong>.</span>
+                <div class="itemgroup info">Alternatively, if the <strong class="ph b">Shipping Rate Basis</strong> set on the Business Group
+                    record is <strong class="ph b">Item Value</strong>, then enter the <strong class="ph b">Minimum Value</strong> and <strong class="ph b">Maximum
+                        Value</strong>.</div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Select the <strong class="ph b">Item Weight UOM</strong> (Unit of Measurement) using the
+                    picklist.</span>
+                <div class="itemgroup info">The <strong class="ph b">Item Weight UOM</strong> value is used when creating an eStore item that
+                    requires shipping and when creating a Shipping Rate item. Admins do not have to
+                    use the same units for items and Shipping Rates. For example, the Shipping Rate
+                    might be defined in pounds and the <strong class="ph b">Item Weight</strong> in ounces. The system
+                    performs the conversion on the backend and will apply the correct rate in the
+                        <strong class="ph b">eStore</strong> checkout, regardless of the unit. </div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">The new Shipping Rate inherits the GL Accounts of the associated Shipping
+                    Carrier. To override and link to an alternative account, select the GL account
+                    using the <strong class="ph b">Income Account</strong> and <strong class="ph b">Refund/Credit Account</strong> lookups.&#x2028; Click
+                        <strong class="ph b">Save</strong>.</span>
+            </li>
+</ol>
+
+        <div class="section postreq">
+            <ul class="ul" id="ShippingRates__ul_jjg_qwv_ht">
+                <li class="li"><a class="xref" href="default_shipping_rate_overview.html#concept_wyr_jyv_ht">Create a
+                        Default Shipping Rate</a></li>
+
+                <li class="li"><a class="xref" href="creating_flat_shipping_rate.html#task_tgj_xdc_3t">Create a Flat Rate
+                        for Shipping Items</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+<div class="related-links"></div>
+<div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="shipping_introduction.html" title="Shipping"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Shipping</span></a></span>  </div><div class="footer">WebHelp output generated by<a class="oxyFooter" href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"></img></span><span class="xmlauthor">XML Author</span></a></div>
+</body>
+</html>

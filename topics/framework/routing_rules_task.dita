@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_kkj_xgl_ls">
+    <title>Managing Routing Rules</title>
+    <abstract>Routing rules control the behavior of how the system routes logic for processing when
+        objects are inserted, updated, and deleted from the database. Routing rule support must be
+        provided when integrating a new Registered Object into the Spark service layer. System Admin
+        can modify the Scripts.cls to accommodate the new functionality and classes built for any
+        new custom objects.<note>Do not delete any existing rules, but instead add to the function
+            that creates the Routing Rules. Replace "Custom_Object__c" with the API name for the new
+            custom object and "CustomObjects" with the plural label (no spaces) for the new custom
+            object in the Scripts.cls.</note></abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Routing Rules</b> Quick Link in the <b>Spark Framework</b>
+                    app.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>New Custom Rule</b> button.</cmd>
+                <info><image href="../../assets/screenshots/framework/routing_rules_sum15jun.png"
+                        width="600" id="image_gfb_njl_ls"/></info>
+            </step>
+            <step>
+                <cmd>Configure the fields to create a new routing rule:</cmd>
+                <substeps id="substeps_urp_sjl_ls">
+                    <substep>
+                        <cmd><b>Rule Name</b>- Routing rule name.</cmd>
+                        <stepxmp>NSPL.Account.T</stepxmp>
+                    </substep>
+                    <substep>
+                        <cmd><b>SObject Name</b>- Enter the SObject API name without the namespace
+                            the rule controls.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd><b>Namespace</b>- Enter the namespace of the app that manages the
+                            rule.</cmd>
+                        <info>Configure the custom settings for the <b>Registered App</b> or the
+                            trigger will not correctly route.</info>
+                    </substep>
+                    <substep>
+                        <cmd><b>Apex Class</b>- Enter the name of the Apex Class containing the
+                            logic for the SObject requiring the rule.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd><b>Execution Order</b>- Enter the order in which parts of the rule are
+                            processed.</cmd>
+                        <info>Leave null if no order exists.</info>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Enabled</b> checkbox and click <b>Save</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>Update Configuration</b> button.</cmd>
+                <info>Review Routing Rules to ensure the new rule populates the list. </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

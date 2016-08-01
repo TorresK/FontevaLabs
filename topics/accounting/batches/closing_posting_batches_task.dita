@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_yp3_trr_5r">
+    <title>Closing and Posting the Batch</title>
+    <abstract>Successfully entering receipts into a batch will initiate a popup window prompting the
+        user to close the batch. </abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_wkz_mbx_wt">
+                <li>Enter receipts into a batch</li>
+            </ul>
+        </prereq>
+        <steps>
+            <stepsection><b>Closing the Batch:</b></stepsection>
+            <step>
+                <cmd>Click the <b>Close Batch</b> button in the popup window; the Batch record
+                    displays with the <b>Is Closed</b> checkbox enabled and the <b>Closed Date</b>
+                    field autopopulated.</cmd>
+                <info>No transactions are created at this time.</info>
+            </step>
+            <step>
+                <cmd>In the <i>Summary</i> section, ensure that the <b>Expected Count</b> and
+                        <b>Expected Amount</b> match the <b>Actual Count</b> and <b>Actual
+                        Amount</b>.</cmd>
+            </step>
+            <step>
+                <cmd>View the complete list of receipts entered in the <i>Receipts</i> related
+                    list.</cmd>
+            </step>
+            <stepsection><b>Posting the Batch:</b></stepsection>
+            <step>
+                <cmd>On the Batch record, click <b>Edit</b> and select the <b>Is Posted</b> checkbox
+                    to post the batch.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>Save</b> button to create the transactions for the receipts
+                    entered via the <i>Batch Receipt Entry</i> page.</cmd>
+                <info>No transaction is created in the event a previously posted receipt is in the
+                    batch at the time of posting.</info>
+            </step>
+            <step>
+                <cmd>Click the <b>Enter Receipts</b> button on the Batch record.</cmd>
+                <info>Adding any additional receipts to the batch via the <i>Batch Receipt Entry</i>
+                    page will not work after the batch is  closed.</info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_ykx_jhh_yr">
+    <title>Setting up a Tax Rate</title>
+    <abstract>System Admins can create multiple tax rates to apply to items based on their related
+        tax locales.</abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_vt1_jr1_kt">
+                <li><xref href="tax_locale_setup_task.dita#task_vpn_5bb_wr">Set up a Tax
+                        Locale</xref></li>
+                <li><xref href="tax_class_setup_task.dita#task_pq5_v5h_wr">Set up a Tax
+                    Class</xref></li>
+            </ul>
+        </prereq>
+        <context>
+            <p>Combined with the Sales Order Line's <b>Sale Price</b> field, the tax rate is used to
+                calculate the tax amount for the related item.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Navigate to the <i>Items</i> related list on the Tax Class record and click the
+                        <b>New</b> button. </cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Is Active</b> checkbox.</cmd>
+            </step>
+            <step>
+                <cmd>Link the <b>Tax Locale</b> lookup field to the related item and select the
+                        <b>Is Tax</b> checkbox.</cmd>
+            </step>
+            <step>
+                <cmd>Enter a value in the <b>Tax Percent</b> field and click <b>Save</b>.</cmd>
+            </step>
+        </steps>
+        <result>When purchasing a taxable item, tax is applied to: <ul id="ul_rpw_dks_bs">
+                <li>Sales Order Line(s)</li>
+                <li>Invoice Line(s)</li>
+                <li>Receipt Line(s)</li>
+                <li>ePayment Line(s) </li>
+            </ul></result>
+        <postreq>
+            <ul id="ul_bc3_gpc_bv">
+                <li><xref href="taxable_items_setup_win16.dita#task_jtc_mpc_bv">Set up Taxable
+                        Items</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

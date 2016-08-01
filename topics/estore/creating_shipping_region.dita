@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_dmf_nrv_ht">
+    <title>Creating a Shipping Region</title>
+    <abstract>The <b>Shipping Region</b> is defined using country names—not states, provinces,
+        cities, or postal codes. When an order contains items that require shipping, customers must
+        enter a shipping address in the <b>eStore</b> checkout. The destination country, item weight
+        or item value, and the item quantity determine the shipping rates displayed to
+        shoppers.</abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_y2f_qrv_ht">
+                <li><xref href="creating_shipping_method_carrier.dita#task_xz1_dqv_ht">Create the
+                        Shipping Carrier and Delivery Method</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Shipping Regions</b> tab in the <b>eStore</b> app and click
+                        <b>New</b>. </cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Shipping Region Name</b>. </cmd>
+                <info>The <b>Shipping Region Name</b> appears in the <b>Shipping Rates</b> lookup.
+                    Optionally, enter a <b>Display Name</b> and <b>Description</b>.</info>
+            </step>
+            <step>
+                <cmd>Enter the countries within the named <b>Shipping Region</b> into the <b>Address
+                        Field Values (CSV)</b> field. Click <b>Save</b>.</cmd>
+                <info>Best practices recommend including any common abbreviations for country names.
+                    For example, customers may enter "USA", "US", or "United States" for the
+                    shipping country. Consequently, it is important to list all variations of the
+                    country name in the <b>Address Field Values (CSV)</b> field so the customer can
+                    complete the purchase. Country names are not case sensitive.</info>
+                <info><image href="../../assets/screenshots/estore/shipping_region_win16.png"
+                        width="600" id="image_h4h_zpw_ht"/></info>
+            </step>
+        </steps>
+        <result>The <b>Shipping Region</b> is created and any countries entered into the <b>Address
+                Field Values (CSV)</b> field will populate the <b>Shipping Rates</b>
+            lookup.</result>
+        <postreq>
+            <ul id="ul_o22_1sv_ht">
+                <li><xref href="creating_shipping_rates.dita#task_ug1_ytv_ht">Create a Shipping
+                        Rate</xref></li>
+                <li>Optionally, create a <xref
+                        href="default_shipping_region_win16.dita#task_wlt_jw2_x5">Default Shipping
+                        Region</xref> and/or a <xref
+                        href="creating_will_not_ship_region.dita#task_oqh_ksv_ht">"Will Not Ship"
+                        Region</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

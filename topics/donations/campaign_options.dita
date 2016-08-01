@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_cvg_dll_js">
+ <title>Donation Campaign Options</title>
+ <shortdesc></shortdesc>
+ <conbody>
+  <p>
+   <table frame="all" rowsep="1" colsep="1" id="table_exm_hll_js">
+    <tgroup cols="3" align="justify">
+     <colspec colnum="1" colwidth="1.0*" colname="c1"/>
+     <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+     <colspec colname="c3" colnum="3" colwidth="1.0*"/>
+     <thead>
+      <row>
+       <entry>Option</entry>
+       <entry>Required</entry>
+       <entry>Description</entry>
+      </row>
+     </thead>
+     <tbody>
+      <row>
+       <entry>Enter Title</entry>
+       <entry>Yes</entry>
+       <entry>Provide a title for the donation campaign. The default value is "Enter a Call to
+        Action Here!"</entry>
+      </row>
+      <row>
+       <entry>Label: Donation Amount</entry>
+       <entry>Yes</entry>
+       <entry>In the <b>Label: Donation Amount</b> field, provide text to describe the <b>Donation
+         Amount</b> field. This field is required and the default value is "Donation
+        Amount."</entry>
+      </row>
+      <row>
+       <entry>Label: Donation Type</entry>
+       <entry>Yes</entry>
+       <entry>In the <b>Label: Donation Type</b> field, provide text to describe the <b>Donation
+         Type</b> field. This field is required and the default value is "Donation Type."</entry>
+      </row>
+      <row>
+       <entry>Label: Available Funds</entry>
+       <entry>Yes</entry>
+       <entry>In the <b>Label: Available Funds</b> field, provide text to be used as a label for the
+        funds to be used. This field is required and the default value is "Available Funds."</entry>
+      </row>
+      <row>
+       <entry>Enable Other Amount</entry>
+       <entry>No</entry>
+       <entry>Allows users to provide their own donation amount. By default, <b>Enable Other
+         Amount</b> is set to "True." The Suggested Levels of Giving validation rules will affect
+        how the <b>Other Amount</b> field displays on the Campaign page.</entry>
+      </row>
+      <row>
+       <entry>Label: Other Suggested Level of Giving</entry>
+       <entry>No</entry>
+       <entry>The default value is "Other."</entry>
+      </row>
+      <row>
+       <entry>Enter Instructions</entry>
+       <entry>No</entry>
+       <entry>Enter user instructions; by default, the value of the <b>Enter Instructions</b> field
+        is "Add instructions here..".</entry>
+      </row>
+      <row>
+       <entry>Header: Donate</entry>
+       <entry>No</entry>
+       <entry>By default, the value of the <b>Header: Donate</b> field is "Donate."</entry>
+      </row>
+      <row>
+       <entry>One Time Donation</entry>
+       <entry>No</entry>
+       <entry>Enter a label for the <b>One Time </b><b>Donation </b>button. The default value is
+        "One-Time."</entry>
+      </row>
+      <row>
+       <entry>Monthly Donation</entry>
+       <entry>No</entry>
+       <entry>Enter a label for the <b>Monthly Donation</b> button used for selecting a recurring
+        donation. The default value is "Monthly."</entry>
+      </row>
+      <row>
+       <entry>Label: Number of Payment</entry>
+       <entry>No</entry>
+       <entry>Provide the label text to identify the number of payments. This field is conditional
+        and the default value is "For All Time."</entry>
+      </row>
+      <row>
+       <entry>Enter Number of Payment Options</entry>
+       <entry>No</entry>
+       <entry>Enter a numerical list of payment options, separated by commas with no spaces between
+        the numerical values. The default value is 2,3,4,5,6,7,8,9,10,11,12,24,36.</entry>
+      </row>
+      <row>
+       <entry>Suggested Level of Giving</entry>
+       <entry>No</entry>
+       <entry>Provide a comma separated list of the allowable dollar amounts with no decimals and no
+        spaces between the numbers. If left null, the field will not show on the page.</entry>
+      </row>
+      <row>
+       <entry>Area of Greatest Need</entry>
+       <entry>No</entry>
+       <entry>Enter a label to  use as the default fund for the campaign. The default value is "Area
+        of Greatest Need."</entry>
+      </row>
+      <row>
+       <entry>Select Area of Greatest Need Fund</entry>
+       <entry>No</entry>
+       <entry>Provide the Salesforce Item ID from the Item URL, e.g., a0xj0000000yKxD. Conditionally
+        required with the use of a default fund.</entry>
+      </row>
+      <row>
+       <entry>Label: Choose From a List</entry>
+       <entry>No</entry>
+       <entry>Enter text to describe the list funds on the page. The default value is "Select
+        Funds."</entry>
+      </row>
+      <row>
+       <entry>Select Fund Search Type</entry>
+       <entry>No</entry>
+       <entry>Select the type that describes the fund search from the list of options: Picklist,
+        Fund Table, Search, Hide. </entry>
+      </row>
+      <row>
+       <entry>Label: Write In</entry>
+       <entry>No</entry>
+       <entry>Provide a description of the <b>Write In Fund</b> field, e.g., a0xj0000000yKxD. The
+        default value is "Write In."</entry>
+      </row>
+      <row>
+       <entry>Label: Write in Fund</entry>
+       <entry>No</entry>
+       <entry>Provide the Item ID from the Item URL for the Write in Fund. This field is required in
+        order to use the <b>Write in Fund</b> field.</entry>
+      </row>
+      <row>
+       <entry>Header: Fund Search</entry>
+       <entry>No</entry>
+       <entry>Enter text to use as the header for the Fund Search. This field is used when the
+         <b>Fund Search Type</b> field is "Search." The default value is "Fund Search."</entry>
+      </row>
+      <row>
+       <entry>Label: Filter By Category</entry>
+       <entry>No</entry>
+       <entry>Provide a description for Filter By Category. This field is used when the <b>Fund
+         Search Type</b> field is "Fund Table." The default value is "Filter By Category."</entry>
+      </row>
+      <row>
+       <entry>Label: View More</entry>
+       <entry>No</entry>
+       <entry>Provide text to view additional information about the funds. This field only displays
+        for items marked as <b>Is Featured</b> and when the <b>Fund Search Type</b> field is "Fund
+        Table." The default value is "View More."</entry>
+      </row>
+      <row>
+       <entry>Label: Search Results Header</entry>
+       <entry>No</entry>
+       <entry>Provide text to describe the search results. This field is required when the <b>Fund
+         Search Type</b> field is set to "Fund Table." The default value is "Search
+        Results."</entry>
+      </row>
+      <row>
+       <entry>Label: No Search Results Header</entry>
+       <entry>No</entry>
+       <entry>Provide text to use as the error message when the search does not return any
+        values.</entry>
+      </row>
+      <row>
+       <entry>Label: Continue Modal Button</entry>
+       <entry>No</entry>
+       <entry>Provide the text to use for the <b>Continue</b> button description. This field is used
+        on the Fund Search window when the <b>Fund Search Type</b> field is "Search." The default
+        value is "Continue."</entry>
+      </row>
+      <row>
+       <entry>Header: Options</entry>
+       <entry>No</entry>
+       <entry>Provide the text for the Additional Donation Items page header. This header is used
+        with Company Matching and In Honor or Memory. The default value is "Options."</entry>
+      </row>
+      <row>
+       <entry>Header: Multiple Donation</entry>
+       <entry>No</entry>
+       <entry>Provide text to describe the donation header section. This header is used when the
+         <b>Fund Search Type</b> field is "Picklist" and multiple funds are selected to receive a
+        donation. The default value is "I Wish To Give...".</entry>
+      </row>
+      <row>
+       <entry>Label: Company Match</entry>
+       <entry>No</entry>
+       <entry>Provide text to describe company donation matching. The default value is "Yes, my
+        company will match my donation."</entry>
+      </row>
+      <row>
+       <entry>Label: In Honor Or Memory</entry>
+       <entry>No</entry>
+       <entry>Provide text to use for the In Honor Or In Memory description. The default value is
+        "Dedicate my donation in honor of or in memory of someone."</entry>
+      </row>
+      <row>
+       <entry>In Honor and In Memory Fields</entry>
+       <entry>No</entry>
+       <entry>Provide the API name of the In Honor Field Set located on the Sales Order object. This
+                is required to display the <b>In Honor</b> donation field.</entry>
+      </row>
+      <row>
+       <entry>HTML: Side Bar</entry>
+       <entry>No</entry>
+       <entry>Provide HTML inline styles to display in the sidebar of the page.</entry>
+      </row>
+      <row>
+       <entry>Display Campaign Stats</entry>
+       <entry>No</entry>
+       <entry>Selecting "True" publishes the total number and amount of donations for the campaign
+        in context. The default value is "True."</entry>
+      </row>
+      <row>
+       <entry>Enter Donation Description</entry>
+       <entry>No</entry>
+       <entry>Provide a description of the donation campaign. If you do not provide a description,
+        the field will not display on the Campaign Page.</entry>
+      </row>
+      <row>
+       <entry>Enter Donation End Date</entry>
+       <entry>No</entry>
+       <entry>Provide the date the donation campaign will end. The default value is today's
+        date.</entry>
+      </row>
+      <row>
+       <entry>Display Goal Progress Bar</entry>
+       <entry>No</entry>
+       <entry>Select "True" to display the progress to goal bar on the donation form. The default
+        value is "True."</entry>
+      </row>
+      <row>
+       <entry>Select Progress Bar Type</entry>
+       <entry>No</entry>
+       <entry>Select the donation progress display method: Thermometer (Default), Progress Bar,
+        Text.</entry>
+      </row>
+      <row>
+       <entry>Error Title: Donation Removal</entry>
+       <entry>No</entry>
+       <entry>Provide text for the title of the removal of information error message field. The
+        default value is "Are You Sure?"</entry>
+      </row>
+      <row>
+       <entry>Error Message: Donation Removal</entry>
+       <entry>No</entry>
+       <entry>Provide text for removal of information error message. The default value is "This will
+        remove your donations!"</entry>
+      </row>
+      <row>
+       <entry>Error Title: Missing Amount</entry>
+       <entry>No</entry>
+       <entry>Provide error message text to display when the search returns no results.</entry>
+      </row>
+      <row>
+       <entry>Error Title: Fund Table No Amount</entry>
+       <entry>No</entry>
+       <entry>Provide text to use as the error message on the Fund table when the selected fund does
+        not have an amount specified and <b>Donate</b> button is clicked. The default value is
+        "Forgot to enter an amount."</entry>
+      </row>
+      <row>
+       <entry>Error Title: No Donation Amount</entry>
+       <entry>No</entry>
+       <entry>Provide error message text to display when submitting a donation for a fund and no
+        donation amount has been specified. The default value is "No Donation amount
+        specified."</entry>
+      </row>
+      <row>
+       <entry>Error Message: No Fund Specified</entry>
+       <entry>No</entry>
+       <entry>Provide error message text to display when submitting a donation and no fund has been
+        specified. The default value is "Must have at least one donation."</entry>
+      </row>
+      <row>
+       <entry>Label: Add to Cart</entry>
+       <entry>No</entry>
+       <entry>Provide text to display on the <b>Add to Cart</b> button. The default value is
+        "Donate."</entry>
+      </row>
+      <row>
+       <entry>Enter Custom CSS</entry>
+       <entry>No</entry>
+       <entry>Provide inline CSS to override default styles on the Catalog Donation Display
+        component.</entry>
+      </row>
+      <row>
+       <entry>Label: Cancel</entry>
+       <entry>No</entry>
+       <entry>Provide a Cancel Modal Button Label. The default value is "Cancel."</entry>
+      </row>
+      <row>
+       <entry>Label: Selected</entry>
+       <entry>No</entry>
+       <entry>Provide the Selected Item Count Label. The default value is "Selected."</entry>
+      </row>
+      <row>
+       <entry>Label: Selected Items</entry>
+       <entry>No</entry>
+       <entry>Provide the Selected Item Header Label. The default value is "Selected Items."</entry>
+      </row>
+      <row>
+       <entry>Label: No Funds Selected</entry>
+       <entry>No</entry>
+       <entry>Provide the No Funds selected description. The default value is "At Least One Fund
+        Must Be Selected."</entry>
+      </row>
+      <row>
+       <entry>Label: Catalog Not Published</entry>
+       <entry>No</entry>
+       <entry>Provide the Catalog Not Published Title. The default value is "Uh Oh!"</entry>
+      </row>
+      <row>
+       <entry>Label: Catalog Not Published Description</entry>
+       <entry>No</entry>
+       <entry>Provide the Catalog Not Published description. The default value is "Houston we have a
+        problem."</entry>
+      </row>
+      <row>
+       <entry>Edit</entry>
+       <entry>No</entry>
+       <entry>Provide Edit fund table Donations. The default value is "Edit."</entry>
+      </row>
+      <row>
+       <entry>Label: Multiple Donation Header</entry>
+       <entry>No</entry>
+       <entry>Enter the Termed Recurring Overview description. The default value is "I wish to
+        donate {{ donation }} {{ frequency }} for {{ installments }} months starting on {{
+        start_date }}, totaling {{ grand_total }}".</entry>
+      </row>
+      <row>
+       <entry>Label: Multiple Donation Header</entry>
+       <entry>No</entry>
+       <entry>Enter the Evergreen Recurring Overview description. The default value is "I wish to
+        donate {{ donation }} {{ frequency }} starting on {{ start_date }}".</entry>
+      </row>
+      <row>
+       <entry>Label: Company Name</entry>
+       <entry>No</entry>
+       <entry>Provide the company name label.The default value is "Company Name."</entry>
+      </row>
+      <row>
+       <entry>Write in Placeholder</entry>
+       <entry>No</entry>
+       <entry>Provide a write in placeholder.</entry>
+      </row>
+      <row>
+       <entry>Start Date Placeholder</entry>
+       <entry>No</entry>
+       <entry>Enter the donation campaign start date. The default value is "Start Date."</entry>
+      </row>
+      <row>
+       <entry>Enter Company</entry>
+       <entry>No</entry>
+       <entry>Provide the name of the company who will be matching the donation. The default value
+        is "Enter Company."</entry>
+      </row>
+     </tbody>
+    </tgroup>
+   </table>
+  </p>
+ </conbody>
+</concept>

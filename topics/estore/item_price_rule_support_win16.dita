@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_s4r_ypr_5t">
+ <title>Shopping Cart Price Rule Support</title>
+ <abstract>Staff users can define a discounted price for items that are purchased when other items
+  are present in the <b>Shopping Cart</b>. Portal and public users can receive beneficial pricing
+  for additional items as long as they purchase those items along with the item that initiates the
+  discount. For example, every customer purchasing a Gold Membership, or enrolling in a specific
+  course, will receive a discount on the related event for Gold Members or the course's related
+  textbooks.</abstract>
+ <conbody>
+  <p>The system calculates the correct price rule to apply based on: <ul id="ul_c5f_lcs_5t">
+    <li>the items identified in the Sales Order Lines and present on the Sales Order and in the
+      <b>Shopping Cart</b></li>
+    <li>when the Sales Order Line quantity is updated</li>
+    <li>when an item is deleted from the <b>Shopping Cart</b></li>
+   </ul></p>
+  <p>If a customer receives beneficial pricing on an event for Gold Members, but a staff user
+   deletes the Gold Membership Sales Order Line from the Sales Order, the price on the event will
+   adjust accordingly. The system responds similarly if the customer deletes the Gold Membership
+   from the <b>Shopping Cart</b>. </p>
+  <p><xref href="creating_price_rules_task.dita#task_adk_fml_gs">Create a price rule</xref> on the
+   item requiring price rule support.</p>
+ </conbody>
+</concept>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_aqh_hm1_f5">
+ <title>Installments for Subscription Plans</title>
+ <abstract>When allowing members to pay for a subscription in installments, the System Admin must
+    check the <b>Enable Schedule</b> field, set the <b>Schedule Type</b> to <b>Invoice</b>, define
+    the <b>Schedule Frequency</b>, and enter the <b>Number of Installments</b> on the Subscription
+    Plan record. </abstract>
+ <conbody>
+  <p/>
+  <example>Use Case: Installments for Lifetime Memberships (no deferred revenue)(UAAA)<p>Diamond
+    Membership Example</p></example>
+  <example>Use Case: Installments for Lifetime Memberships (no booking to A/R)(TE)</example>
+  <example>Use Case: 36 Month Termed Membership (deferred revenue)</example>
+ </conbody>
+</concept>

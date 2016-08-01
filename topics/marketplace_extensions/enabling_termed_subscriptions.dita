@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_mc5_zrt_qv">
+    <title>Enabling Termed Subscriptions</title>
+    <abstract>Termed subscriptions are activated when the Direct Debit agreement is submitted and
+        extends the identified term.</abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>eStore</b> app and click the <b>Subscription Plans</b> tab.
+                    Click <b>New</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Select <b>Termed</b> from the <b>Type</b> picklist.</cmd>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Active</b> checkox.</cmd>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Direct Debit Enabled</b> checkbox.</cmd>
+            </step>
+            <step>
+                <cmd>Set <b>Invoice Days Variable</b> (days). The system automatically creates a
+                    Sales Order that mirrors the current active subscription "X" number of days
+                    prior to subscription expiration.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Initial Term (Months)</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Renewal Term (Months)</b>.</cmd>
+            </step>
+            <step>
+                <cmd>If the subscription is to set up to auto-renew, the direct debit agreement will
+                    be extended to the end of the new term:Select “Required” from the <b>Auto
+                        Renewed</b> picklist. The system updates the amount of each payment and
+                    extend the term of the agreement to match the renewal period. </cmd>
+            </step>
+            <step>
+                <cmd>Check <b>Require Payment Method</b> Note: Non-Direct Debit Enabled Subscription
+                    Plans require a Payment Gateway assignment when Auto-Renew enabled.</cmd>
+            </step>
+            <step>
+                <cmd>Check <b>Enable Schedule</b></cmd>
+            </step>
+            <step>
+                <cmd>Leave <b>Number of Installments </b>(blank), <b>Bill Cycle:</b> AUTO and
+                        <b>Bill Cycle Day:</b> (blank)</cmd>
+            </step>
+            <step>
+                <cmd>Select “Automatic Payment” from <b>Schedule Type</b> picklist</cmd>
+            </step>
+            <step>
+                <cmd>Select the desired frequency from <b>Schedule Frequency</b> picklist (e.g.
+                    Annually, Quarterly, Monthly) Note: The direct debit payment processor only
+                    supports: <b>Annually</b>, <b>Quarterly</b>, and <b>Monthly</b>. </cmd>
+            </step>
+            <step>
+                <cmd>Click <b>Save</b>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

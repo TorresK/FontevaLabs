@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>Fundraising</title>
+ <topicref href="donation_intro.dita"/>
+ <topicref href="donations_cp_task.dita">
+  <topicref href="campaign_options.dita"/>
+ </topicref>
+</map>

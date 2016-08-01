@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_itr_pzs_35">
+    <title>Setting up Deferred Revenue</title>
+    <abstract><b>Deferred Revenue</b> is a liability because it refers to revenue that has not yet
+        been earned, but represents products or services that are owed to the customer. As the
+        product or service is delivered over time, it is recognized as revenue on the income
+        statement. When the deferred revenue becomes earned, an adjusting entry is prepared that
+        will debit the Unearned Revenues or Deferred Revenues account and will credit the Sales
+        Revenues or Service Revenues account. <note><b>Users can enable Defer Revenue on a per item
+                basis. Additionally, revenue cannot be deferred for items with Lifetime Subscription
+                Plans.</b></note></abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Items</b> tab in the <b>eStore</b> app and click the
+                        <b>New</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the item <b>Name</b>.</cmd>
+                <info>Identify the <b>Business Group</b> via the lookup and enter the
+                        <b>Description</b> for the item. </info>
+            </step>
+            <step>
+                <cmd>Check the <b>Defer Revenue</b> checkbox to initiate Deferred Revenue
+                    Recognition Rules and identify the <b>Deferred Revenue Account</b> via the
+                    lookup.</cmd>
+                <info><image href="../../assets/screenshots/estore/enabling_defer_revenue_win16.png"
+                        width="700" id="image_tbv_bmy_35"/></info>
+                <info>The GL Account for Deferred Revenue/Income, like all <xref
+                        href="../accounting/business_groups/bg_glaccounts_task.dita#task_fys_vtv_kr"
+                        >GL Accounts</xref>, is created and maintained on the related Business Group
+                    record.</info>
+            </step>
+            <step>
+                <cmd>Select the <b>Revenue Recognition Rule</b> from the picklist:  </cmd>
+                <choices id="choices_r2p_nnf_j5">
+                    <choice><b>Over Time</b>- Select this value to recognize revenue over a period
+                        of time. <b>This value is most often used for Subscriptions</b>. If the
+                            <b>Revenue Recognition Rule</b> is set to <b>Over Time</b>, then select
+                        the <b>Revenue Recognition Term Rule</b> from the picklist: <p><image
+                                href="../../assets/screenshots/estore/item_class_deferred_revenue_fields_win16.png"
+                                width="400" id="image_r1k_5wm_j5"/></p><ul id="ul_nqm_rnf_j5">
+                            <li><b>No Partial Credit</b>-The first month’s revenue is recognized on
+                                the last day of the month for the duration of the term, regardless
+                                of the day it was purchased. For example, if an annual membership is
+                                purchased in January, the first revenue recognition entry is made on
+                                January 31st.  </li>
+                            <li><b>Flex Day</b>-Revenue is recognized in the first month as long the
+                                purchase is on or prior to the Flex Day of the Month. For example,
+                                if a membership is purchased on January 7, but the Flex Day is set
+                                to 5, the first revenue recognition entry will not occur until the
+                                last day of the following month, February 28/29.</li>
+                            <li><b>Daily</b>- Revenue is recognized on the last day of the month,
+                                but is calculated based on the total cost of the item divided by
+                                365. For example, if a $1,200 annual membership is purchased and
+                                paid for on January 15, then the first credit to the revenue account
+                                is made for $55.89 on January 31. </li>
+                        </ul></choice>
+                    <choice><b>Specific Date</b>-Revenue is recognized on a specific day of the
+                        year. <b>This is most often used for Event items</b>. If Specific Date is
+                        selected as the Revenue Recognition Rule, then the Revenue Recognition Date
+                        field must be populated with the date the system is to recognize revenue. </choice>
+                </choices>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Active</b> checkbox and click <b>Save</b>.</cmd>
+            </step>
+        </steps>
+        <result>Deferred Revenue is set up on an item.</result>
+    </taskbody>
+</task>

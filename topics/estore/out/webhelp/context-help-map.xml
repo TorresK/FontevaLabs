@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="topic_lhn_kmf_cs" path="estore_landing_page.html"/>
+   <appContext helpID="task_p3m_trm_js" path="creating_stores_task.html"/>
+   <appContext helpID="topic_ihw_t3h_ks" path="configuring_checkout.html"/>
+   <appContext helpID="task_yrs_bln_js" path="creating_catalogs_task.html"/>
+   <appContext helpID="task_q41_1s5_js" path="item_campaign_pages_task.html"/>
+   <appContext helpID="concept_st2_y2l_gs" path="item_classes_intro.html"/>
+   <appContext helpID="task_zdr_yqj_gs" path="creating_item_classes.html"/>
+   <appContext helpID="task_nc2_hll_gs" path="creating_items_task.html"/>
+   <appContext helpID="task_y1f_2z3_ks" path="package_items_task.html"/>
+   <appContext helpID="task_itr_pzs_35" path="deferred_revenue_item_class.html"/>
+   <appContext helpID="concept_vlp_cxn_ht" path="shipping_introduction.html"/>
+   <appContext helpID="task_xz1_dqv_ht" path="creating_shipping_method_carrier.html"/>
+   <appContext helpID="task_dmf_nrv_ht" path="creating_shipping_region.html"/>
+   <appContext helpID="task_wlt_jw2_x5" path="default_shipping_region_win16.html"/>
+   <appContext helpID="task_oqh_ksv_ht" path="creating_will_not_ship_region.html"/>
+   <appContext helpID="ShippingRates" path="creating_shipping_rates.html"/>
+   <appContext helpID="concept_wyr_jyv_ht" path="default_shipping_rate_overview.html"/>
+   <appContext helpID="task_tgj_xdc_3t" path="creating_flat_shipping_rate.html"/>
+   <appContext helpID="task_scq_w1w_ht" path="creating_shipping_items.html"/>
+   <appContext helpID="concept_mbk_hst_js" path="subscriptions_intro.html"/>
+   <appContext helpID="concept_bds_slt_g5"
+               path="subscriptions_invoicing_options_win16.html"/>
+   <appContext helpID="task_bxk_rhx_ds" path="subscription_calendar_task.html"/>
+   <appContext helpID="task_bxk_rhx_ds" path="subscription_termed_task.html"/>
+   <appContext helpID="task_bxk_rhx_ds" path="subscription_lifetime_task.html"/>
+   <appContext helpID="task_glq_zf1_ft" path="subscription_item_class.html"/>
+   <appContext helpID="task_i1s_mwt_js" path="creating_subscriptions_task.html"/>
+   <appContext helpID="task_qkl_rwb_f5" path="purchasing_subscriptions_win16.html"/>
+   <appContext helpID="task_asr_ppm_ss" path="managing_subscriptions.html"/>
+   <appContext helpID="task_tjm_3z1_ks" path="subscription_renewal.html"/>
+   <appContext helpID="task_a13_4rm_ht" path="modifying_subscriptions_backend.html"/>
+   <appContext helpID="task_bfx_lj3_ft" path="amending_subscriptions.html"/>
+   <appContext helpID="concept_snc_vzb_wr" path="taxes_overview_concept.html"/>
+   <appContext helpID="task_vpn_5bb_wr" path="tax_locale_setup_task.html"/>
+   <appContext helpID="task_pq5_v5h_wr" path="tax_class_setup_task.html"/>
+   <appContext helpID="task_ykx_jhh_yr" path="tax_rate_setup.html"/>
+   <appContext helpID="task_jtc_mpc_bv" path="taxable_items_setup_win16.html"/>
+   <appContext helpID="concept_l2w_b23_wr" path="tax_class_expected_results.html"/>
+   <appContext helpID="concept_tg5_2nf_x5" path="estore_customizations.html"/>
+   <appContext helpID="task_qzc_5s5_sr" path="badges_access_permissions_task.html"/>
+   <appContext helpID="task_adk_fml_gs" path="creating_price_rules_task.html"/>
+   <appContext helpID="concept_s4r_ypr_5t" path="item_price_rule_support_win16.html"/>
+   <appContext helpID="task_dzs_5my_sr" path="badges_creating_task.html"/>
+   <appContext helpID="concept_cmd_dtn_q5" path="badge_flowdown.html"/>
+   <appContext helpID="task_ocl_tly_sr" path="badges_assignment_task.html"/>
+   <appContext helpID="topic_zfp_nhh_ks" path="adding_bar_codes.html"/>
+   <appContext helpID="task_zc4_3xx_pt" path="applying_discount_codes_task.html"/>
+   <appContext helpID="task_u4m_2yx_bs" path="source_codes_task.html"/>
+</map>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_a2g_gwj_sr">
+  <title>Community Group Detail</title>
+  <abstract>The Community Group record details the various capabilities of staff users in exercising
+    control throughout the <b> Community Portal</b>. </abstract>
+  <conbody>
+    <section>There are several fields that staff users need to configure on the Community Group record:<ul>
+        <li><b>Community Group Name</b>-Displays as the <b>Group Name</b> in search results and on
+          the <i>Community Group Detail </i> page.</li>
+        <li><b>Member Entity Type</b>-Defines the type of group members allowed in a group:
+          Contacts, Accounts, or Groups. <b>A group cannot contain more than one Member Entity
+            Type</b>.</li>
+        <li><b>Type</b>-Categorizes groups in the system through a picklist. The System
+          Administrator can update the picklist values.</li>
+        <li><b>Is Published</b>-Publishes a Community Group in the <b>Community Portal</b>.</li>
+        <li><b>Site</b>-Links each group to a site, creating visibility in the <b>Community
+            Portal</b>. Without a site, the group will only exist as data in the backend and will
+          not be published in the <b>Community Portal</b>.</li>
+        <li><b>Group Owner</b>-If enabled by the System Administrator, updates the group information
+          when logged into the <b>Community Portal</b>. Required for Community Groups that will be
+          published in the <b>Community Portal</b>. Group Owner is also referred to as the
+            <b>Administrator</b> of the group.</li>
+        <li><b>Members</b>-Counts the number of members in a group via roll-up summary.</li>
+      </ul>
+      <image href="../../../assets/screenshots/community_builder/community_group_record.png"
+        width="600" id="image_g2b_f4g_vs"/>
+    </section>
+    <section><b>Description and Images</b>
+      <p>The fields for the group's description and images establish the page aesthetics and main
+        text:</p><ul>
+        <li><b>Banner</b>-Hosts the link of the image displayed on the <i>Community Group Detail</i>
+          page in the <b>Community Portal</b>. The Group Owner can change the banner image from
+          within the <b>Community Portal</b> by clicking the <b>Change Background</b> button. Any
+          changes to the banner image appear as an attachment in the <i>Notes and Attachments</i>
+          related list on the Group's record.</li>
+        <li><b>Group Image URL</b>-Hosts the link of the Group's Profile image displayed above the
+            <b>Group Name</b> on the <i>Community Group Detail</i> page. The Group Owner can change
+          the Group image from within the <b>Community Portal</b> by hovering over the image and
+          clicking on the <b>Change Photo</b> button. Any changes to the Group image appear as an
+          attachment in the <i>Notes and Attachments</i> related list on the Group's record. </li>
+        <li><b>Description</b>-Appears on the banner image of the <i>Community Group Detail</i>
+          page. If the created text is too long to fully appear in the provided area, users can
+          click the <b>Read More</b> link to view a pop up window with group information.</li>
+      </ul>
+      <image href="../../../assets/screenshots/community_builder/group_homepage_sum15r2apr.png"
+        id="image_n5n_jkz_xr" width="600"/></section>
+  </conbody>
+</concept>

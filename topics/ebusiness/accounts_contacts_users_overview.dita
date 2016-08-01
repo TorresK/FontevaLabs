@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_srp_51q_kr">
+ <title>Creating Accounts and Contacts</title>
+ <abstract><keyword>Accounts are organizations and companies that need to be tracked within the
+   organization.</keyword> In a non-profit environment, accounts are created for companies, groups,
+  and organizations, although partners and governing bodies also qualify as accounts.
+   <keyword>Contacts are individuals related to an account.</keyword></abstract>
+<conbody>
+   <p>Each account stores information associated with it such as a name, address, and phone number. Accounts may have related contacts, memberships, 
+   orders, and cases which can be accessed from the related lists below the account record.</p>
+  <p><b>An account can have several related contacts, however, each contact can have only one
+        related account.</b></p>
+ </conbody>
+</concept>

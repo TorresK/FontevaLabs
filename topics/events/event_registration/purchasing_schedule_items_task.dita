@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_tjj_flk_5r">
+    <title>Purchasing Schedule Items [DRAFT]</title>
+    <abstract>Once a user has been registered for an event via the Community Portal, they are
+        eligible to purchase additional schedule items.<p><b>Prerequisites:</b>Registered as a
+            single/group registrant, email sent </p></abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Open the email titled "Event Registration" and click the link included in the
+                    body of the email. This link will take the user to a page with interview
+                    questions related to the purchased ticket type.</cmd>
+            </step>
+            <step>
+                <cmd>Complete the required questions as well as any optional questions as needed.
+                    Click <b>Submit</b>. The Agenda Builder for the event will display, with the
+                    purchased ticket type at the top of the page.</cmd>
+            </step>
+            <step>
+                <cmd>Select the available dates of the event at the top of the page to navigate
+                    through the list of schedule items from which to build the agenda. There is a
+                    legend with the symbols that indicate whether the schedule items are "Scheduled"
+                    or already added, "Waitlist" if the schedule item has waitlisting enabled, and
+                    "Full" if the user is unable to add the schedule item to the agenda.</cmd>
+            </step>
+            <step>
+                <cmd>View the cost, description, speakers, and other available information by
+                    clicking the item. Then select the schedule item by clicking the <b>Add</b>
+                    button below the item information. To delete the item, click the <b>Remove</b>
+                    button.</cmd>
+            </step>
+            <step>
+                <cmd>Once all needed schedule items have been added, click <b>Continue</b>. The
+                    login page will display.</cmd>
+            </step>
+            <step>
+                <cmd>To continue to the checkout page as a guest, enter First Name, Last Name, and
+                    email. Click <b>Continue</b>.</cmd>
+            </step>
+            <step>
+                <cmd>On the next page, complete the shipping information. <b>Note</b>: Only the
+                        <b>Mailing State/Province</b> field is required. There is also the option to
+                    create an account on this page.</cmd>
+            </step>
+            <step>
+                <cmd>Click <b>Continue</b> to go to the Checkout page. Enter payment information and
+                    click the <b>Pay</b> button. <b>Note</b>: This payment method can be saved for
+                    future use.</cmd>
+            </step>
+        </steps>
+        <result>A receipt page will display with the following: <ul>
+                <li>Receipt Number</li>
+                <li>Date of purchase</li>
+                <li>Customer</li>
+                <li>Line Description for purchased item(s)</li>
+                <li>Memo with Sales Order number</li>
+                <li>Total Paid</li>
+            </ul>The Sales Order will be closed and posted, with a Sales Order Line for each
+            purchased item. A new record will appear in the <i>Registered Attendees</i> related list
+            on the Schedule Item's Detail page, with the Sales Order (Source) ID linking the
+            registered attendee back to the related sales order.</result>
+    </taskbody>
+</task>

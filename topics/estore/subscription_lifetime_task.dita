@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="task_bxk_rhx_ds">
+    <title>Creating a Lifetime Subscription Plan</title>
+    <abstract>A <b>Lifetime Subscription Plan</b>, by default, will have a term of 100 years
+        beginning on the purchase date. <note><b>A Lifetime Subscription Plan cannot be set up for
+                the Auto Renew Option. </b></note></abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to <b>Subscription Plans</b> in the <b>eStore</b> app and click
+                        <b>New</b>.</cmd>
+            </step>   
+           <step>
+                <cmd>Enter a <b>Name</b> for the <b>Subscription Plan</b>, set the <b>Type</b> to
+                        <b>Lifetime</b>, and check the <b>Is Active</b> checkbox.</cmd>
+            </step>
+            <step>
+                <cmd>Add a <b>Description</b> and click <b>Save</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/estore/lifetime_subscription_plan_win16.png"
+                        width="600" id="image_of3_5rx_dt"/></info>
+            </step>
+        </steps>
+        <result>A Lifetime Subscription Plan is created.</result>
+        <postreq>
+            <ul id="ul_dxf_lgl_ss">
+                <li><xref href="subscription_item_class.dita#task_glq_zf1_ft">Create an Item Class
+                        for Subscriptions and Configure Assignment Roles</xref></li>
+            </ul>
+        </postreq>    
+    </taskbody>
+</task>

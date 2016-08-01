@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="concept_elc_nqm_lw">
+ <title>Directory Builder</title>
+ <abstract>A directory is a useful addition to any Customer Community. The <b>Directory Builder</b>
+  is dynamic tool for creating and maintaining these online listings. The application’s design
+  allows the portal users to personalize the directory’s output based on the data elements in the
+  defined object.</abstract>
+ <section><b>Search Page.</b>Each directory presents its own custom Search Page. The staff user
+  establishes the title, instructional text and searchable fields.</section>
+ <p/>
+ <image
+  href="../../../assets/screenshots/marketplace_extensions/directory_builder/db_search_page.png"
+  id="image_cgl_vv3_mw" width="700"/>
+ <p> </p>
+ <section><b>Search Results. </b>The portal user types ahead in the desired search field(s).
+    <b><i>Search ahead</i></b> narrows the search to values within the pool of available data. By
+  clicking on results, pills are created. </section>
+ <p> </p>
+ <section><b>Pills</b> identify the criteria that will be used to return the directory search
+  results. The pills provide “OR” logic. The result set puts all records that contain the pill
+  value(s). Multiple pills in each row are treated as “ORs.” The rows are added (“AND”) together.
+  The search fields are treated as ANDs. For Example: First Name = John or James; AND Last Name =
+  Smith. Search Results can be refined by removing the pills</section>
+ <p> </p>
+ <section><b>Search. </b>Portal user clicks on Search button to expand the Search results to enter
+  new criteria. Search area collapses to display results. Pills are displayed at the top of the page
+  to remind the customer what filter criteria was employed. Pills can be removed to expand result
+  set. <p>The <b>Search fields</b> are displayed to the portal user and allows them to add the
+   desired criteria. The search fields offer type ahead logic to assist the portal user locate
+   available values. </p></section>
+ <p> </p>
+ <section>The <b>Search Result</b> List displays those data elements identified by the staff user
+  during the setup of the Directory. <p> </p>
+  <p>The number of records displayed is determined by the <b>Display Result</b> variable on the
+   Directory record. If the result set exceeds that number, pagination is employed to allow the
+   portal user to navigate easily.</p>
+  <p><image
+    href="../../../assets/screenshots/marketplace_extensions/directory_builder/db_search_results.png"
+    id="image_bnz_fw3_mw" width="700"/></p></section>
+ <p> </p>
+ <section><b>Profile Modal.</b>
+  <p>A profile modal is rendered by clicking on a record in the Search Result list. The Profile
+   Modal displays all the records detailed in the directories setup. </p>
+  <p>
+   <image
+    href="../../../assets/screenshots/marketplace_extensions/directory_builder/db_modal_profile.png"
+    id="image_tg4_rx3_mw" width="350"/></p>
+  <p> </p>
+  <p>When enabled, an authenticated portal user will be able to take advantage of these Advanced
+   Options.</p>
+  <p> </p></section>
+ <section><b>Modal Image.</b>
+  <p>Authenticated portal users benefit from advanced directory options. Among these is the ability
+   to see a Contact’s image if they have uploaded one to their online Profile Modal. </p>
+  <p><image
+    href="../../../assets/screenshots/marketplace_extensions/directory_builder/db_image_profile.png"
+    id="image_u3p_sx3_mw" width="350"/></p></section>
+ <section><b>Contact Me.</b> In addition, the staff user can allow an authenticated portal user to
+  message the Contact owner by clicking on an eMail button on the Contact’s Profile modal. When
+  clicked, a message modal opens. The portal user drafts a message in the provided text areas and
+  clicks Send. <p/>
+  <p><image
+    href="../../../assets/screenshots/marketplace_extensions/directory_builder/db_contact_me_modal.png"
+    id="image_xdb_zx3_mw" width="350"/></p></section>
+ <p>Note: Both the Portal user and the Profile Owner’s Email address field must be populated. </p>
+ <p/>
+ <section><b>Update Profile. </b>The staff user may also provide a link on the authenticated portal
+  users own Profile modal to sees the Email button on the portal user’s personal portal modal
+  window, when the Advanced Option is enabled. When clicked, the portal user is redirected to My
+  Profile page to update personal information displayed.</section>
+ <p>Note: Organization will need to include the directory fields in the provided field set.</p>
+</task>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_zc4_3xx_pt">
+    <title>Applying a Discount Code </title>
+    <abstract><b>Discount Codes</b> give organizations the functionality to provide customers
+        reduced prices on specified items or events that are added to their <b>Shopping Cart</b>.
+        System Admins and staff users can apply a <b>Discount Code</b> to an item on the the Sales
+        Order record by populating the <b>Source Code</b> field.</abstract>
+    <taskbody>
+<prereq>
+            <ol id="ul_llr_kzx_pt">
+                <li><xref href="source_codes_task.dita#task_u4m_2yx_bs">Create a Source Code
+                    </xref></li>
+                <li><xref href="creating_price_rules_task.dita#task_adk_fml_gs">Create a Price
+                        Rule</xref></li>
+                <li>System Admins must enable <b>Discount Codes</b> in their environment: <ul
+                        id="ul_up2_k14_rt">
+                        <li>Navigate to the username drop down list and click <b>Developer
+                                Console</b>. <p><image
+                                    href="../../assets/screenshots/estore/dev_console_drop_down_win16.png"
+                                    width="600" id="image_crc_psy_pt"/></p></li>
+                        <li>Select the <b>Debug</b> topbar menu item and click the <b>Open Execute
+                                Anonymous Window</b> from the drop down list.<p><image
+                                    href="../../assets/screenshots/estore/exec_anon_window_win16.png"
+                                    width="400" id="image_zqq_kty_pt"/></p></li>
+                        <li>Enter the following script into the <b>Enter Apex Code</b> window:
+                            <codeph>Framework.AppUpdate app = Framework.AppUpdate.get('DiscountCode');
+                                app.isActivated = true; Framework.Config.push(app);</codeph><p><image
+                                    href="../../assets/screenshots/estore/apex_code_windown_win16.png"
+                                    width="600" id="image_gcx_g5y_pt"/></p><p>Click <b>Execute</b>
+                                and close the <b>Force.com Developer Console</b> window.</p></li>
+                    </ul></li>
+            </ol>
+        </prereq>
+        <steps>
+            <stepsection><b>User Experience</b></stepsection>
+            <step>
+                <cmd>Authenticated users will log in to the <b>Community Portal</b> and click the
+                        <b>Store</b> tab in the navbar. </cmd>
+            </step>
+            <step>
+                <cmd>Select the item associated with the <b>Discount Code</b> and click <b>Add to
+                        Cart</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/estore/adding_discount_item_shopping_cart_win16.png"
+                        width="600" id="image_qcn_qxy_pt"/></info>
+                <stepresult>In the <b>Shopping Cart </b> modal, <b>Community Portal</b> users can
+                    click <b>Update Cart</b> or proceed to <b>Checkout</b>. Click
+                    <b>Checkout</b>.</stepresult>
+            </step>
+            <step>
+                <cmd>Both authenticated and unauthenticated users will enter the <b>Discount
+                        Code</b> into the <i>Order Total</i> pane on the <i>Checkout</i> page and
+                    click <b>Apply</b>.</cmd>
+                <info>Only one <b>Discount Code</b> can be applied per transaction.</info>
+                <info><image
+                        href="../../assets/screenshots/estore/cpu_applying_discount_code_win16.png"
+                        width="600" id="image_fd3_czy_pt"/></info>
+                <info><image
+                        href="../../assets/screenshots/estore/applied_discount_checkout_page_win16.png"
+                        width="600" id="image_lzb_m1z_pt"/></info>
+                <stepresult>The <i>Checkout</i> page is updated to reflect the applied
+                    discount.</stepresult>
+            </step>
+            <step>
+                <cmd>Complete <b>Payment Information</b> and click <b>Pay</b>.</cmd>
+                <info><image href="../../assets/screenshots/estore/frontend_sales_receipt_win16.png"
+                        width="600" id="image_wd5_x1z_pt"/></info>
+            </step>
+        </steps>
+        <result><b>Discount Codes</b> are successfully applied allowing backend users and both
+            authenticated and unauthenticated users the benefit of a reduced price on an item or
+                event.<note>In order to pass a <b>Discount Code</b> on an event to others, navigate
+                to the Source Code record and copy the <b>Source Code ID</b> from the URL. Next,
+                append the <b>Source Code ID</b> to the <b>Community URL</b>:
+                    {!communityurl}/Eventapi__Router?event={!event.id}&amp;site={!site.id}<b>&amp;sourcecode={!Source_Code__c.id}</b></note></result>
+    </taskbody>
+</task>

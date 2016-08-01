@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_kvc_bbj_rs">
+    <title>Configuring the Community</title>
+    <taskbody>
+        <prereq>
+            <ul id="ul_zqz_cbj_rs">
+                <li><xref href="creating_community_portal_task.dita#task_y45_ycc_nt">Prepare the
+                        Environment</xref></li>
+                <li><xref href="community_portal_profile_task.dita#task_gth_3y3_rs">Set up New
+                        Profiles</xref></li>
+                <li>On the <i>Community Management</i> page, ensure that the intended Community has
+                    a <b>Status</b> of <b>Active</b>.<p><image
+                            href="../../../assets/screenshots/setup/activate_community_sum15july.png"
+                            width="600" id="image_jlk_kkk_rs"/></p></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Click the <b>Manage</b> link next to the Active Community on the Community
+                    Management page.</cmd>
+            </step>
+            <step>
+                <cmd>Click <b>Administration</b> from the sidebar menu and select
+                    <b>Members</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Select <b>All</b> from the <b>Search</b> picklist and add the profiles from the
+                        <i>Available Profiles</i> list to the <i>Selected Profiles</i> list.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/framework/managing_member_profiles_win16.png"
+                        width="600" id="image_dpf_hrk_zs"/></info>
+                <info>The <b>System Admin</b> is automatically added to <i>Selected
+                    Profiles</i>.</info>
+            </step>
+            <step>
+                <cmd>Similarly, select all of the permission sets listed under the <i>Available
+                        Permission Sets</i> list and add them to the <i>Selected Permission Sets</i>
+                    list. Click <b>Save</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Navigate to <b>Administration</b> &gt; <b>Pages </b>and enter<b> Visualforce
+                        Page</b> as the<b> Community Home</b> and use the lookup to select
+                        <b>custom_login</b> with the <i>Namespace Prefix</i> of <b>CPBase</b>. Click
+                        <b>Save</b>.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/framework/pages_vfcustom_login_win16.png"
+                        width="600" id="image_olq_xrk_zs"/></info>
+            </step>
+            <step>
+                <cmd>Click <b>Go to Force.com</b>.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/community_builder/site_edit_detail_win16.png"
+                        width="600" id="image_qz2_lsk_zs"/></info>
+                <substeps>
+                    <substep>
+                        <cmd>Click the <b>Edit</b> button on the Site Details record.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Select <b>profile</b> using the <b>Active Site Home Page</b>
+                            lookup.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Select <b>custom_login</b> using the <b>Inactive Site Home Page</b>
+                            lookup.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Select <b>CommunitiesSelfReg</b> using the <b>Self Registration
+                                Page</b> lookup.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Select <b>reset_password</b> using the <b>Change Password Page</b>
+                            lookup.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Select <b>forgot_password</b> using the <b>Forgot Password Page</b>
+                            lookup.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Click <b>Save</b>.</cmd>
+                    </substep>
+                </substeps>
+                <info><image
+                        href="../../../assets/screenshots/community_builder/site_edit_detail_info_win16.png"
+                        width="600" id="image_jyw_w5k_zs"/></info>
+            </step>
+            <step>
+                <cmd>Navigate to the <i>Error Pages</i> related list on the Site record and click
+                    the <b>Page Assignment</b> button.</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>Select <b>custom_login</b> using the <b>Authorization Required Page
+                                (401)</b> lookup.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Select <b>limit_exceeded</b> using the <b>Limit Exceeded Page (509)</b>
+                            lookup.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Select <b>custom_login</b> using the <b>Maintenance Page (500/503)</b>
+                            lookup.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Leave the <b>Service Not Available</b> field blank.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Select <b>page_not_found</b> using the <b>Page Not Found (404)</b>
+                            lookup.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Select <b>generic_error</b> using the <b>Generic Error Page</b>
+                            lookup.</cmd>
+                        <info><image
+                                href="../../../assets/screenshots/community_builder/assign_error_pages_win16.png"
+                                width="600" id="image_ycq_kxk_zs"/></info>
+                    </substep>
+                    <substep>
+                        <cmd>Click <b>Save</b>.</cmd>
+                        <info><image
+                                href="../../../assets/screenshots/community_builder/error_pages_saved_assigned_win16.png"
+                                width="600" id="image_wk2_5xk_zs"/></info>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>Click the <b>Public Access Settings</b> button and then click <b>Edit</b> on
+                    the <b>Site Guest Profile</b> record.</cmd>
+                <info><image href="public_access_settings_win16.png" width="600"
+                        id="image_jjp_hkz_pt"/></info>
+            </step>
+            <step>
+                <cmd>Navigate to the <i>Standard Object Permissions</i> section and grant
+                        <b>Read</b> and <b>Create</b> access for both <b>Accounts</b> and
+                        <b>Contacts</b>. Click <b>Save</b>.</cmd>
+                <info><image href="account_contact_visibility_win16.png" width="600"
+                        id="image_dvc_nlz_pt"/></info>
+            </step>
+            <step>
+                <cmd>Select the previous tab to return the <i>Community Management </i> page and
+                    click the <b>Preferences</b> tab. Check the <b>Use custom Visualforce error
+                        pages</b> checkbox and click <b>Save</b>.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/setup/community_setup_preferences.png"
+                        width="600" id="image_nnf_2mk_nt"/></info>
+                <info>If the checkbox is not enabled, then a <b>Community Portal</b> user is
+                    directed to a standard <i>Salesforce Community</i> error page, not the error
+                    page set up by the System Admin. </info>
+            </step>
+        </steps>
+        <result>All necessary profiles and permission sets are selected and Error Pages are assigned
+            for the new Community.</result>
+        <postreq>
+            <ul id="ul_frg_yjk_rs">
+                <li><xref href="login_registration_task.dita#task_vfg_42j_rs">Configure Login &amp;
+                        Registration Information</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_scq_w1w_ht">
+    <title>Creating an Item Requiring Shipment</title>
+    <abstract>Once Shipping Rates are created, identify the <b>eStore</b> merchandise that requires
+            shipping.<note>If using the same <b>Item Weight UOM</b> across shipping items, staff
+            users can set it as the default value in the picklist via: <ul id="ul_tqp_wjc_3t">
+                <li><b>Setup</b>
+                    <b>&gt; </b><b>Create</b>
+                    <b>&gt;</b>
+                    <b>Objects</b>
+                    <b>&gt;</b>
+                    <b>Item</b><b> &gt;</b>
+                    <b>Item Weight UOM</b><b> ></b>
+                    <i>Picklist Values</i> related list <b>></b> Click <b>Edit</b> on the preferred
+                        unit<b> ></b> Check the <b>Default</b> checkbox<b> ></b>
+                    <b>Save</b>.</li>
+            </ul></note></abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_etm_2bw_ht">
+                <li><xref href="creating_shipping_method_carrier.dita#task_xz1_dqv_ht">Create the
+                        Shipping Carrier and Delivery Method</xref></li>
+                <li><xref href="creating_shipping_region.dita#task_dmf_nrv_ht">Create the Shipping
+                        Region</xref></li>
+                <li><xref href="creating_shipping_rates.dita#task_ug1_ytv_ht">Create a Shipping
+                        Rate</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Items</b> tab in the <b>eStore</b> app and click
+                    <b>New</b>.</cmd>
+                <info>Alternatively, select an existing item and click <b>Edit</b>. </info>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Active</b> and <b>Require Shipping</b> checkboxes.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Item Weight</b>.</cmd>
+                <info>Alternatively, if the <b>Shipping Rate Basis</b> set on the Business Group
+                    record is <b>Item Value</b>, then only the <b>Item Price</b> is required.</info>
+            </step>
+            <step>
+                <cmd>Select the <b>Item Weight UOM</b> and click <b>Save</b>.</cmd>
+                <info>When the Shipping Rate Basis is set to Item Weight, not identifying the
+                        <b>Item Weight UOM</b> will result in incorrect Shipping Rates displayed to
+                    customers. Leave <b>Item Weight UOM</b> blank if the <b>Shipping Rate Basis</b>
+                    is <b>Item Value</b>.</info>
+            </step>
+        </steps>
+        <result>Shipping is enabled on the item.<note><b>If the Shipping Rate Basis is set to Item
+                    Value, staff users can still charge shipping on a $0.00 item via:</b><ul
+                    id="ul_wtj_v1g_x5">
+                    <li><b>Checking the Require Shipping checkbox on the Item record</b></li>
+                    <li><b>Entering "0" as the Minimum Value on the Shipping Rate Item
+                        record.</b></li>
+                </ul></note></result>
+    </taskbody>
+</task>

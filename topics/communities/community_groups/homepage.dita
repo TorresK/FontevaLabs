@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_yzk_ydy_rr">
+  <title>Community Groups</title>
+  <abstract>The <b>Community Groups</b> feature gives organizations the capability to bundle
+    accounts, contacts, and groups in a branded, dynamic, and interactive environment.</abstract> 
+  <conbody>
+    <p><b>Community Groups</b> promotes collaboration and engagement among members through the
+        <b>Community Portal</b>. Authenticated and unauthenticated users can click on the
+        <b>Groups</b> link in the navbar to search for groups of their interest. Search results are
+      displayed in a <i>tile</i> format, with each <i>tile</i> representing an individual Group on
+      the <i>Groups Listing</i> page. If enabled, use the search and filter components in the
+      sidebar nav to find Groups in the system.</p>
+    <p>
+      <note>Staff users control the configurations for <i>Community Group Search Settings</i> via
+        the Site record. <p><image
+            href="../../../assets/screenshots/community_builder/site_group_search_config_win16.png"
+            width="600" id="image_qhd_24y_wt"/></p></note>
+    </p>
+    <p>On each <i>Group Detail</i> page, staff users can display tabs to further engage with their
+      members:</p>
+    <ul id="ul_bn3_qkx_yt">
+      <li><b>Community Feed</b>-Share files and information between fellow members.</li>
+      <li><b>Members</b>-Search via the <b>Group Member Search</b> component and view profiles of
+        the listed members.</li>
+      <li><b>Events</b>-View and register for upcoming group events. </li>
+    </ul>
+    <p>Portal users can view the Groups they hold active memberships in by navigating to their
+        <i>Profile</i> page in the <b>Community Portal</b> and clicking the <b>My Groups</b> tab in
+      the sidebar nav. </p>
+    <p><image href="../../../assets/screenshots/community_builder/my_groups_tab_win16.png"
+        width="600" id="image_s43_cd2_zt"/></p>
+    <p>Click on the name of the Community Group to return the associated <i>Group Detail</i> page. </p>
+  </conbody>
+</concept>

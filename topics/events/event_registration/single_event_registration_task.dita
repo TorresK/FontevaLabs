@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_d43_1bk_5r">
+    <title>Registering for a Conference Style Event</title>
+    <abstract>Both authenticated and unauthenticated users can register for an event, view
+        additional details, and select sessions in the <b>Community Portal</b>. </abstract>
+    <taskbody>
+        <prereq>
+            <ul>
+                <li>Ensure the <b>Status</b> picklist is set to <b>Active</b> and the <b>Is
+                        Published</b> checkbox is enabled on the Event record</li>
+                <li>Authenticated users should log in to their <b>Community Portal</b></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Click on <b>Events</b> in the top navbar to search for events.</cmd>
+            </step>
+            <step>
+                <cmd>Click on the desired event to navigate to the <i>Event Detail</i> page and then
+                    click the <b>Register Now</b> button to continue to the <i>Event
+                        Registration</i> page.</cmd>
+                <info><image href="../../../assets/screenshots/events/event_detail_page_cp.png"
+                        width="600" id="image_ltt_g14_tt"/></info>
+            </step>
+            <step>
+                <cmd>Click <b>Yourself</b> or <b>Someone Else</b> in the pop-up modal depending on
+                    who is attending the event.</cmd>
+                <info><image href="../../../assets/screenshots/events/register_now_modal_win16.png"
+                        width="600" id="image_n1m_ybp_tt"/></info>
+                <info>If, for example, an organization's HR representative is registering the CEO
+                    for an event, then the HR rep will click the <b>Someone Else</b> button.</info>
+            </step>
+            <step>
+                <cmd>Select the ticket type and click <b>Continue</b>.</cmd>
+                <info>Unauthenticated users must enter <b>First Name</b>, <b>Last Name</b>, and
+                        <b>Email</b>.</info>
+            </step>
+            <step>
+                <cmd>Use the sidebar nav to view additional event details and the <b>Agenda
+                        Builder</b> to select any available sessions and click
+                    <b>Continue</b>.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/events/selecting_sessions_cp_win16.png"
+                        width="600" id="image_dnk_y24_tt"/></info>
+            </step>
+            <step>
+                <cmd>Click the <b>Checkout</b> button in the pop-up modal.</cmd>
+                <info>The <b>Add Guests</b> button is designed for users interested in <xref
+                        href="group_event_registration_task.dita#task_r3r_2yj_5r">Group
+                        Registration</xref>.</info>
+            </step>
+            <step>
+                <cmd>Registration information will autopopulate from the Contact record for
+                    authenticated portal users.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/events/checkout_autopopulation_win16.png"
+                        width="600" id="image_tgr_qw5_tt"/></info>
+                <info>An unauthenticated portal user is directed to checkout as a guest and enter
+                    the required contact information to complete the registration. </info>
+            </step>
+            <step>
+                <cmd>Select the <b>Payment Method</b>, enter the required information, and click the
+                        <b>Pay</b> button.</cmd>
+            </step>
+        </steps>
+        <result>A receipt is returned along with an email enclosed with the option for registrants
+            to further customize their event experience via the <b>Agenda Builder</b>.<p><image
+                    href="../../../assets/screenshots/events/receipt_page_win16.png" width="600"
+                    id="image_zdx_dx5_tt"/><image
+                    href="../../../assets/screenshots/events/event_detail_post_registration_win16.png"
+                    width="600" id="image_itf_5x5_tt"/></p></result>
+        <postreq>
+            <ul id="ul_yny_dz5_tt">
+                <li><xref href="add_to_passbook.dita#concept_yvw_q5h_jt">Add to Passbook</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_cmd_dtn_q5">
+ <title>Badge Flowdown</title>
+ <abstract>Badge Flowdown allows users to assign a badge to a Parent Account and allow the Child
+  Accounts and their related Contacts to receive any benefits of the badge. Badge Flowdown is
+  composed of four primary components: <ul>
+   <li><b>Enabling Badge Calculations</b></li>
+   <li><b>Enabling Badge Flowdown</b>
+   </li>
+   <li><b>Disabling Badge Flowdown for specific Accounts</b></li>
+   <li><b>Badges VisualForce Component on the Contact Detail Page</b></li>
+  </ul><p>Badge records are not created for the Child Accounts and their Contacts. The system
+   populates the Badges VisualForce Component on the Contact record for reporting
+     purposes.<note><b>In order to view all the badges benefiting a Contact, the user must add the
+     Badges Visualforce Component to the Contact record's page layout.</b><p><image
+      href="../../assets/screenshots/estore/badge_contact_component_win16.png" width="700"
+      id="image_arg_1fg_x5"/></p></note></p></abstract>
+ <conbody>
+  <section><b>Enabling Badge Calculations</b><p>To enable Badge calculations, navigate to the
+     <b>Spark Admin</b> tab in the <b>Spark Framework</b> app and click <b>Apps</b>. </p><p><image
+     href="../../assets/screenshots/estore/enabling_badge_calculations_win16.png" width="700"
+     id="image_sns_rdx_1v"/></p><p>Next, click <b>Charge</b> and activate the <b>Enables Badge Flow
+     Down</b> update. This enables the calculation of badges from the <i>Badges</i> related list on
+    the Contact record to the <b>Badges</b> field on the Contact record. </p></section>
+  <section><title>Enabling Badge Flowdown</title>  
+   <p>To enable Badge Flowdown: <ol>
+     <li>Navigate to the <b>Badge Type</b> to be enabled for flowdown.</li>
+     <li>Check the <b>Enable Badge Flowdown</b> checkbox and click <b>Save</b>.<note><b>Type</b>
+              must be set to <b>Line Account</b>. </note></li>
+    </ol></p>
+  </section>
+<section><title>Disabling Badge Flowdown</title>
+<p>The <b>Disable Badge Flowdown</b> checkbox allows users to define specific accounts that cannot
+    receive benefits if flowdown badges are assigned to their parent accounts. To disable badge
+    flowdown: <ol>
+     <li>Navigate to the Account to be removed from badge flowdown.</li>
+     <li>Check the <b>Disable Badge Flowdown</b> checkbox and click <b>Save</b>.</li>
+    </ol></p></section>
+  <section><title>Badges Field and VisualForce Component</title>
+   <p>Records are not created for all Contacts when badges are assigned to an Account, nor are
+    badges created for Child Accounts and their Contacts when an Account receives a badge that is
+    enabled for badge flowdown. To report on assigned badges, users can use the <b>Badges</b> field
+    on the Contact record. </p>
+   <p><b>Badges are available to display based upon three relationships:</b>
+    <ol>
+     <li>Direct relationships are badges that are directly assigned to the contact record. </li>
+     <li>Inherited relationships are the badges that are assigned to the related account
+      record.</li>
+     <li>Flowdown relationships are the badges that are assigned to the related account’s parent
+      account and where the badge is enabled for flowdown. <p>The <b>Badges</b> field is a Long Text
+       Area field that concatenates every badge that gets assigned to a Contact, Account, or Parent
+       Account when the <b>Enable Badge Flowdown</b> checkbox is checked. To view badges assigned to
+       a contact (inherited, direct, and flowdown) navigate to the Contact record.</p></li>
+    </ol></p>
+   
+  </section>
+  <section><b>Badges Tab in the Community Portal</b><p>To display Badges in the <b>Community
+     Portal</b>, navigate to the <b>Spark Admin</b> tab in the <b>Spark Framework</b> app and click
+     <b>Apps</b>. </p><p><image
+     href="../../assets/screenshots/estore/spark_admin_apps_badges_win16.png" width="700"
+     id="image_xvs_5dg_x5"/></p><p>Next, click <b>Engage Member Community</b> and activate
+     <b>Displays My Badges tab on my profile page</b>. </p><p><image
+     href="../../assets/screenshots/estore/badges_profile_win16.png" width="700"
+     id="image_any_m2g_x5"/></p><p>When logged in to the Community Portal, contacts can click on the
+     <b>Badges</b> tab to view their associated badges.</p></section>
+ </conbody>
+</concept>

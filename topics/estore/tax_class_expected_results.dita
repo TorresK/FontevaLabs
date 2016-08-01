@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_l2w_b23_wr">
+ <title>Purchasing a Taxable Item </title>
+ <conbody>
+  <p>After purchasing a taxable item:<ul>
+    <li>Sales Order Line(s) are created.</li>
+    <li>Individual Sales Order Line(s) created for the Sales Tax or VAT.</li>
+   </ul></p>
+  <p><image href="../../assets/screenshots/estore/tax_rates_applied_to_sales_order_sum15r2may.png"
+    id="image_p1y_f5y_zr" width="600" alt="Tax Rates applied to a Sales Order"/></p>
+  <p>Closing and posting the Sales Order journals: <ul>
+    <li>A <b>debit</b> to the Cash account for the total amount on the sales order.</li>
+    <li>A <b>credit</b> to the Revenue account for the sale price of the item.</li>
+    <li>A <b>credit</b> to the Tax Liabilities GL account for the amount of the Sales Tax or
+          VAT.</li>
+   </ul></p>
+  <note><b>When multiple items are purchased with different tax classes, the sales order reflects
+        all the taxes that apply.</b></note>
+ </conbody>
+</concept>

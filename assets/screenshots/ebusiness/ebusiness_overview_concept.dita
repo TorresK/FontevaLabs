@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_nn2_fb5_1s">
+ <title>eBusiness Overview</title>
+ <abstract>The eBusiness process in the system provides and end-to-end life cycle of Order to Cash.
+  This process utilizes Receipts generated from Sales Orders, or cash entries which do not post to
+  Accounts Receivable, and Invoices, which post to Accounts Receivable.</abstract>
+ <conbody>
+  <p>It is important to understand the difference between Receipts and Invoices in the system, when,
+   why, and how they are used, and their accounting impact.</p>
+  <p><b>Receipts vs. Invoices</b></p>
+  <p>
+   <ul>
+    <li><b>Receipts</b> - Receipts create cash entry transactions and transaction lines when payment
+     is received and do not post to Accounts Receivable.</li>
+    <li><b>Invoices</b> - Invoices post to Accounts Receivable and have an accounting impact without
+     receipt of payment.</li>
+    <li>Selecting <b>Receipt</b> as the posting entity allows for Installment and Termed Recurring
+     payments.</li>
+    <li>Selecting <b>Invoice</b> as the posting entity allows for Termed Recurring and Evergreen
+     payments.</li>
+   </ul>
+  </p>
+ </conbody>
+</concept>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_m5t_3sq_3r">
+    <title>Enabling Community Portal Users</title>
+    <abstract id="external_user_abstract">Staff users must enable an external user's Contact record as a Customer User in order
+        to access the <b>Community Portal</b>. External users cannot be deleted; instead, the user
+        must be deactivated in order to restrict their access to the <b>Community
+        Portal</b>.</abstract>
+    <taskbody id="external_user_setup">
+        <prereq>
+            <ul id="ul_sjh_cbt_js">
+                <li>Create an Account or Contact<note>The <b>Contact Owner</b> must be assigned a
+                            <b>Role</b> in order to enable the new Community User.</note></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Contacts</b> tab in the <b>eBusiness</b> app and select an
+                    existing <b>Contact</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Manage External User</b> drop-down button on the Contact record
+                    and click <b>Enable Customer User</b>.</cmd>
+                <info>Alternatively, select the M<b>anage External Account</b> drop-down button on
+                    the Account record and click <b>Enable Partner</b>.</info>
+            </step>
+            <step>
+                <cmd>Enter, or edit, the user's <b>First Name</b>, <b>Last Name</b>, and
+                        <b>Email</b>.</cmd>
+                <info>The <b>Alias</b>, <b>Username</b>, and <b>Nickname</b> fields autopopulate
+                    based upon the <b>Email</b> field.</info>
+            </step>
+            <step>
+                <cmd>Select the <b>User License</b> and <b>Profile</b> from the picklists. Click
+                        <b>Save</b>.</cmd>
+                <info>The available profiles depend on the assigned <b>User License</b>. Profiles
+                    contain settings and permissions, which control the functions the user can
+                    perform and field level visibility.</info>
+            </step>
+        </steps>
+        <result>The Contact, or Account, is enabled and can access the <b>Community
+            Portal</b>.</result>
+        <postreq><image href="../../assets/screenshots/ebusiness/enabling_users_sum15jun.png"
+                id="image_wwr_mjt_js" width="600"/><ul id="ul_oxy_2gt_js">
+                <li>Navigate to the Contact record and select the <b>Manage External User</b>
+                    drop-down button and click <b>Log in to Community as User</b>.</li>
+                <li>Once logged in to the Community Portal, authenticated users can select among
+                    their Sites and Communities from a drop-down menu in the supernav.</li>
+            </ul></postreq>
+    </taskbody>
+</task>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_fr2_bvx_bv">
+    <title>Adjusting Invoices</title>
+    <abstract>Invoices are adjusted to account for several reasons, including late fees, write-offs,
+        and refunds. Adding adjustments to posted invoices create adjusting entries that are
+        reflected in the customer's financial software. <note><b>Multiple adjustments can be made to
+                an Invoice. The "Is Adjustment" field must be checked on each Invoice Line record
+                that is being adjusted. Invoice lines cannot be added to paid
+        invoices.</b></note></abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the invoice needing adjustment via the <b>Invoices</b> tab in the
+                        <b>eBusiness</b> app.</cmd>
+            </step>
+            <step>
+                <cmd>Check the checkbox(es) related to the line item(s) needing adjustment on the
+                        <i>Invoice Lines</i> related list. Click the <b>Create Adjustment Line</b>
+                    button. </cmd>
+                <stepresult>A new invoice line is created and marked <b>Is Adjustment</b>. Next,
+                    navigate to the newly created invoice line and define the attributes that will
+                    affect the adjustment transaction. </stepresult>
+            </step>
+            <step>
+                <cmd>Enter a negative or a positive value in the <b>Sales Price</b> to show a
+                    decreasing or increasing adjustment to the invoice, respectively.</cmd>
+            </step>
+            <step>
+                <cmd>Define the <b>GL Account</b> that will be the opposing entry to the defined
+                        <b>A/R Account</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Adjustment Reason</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Posted</b> checkbox to create the Adjusting Transaction and
+                    click <b>Save</b>.</cmd>
+                <info>Check the <b>Deferred Revenue Adjustment</b> checkbox to identify the
+                    adjustment as a deferred revenue adjustment prior to sving and posting; the
+                    resulting transaction will adjust all deferred revenue transactions. Any
+                    transactions dated prior to the <b>Adjustment Date</b> will have a date of the
+                        <b>Adjustments Posted Date</b>. </info>
+            </step>
+        </steps>
+        <result><b>The invoice adjustment is complete:</b><ul id="ul_chq_5wz_bv">
+                <li>The adjustment line is posted in the <i>Invoice Lines</i> related list.</li>
+                <li>Adjusting entries are generated for reporting purposes.</li>
+                <li><b>Adjustments</b> field on the Invoice record populates with the sum of the
+                    value of the related invoice lines <b>Total</b> field. </li>
+            </ul></result>
+    </taskbody>
+</task>

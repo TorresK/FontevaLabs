@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_dw1_yfy_pr">
+    <title>Registering for an Event through the Shopping Cart</title>
+    <abstract>Staff users can register event attendees through the backend <b>Shopping Cart</b>.
+            <note>Best practices recommend using the <b>Shopping Cart</b> for backend group
+            registration. </note></abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_pfv_pld_5s">
+                <li><xref href="creating_event_task.dita#task_oft_s1b_rr">Create an
+                    Event</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Sales Order</b> tab within the <b>eBusiness</b> app and
+                    click <b>New</b> to create a new Sales Order.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Contact</b> from the lookup, <b>Receipt</b> as the <b>Posting
+                        Entity</b>, and<b> Simple Receipt</b> as the <b>Schedule Type</b>. Click the
+                        <b>Save</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>Shopping Cart</b> button on the Sales Order record.</cmd>
+                <info>If the <b>Shopping Cart</b> button is not present on the Sales Order record,
+                        <xref
+                        href="../../system_configurations/creating_buttons.dita#task_bdb_1dt_zt"
+                        >create a new button</xref>.</info>
+            </step>
+            <step>
+                <cmd>Select the <b>Events</b> checkbox in the <b>Filter Results</b> sidebar. Search
+                    for the event schedule item and/or ticket type and click the <b>Shopping
+                        Cart</b> icon to add the item to the <b>Shopping Cart</b>.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/events/backend_shopping_cart_selection_win16.png"
+                        width="600" id="image_py1_pr5_vt"/></info>
+                <info>If the ticket type has a form attachment, click the <b>Interview</b> tab to
+                    complete the attached set of interview questions along with any requested
+                    information. Click the <b>Submit</b> button.</info>
+            </step>
+            <step>
+                <cmd>Review the field values in the <b>Price and Quantity</b> tab and click the
+                        <b>Save</b> button to preserve any changes. </cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>Checkout</b> button if there are no other backend
+                    registrations.</cmd>
+                <info>Select the correct <b>Payment Gateway</b> and complete the required payment
+                    information. Click <b>Pay</b>.</info>
+            </step>
+            <stepsection><b>Group Registration</b></stepsection>
+            <step>
+                <cmd>After saving, click <b>Continue Shopping</b>.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/events/backend_shopping_cart_groups_win16.png"
+                        width="600" id="image_zgn_ks5_vt"/></info>
+                <info>Add another ticket for the additional attendee to the <b>Shopping
+                    Cart</b>.</info>
+            </step>
+            <step>
+                <cmd>In the <b>Contact</b> field: </cmd>
+                <choices id="choices_s4f_gt5_vt">
+                    <choice>Use the lookup to select an existing Contact</choice>
+                    <choice>Enter the attendees name and click the lookup icon to create a new
+                        Contact record</choice>
+                </choices>
+                <info><image
+                        href="../../../assets/screenshots/events/backend_groupreg_new_contact_win16.png"
+                        width="600" id="image_ngq_d55_vt"/></info>
+                <info>Click the <b>New</b> button, enter any additional information, and click
+                        <b>Save</b>.</info>
+                <info><image
+                        href="../../../assets/screenshots/events/group_registration_new_contact_win16.png"
+                        width="500" id="image_i2j_m55_vt"/></info>
+            </step>
+            <step>
+                <cmd>Enter any necessary changes to the Sales Order and click <b>Save</b>.</cmd>
+                <info><b>Repeat Steps 7-9 for additional attendees.</b></info>
+            </step>
+            <step>
+                <cmd>Click <b>Checkout</b>, select the correct <b>Payment Gateway</b> and complete
+                    the required payment information. Click <b>Pay</b>.</cmd>
+            </step>
+        </steps>
+        <result>Registration for a ticket type and/or schedule item is successful upon payment.
+            Assignment records are created for additional attendees.<note>Additional attendees will
+                not receive any event related emails.</note></result>
+    </taskbody>
+</task>

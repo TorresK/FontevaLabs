@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_ghl_2l5_qs">
+    <title>Configuring Authorization Providers: Google</title>
+    <abstract>The Authorization Provider page allows staff users to configure alternate means to
+        register for or log in to a Community.<note>Salesforce will only allow one email per user.
+            Therefore, a unique email must be used for each federated login. Otherwise an Error page
+            will display notifying the user that the authentication attempt has failed.
+        </note></abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to <xref href="https://console.developers.google.com/start"
+                        format="html" scope="external">https://console.developers.google.com</xref>
+                    and log in to an existing <b>Google</b> account. If no Google account currently
+                        exists,<b> Create an empty project</b>.</cmd>
+                <info><image href="../../../assets/screenshots/setup/google_new_project.png"
+                        width="600" id="image_qsk_plk_rs"/></info>
+            </step>
+            <step>
+                <cmd><b>Select the Project</b>. If no project currently exists, click <b>Create</b>. </cmd>
+                <info><image href="../../../assets/screenshots/setup/new_project_googledev.png"
+                        width="600" id="image_xrm_qlk_rs"/></info>
+            </step>
+            <step>
+                <cmd>Under <b>APIs and auth</b>, click <b>Credentials</b>, which will display the
+                    Auth Credentials. </cmd>
+            </step>
+            <step>
+                <cmd>If this is a new project, click <b>Create new Client ID</b> and select <b>Web
+                        application</b> as the Application Type, and then click <b>Configure consent
+                        screen</b>. Populate the desired fields and click <b>Save</b>.</cmd>
+                <info><u>Required Fields</u><ul id="ul_dgh_zcw_qs">
+                        <li><b>Email Address</b></li>
+                        <li><b>Product Name</b></li>
+                    </ul></info>
+                <info><u>Optional Fields</u><ul id="ul_qwc_rxh_rs">
+                        <li><b>Homepage URL</b></li>
+                        <li><b>Product logo</b></li>
+                        <li><b>Privacy policy URL</b></li>
+                        <li><b>Terms of service URL</b></li>
+                        <li><b>Google+ page ID</b></li>
+                    </ul></info>
+            </step>
+            <step>
+                <cmd>Enter the <b>Authorized JavaScript origins</b> and click <b>Create Client
+                        ID</b>.</cmd>
+                <info><image href="../../../assets/screenshots/setup/client_id_google.png"
+                        width="600" id="image_ifl_rlk_rs"/></info>
+                <stepresult>Once Client ID is created, open up a new tab and log in to Salesforce.
+                </stepresult>
+            </step>
+            <stepsection><b>Create an Auth. Provider</b></stepsection>
+                <step>
+                <cmd>Click <b>Setup</b>> <b>Security Controls</b> > <b>Auth. Providers</b>.</cmd>
+            </step>
+            <step>
+                <cmd>On the <i>Auth. Providers</i> page, click the <b>New</b> button. </cmd>
+            </step>
+            <step>
+                <cmd>Select <b>Google</b> from the <b>Provider Type</b> picklist. Populate the
+                    desired fields and click <b>Save</b>.</cmd>
+                <info><u>Required Fields</u><ul id="ul_qn5_l23_rs">
+                        <li><b>Name</b>- Enter a unique, identifying name for the Auth.
+                            Provider.</li>
+                        <li><b>URL Suffix</b>- Enter a value to use in the callback URL. This field
+                            will default to the value entered in the <b>Name</b> field. </li>
+                        <li><b>Consumer Key</b>- Paste the <b>Client ID</b> returned in Step 5.</li>
+                        <li><b>Consumer Secret</b>- Paste the <b>Client Secret</b> returned in Step
+                            5. </li>
+                    </ul></info>
+                <info><u>Optional Fields</u><ul id="ul_rn5_l23_rs">
+                        <li><b>Default Scopes</b>- Enter the level of access that this user has to
+                            that profile, i.e., read-only access or profile email openid. Otherwise,
+                            the field will default to <b>Salesforce</b>.</li>
+                        <li><b>Custom Error URL</b>- Enter a URL to display a custom error
+                            message.</li>
+                        <li><b>Custom Logout URL</b>- Enter a URL to display a logout error message </li>
+                        <li><b>Registration Handler</b>- Enter "Google" into the lookup.</li>
+                        <li><b>Execute Registration As</b>- Enter the name of a full user in the
+                            system associated to a Role. <b>Cannot be a Community User</b>. </li>
+                        <li><b>Portal</b>- Leave as "None." </li>
+                        <li><b>Icon URL</b>- Enter a secure URL to the icon, or choose from among
+                            Google's sample icons.</li>
+                    </ul></info>
+                <info><image href="../../../assets/screenshots/setup/google_auth_provider.png"
+                        width="600" id="image_abf_slk_rs"/></info>
+                <stepresult>The Auth. Provider record populates the <b>Client Configuration</b>
+                    fields: <ul>
+                        <li><b>Test-Only Initialization URL</b></li>
+                        <li><b>Single Sign-On Initialization URL</b></li>
+                        <li><b>Existing User Linking URL</b></li>
+                        <li><b>OAuth-Only Initialization URL</b></li>
+                        <li><b>Callback URL</b></li>
+                    </ul></stepresult>
+            </step>
+            <step>
+                <cmd>Copy the <b>Callback URL</b> and navigate to the <b>Google Developers
+                        Console</b> tab in the browser window and click the <b>Edit Settings</b>
+                    button. Paste the <b>Callback URL</b> into the <b>Authorized redirect URIs</b>
+                    field and click <b>Update</b>.</cmd>
+            </step>
+            <stepsection><b>Enable Social Login</b></stepsection>
+            <step>
+                <cmd>Navigate to <b>Setup</b> > Search: <b>Communities</b> > Select <b>All
+                        Communities</b> > Click <b>Manage</b> next to the intended Community.</cmd>
+            </step>
+            <step>
+                <cmd>Navigate to <b>Administration</b> > <b>Login &amp; Registration</b> > Check the
+                        <b>Google</b> checkbox and click <b>Save</b>. </cmd>
+                <info><image href="../../../assets/screenshots/setup/login_google.png" width="600"
+                        id="image_alb_tlk_rs"/></info>
+            </step>
+            <step>
+                <cmd>Open a new tab, navigate to the <b>Communities</b> app, and select the
+                        <b>Sites</b> tab. </cmd>
+                <info><image
+                        href="../../../assets/screenshots/community_builder/sites_sum15july.png"
+                        width="600" id="image_sjb_vlk_rs"/></info>
+            </step>
+            <step>
+                <cmd>Navigate to the Community's related Site record and click <b>Edit</b>. </cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Auth Provider Default Account</b> using the lookup. </cmd>
+            </step>
+            <step>
+                <cmd>Copy the <b>Single Sign-On Initialization URL</b> generated during the Auth.
+                    Provider configuration and paste it into the <b>Google Login URL</b>
+                        field.<b>Click Save</b>.</cmd>
+            </step>
+        </steps>
+        <result>Authenticated and unauthenticated users can log in to the Community Portal through
+            their Google accounts. </result>
+        <postreq>
+            <ul id="ul_ohp_wlk_rs">
+                <li><xref href="../enabling_portal_users_task.dita#task_m5t_3sq_3r">Enable Community
+                        Portal Users</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>
+

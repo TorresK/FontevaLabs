@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_qs5_gtx_pr">
+    <title>Registering for Optional Schedule Items</title>
+    <abstract>An event generally offers various activities for attendees. In order to participate,
+        attendees must register for the individual activity prior to the <b>Registration End
+            Date</b>, or register for a package item, if available. Registration for optional
+        schedule items exists to accommodate those participating in multiple activities over the
+        course of a single event.</abstract>
+    <taskbody>
+        <prereq><b>Prerequisites:</b> Prior to registering for optional schedule items, the
+            following must be created: <ul>
+                <li>An event</li>
+                <li>A ticket type </li>
+                <li>A schedule item<p>See <xref href="single_registration_task.dita#task_ltq_czf_4r"
+                        /> and proceed through the first two steps.</p></li>
+            </ul></prereq>
+        <steps>
+            <step>
+                <cmd>Click the <b>Shopping Cart</b> button on the <i>Sales Order Detail</i>
+                    page.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Events</b> checkbox in the <b>Filter Results</b> sidebar. Search
+                    for the schedule item and add it to the <b>Shopping Cart</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>Interview</b> tab. Check the box next to each event session to add
+                    it to the <b>Shopping Cart</b>. Click <b>Add to Cart</b>.</cmd>
+                <info>
+                    <p>If there is a scheduling conflict between selected schedule items, staff
+                        users not assigned an Administrator user profile will receive notification
+                        via popup window.</p>
+                </info>
+            </step>
+            <step>
+                <cmd>Review the field values in the <b>Price and Quantity</b> tab and click the
+                        <b>Save</b> button to preserve any changes. Otherwise, click the
+                        <b>Checkout</b> button.</cmd>
+                <info>Administrators can select the <b>Price Override</b> checkbox to manually enter
+                    a value in the <b>Sales Price</b> field.</info>
+            </step>
+            <step>
+                <cmd>Select the correct payment gateway and complete the required payment
+                    information. Click the <b>Pay</b> button.</cmd>
+            </step>
+        </steps>
+        <result>Event registration for optional schedule items is successfully completed via the
+                <b>Shopping Cart</b> upon payment.</result>
+    </taskbody>
+</task>

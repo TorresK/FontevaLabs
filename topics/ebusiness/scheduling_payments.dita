@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_v2d_lwf_js">
+    <title>Scheduling Payments </title>
+    <shortdesc>Scheduled payments for cash entries and invoices need a form of ePayment.</shortdesc>
+    <taskbody> 
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Sales Orders</b> tab in the <b>eBusiness</b> app and click
+                        <b>New</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Posting Entity</b> and the <b>Schedule Type</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter values for the <b>Scheduled Frequency</b>, <b>Number of Installments</b>,
+                    and <b>Schedule Start Date</b>.</cmd>
+                <info>To complete a purchase, click the <b>New Sales Order Line</b> button on the
+                        <i>Sales Order Lines</i> related list. Select the <b>Item</b> using the
+                    lookup and click <b>Save</b>.</info>
+                <info>The <b>Price Override</b> option is enabled by default. If applicable,
+                    manually enter a new price to the <b>Sale Price</b> field.</info>
+            </step>
+            <step>
+                <cmd>Use the lookup to identify the <b>Payment Gateway</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Select <b>Closed</b> and <b>Posted</b> for the <b>Status</b> and <b>Posting
+                        Status</b> fields. Click <b>Save</b>.</cmd>
+            </step>
+           
+        </steps>
+        <result>The related lists will update to reflect the accounting impact of payments for cash
+            entries and invoices.</result>
+        
+    </taskbody>
+</task>

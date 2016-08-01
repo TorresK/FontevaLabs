@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="reuse_concept">
+ <title>Assignment Roles for Subscriptions</title>
+ <abstract id="ConceptFirst">Assignment Roles control access to important functions related viewing and modifying
+    subscriptions in the <b>Community Portal</b>.</abstract>
+ <conbody>
+  <p>The <i>Assignment Roles</i> related list on an Item Class record, with the <b>Is
+        Subscription</b> checkbox enabled, allows Admin users to manually configure assignments:<ul
+        id="ul_nqw_p4l_ss">
+        <li><b>Receives Email Communications</b>-Check the <b>Receives Email Communications</b>
+          checkbox to allow the customer to receive emails related to renewal notices, subscription
+          logs, subscription amendments, and any other Admin modifications to their subscription. </li>
+        <li>
+          <p><b>Is Primary</b>-When a customer is assigned to a subscription with <b>Is Primary</b>
+            checked, the customer can modify their subscription in the <b>Community Portal</b>.</p>
+        </li>
+        <li><b>Is Default</b>-When an Assignment Role is not selected, the customer is auto-assigned
+          a <b>Default</b> role that will allow the assignee to view their subscription in the
+            <b>Community Portal</b>.</li>
+        <li><b>Is Active</b>-The <b>Is Active</b> checkbox must be enabled in order for the items
+          related to the subscription based Item Class to display in the <b>Community
+          Portal</b>.</li>
+      </ul></p>
+  <p id="ConceptLast">At a minimum, a subscription based Item Class must have at least one Assignment Role with the
+        <b>Is Default</b> and <b>Is Active</b> checkboxes enabled. If the Assignment is not the same
+      as the Contact on the Sales Order, users must navigate to the Sales Order record to identify
+      the Contact purchasing the subscription. All Assignments can view the subscriptions that are
+      assigned to them. In order to allow the customer full access to subscription management in the
+        <b>Community Portal</b>, enable <b>Receives Email Communications</b>, <b>Is Primary</b>, and
+        <b>Is Active</b>.</p>
+  <p>After setting Assignment Roles: <ul id="ul_nhx_2vl_ss">
+    <li><xref href="creating_item_classes.dita#task_zdr_yqj_gs">Create an Item Class for
+            Subscriptions and Set Assignment Roles</xref></li>
+   </ul></p>
+ </conbody></concept>

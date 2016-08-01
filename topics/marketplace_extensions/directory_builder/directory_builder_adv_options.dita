@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_otx_dkm_nw">
+ <title>Directory Builder Advanced Options</title>
+ <abstract>When Contact is chosen as the Directory entity, the staff user can add value the authenticated portal users experience by using the advanced directory options.</abstract>
+ <conbody>
+  <p><image href="../../../assets/screenshots/marketplace_extensions/db_advanced_options.png"
+        id="image_p5f_yld_mw" width="400"/></p>
+  <section><b>Enable Profile Link</b><p>When checked, adds Update Profile button to an authenticated
+    portal users profile modal. The portal user is redirected to <i>My Profile </i>page to update
+    personal information. Note: If this option is used, the field set(s) on the My Profile page
+    should include the fields included in the directory. </p></section>
+  <section><b>Enable Access Permissions</b><p>When checked, <b>Select Badge Type</b> button appears.
+    The <b>Access Permission</b> modal allows the user to select badges by dragging and dropping
+    them. from left to right. Only authenticated portal users with an active badge assignment that
+    matches a selected badge can open the directory search page.</p></section>
+  <section><b>Enable Contact Me</b><p>An email button is displayed on the profile modal window when
+    the staff user checks <b>Enable Contact Me</b>is checked. Drop-down fields are provided so the
+    staff user can identify which email address preference will be used for the addressee and the
+    sender. Note: "Update Contact Standard Email Field" must be check on the Organization Wide
+    Default Preferences for this option to work properly. </p></section>
+ </conbody>
+</concept>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_t1d_mhj_pw">
+    <title>Create Candidate Term</title>
+    <shortdesc/>
+    <taskbody>
+        <context>On the <b>Program Profile Detail Page</b>: </context>
+        <steps>
+            <step>
+                <cmd>Check <b>Create Candidate Term</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <b>Save</b> button.</cmd>
+                <info>A term record is created with a <b>Start Date</b> (Today) and <b>End Date</b>
+                    (Today + <b>Candidate Term</b>). <b>Goal</b> records are created for each active
+                    candidate requirement associated with the program. </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

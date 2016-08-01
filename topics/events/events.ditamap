@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>Events</title>
+ <topicref href="event_setup/events_overview.dita"/>
+ <topicref href="event_setup/event_setup_concept_win16.dita">
+  <topicref href="event_builder_simple_event.dita"/>
+  <topicref href="event_setup/event_categories_task.dita"/>
+  <topicref href="event_setup/ticket_types_task.dita"/>
+  <topicref href="event_setup/creating_event_task.dita"/>
+  <topicref href="event_setup/schedule_items_task.dita"/>
+  <topicref href="event_setup/speakers_task.dita"/>
+  <topicref href="event_setup/venues_sum15r2may.dita"/>
+  <topicref href="event_setup/sponsor_packages_task.dita"/>
+ </topicref>
+ <topicref href="event_registration/event_reg_setup_intro.dita">
+  <topicref href="event_registration/single_registration_task.dita"/>
+  <topicref href="event_setup/interview_questions_task.dita"/>
+ </topicref>
+ <topicref href="event_registration/event_registration_intro.dita">
+  <topicref href="event_registration/single_event_registration_task.dita"/>
+  <topicref href="event_registration/group_event_registration_task.dita"/>
+  <topicref href="event_registration/agenda_builder_task.dita"/>
+ </topicref>
+ <topicref href="event_registration/add_to_passbook.dita"/>
+</map>

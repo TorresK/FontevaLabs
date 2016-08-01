@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_vlc_kqw_yr">
+    <title>Setting up a Tax Class for Items with a Default Tax Rate</title>
+    <abstract>Tax classes will default to the same tax rate if the <b>Use Default Tax Rate</b>
+        checkbox is enabled on the Tax Class record. </abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_u3q_5g1_kt">
+                <li>Disable the <b>Is Default Tax Rate</b> checkbox on the original Default Tax Rate
+                    item.</li>
+            </ul>
+            <note>Only one Default Tax Rate can be designated for a tax class.</note>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Item Classes</b> tab in the <b>eStore</b> application and
+                    click the <b>New</b> button. </cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Name</b> of the Item Class and check the <b>Is Active</b>
+                    checkbox.</cmd>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Tax</b> checkbox.</cmd>
+            </step>
+            <step>
+                <cmd>Check the <b>Use Default Tax Rate</b> checkbox to indicate that the default tax
+                    rate will be used for all related items created under the tax class.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>New Item</b> button on the <i>Items</i> related list and set up a
+                    new default tax rate with the <b>Is Default Tax Rate</b> checkbox selected. Link
+                    the the tax rate to a Default Tax Locale.</cmd>
+                <info><image
+                        href="../../assets/screenshots/estore/tax_class_with_default_tax_rate__sum15r2apr.png"
+                        id="image_i5d_rns_bs" width="600"/></info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

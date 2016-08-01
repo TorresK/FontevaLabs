@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_mkz_rth_ks">
+  <title>Upgrading Subscriptions</title>
+  <body>
+    <p><b>Overview:</b></p>
+    <p>Upgrading a Subscription means that you are taking an existing active Subscription and
+      renewing it, but replacing it with a different subscription item than the original.</p>
+    <p><b>Prerequisite:</b></p>
+    <ul id="ul_bvk_tth_ks">
+      <li>Existing active Subscription (Silver Membership) with active Subscription Plan
+        (Anniversary Subscription Plan).</li>
+    </ul>
+    <p><b>Upgrading a Subscription</b></p>
+    <p>To upgrade a subscription,</p>
+    <ul id="ul_idw_5th_ks">
+      <li>Create a Sales Order with "Receipt" as the <b>Posting Entity</b>, and "Simple Receipt" as
+        the <b>Schedule Type</b>. Save the Sales Order.</li>
+      <li>Add a Sales Order Line with a different subscription item (Basic Membership) than the
+        original subscription (Silver Membership), with the following values:<ul id="ul_jdw_5th_ks">
+          <li>Select <b>Is Renewal.</b></li>
+          <li>Select a different Subscription Plan (Calendar Subscription) than the original
+            subscription's Subscription Plan (Anniversary Subscription Plan).</li>
+          <li>Select the original Subscription for the <b>Subscription (Upgrade/Renew)
+            </b>field.</li>
+        </ul></li>
+      <li>Save the Sales Order Line.</li>
+      <li>Update the Sales Order to "Closed."</li>
+      <li>Because the <b>Posting Entity</b> is "Receipt," you'll need to <xref
+          href="https://fonteva.atlassian.net/wiki/pages/viewpage.action?pageId=49807847"
+          format="html" scope="external">pay for your Sales Order</xref>.</li>
+      <li>The Sales Order <b>Posting Status</b> will be updated to "Posted" upon payment.</li>
+    </ul>
+    <p><b>What you should see...</b></p>
+    <ul id="ul_yxj_wth_ks">
+      <li>Only one Sales Order Line should be created for that Sales Order with the new subscription
+        item (Basic Membership).</li>
+      <li>The original subscription record (Silver Membership) should be updated with the following
+          fields:<ul id="ul_zxj_wth_ks">
+          <li><b>Is Upgraded</b> is checked.</li>
+          <li>The <b>Status</b> will appear as "Upgraded."</li>
+          <li>The upgraded subscription should be populated with the newly created
+            subscription.</li>
+          <li>The new subscription will have a status of "Pending" until the following day when the
+              <b>Current Term Start Date</b> begins.</li>
+        </ul></li>
+    </ul>
+  </body>
+</topic>

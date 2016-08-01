@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_ifp_hrm_lw">
+    <title>Site Selection</title>
+    <shortdesc>A directory can be related to multiple <b>Sites</b>. Drag and drop the any
+            <b>Available Site</b> to the <b>Selected Sites</b> box. At least one site must be
+        identified for the directory to be used. The Directory is given a Site ID unique to each
+        site and will inherit the Theme from that site. 
+        <image
+                href="../../../assets/screenshots/marketplace_extensions/db_site_directory.png"
+                id="image_wmp_hs3_mw"/></shortdesc>
+</task>

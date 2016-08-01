@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_ost_srg_2v">
+ <title>Access Manager</title>
+ <abstract>The Access Manager uses the <b>Spark Toolkit</b>, a custom application hosted on Heroku
+    to modify object permissions, Apex Class and VisualForce page access, and run field level
+    security. </abstract>
+ <conbody>
+  <p><image href="../../assets/screenshots/framework/access_manager_toolkit_win16.png" width="700"
+    id="image_yg4_ftg_2v"/></p>
+  <p>Click on <b>Access Manager</b> in the <b>Spark Admin</b> tab of the <b>Spark Framework</b> app
+   to launch the <b>Spark Toolkit</b>. </p>
+    <p><b>Choose Packages &amp; Profiles: </b></p>
+    <p><image href="../../assets/screenshots/framework/spark_toolkit_win16.png" width="700"
+        id="image_ofj_jyl_2v"/><ul id="ul_q5d_w5k_zv">
+        <li>All packages are selected by default. Otherwise, uncheck the related checkbox to limit
+          updating profiles only for specific packages. </li>
+        <li>For standard and custom object access, check the <b>Standard</b> and <b>Custom</b>
+          checkboxes to update object and field access on any object that is not part of the managed
+          packages. <ul id="ul_ufc_bvk_zv">
+            <li><b>Account</b>, <b>Contact</b>, and <b>User</b> objects are included by default.
+            </li>
+          </ul></li>
+        <li>If there is a namespace assigned to the customer environment, enter the <b>Package
+            Namespace</b>. </li>
+        <li>Select the applicable org <b>Profiles</b> and click <b>Fetch Profiles</b>.<ul
+            id="ul_ipw_2vk_zv">
+            <li>Selection of <b>All Profiles</b> is disabled, so staff users must select profiles on
+              an individual basis.</li>
+            <li>If the process exceeds 10 minutes, select fewer profiles.</li>
+          </ul></li>
+      </ul></p>
+    <p><b>Set Up Profiles</b></p>
+    <p><image href="../../assets/screenshots/framework/access_manager_profile_setup.png" width="600"
+        id="image_jxr_wxk_zv"/></p>
+  <p>
+      <ul id="ul_kfx_bwk_zv">
+        <li>For each profile selected in the previous tab, there are 3 sections to configure: <ul
+            id="ul_tm4_xxk_zv">
+            <li><b>Object Permissions - Disabled by default</b></li>
+            <li><b>Class and Page Access</b></li>
+            <li><b>Field Access</b></li>
+          </ul></li>
+        <li>Staff users will need to configure <b>Object Permissions</b> only if the org is brand
+          new, when any new objects are added to a package, or if they need to modify an existing
+          configuration. <p><image
+              href="../../assets/screenshots/framework/profile_setup_object_permissions.png"
+              width="600" id="image_lfz_bzk_zv"/></p><ul id="ul_vh1_nwk_zv">
+            <li>When <b>Object Permissions</b> is enabled, <b>View All</b> and <b>Modify All</b> are
+              disabled by default and best practices recommend restricting access to System
+              Administrators only. </li>
+          </ul></li>
+        <li> Click <b>Update Profiles</b> to complete the profile set up. </li>
+      </ul>
+    </p>
+    <p><b>Profiles Deployed</b></p>
+    <p><image href="../../assets/screenshots/framework/completed_fls_toolkit_win16.png" width="700"
+        id="image_zby_3qn_2v"/></p>
+  <p>
+      <ul id="ul_asp_bxk_zv">
+        <li>All profiles are updated as indicated by the blue <i>Profile</i> tiles. </li>
+        <li>In the event a profile failed to update, an orange <i>Profile</i> tile will display
+          instead. </li>
+        <li>Click <b>Return to Spark Admin</b>. </li>
+      </ul>
+    </p>
+ </conbody>
+</concept>

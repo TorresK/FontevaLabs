@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_zdr_yqj_gs">
+    <title>Creating an Item Class</title>
+    <abstract>Item Classes group and set options for items at the class level. <b>All items must
+            have an Item Class.</b><note>The system automatically creates Item Classes for Event
+            ticket types, schedule items, and sponsors, if enabled on the Event record.</note>
+    </abstract>
+    <taskbody id="task_create_ic">
+        <steps id="steps_create_ic">
+            <step>
+                <cmd>Navigate to the <b>Item Classes</b> tab in the <b>eStore</b> app and click the
+                        <b>New</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Name</b> of the Item Class.</cmd>
+                <info>Identify the <b>Business Group</b> via the lookup and enter the
+                        <b>Description</b> for the Item Class. </info>
+            </step>
+            <step>
+                <cmd>Identify any relevant Item Class <i>Attributes</i>. </cmd>
+                <info><image href="../../assets/screenshots/estore/item_class_attributes_win16.png"
+                        width="700" id="image_gvx_vrq_35"/></info>
+            </step>
+            <step>
+                <cmd>Select the <b>Is Active</b> checkbox and click <b>Save</b>.</cmd>
+            </step>
+        </steps>
+        <postreq>
+            <ul id="ul_d5s_vd3_rs">
+                <li><xref href="creating_items_task.dita">Create an Item</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

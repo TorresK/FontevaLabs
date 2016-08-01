@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_ctc_prv_wr">
+    <title>Processing an ePayment Refund</title>
+    <abstract>After creating a refund for an ePayment, it must continue to be processed in the
+        system.</abstract>
+    <taskbody>
+        <prereq>The system only allows the processing of a refund on a Receipt record where the
+                <b>Type</b> field value is "Refund." Therefore, an ePayment record is necessary, and
+            the Refund record created from the original receipt must be made prior to clicking the
+                <b>Process Refund</b> button:<ul id="ul_lqk_csc_3t">
+                <li><xref href="refund_creating_task.dita#task_dnk_npv_wr">Creating a
+                    Refund</xref></li>
+            </ul></prereq>
+        <context>
+            <p>Follow the steps to process a refund for an ePayment:</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>From the newly created Receipt record, click the <b>Process Refund</b> button. </cmd>
+                <info><image
+                        href="../../assets/screenshots/ebusiness/process_refund_button_sum15r2apr.png"
+                        id="image_ib2_myx_wr" width="600" alt="Process Refund Button"/></info>
+            </step>
+        </steps>
+        <result>Processing the refund will submit electronic payments to the payment processor.<ul>
+                <li>If it succeeds, a new ePayment record is created and the refund record is
+                    posted, which creates transactions and transaction lines.<note>It may take a few
+                        minutes for the refund to process.</note></li>
+                <li>If it fails, the ePayment record will not be created.</li>
+            </ul> If it is successful, the <i>Receipt Detail</i> page will have the following
+            populated: <ol>
+                <li>The <b>Type</b> field value will be "Refund."</li>
+                <li><b>Is Posted</b> will be selected.</li>
+                <li>The <b>Payment Type</b> will be a credit card since the original payment was via
+                    a credit card.</li>
+                <li>The <b>Reference Number</b> will be populated.</li>
+                <li>The <b>Total</b> will be the total from the receipt lines.</li>
+                <li>The <b>Applied Amount</b> will be the total refund and the <b>Balance</b> will
+                    be 0.00.</li>
+                <li>The <b>Memo</b> field will include the number of the original receipt, which
+                    will also appear in the <b>Sales Order</b> field as the Source.</li>
+                <li>Transaction lines will be created with the appropriate journal entries.</li>
+                <li>There will be a record in the <i>Refund ePayments</i> related list with a status
+                    of "Succeeded" along with the <b>Total</b> amount of the refund.</li>
+            </ol><image href="../../assets/screenshots/ebusiness/refund_processed_sum15r2apr.png"
+                id="image_st4_qyx_wr" width="600"/></result>
+    </taskbody>
+</task>

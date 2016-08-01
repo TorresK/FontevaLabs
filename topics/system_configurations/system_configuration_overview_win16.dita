@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_drc_44v_1v">
+  <title>System Configurations Overview</title>
+  <body>
+    <p>System Admins and staff users are provided with multiple different ways to further customize
+      the system to suit their needs. For example, most orgs will use field sets, whereas only orgs
+      installed with Charge will need to create a backend <b>Shopping Cart</b> button. </p>
+  </body>
+</topic>

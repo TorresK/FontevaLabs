@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_st2_y2l_gs">
+ <title>Item Classes and Items </title>
+ <abstract><indexterm>Item Class</indexterm>The <b>Item Class</b> establishes the workflow for a set
+  of items that are grouped together based on common attributes. Item Classes allow staff users to:
+   <ul id="ul_r23_kjl_gs">
+   <li>Track the flow of items</li>
+   <li>Enable Assignments for items</li>
+   <li>Configure Shipping Rates </li>
+   <li>Configure Taxes <p>Item Classes have a one-to-many relationship with both items and other
+     Item Classes, such as: <ul id="ul_p3k_y2q_rt">
+      <li>Tax Class</li>
+      <li>Shipping Carrier Item Class</li>
+      <li>Ticket Type Item Class</li>
+      <li>Schedule Item Item Class </li>
+     </ul></p></li>
+   <li>
+    <p>An <b>Item</b> is any good or service available for sale. Items can be:</p>
+    <p><ul id="ul_fxd_mjp_rt">
+      <li>Digital (eBooks, apps)</li>
+      <li>Contributions</li>
+      <li>Inventory </li>
+      <li>Subscriptions and Memberships</li>
+     </ul>Items are also automatically created once any ticket type, schedule item, or sponsor
+     package is created for an event, sharing a 1:1 relationship. Through the Item record, System
+     Admins and staff users can configure the fields related to the item's Shipping Rate, Tax/Vat
+     Options, Assignment Options, Price Rules, and Access Permissions. </p>
+   </li>
+  </ul></abstract>
+</concept>

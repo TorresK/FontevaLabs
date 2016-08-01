@@ -1,0 +1,89 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+<head><meta name="description" content="Once Shipping Rates are created, identify the eStore merchandise that requires shipping. Note: If using the same Item Weight UOM across shipping items, staff users can set it as the default value in ..."></meta><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><meta name="copyright" content="(C) Copyright 2005"></meta><meta name="DC.rights.owner" content="(C) Copyright 2005"></meta><meta name="DC.Type" content="task"></meta><meta name="DC.Title" content="Creating an Item Requiring Shipment"></meta><meta name="DC.Relation" scheme="URI" content="shipping_introduction.html"></meta><meta name="DC.Format" content="XHTML"></meta><meta name="DC.Identifier" content="task_scq_w1w_ht"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/commonltr.css"><!----></link><title>Creating an Item Requiring Shipment</title><!--  Generated with Oxygen version 17.1, build number 2016032212.  --><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_topic.css"><!----></link><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/skins/skin.css"><!----></link><script type="text/javascript"><!--
+          
+          var prefix = "index.html";
+          
+          --></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-1.8.2.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="oxygen-webhelp/resources/js/webhelp_topic.js"><!----></script></head>
+<body onload="highlightSearchTerm()" class="frmBody" id="task_scq_w1w_ht">
+<table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td width="75%"><a class="navheader_parent_path" href="shipping_introduction.html" title="Shipping">Shipping</a></td><td><div class="navheader">
+<span class="navparent"><a class="link" href="shipping_introduction.html" title="Shipping"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Shipping</span></a></span>  </div></td></tr></tbody></table>
+
+    <h1 class="title topictitle1">Creating an Item Requiring Shipment</h1>
+
+    
+    <div class="body taskbody"><div class="abstract">Once Shipping Rates are created, identify the <strong class="ph b">eStore</strong> merchandise that requires
+            shipping.<div class="note note"><span class="notetitle">Note:</span> If using the same <strong class="ph b">Item Weight UOM</strong> across shipping items, staff
+            users can set it as the default value in the picklist via: <ul class="ul" id="ul_tqp_wjc_3t">
+                <li class="li"><strong class="ph b">Setup</strong>
+                    <strong class="ph b">&gt; </strong><strong class="ph b">Create</strong>
+                    <strong class="ph b">&gt;</strong>
+                    <strong class="ph b">Objects</strong>
+                    <strong class="ph b">&gt;</strong>
+                    <strong class="ph b">Item</strong><strong class="ph b"> &gt;</strong>
+                    <strong class="ph b">Item Weight UOM</strong><strong class="ph b"> &gt;</strong>
+                    <em class="ph i">Picklist Values</em> related list <strong class="ph b">&gt;</strong> Click <strong class="ph b">Edit</strong> on the preferred
+                        unit<strong class="ph b"> &gt;</strong> Check the <strong class="ph b">Default</strong> checkbox<strong class="ph b"> &gt;</strong>
+                    <strong class="ph b">Save</strong>.</li>
+
+            </ul>
+</div>
+</div>
+
+        <div class="section prereq p">
+            <ul class="ul" id="task_scq_w1w_ht__ul_etm_2bw_ht">
+                <li class="li"><a class="xref" href="creating_shipping_method_carrier.html#task_xz1_dqv_ht">Create the
+                        Shipping Carrier and Delivery Method</a></li>
+
+                <li class="li"><a class="xref" href="creating_shipping_region.html#task_dmf_nrv_ht">Create the Shipping
+                        Region</a></li>
+
+                <li class="li"><a class="xref" href="creating_shipping_rates.html#task_ug1_ytv_ht">Create a Shipping
+                        Rate</a></li>
+
+            </ul>
+
+        </div>
+
+        <ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd">Navigate to the <strong class="ph b">Items</strong> tab in the <strong class="ph b">eStore</strong> app and click
+                    <strong class="ph b">New</strong>.</span>
+                <div class="itemgroup info">Alternatively, select an existing item and click <strong class="ph b">Edit</strong>. </div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Check the <strong class="ph b">Is Active</strong> and <strong class="ph b">Require Shipping</strong> checkboxes.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Enter the <strong class="ph b">Item Weight</strong>.</span>
+                <div class="itemgroup info">Alternatively, if the <strong class="ph b">Shipping Rate Basis</strong> set on the Business Group
+                    record is <strong class="ph b">Item Value</strong>, then only the <strong class="ph b">Item Price</strong> is required.</div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Select the <strong class="ph b">Item Weight UOM</strong> and click <strong class="ph b">Save</strong>.</span>
+                <div class="itemgroup info">When the Shipping Rate Basis is set to Item Weight, not identifying the
+                        <strong class="ph b">Item Weight UOM</strong> will result in incorrect Shipping Rates displayed to
+                    customers. Leave <strong class="ph b">Item Weight UOM</strong> blank if the <strong class="ph b">Shipping Rate Basis</strong>
+                    is <strong class="ph b">Item Value</strong>.</div>
+            </li>
+</ol>
+
+        <div class="section result">Shipping is enabled on the item.<div class="note note"><span class="notetitle">Note:</span> <strong class="ph b">If the Shipping Rate Basis is set to Item
+                    Value, staff users can still charge shipping on a $0.00 item via:</strong><ul class="ul" id="task_scq_w1w_ht__ul_wtj_v1g_x5">
+                    <li class="li"><strong class="ph b">Checking the Require Shipping checkbox on the Item record</strong></li>
+
+                    <li class="li"><strong class="ph b">Entering "0" as the Minimum Value on the Shipping Rate Item
+                        record.</strong></li>
+
+                </ul>
+</div>
+</div>
+
+    </div>
+
+<div class="related-links"></div>
+<div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="shipping_introduction.html" title="Shipping"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Shipping</span></a></span>  </div><div class="footer">WebHelp output generated by<a class="oxyFooter" href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"></img></span><span class="xmlauthor">XML Author</span></a></div>
+</body>
+</html>

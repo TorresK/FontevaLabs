@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_i55_rht_nw">
+    <title>Program Types</title>
+    <shortdesc><b>Program Types</b> (Certification, Accreditation, Education, et al.) are used to
+        segment programs based on the organization’s mission and business needs. An authenticated
+        particiapant can access an active (unhidden) <b>Program Profile</b> using a provided URL
+        based on the program's <b>Program Type</b> (or <b>Parent Program Type)</b>.</shortdesc>
+    <taskbody>
+        <context><p><image
+                    href="../../../assets/screenshots/marketplace_extensions/pm_program_type_detail.png"
+                    width='500' id="image_gg4_km1_4w"/></p>To create a <b>Program Type</b>:</context>
+        <steps>
+            <step>
+                <cmd>Choose <b>Programs</b> application from the AppPicker</cmd>
+            </step>
+            <step>
+                <cmd>Click on <b>Program Type</b> tab</cmd>
+            </step>
+            <step>
+                <cmd>Click <b>New</b> button</cmd>
+            </step>
+            <step>
+                <cmd>Populate <b>Program Type Name</b> field</cmd>
+            </step>
+            <step>
+                <cmd>Populate <b>Program Profile Page Title</b> field. When the program type is
+                    including in the Program URL, the title displays at the top of the <b>Program
+                        Profile Page</b>. </cmd>
+            </step>
+            <step>
+                <cmd>Enter <b>Display Order</b> (number). This value determines the hierarchy of the
+                    program types as they are displayed on the<b> Program Profile Page</b>.</cmd>
+            </step>
+            <step>
+                <cmd><b>Parent Program Type</b>looks up to an existing <b>Program Type.</b> It
+                    allows the organization to manage and support multiple the program participant's
+                    online experience.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/marketplace_extensions/pm_program_profile_page.png"
+                        width='500' id="image_xms_1tc_4w"/></info>
+                <info><b>Generate Program Profile
+                        URL</b><lines>- Add Custom Formuala field to Program Type object. Go to Setup >> Custom >> Objects  </lines><lines>- Click on <b>Project Type</b>. Navigate to <b>Custom Fields and Relationships</b>. Click <b>New</b> button</lines><lines>-  Click <b>Formula</b>, then <b>Next</b> button</lines><lines>-  Enter <b>Field Name</b> - <i>"Program Profile URL"</i>. </lines><lines>-  Click <b>Text</b>, then <b>Next</b> button. [ Field Name autopopulates with the API name.]</lines><lines>- In the Advanced Formal text area, enter the </lines><lines><!--' Your Community URL/ProgramApi__Progrms/programtype='+-->. </lines><lines>-  Click <b>Insert Field </b>button. Select <b>Program Type</b>>> <b>Program Type </b><b>Name</b> <i>(Type: Auto Number, API Name: Name).</i> </lines><lines>-  Click <b>Insert </b>button.Add <b>'&amp;site=</b><i>Site Key</i><b>' </b><i>[The community URL and site key are being hard coded in this instance. Be mindful to use the site that you plan to associate with your Program.]</i> Click on <b>Check Syntax </b>button to confirm that formaula is devoid of errors. Click <b>Next</b> button</lines><lines>- Identify Profiles to be granted access to the field. Click <b>Next </b>button</lines><lines>-  Add the field to the <b>Program Type Layout</b>. Click <b>Save</b> button.</lines><lines>You may choose to modify the Program Type layout. </lines><image
+                        href="../../../assets/screenshots/marketplace_extensions/pm_program_type_page_layout.png"
+                        width="500" id="image_enp_qcj_pw"/></info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

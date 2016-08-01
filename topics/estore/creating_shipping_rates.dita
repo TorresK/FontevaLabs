@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ShippingRates">
+    <title>Creating a Shipping Rate</title>
+    <abstract>Shipping Rates display in the checkout screen when a customer selects an item that
+        requires shipping. The Shipping Rate is calculated based upon:  <ul id="ul_fk5_j5v_ht">
+            <li>Shipping Carrier</li>
+            <li>Delivery Method</li>
+            <li>Shipping Region</li>
+            <li>Minimum and Maximum Item Weights or Item Value<p><b>Users can set up multiple
+                        Shipping Rates or define a single Flat Rate per item or a Flat Rate per
+                        order.</b></p></li>
+        </ul></abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_ky2_c5v_ht">
+                <li><xref href="creating_shipping_method_carrier.dita#task_xz1_dqv_ht">Create the
+                        Shipping Carrier and Delivery Method</xref></li>
+                <li><xref href="creating_shipping_region.dita#task_dmf_nrv_ht">Create the Shipping
+                        Region</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Items</b> tab in the <b>eStore</b> app and click
+                    <b>New</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Name</b> for the Shipping Rate and enter a <b>Display
+                    Name</b>.</cmd>
+                <info>The <b>Display Name</b> appears on the <b>eStore</b> checkout screen and on
+                    the customer's receipt. </info>
+            </step>
+            <step>
+                <cmd>Identify the <b>Shipping Carrier</b> using the <b>Item Class</b> lookup.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the cost of shipping applied to the item in the <b>Item Price</b>
+                    field.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Business Group</b> and check the <b>Is Active</b> and <b>Is
+                        Shipping Rate</b> checkboxes.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Shipping Method</b> associated with the new Shipping Rate using
+                    the lookup.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Shipping Region</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the shipping item's <b>Minimum Weight</b> and <b>Maximum
+                    Weight</b>.</cmd>
+                <info>Alternatively, if the <b>Shipping Rate Basis</b> set on the Business Group
+                    record is <b>Item Value</b>, then enter the <b>Minimum Value</b> and <b>Maximum
+                        Value</b>.</info>
+            </step>
+            <step>
+                <cmd>Select the <b>Item Weight UOM</b> (Unit of Measurement) using the
+                    picklist.</cmd>
+                <info>The <b>Item Weight UOM</b> value is used when creating an eStore item that
+                    requires shipping and when creating a Shipping Rate item. Admins do not have to
+                    use the same units for items and Shipping Rates. For example, the Shipping Rate
+                    might be defined in pounds and the <b>Item Weight</b> in ounces. The system
+                    performs the conversion on the backend and will apply the correct rate in the
+                        <b>eStore</b> checkout, regardless of the unit. </info>
+            </step>
+            <step>
+                <cmd>The new Shipping Rate inherits the GL Accounts of the associated Shipping
+                    Carrier. To override and link to an alternative account, select the GL account
+                    using the <b>Income Account</b> and <b>Refund/Credit Account</b> lookups.  Click
+                        <b>Save</b>.</cmd>
+            </step>
+        </steps>
+        <postreq>
+            <ul id="ul_jjg_qwv_ht">
+                <li><xref href="default_shipping_rate_overview.dita#concept_wyr_jyv_ht">Create a
+                        Default Shipping Rate</xref></li>
+                <li><xref href="creating_flat_shipping_rate.dita#task_tgj_xdc_3t">Create a Flat Rate
+                        for Shipping Items</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

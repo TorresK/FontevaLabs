@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_k3z_cgg_cs">
+  <title>Communities Overview</title>
+  <body>
+    <p>The <b>Communities</b> app gives customers the flexibility to build web forms, landing pages,
+      and microsites compatible with <xref href="http://force.com/" format="html" scope="external"
+        >Force.com</xref>. Customers can customize communities through their access to <b>Media
+        Assests</b>, <b>Sites</b>, and <b>Themes</b>. Additionally, the <b>Community Groups</b>
+      feature is successful in managing group members, encouraging collaboration, and coordinating
+      group events. </p>
+    <p>In order to gain access to the <b>Community Portal</b>, System Admins must set up a new
+      community.</p>
+  </body>
+</topic>

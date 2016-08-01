@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_wyr_jyv_ht">
+ <title>Default Shipping Rates</title>
+ <abstract>The <b>eStore</b> app has a <b>Default Shipping Rate</b> feature that ensures customers
+    can successfully complete a purchase even if there is no Shipping Rate defined for their region
+    or item weight/value. <b>The only time a customer is prevented from making a purchase with
+      shipping is if they have not entered a shipping address at all, or if their shipping country
+      is in a Will Not Ship region. </b><note>A <b>Default Shipping Rate</b> can be defined for each
+      Shipping Carrier, with a maximum of one default per carrier. When the <b>Is Default</b>
+      checkbox is selected for the Shipping Rate, staff users cannot associate a region with the
+      rate. Additionally, the <b>Minimum Weight</b> and <b>Maximum Weight</b> fields can be left
+        blank.<p>Customers will see the Default Rate in the <b>eStore</b> checkout if: <ul
+          id="ul_i2n_5bc_3t">
+          <li>The shipping item has the <b>Require Shipping</b> checkbox enabled and the <b>Shipping
+              Rate Basis</b> is set to <b>Item Weight</b>, but the <b>Item Weight</b> is missing or
+            given a value of "0."</li>
+          <li>The total weight or value of the item (item x quantity) does not match to an existing
+            Shipping Rate.</li>
+          <li>The shipping address country is misspelled, or does not match to an existing Shipping
+            Rate, and there are no rates set up for the Default Shipping Region.</li>
+        </ul></p></note></abstract>
+</concept>

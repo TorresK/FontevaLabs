@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_vjt_s3b_rr">
+    <title>Creating a Sponsor Package</title>
+    <abstract>The <b>Sponsors</b> object tracks the organizations purchasing a Sponsor Package, as
+        well as the benefits and levels of sponsorship available for an event. Package items will
+        often include a discount rather than the premium price applied for individual
+        registration.</abstract>
+    <taskbody>
+        <prereq>
+            <ul>
+                <li><b>Enable Sponsor Sales</b> on the Event record.</li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the related Event record and click the <b>New Sponsor Package</b>
+                    button on the <i>Sponsor Packages</i> related list.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the values for the <b>Sponsor Package Name</b> and <b>Price</b>
+                    fields.</cmd>
+                <info>Optionally, enter the <b>Quantity Available</b>.</info>
+            </step>
+            <step>
+                <cmd>Add the <b>Image URL</b> for an image to appear in the <b>Community Portal</b>
+                    and the backend <b>Shopping Cart</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Is Active</b> checkbox. Click the <b>Save</b> button.</cmd>
+            </step>
+        </steps>
+        <result>An Item record and default price rule are generated for the newly created Sponsor
+            Package. The Item record will similarly be marked as <b>Active</b>, so that it is
+            available for purchase in the <b>Shopping Cart</b> and the <b>Community
+            Portal</b>.</result>
+    </taskbody>
+</task>

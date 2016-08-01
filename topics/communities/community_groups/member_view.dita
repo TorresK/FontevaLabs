@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_yzk_ydy_rr">
+ <title>Group Member View</title>
+ <abstract>The <b>Group Member View</b> is configured by the Administrator in the Community Group
+  record. </abstract>
+ <conbody>
+  <image href="../../../assets/screenshots/community_builder/member_view_backend_sum15r2apr.png"
+   id="image_mm1_lpz_xr" width="600"/>
+  <p>Administrators can define how search results and tile views display on the <b>Members</b> tab
+   of the <i>Community Group Detail</i> page in the <b>Community Portal</b> through: <ul
+    id="ul_rrq_nq4_tr">
+    <li><b>Search Results Sort Field</b>-Defines the field to sort group member search results in
+     ascending or descending order. Defaults to the <b>Group Name</b> field.</li>
+    <li><b>Search Results Sort Order</b>-Defines the order in which the search results will be
+     displayed. The default is "ASC" for "Ascending."</li>
+    <li><b>Member Search Display Fields (CSV)</b>-Defines the fields to be displayed on the group
+     member tiles in the group members page using comma separated values of field API names. </li>
+    <li><b>Show Search Filters</b>-Enables or disables the sidebar nav filters for the <i>Member
+      Search</i> page. The default is "Enabled." </li>
+    <li><b>Search Results</b>-Defines the maximum number of results that are returned for search
+     results on the <b>Members</b> tab. The default is set to "10."</li>
+    <li><b>Member Search Filter Fields (CSV)</b>-Defines the group member field API names to present
+     on the sidebar nav.</li>
+   </ul></p>
+  <p>Staff users can change the fields within the sidebar visible to users on the <b>Members</b> tab
+   by configuring the <b>Search Filters</b> on the Community Group record.</p>
+  <p><b>Social Media</b></p>
+  <p>On the Community Group record, populate the social media fields for them to appear within the
+   banner of the <i>Community Group Detail</i> page. The social media links supported are: <ul>
+    <li><b>Twitter Profile URL</b></li>
+    <li><b>LinkedIn Profile URL</b></li>
+    <li><b>Google+ Profile URL</b></li>
+   </ul></p>
+  <image href="../../../assets/screenshots/community_builder/social_links_sum15r2apr.png"
+   id="image_e42_krz_xr" width="600"/>
+  <p>Clicking on one of the social media icons will direct Community Portal Users to the URL defined
+   on the Community Group record in a separate tab in the browser window. </p>
+  <note>On the Community Group record, populate the <b>Email</b> field with the email address
+   associated with the Group. The <b>Email</b> field is displayed on the banner of the <i>Community
+    Group Detail</i> page, adjacent to the <b>Group Name</b>.</note>
+ </conbody>
+</concept>

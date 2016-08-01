@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_drf_rdv_1v">
+    <title>Multi-Currency</title>
+    <abstract>System Admins must enable and configure Multi-Currency for customers with
+        international operations. </abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Contact Salesforce to enable Multi Currency on the org and navigate to
+                        <b>Company Profile</b> > <b>Company Information</b> > Click the <b>Allow
+                        Support to Activate Multiple Currencies</b> > Click <b>Save</b>.</cmd>
+                <info>Set the <b>Default Currency</b> by entering the <b>Corporate Currency</b> on
+                    the Company Information record.</info>
+            </step>
+            <step>
+                <cmd>Once Multi Currency is enabled, navigate to the <b>Marketplace</b> and install
+                    the <b>Multi-Currency</b> package.</cmd>
+            </step>
+            <step>
+                <cmd>Navigate to the <b>Access Manager</b> and run FLS for profiles and all
+                    installed packages.</cmd>
+            </step>
+            <step>
+                <cmd>Navigate to <b>Setup</b> > <b>Administer</b> > <b>Company Profile</b> >
+                        <b>Manage Currencies</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Create the supported currencies:</cmd>
+                <substeps id="substeps_y32_m2v_1v">
+                    <substep>
+                        <cmd>Click <b>New</b></cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Select the <b>Currency Type</b> from the picklist</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Enter the <b>Conversion Rate</b>. In order to convert from one currency
+                            to another, the System Admin must enter the accurate <b>Conversion
+                                Rate</b>. Currently, the <b>Conversion Rate </b>must be manually
+                            maintained.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Enter the number of <b>Decimal Places</b> allowed when displaying data
+                            in the new currency.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Click <b>Save</b> or <b>Save &amp; New</b>.</cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd><xref href="../accounting/business_groups/bg_setup_task.dita#task_scm_ytg_kr"
+                        >Create a new Business Group</xref> for each new currency.</cmd>
+                <info>The <b>Currency</b> field appears on every <i>Object</i> record related to the
+                    Business Group. During set up, verify that the <b>Currency</b> on each related
+                        <i>Object</i> record matches the <b>Currency</b> set on the Business Group.
+                        <b>Click Edit on the record to view the Currency field.</b></info>
+            </step>
+        </steps>
+        <result>Multi-Currency is set up for the org, along with the related Business Group(s) and
+            associated objects. <note><b>If the currency on an existing Business Group is changed,
+                    that change is only reflected on new records, not on existing records.
+                </b></note></result>
+    </taskbody>
+</task>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_spr_sp4_ks">
+  <title>Payment Methods</title>
+  <body>
+    <p>Three options are available for payment processing:<ul id="ul_wfy_wp4_ks">
+        <li>Credit Card</li>
+        <li>eCheck</li>
+        <li>Offline Payment</li>
+      </ul> Payments can be saved in the <b>Community Portal</b> to provide users with an expedited
+      checkout for future purchases.</p>
+    <p><b>Paying by Credit Card</b></p>
+    <p>To use a credit card, follow the steps below. If you have a credit card stored with your
+      profile the information will automatically display.</p>
+    <ul id="ul_iz4_s2h_ks">
+      <li>Select the <b>Credit Card </b>tab. If you are an existing user, you may have stored card
+        card information.</li>
+      <li>To use the stored credit card select<b> Saved Method.</b><ul id="ul_jz4_s2h_ks">
+          <li>Click <b>Pay</b> to pay for and complete your purchase.</li>
+        </ul></li>
+      <li>Select<b> New Payment Method </b>to add a new card.<ul id="ul_kz4_s2h_ks">
+          <li>Enter the credit card number, expiration month, expiration year, CVV number, and card
+            holder's name.</li>
+          <li>Select <b>Save</b> to retain your payment information for future use.</li>
+          <li>Click <b>Pay</b> to pay for and complete your purchase.</li>
+        </ul></li>
+    </ul>
+    <p><b>Pay by eCheck</b></p>
+    <p>To process payment via electronic bank debit follow the steps below:</p>
+    <ul id="ul_s1m_52h_ks">
+      <li>Select the <b>eCheck</b> tab.</li>
+      <li>Enter the name of the account holder.</li>
+      <li>Provide the name of the bank.</li>
+      <li>Enter the bank routing number.</li>
+      <li>Enter the bank account number.</li>
+      <li>Click <b>Bank Account Type</b> and select the account to use for payment, Checking or
+        Savings.</li>
+      <li>Click <b>Bank Account Holder Type</b> and select the type of account to be used, Personal
+        or Business.</li>
+      <li>Select <b>Save</b> to retain your payment information for future use.</li>
+      <li>Click <b>Pay </b>to pay for and complete your purchase.</li>
+    </ul>
+    <p><b>Offline Payment</b></p>
+    <p>To enter an offline payment, follow the steps below.</p>
+    <ul id="ul_t1m_52h_ks">
+      <li>Select the <b>Offline Payment</b> option.</li>
+      <li>Enter the check number into the <b>Check</b> field.</li>
+      <li>Click the <b>Pay with Check</b> button.</li>
+    </ul>
+    <p><b>What you should see...</b></p>
+    <ul id="ul_u1m_52h_ks">
+      <li>
+        <p>After your payment is received the <i>Confirmation Page</i> will display.</p>
+      </li>
+    </ul>
+  </body>
+</topic>

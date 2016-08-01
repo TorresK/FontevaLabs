@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_jfg_d3j_pw">
+    <title>Create Lifetime Term</title>
+    <shortdesc/>
+    <taskbody>
+        <context>On the <i>Program Profile Detail Page</i>:</context>
+        <steps>
+            <step>
+                <cmd>Validate that the goals related to the current term have been successfully
+                    created and the term is deactivated. </cmd>
+            </step>
+            <step>
+                <cmd>Check<b> Lifetime Term</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <b>Save</b>button. </cmd>
+                <info>There are no term or goal records created with respect to this term.</info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

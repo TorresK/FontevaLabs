@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_x1y_4yh_1s">
+    <title>Agenda Builder</title>
+    <abstract>The <b>Agenda Builder</b> allows portal and public users the opportunity to customize
+        their event by registering, or unregistering, for additional schedule
+            items.<note>Authenticated users can unregister for free sessions during the registration
+            process in the <b>Community Portal</b>, on the <i>Checkout</i> page, or through the
+                <b>Agenda Builder</b> email. Unauthenticated users can unregister for free sessions
+            only through the <b>Agenda Builder </b>email. Unregistering for a free session will
+            delete the Registration Item object on the Attendee record. </note></abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Open the email received upon completing the event registration process in the
+                        <b>Community Portal</b> and click the <b>Build Agenda</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Event sessions display on the <b>Agenda</b> tab located in the sidebar menu.
+                    Click the item for session details and click the <b>Add</b> button to register.
+                    Repeat to include additional sessions.</cmd>
+                <info>Adding a session with a form attatchment will return an interview question
+                    modal. Complete the questions and click the <b>Submit</b> button. </info>
+                <info>In order to attend a waitlisted session, click the <b>Join Waitlist</b> button
+                    and enter <b>Full Name</b> and <b>Email</b>. Click the <b>Add to Waitlist</b>
+                    button. </info>
+            </step>
+            <step>
+                <cmd>After all desired sessions are added to the event schedule, click the
+                        <b>Continue</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Review the selected schedule items and enter payment information if any paid
+                    sessions are selected. Click the <b>Pay</b> button.</cmd>
+                <info>Edit schedule items directly on the <i>Checkout</i> page by clicking the
+                        <b>Delete</b> icon. </info>
+            </step>
+        </steps>
+        <result>A confirmation page is returned with the receipt detailing the event
+                agenda.<note>Waitlisted sessions will not display on the receipt.</note></result>
+    </taskbody>
+</task>

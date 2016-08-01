@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>Shipping Feature</title>
+ <topicref href="shipping_introduction.dita">
+  <topicref href="creating_shipping_method_carrier.dita"/>
+  <topicref href="creating_shipping_region.dita">
+   <topicref href="creating_will_not_ship_region.dita"/>
+  </topicref>
+  <topicref href="default_shipping_rate_overview.dita"/>
+  <topicref href="creating_shipping_rates.dita">
+   <topicref href="creating_flat_shipping_rate.dita"/>
+  </topicref>
+  <topicref href="creating_shipping_items.dita"/>
+ </topicref>
+</map>

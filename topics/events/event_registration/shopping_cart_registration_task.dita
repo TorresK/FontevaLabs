@@ -1,0 +1,47 @@
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_s4w_ltg_4r">
+    <title>Registering for an Event through the Shopping Cart</title>
+    <abstract>Single or Group Registration is accomplished both manually or through the <b>Shopping
+            Cart</b>.</abstract>
+    <taskbody>
+        <prereq><b>Prerequisites:</b>See <xref href="single_registration_task.dita#task_ltq_czf_4r"
+            /> and proceed through the first two steps.</prereq>
+        <steps>
+            <step>
+                <cmd>Click the <b>Shopping Cart</b> button on the <i>Sales Order Detail</i>
+                    page.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Event</b> checkbox in the <b>Filter Results</b> sidebar. Search
+                    for the ticket type and add it to the <b>Shopping Cart</b>.</cmd> 
+            </step>
+            <step>
+                <cmd>Select the <b>Interview</b> tab and complete the "Pre-Event Questionnaire."
+                    Click the <b>Submit</b> button.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/ebusiness/ticket_type_form_sum15r2may.png"
+                        id="image_zyx_hls_zr" width="600"/></info>
+            </step>
+            <step>
+                <cmd>Click the <b>Sessions</b> tab and select the checkbox associated with the
+                    schedue item to add it to the <b>Shopping Cart</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Review the field values in the <b>Price and Quantity</b> tab and click the
+                        <b>Save</b> button to preserve any changes. Otherwise, click the
+                        <b>Checkout</b> button.</cmd>
+                <info>Administrators can select the <b>Price Override</b> checkbox to manually enter
+                    a value in the <b>Sales Price</b> field.</info>
+            </step>
+            <step>
+                <cmd>Select the correct payment gateway and complete the required payment
+                    information. Click the <b>Pay</b> button.</cmd>
+            </step>
+        </steps>
+        <result>A record is created in the <i>ePayments</i> and <i>Receipts</i> related lists on the
+                <i>Sales Order Detail</i> page. The payment status is indicated in the
+                <b>Message</b> field of the <i>ePayments</i> related list. <p><image
+                    href="../../../assets/screenshots/ebusiness/epayments_receipts_records_sum15r2may.png"
+                    id="image_jvs_2ms_zr" width="600"/></p></result>
+    </taskbody>
+</task>

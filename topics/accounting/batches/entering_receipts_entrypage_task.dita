@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_wyb_vgr_5r">
+    <title>Entering Receipts: Batch Receipt Entry Page</title>
+    <abstract> Users can execute a batch through the <i>Batch Receipt Entry</i> page.</abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the Batch record and click the <b>Enter Receipts</b> button. </cmd>
+                <info>To return to the Batch record in <b>Edit</b> mode, click the <b>Edit Batch</b>
+                    button, represented by the <b>cog</b> icon. </info>
+            </step>
+            <step>
+                <cmd>Select the <b>Entity</b> and use the lookup to find the <b>Customer</b> related
+                    to the receipt. If <b>Account</b> is selected as the <b>Entity</b>, then all
+                    invoices for all contacts associated with the Account will be included in the
+                    batch.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/accounting/batch_entry_receipt_win16.png"
+                        id="image_v1n_xb2_55" width="700"/></info>
+                <info>The contact information for the Customer will display in <b>View</b> mode, but
+                    there is an option to edit the Contact record by clicking the <b>Edit</b>
+                    button. The <i>Contact Edit</i> page allows for changes to be made to the
+                    record. </info>
+            </step>
+            <step>
+                <cmd>Select the invoice(s) from the popup modal by selecting the related
+                    checkbox(es) and click <b>Apply payment to selected Invoices</b>.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/accounting/outstanding_invoices_batches_win16.png"
+                        width="700" id="image_gnw_vf2_55"/></info>
+                <info>Use the <b>search</b> icon on the <i>Item-or-Invoice</i> line to identify the
+                    item(s) to which the payment is being applied, if not paying for an invoice.
+                    Update the payment amount.</info>
+                <info><image
+                        href="../../../assets/screenshots/accounting/invoice_search_batches_win16.png"
+                        width="700" id="image_pmg_zh2_55"/></info>
+                <info>Price rules are not applied to receipts entered in batches.</info>
+            </step>
+            <step>
+                <cmd>Click the <b>Apply Payment to Selected Invoices</b> button.</cmd>
+                <info>Alternatively, enter the check number or credit card/bank authorization code
+                    related to the payment in the <b>Reference Number</b> field. Click the <b>Save
+                        and New</b> button to add receipts to the batch.</info>
+                <info>After saving a receipt, refresh the page to see the <b>Expected Count</b> and
+                        <b>Expected Amount</b> at the top of the <i>Batch Receipt Entry</i> page
+                    change to reflect the number and total amount of receipts entered. Toggle to
+                    view any batch receipts by clicking the <b>arrow</b> button; the receipts will
+                    display underneath the <i>Batch Receipt Entry</i> page. </info>
+                <info>Click the <b>Toggle</b> button again to hide the receipt(s)
+                    information.</info>
+            </step>
+        </steps>
+        <result>Once the <b>Expected Count</b> and <b>Expected Amount</b> equals the <b>Actual
+                Count</b> and <b>Actual Amount</b>, the <i>Batch Receipt Entry</i> page will prompt
+            the user to close the batch. </result>
+        <postreq>
+            <ul id="ul_ftg_jbx_wt">
+                <li><xref href="closing_posting_batches_task.dita#task_yp3_trr_5r">Close and Post
+                        the Batch</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

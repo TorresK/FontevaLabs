@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>Marketplace Extensions</title>
+ <topichead navtitle="Marketplace Extensions">
+  <topicref href="marketplace_intro.dita">
+   <topicref href="abstracts/abstracts_overview.dita">
+    <topicref href="abstracts/create_abstract_call.dita"/>
+    <topicref href="abstracts/abstract_call_topics.dita">
+     <topicref href="abstracts/abstract_call_topics.dita"/>
+    </topicref>
+    <topicref href="abstracts/abstract_submission.dita"/>
+    <topicref href="abstracts/abstract_review.dita"/>
+   </topicref>
+   <topicref href="ar_by_item_win16.dita"/>
+   <topicref href="directory_builder/directory_builder_overview.dita">
+    <topicref href="directory_builder/directory_builder_setup.dita"/>
+    <topicref href="directory_builder/define_directory_records.dita"/>
+    <topicref href="directory_builder/define_display_fields.dita"/>
+    <topicref href="directory_builder/db_site_selection.dita"/>
+    <topicref href="directory_builder/db_adv_options.dita"/>
+    <topicref href="directory_builder/db_create_directory.dita"/>
+   </topicref>
+   <topicref href="configuring_multi_currency_win16.dita"/>
+   <topicref href="price_rule_builder/price_rule_builder.dita">
+    <topicref href="price_rule_builder/pr_price_rule_builder.dita">
+     <topicref href="price_rule_builder/pr_update_price_rule.dita"/>
+     <topicref href="price_rule_builder/pr_delete_price_rule.dita"/>
+    </topicref>
+    <topicref href="price_rule_builder/pr_field_definitions.dita"/>
+   </topicref>
+   <topicref href="programs/pm_overview.dita">
+    <topicref href="programs/pm_program_types.dita"/>
+    <topicref href="programs/pm_program.dita"/>
+    <topicref href="programs/pm_requirements.dita"/>
+    <topicref href="programs/pm_program_profiles.dita"/>
+    <topicref href="programs/pm_program_terms.dita">
+     <topicref href="programs/pm_create_candidate_term.dita"/>
+     <topicref href="programs/pm_create_maintenance_term.dita"/>
+     <topicref href="programs/pm_create_lifetime_term.dita"/>
+    </topicref>
+    <topicref href="programs/pm_goals.dita"/>
+   </topicref>
+   <topicref href="uk_dd_overview.dita">
+    <topicref href="direct_debit.dita"/>
+    <topicref href="dd_item_class.dita"/>
+    <topicref href="enabling_termed_subscriptions.dita"/>
+    <topicref href="enabling_calendar_subscriptions.dita"/>
+    <topicref href="enabling_dd_deferred_rev.dita"/>
+    <topicref href="purchasing_dd_subscription.dita"/>
+    <topicref href="managing_dd_sub.dita"/>
+    <topicref href="back_office_data_entry.dita"/>
+    <topicref href="uk_dd_system_info.dita"/>
+   </topicref>
+  </topicref>
+ </topichead>
+</map>

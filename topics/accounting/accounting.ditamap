@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>Accounting</title>
+ <topicref href="accounting_landing_page.dita"/>
+ <topicref href="business_groups/bg_intro.dita">
+  <topicref href="business_groups/bg_setup_task.dita"/>
+  <topicref href="business_groups/bg_glaccounts_task.dita"/>
+  <topicref href="business_groups/bg_paymentgateway_task.dita"/>
+ </topicref>
+ <topicref href="transactions/transactions.dita">
+  <topicref href="transactions/transactions_bg_task.dita"/>
+  <topicref href="transactions/transactions_so_task.dita"/>
+ </topicref>
+ <topicref href="batches/batch_intro.dita">
+  <topicref href="batches/batch_create_task.dita"/>
+  <topicref href="batches/entering_receipts_timeofpayment_task.dita"/>
+  <topicref href="batches/entering_receipts_listview_task.dita"/>
+  <topicref href="batches/entering_receipts_entrypage_task.dita"/>
+  <topicref href="batches/closing_posting_batches_task.dita"/>
+ </topicref>
+</map>

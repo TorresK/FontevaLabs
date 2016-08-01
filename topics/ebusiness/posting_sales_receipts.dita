@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_ydb_53r_3s">
+    <title>Creating and Posting a Cash Sale Receipt</title>
+    <abstract>Adding a Sales Order Line to the 
+    Sales Order will link each product and service offered to an Item in the 
+    eStore.</abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Sales Order</b> tab in the <b>eBusiness</b> app and click
+                        <b>New</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Account</b> or <b>Contact</b> using the lookup.</cmd>
+            </step>
+            <step>
+                <cmd>Select <b>Receipt</b> as the <b>Posting Entity</b> and <b>Simple Receipt </b>as
+                    the <b>Schedule Type</b>. Click <b>Save</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>New Sales Order Line</b> button on the <i>Sales Order Lines</i>
+                    related list. </cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Item</b> using the lookup and enter the <b>Quantity</b>. Click
+                        <b>Save</b>.</cmd>
+                <info>Enable the <b>Price Override</b> checkbox if a price less than the item's
+                        <b>List Price</b> is to be applied. If no Price Rule is linked to the Sales
+                    Order, manually enter the discount <b>Sales Price</b> through:</info>
+                <choices id="choices_zlc_5k2_ss">
+                    <choice>The Sales Order Line record</choice>
+                    <choice>The backend <b>Shopping Cart</b></choice>
+                </choices>
+                <info> In the <b>Community Portal</b>, the checkout modal displays a strikethrough
+                    on the item's original list price and features the <b>Your Price</b> default
+                    label and the related sales price.</info>
+            </step>
+         </steps>
+        <result>The receipt is created, but not yet posted.</result>
+        <postreq>
+            <ol id="ol_xvq_gg5_js">
+                <li>Navigate to the Sales Order record to review and, if necessary, amend the
+                    receipt.</li>
+                <li>Select <b>Closed</b> from the <b>Status</b> picklist and click <b>Save</b>.
+                            <p><image
+                            href="../../assets/screenshots/ebusiness/posting_sales_receipts.png"
+                            width="600" id="image_wgc_rw5_1t"/></p><p><image
+                            href="../../assets/screenshots/ebusiness/posting_sales_receipt_pending_status.png"
+                            width="600" id="image_qqr_nx5_1t"/></p></li>
+                <li>Click the <b>Sales Receipt </b>button.</li>
+                <li>Enter the payment information and click the <b>Pay</b> button.<note>If no
+                            <b>Payment Gateway</b> is selected, an error message is returned.
+                        </note><p>Navigate to the <i>Receipts</i> related list and click on the
+                        newly created receipt to view further transaction details, such as Receipt
+                        Lines. The related journal entries are entered into the GL and displayed on
+                        the Sales Order record.</p><p><image
+                            href="../../assets/screenshots/ebusiness/receipt_details.png"
+                            width="600" id="image_j4c_vy5_1t"/></p></li>
+            </ol>
+        </postreq>
+    </taskbody>
+</task>

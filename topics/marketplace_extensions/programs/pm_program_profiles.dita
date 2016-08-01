@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_i55_rht_nw">
+    <title>Program Profiles</title>
+    <shortdesc>Each program participant will have a unique persona, Program Profile, for each
+        program. This record will be used to track the Contact or Account's lifecycle in relation to
+        the program. </shortdesc>
+    <taskbody>
+        <context>
+            <p>To create a new <b>Program Program</b> from the <b>Program </b>detail page:</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Navigte to the <b>Program Profile</b> related list. Click the <b>New Program
+                        Profile</b> button. (The <b>Program</b> looks up to the Program record and
+                    autopopulates.)</cmd>
+            </step>
+            <step>
+                <cmd>Link Program Profile record to a Contact <i>(and an Account (if Program Entity
+                        is Account) .</i></cmd>
+            </step>
+            <step>
+                <cmd>Click <b>Save</b> button</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

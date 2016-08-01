@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_rjh_2xh_1s">
+    <title>Configuring the Registration UI </title>
+    <abstract>Staff users need to configure the registration UI in order to enable portal users to
+        register for an event. Configuring the registration UI is achieved through the Event record
+        and the Event Campaign Page(s). </abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the Event record and populate the <b>Display Name</b>,
+                        <b>Venue/Location Name</b>, <b>Location Information</b>, and <b>Image
+                        URL</b> fields. Click <b>Save</b>.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/events/event_detail_regpage_sum15r2may.png"
+                        id="image_j1d_rs4_1s" width="600"/></info>
+                <info>To allow group registration for an event, select the <b>Enable Registration
+                        Groups</b> checkbox and the appropriate option from the <b>Registration
+                        Group Type</b> picklist.</info>
+            </step>
+            <step>
+                <cmd>Navigate to each ticket type and select the <b>Is Active</b> and <b>Is
+                        Published</b> checkboxes in order for the ticket types to display in the
+                    registration UI. Click <b>Save</b> on each Ticket Type record. </cmd>
+                <info><image
+                        href="../../../assets/screenshots/events/ticket_type_publish_sum15r2may.png"
+                        id="image_ews_xs4_1s" width="600"/></info>
+            </step>
+        </steps>
+        <postreq><b>Post-requisites:</b>
+        <ul>
+            <li>Create the Event Campaign Page(s).</li>
+            <li>Publish the event.</li>
+       </ul> </postreq>
+    </taskbody>
+</task>

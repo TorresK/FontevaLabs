@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_skp_cp5_q5">
+  <title>Managing Registered Apps </title>
+  <abstract>The <i>Registered App</i> detail page provides critical updates, custom scripts, and
+    settings pages for apps available in the Marketplace.<p>In the <b>Spark Framework</b> app, click
+      the <b>Spark Admin</b> tab to return the Dashboard. Extend the <b>Apps</b> menu item to view
+      current configurations and available updates. If updates are available, then an <b>Alert
+        Badge</b> displays in the sidebar nav:</p><p><image
+        href="../../assets/screenshots/framework/alert_badge_win16.png" width="700"
+        id="image_dws_hmb_y5"/></p></abstract>
+  <conbody>
+    <p>New critical updates display a <b>Count Badge</b> on the related app in the sidebar nav
+      indicating the number of updates available. </p>
+    <p><image href="../../assets/screenshots/framework/spark_app_page_win16.png" width="700"
+        id="image_ewd_mmb_y5"/></p>
+    <p>The alerts remain visible until the user either <b>Activates</b> or <b>Dismisses</b> the
+      update. When an update is activated or dismissed the count in the sidebar nav is decremented
+      by 1. </p>
+    <section><b>Critical Updates</b><p><image
+          href="../../assets/screenshots/framework/spark_registered_app_ui_win16.png" width="700"
+          id="image_isd_bnb_y5"/></p><p>New updates have an action menu with two options:
+          <b>Activate</b> or <b>Dismiss</b>. Clicking the <b>Activate</b> action returns the
+        confirmation modal: </p><p><image
+          href="../../assets/screenshots/framework/activate_update_app_ui_win16.png"
+          id="image_rxr_d3b_y5" width="400"/></p><p><b>There are 4 possible Statuses: </b><ol
+          id="ol_t5h_fnb_y5">
+          <li><b>New, with an auto-activation date</b></li>
+          <li><b>New, with no auto-activation date</b></li>
+          <li><b>Active</b></li>
+          <li><b>Dismissed</b>
+          </li>
+        </ol></p></section>
+    <section>
+      <p><b>When an update is Active, there are no further actions available.</b></p>
+    </section>
+    <section><b>Custom Scripts</b><p><image
+          href="../../assets/screenshots/framework/custom_scripts_win16.png" width="700"
+          id="image_lm2_mpb_y5"/></p><p>Users can navigate to the <i>Custom Scripts</i> section to
+        run schedule jobs, reset settings, and install scripts in order to reset configurations.
+          <b>Please check with the Implementation team prior to running Custom
+            Scripts.</b><note><b>The Delete All Data script in the Charge app will delete all data
+            for the objects within Charge. The Delete all Configurations script in the Charge app
+            will delete all Business Groups and GL Accounts, in addition to custom configurations.
+          </b></note></p></section>
+    <section><b>Settings Pages</b><p>The <i>Settings Pages</i> section allows the user to control
+        the settings for both the Spark and Charge managed
+        packages:</p><sectiondiv><b>Spark:</b></sectiondiv><p><image
+          href="../../assets/screenshots/framework/spark_custom_settings_win16.png" width="700"
+          id="image_vlt_t3c_y5"/></p><p>Click on Settings to return the Spark Framework
+        settings:</p><p><image
+          href="../../assets/screenshots/framework/framework_settings_win16.png" width="700"
+          id="image_vdq_bkc_y5"/></p><p>
+        <ul id="ul_bqq_2fd_y5">
+          <li><b>Is Enabled</b> - Check to enable Framework</li>
+          <li><b>Triggers Enabled </b></li>
+          <li><b>Enable Async Rollups</b> - All rollups will run in the Future context </li>
+        </ul>
+      </p></section>
+    <section><b>Charge: </b><p><image
+          href="../../assets/screenshots/framework/charge_custom_settings_win16.png" width="700"
+          id="image_qjy_qfd_y5"/></p><p>Click on <b><xref
+            href="org_default_pref.dita#concept_rkw_pkt_ls">eBusiness User/Profile
+            Preferences</xref></b> to set an organization's Default Account, Contact, and Accounting
+        Preferences. </p></section>
+  </conbody>
+</concept>

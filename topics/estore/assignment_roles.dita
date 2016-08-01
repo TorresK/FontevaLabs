@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_k5w_hkj_ps">
+ <title>Assignment Roles </title>
+ <abstract>Staff users can segment attendees via Assignment Roles in order to identify and analyze
+  levels of customer engagement. </abstract>
+ <conbody>
+  <p>The system automatically creates a <b>Default Attendee Assignment Role</b>, along with Item
+   Classes (Ticket Type Item Class, Schedule Item Item Class, Sponsor Item Class), when creating a
+   new event. If <b>Registration Groups</b> is enabled on the Event record, the system autocreates a
+    <b>Primary Attendee Assignment Role</b> under the Ticket Type Item Class, in addition to the
+    <b>Default Attendee</b>. The <b>Primary Attendee</b> is the primary registrant and the Group
+   Owner, which may or may not be the primary contact for the account. <note>Only authenticated
+    portal users can register a group, so therefore only authenticated portal users can be assigned
+    to the <b>Primary Attendee</b> role. Guest users are not able to initiate group
+    registration.</note></p>
+  <p>Assignment Roles identify the Group Owner in the list of assignments. The assignment is
+   integral to building the Attendee records, which relate any session purchases to the contact. In
+   turn, each assignment is linked to the ticket type purchase, and each ticket type must be
+   associated with the beneficiary's contact information, not an actual contact record. <note>Best
+    practices recommend that staff users avoid creating new Assignment Roles for events because the
+    system is configured to identify only the Primary and Default Attendees. </note></p>
+ </conbody>
+</concept>

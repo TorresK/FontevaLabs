@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_u4m_2yx_bs">
+    <title>Creating a Source Code</title>
+    <abstract><b>Source Codes </b>can be linked to a <b>Business Group</b> for reporting concerns
+        and a channel in order to track transactions. Active source codes are associated with
+            <b>Campaign Pages</b> and <b>Price Rules</b>.</abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Source Codes</b> tab in the <b>eStore</b> app and click the
+                        <b>New</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the name of the <b>Source Code</b> and use the lookup to identify the
+                        <b>Business Group</b>.</cmd>
+                <info>Linking the <b>Source Code</b> to the applicable <b>Business Group</b>
+                    furthers reporting goals. Optionally, select the <b>Channel</b> in order to
+                    track <b>Source Code</b> transactions. </info>
+            </step>
+            <step>
+                <cmd>Check the <b>Active</b> checkbox and click <b>Save</b>.</cmd>
+                <info><image href="../../assets/screenshots/estore/source_codes_win16.png"
+                        width="600" id="image_u1m_mhy_pt"/></info>
+            </step>
+        </steps>
+        <postreq>
+            <ul id="ul_t2s_nhy_pt">
+                <li><xref href="creating_price_rules_task.dita#task_adk_fml_gs">Create a Price
+                        Rule</xref>
+                </li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

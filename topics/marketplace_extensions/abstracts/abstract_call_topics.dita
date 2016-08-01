@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_xrh_hjc_pw">
+    <title>Create a Topic</title>
+    <shortdesc>Each <b>Abstract Call</b> can be organized into one or more <b>Call Topics</b>.  Each
+            <b>Call Topic</b> sets attributes or business rules  for the <b>Submissions</b> to be
+        gathered. A <b>Call Topic</b> joins the <b>Abstract Call</b> to <b>Topic</b>. These
+            <b>Topics</b> are defined by the staff user and can be related to more than one
+            <b>Abstract Call</b>.</shortdesc>
+    <taskbody>
+        <context>To create a <b>Topic</b> record:</context>
+        <steps>
+            <step>
+                <cmd>Open the <b>Topics </b>view by clicking on the <b>Topics</b> tab.</cmd>
+            </step>
+            <step>
+                <cmd>Click on <b>New</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Enter <b>Topic</b> name. Click <b>Save</b> button.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

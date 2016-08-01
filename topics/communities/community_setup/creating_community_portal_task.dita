@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_y45_ycc_nt">
+    <title>Preparing the Environment</title>
+    <taskbody> 
+        <context>Communities must be enabled in order for <b>Engage-Member Community</b> (CPBase) to
+            work: Navigate to <b>Setup</b>><b>Customize</b>><b>Communities</b>><b>Settings</b>>
+            Check the <b>Enable Communities</b> checkbox. <b>Next, enter a unique Domain Name</b>.
+            Consult the client on their desired domain name, as it cannot be changed once it is set.
+                    <p><b>TIP</b>: Setting up a new Community triggers unnecessary emails during the
+                initial installation and configuration. <b>Implementation Team only:</b>
+                <u>Turn off email notifications</u><ul id="ul_myc_spw_rs">
+                    <li><b>Setup</b>&gt;<b>Email Administration</b>&gt;<b>Deliverability</b>&gt;<b>
+                            Access Level:</b> "<b>No Access</b>"</li>
+                </ul></p></context>
+        <steps>
+            <step>
+                <cmd>Install <b>Spark</b>. </cmd>
+                <info><b>Contact Fonteva for Spark Installation Link. Grant all users full access.
+                    </b></info>
+            </step>
+            <step>
+                <cmd>Navigate to the <b>Spark Admin</b> tab in the <b>Spark Framework</b> app. </cmd>
+                <substeps id="substeps_cz3_npc_w5">
+                    <substep>
+                        <cmd><b>Click Marketplace and install all packages.</b></cmd>
+                    </substep>
+                </substeps>
+                <info><image
+                        href="../../../assets/screenshots/introduction/spark_admin_marketplace_win16.png"
+                        width="700" id="image_bj1_vpc_w5"/></info>
+            </step>
+            <step>
+                <cmd>Chatter is auto-enabled for all orgs. As a precaution, ensure Chatter is
+                    enabled: <b>Setup</b> > <b>Customize</b> > <b>Chatter</b> >
+                    <b>Settings</b></cmd>
+                <info><image
+                        href="../../../assets/screenshots/community_builder/enabling_chatter_win16.png"
+                        width="700" id="image_rjt_jw5_vs"/></info>
+            </step>
+            <step>
+                <cmd>Navigate to <b>Setup</b> &gt; Search: <b>Communities</b> &gt; Select <b>All
+                        Communities</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>New Community</b> button and select the<b> Salesforce Tabs +
+                        Visualforce</b> template.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/community_builder/community_template_win16.png"
+                        width="700" id="image_vgh_nhq_bt"/></info>
+            </step>
+            <step>
+                <cmd>Enter a <b>Name</b> for the Community. </cmd>
+                <info><image
+                        href="../../../assets/screenshots/community_builder/new_community_url_win16.png"
+                        width="700" id="image_ard_whq_bt"/></info>
+            </step>
+            <step>
+                <cmd>Click the <b>Create Community</b> button and then click the <b>Go to Community
+                        Management</b> button. </cmd>
+                <info><image
+                        href="../../../assets/screenshots/community_builder/save_new_community_win16.png"
+                        width="700" id="image_fpd_d3q_bt"/></info>
+                <info><b>Implementation Team only:</b>
+                    <u>Further disable Community emails</u> via sidebar navigation
+                        <b>Administration</b>&gt;<b>Emails</b>&gt; Uncheck the <b>Send Welcome
+                        Email</b> checkbox > Click <b>Save</b>.</info>
+            </step>
+            <step>
+                <cmd>Click the <b>Administration</b> tab in the sidebar nav and then click
+                        <b>Settings</b>. Click the <b>Activate Community</b> button.</cmd>
+            </step>
+            <step>
+                <cmd><b>Setup Scheduled Jobs: </b></cmd>
+                <info><image
+                        href="../../../assets/screenshots/introduction/schedule_apex_jobs_win16.png"
+                        width="700" id="image_vwb_vwc_w5"/></info>
+                <substeps id="substeps_bbt_dwc_w5">
+                    <substep>
+                        <cmd><b>Setup</b>>Search: <b>Apex Classes</b>><b>Apex Classes</b>>Click
+                                <b>Schedule Apex</b> button>Enter a unique <b>Job Name</b>>Use the
+                            lookup to <b>identify the Scheduler for OrderAPI</b>>Define
+                                <b>Frequency</b>, <b>Start Date</b>, <b>End Date</b>, and
+                                <b>Preferred Start Time</b>>Click <b>Save</b>.</cmd>
+                        <info><image
+                                href="../../../assets/screenshots/introduction/scheduled_jobs_setup_win16.png"
+                                width="700" id="image_mnw_bxc_w5"/></info>
+                    </substep>
+                    <substep>
+                        <cmd><b>Setup</b>>Search: <b>Apex Classes</b>><b>Apex Classes</b>>Click
+                                <b>Schedule Apex</b> button>Enter a unique <b>Job Name</b>>Use the
+                            lookup to <b>identify the Scheduler for Framework</b>>Define
+                                <b>Frequency</b>, <b>Start Date</b>, <b>End Date</b>, and
+                                <b>Preferred Start Time</b>>Click <b>Save</b>.</cmd>
+                        <info>Search: <b>Scheduled Jobs</b> to manage all scheduled jobs. </info>
+                        <info><image
+                                href="../../../assets/screenshots/introduction/manage_scheduled_jobs_win16.png"
+                                width="700" id="image_rdb_3xc_w5"/></info>
+                    </substep>
+                </substeps>
+            </step>
+        </steps>
+        <result>The Community is successfully created and activated.</result>
+        <postreq>
+            <ul id="ul_nvt_2rd_y5">
+                <li><xref href="community_portal_profile_task.dita#task_gth_3y3_rs">Set up New
+                        Profiles</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

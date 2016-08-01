@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_p3m_trm_js">
+    <title>Creating a Store</title>
+    <abstract>Stores are fundamental for event registration, renewing subscriptions, and paying
+        invoices in the <b>Community Portal</b>. Staff users can additionally configure payment
+        information, catalogs and catalog items, and <xref
+            href="configuring_checkout.dita#topic_ihw_t3h_ks">guest checkout settings</xref>. <b>The
+            system permits one Store for every Site.</b><note><b>Configuring the guest checkout
+                settings match unauthenticated portal users to existing contacts.
+        </b></note></abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_ihl_ks4_ps">
+                <li><xref href="../accounting/business_groups/bg_setup_task.dita#task_scm_ytg_kr"
+                        >Create a Business Group</xref></li>
+                <li><xref
+                        href="../accounting/business_groups/bg_paymentgateway_task.dita#task_rc1_52w_kr"
+                        >Connect to a Payment Gateway</xref></li>
+                <li>Ensure that the user creating the Store has a <b>Role</b> assigned to their User
+                    record. </li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Stores</b> tab in the <b>eStore</b> app and click
+                    <b>New</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Store Name</b> and select the <b>Business Group</b> and <b>Payment
+                        Gateway</b> using the lookups.</cmd>
+            </step>
+            <step>
+                <cmd>Check the <b>Enable Guest Checkout</b> checkbox.</cmd>
+                <info>Enabling the guest checkout allows an unauthenticated portal user to process
+                    transactions without creating a new user account. Default is unchecked.</info>
+            </step>
+            <step>
+                <cmd>Configure the <b>Default Checkout:</b></cmd>
+                <choices id="choices_kn5_t2n_cv">
+                    <choice><b>Guest Checkout</b> - Customers will view the <i>Checkout as Guest</i>
+                        page as the first option during checkout. <b>Guest Checkout</b> is the
+                        default value when the <b>Enable Guest Checkout</b> field is
+                        checked.</choice>
+                </choices>
+                <info><image href="../../assets/screenshots/estore/guest_checkout_ui_win16.png"
+                        width="500" id="image_q5r_mgn_cv"/><note>The <b>Create an account</b>
+                        checkbox and <b>Create Password</b> text field will display only if
+                            <b>Self-Registration</b> is enabled for the community. </note></info>
+                <choices id="choices_nvm_lgn_cv">
+                    <choice><b>Account Login</b> - Customers are asked to log in to their account as
+                        the first option during checkout. <b>Account Login</b> is the default value
+                        if the <b>Enable Guest Checkout</b> field is not checked.</choice>
+                </choices>
+                <info><image href="../../assets/screenshots/estore/account_login_checkout_win16.png"
+                        width="500" id="image_lv5_tgn_cv"/></info>
+            </step>
+            <step>
+                <cmd>Enter the <b>Payment Confirmation Message</b> to display to users after
+                    successfully processing payment on the <i>Checkout</i> page. Click
+                    <b>Save</b>.</cmd>
+            </step>
+        </steps>
+        <postreq>
+            <ul id="ul_c5j_zhn_js">
+                <li><xref href="creating_item_classes.dita#task_zdr_yqj_gs">Create an Item
+                        Class</xref> and the included <xref
+                        href="creating_items_task.dita#task_nc2_hll_gs">Items</xref> that will be
+                    added to the catalog. Then, <xref
+                        href="creating_catalogs_task.dita#task_yrs_bln_js">create a catalog and add
+                        it to the Store</xref>.</li>
+                <li><xref href="../communities/sites/sites_concept.dita#concept_kwb_srp_ks">Create a
+                        Site</xref> and enable the eStore on the Site record.<note><b>Every Store
+                            must have a catalog in order for public users to make purchases in the
+                            Community Portal. Staff users should create the catalog's Item Class
+                            along with its items before creating the catalog. </b></note></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

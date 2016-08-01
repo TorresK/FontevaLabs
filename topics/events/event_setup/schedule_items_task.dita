@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_qsp_4gy_rr">
+    <title>Creating Schedule Items </title>
+    <abstract>Conference style events offer breakout sessions within an event that allow users to
+        tailor the event itinerary to suit their interests. Staff users and Community Portal users
+        can view and select the created schedule items in the backend <b>Shopping Cart</b> and the
+            <b>Community Portal</b>. <b>Schedule items are only available for Conference style
+            events</b>.</abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_z45_3wx_ns">
+                <li><xref href="event_categories_task.dita#task_bkk_nx1_rr">Create the Event
+                        Category</xref></li>
+                <li>If required, <xref
+                        href="../../estore/deferred_revenue_item_class.dita#task_itr_pzs_35">Set up
+                        Deferred Revenue</xref></li>
+                <li><xref href="ticket_types_task.dita#task_ztb_3gb_rr">Create Ticket
+                    Types</xref></li>
+                <li><xref href="creating_event_task.dita#task_oft_s1b_rr">Create the
+                        Event</xref><note>System Admins or staff users must <b>Enable Schedule
+                            Items</b> on the related Event Category for recurring events. Otherwise,
+                            <b>Enable Schedule Items</b> on the Event record for one-time
+                        events.</note></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Click the <b>New Schedule Item</b> button on the <i>Schedule</i> related list
+                    on the Event record.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Schedule Item Name</b>, <b>Start Date/Time</b>, <b>End
+                        Date/Time</b>, and <b>Price</b> fields.</cmd>
+                <info>The <b>Price</b> field can have a value of "0" or a value greater than "0".
+                    Default is "0".</info>
+            </step>
+            <step>
+                <cmd>Enter the <b>Display Name</b>, <b>Description</b>, and <b>Image URL</b>.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/events/schedule_item_details_sfc_win16.png"
+                        width="600" id="image_vpf_q2p_wt"/></info>
+            </step>
+            <step>
+                <cmd>Enter the <b>Capacity</b> and check the <b>Is Active</b> checkbox. Click
+                        <b>Save</b>.</cmd>
+                <info>If the <b>Capacity</b> field is left blank, then the schedule items will
+                    display as "Full" in the Agenda Builder and are unavailable for
+                    registration.</info>
+                <info><image
+                        href="../../../assets/screenshots/events/session_quantity_remaining_sfc_win16.png"
+                        width="600" id="image_kp5_bfp_wt"/></info>
+            </step>
+        </steps>
+        <result>Creating a schedule item automatically creates an Item record and a default<b> Price
+                Rule</b>. System Admins and staff users can <xref
+                href="../../estore/creating_price_rules_task.dita#task_adk_fml_gs">create an
+                additional custom price rule</xref> by navigating to the <i>Price Rules</i> related
+            list on the Schedule Item record and clicking the <b>New Price Rule</b> button. </result>
+        <postreq>
+            <sectiondiv>
+                <ul>
+                    <li>Attach optional <xref
+                            href="../../form_builder/creating_forms.dita#task_jdk_12p_yr"
+                            >Registration Questions</xref> to the schedule item through the
+                            <b>Registration Interview</b> lookup</li>
+                    <li>Enable <xref
+                            href="../../estore/badges_access_permissions_task.dita#task_qzc_5s5_sr"
+                            >Access Permissions</xref> to restrict visibility to a target
+                        audience</li>
+                </ul>
+            </sectiondiv>
+        </postreq>
+    </taskbody>
+</task>

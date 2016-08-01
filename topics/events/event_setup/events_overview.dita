@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_tsd_rn1_rr">
+    <title>Events Overview </title>
+    <conbody>
+        <p>The <b>Events</b> app is perfect for creating any type of event. System Admins can
+            configure the event to allow discounts for early registrants, restrict event
+            registration for elite members, swiftly process payments, track sponsors, speakers, and
+            all related event tasks. Prior to creating an event, Admins must first create a properly
+            configured Community and ensure that it is <b>Active</b>.</p>
+        <p>Secondly, Admins must decide if the event they are creating is <b>recurring</b> or
+                <b>non-recurring</b>. If the event is <b>recurring</b>, all of the event components
+            (ticket types, schedule items, venues, etc.) must be created via related lists on the
+                <b>Event Category</b> record to ensure reusability. Conversely, if the event is
+                <b>non-recurring</b>, Admins can create all event components directly from the Event
+            record. <note>All events must have an <b>Event Category</b>, regardless if the event is
+                    <b>recurring</b> or not. The system automatically creates an "Uncategorized"
+                    <b>Event Category</b> providing Admins with the ease of linking a
+                    <b>non-recurring</b> Event to an <b>Event Category</b> without navigating away
+                from the Event record. </note></p>
+    </conbody>
+</concept>

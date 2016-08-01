@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_oqw_zgj_ks">
+    <title>Modifying the Theme</title>
+    <abstract>Staff users can store different page styles and branding configurations in the
+            <b>Themes</b> tab. Themes control how various objects in the system appear to the user
+        by allowing staff users to play with the <b>Color Scheme</b>, <b>Logo</b>, <b>Custom
+        CSS</b>, <b>Header</b>, <b>Footer</b>, <b>HTML Head</b>, and <b>Supernav</b>. The
+            <b>Advanced Settings</b> provide options for adding custom stylesheets so organizations
+        can extend the look and feel of their existing website to the <b>Community
+            Portal</b>.<note>All URLs must originate from a secure site.</note></abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_ckd_kcr_wt">
+                <li><xref href="../media_assets/media_asset_upload_win16.dita#task_xwc_yyq_wt"
+                        >Upload Media Assets</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Themes</b> tab in the <b>Communities</b> app and click
+                        <b>New</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Theme Name</b>.</cmd>
+                <info>Optionally, enter a <b>Description</b> to differentiate between similar
+                    themes.</info>
+            </step>
+            <step>
+                <cmd>Configure the <b>Color Scheme</b> that is used throughout the <b>Community
+                        Portal</b>.</cmd>
+                <info><image href="../../../assets/screenshots/community_builder/theme_keys.png"
+                        width="600" id="image_cgf_4w5_ts"/></info>
+            </step>
+            <step>
+                <cmd>Populate the <b>Logo Image </b>and <b>Favicon Image</b> fields with the related
+                    image URL(s). All images must originate from a secured site.</cmd>
+                <info>Additionally, enter the website that users are directed to when clicking on
+                    the logo in the <b>Community Portal</b>. Users can populate the <b>Logo Text</b>
+                    field in order to include accompanying text if the logo is only an image. </info>
+                <info>Best practices recommend providing a <b>Logo</b> that is no larger than 20kb
+                    and has a resolution of 72dpi. </info>
+            </step>
+            <stepsection><b>Custom Configurations</b></stepsection>
+            
+            <step>
+                <cmd>Staff users can  Configure the<b> Custom CSS</b>, <b>Header</b>, <b>Footer</b>,
+                        <b>HTML Head</b>, and <b>Supernav</b> to overwrite the look and feel of
+                    standard pages, as well as adding additional resources and information.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/community_builder/theme_custom_configurations_win16.png"
+                        width="600" id="image_ehh_m4l_xt"/></info>
+                <choices id="choices_n42_44l_xt">
+                    <choice><b>Custom CSS</b>- Customize the appearance of any page element.
+                            <note>Cannot customize elements directly controlled by the <b>Theme</b>.
+                        </note></choice>
+                </choices>
+                <info><image
+                        href="../../../assets/screenshots/community_builder/theme_css_hover_color.png"
+                        width="600" id="image_jfj_2pl_xt"/><ul id="ul_lrt_mql_xt">
+                        <li><b>Supernav Link Hover:</b>
+                            <b>.topbar-row a:hover { color: #colorvalue!important; } </b></li>
+                        <li><b>Navbar Link Hover: </b><b>.em-navbar li a:hover { color:
+                                #colorvalue!important; }</b></li>
+                    </ul></info>
+                <choices id="choices_pdm_dpl_xt">
+                    <choice><b>Header</b>- Enter content for an additional page header; create drop
+                        down menus, buttons, etc. Optionally, hide the default header via <b>Custom
+                            CSS</b>. </choice>
+                </choices>
+                <info><image
+                        href="../../../assets/screenshots/community_builder/additional_header.png"
+                        width="600" id="image_vxs_x1m_xt"/></info>
+                <choices id="choices_wms_w1m_xt">
+                    <choice><b>Footer</b>- Enter content for a footer.</choice>
+                </choices>
+                <info><image href="../../../assets/screenshots/community_builder/theme_footer.png"
+                        width="600" id="image_ecy_v1n_xt"/></info>
+                <choices id="choices_c1f_v1n_xt">
+                    <choice><b>HTML Head</b>- Load custom style sheets, reference javascript
+                        library, add meta tags, or enter additional resources.</choice>
+                </choices>
+                <info><image
+                        href="../../../assets/screenshots/community_builder/html_head_theme_win16.png"
+                        width="600" id="image_af3_kps_xt"/></info>
+                <choices id="choices_gnn_jps_xt">
+                    <choice><b>Supernav</b>- Input additional text, buttons, drop down menus, and
+                        links within the <b>Supernav</b>. </choice>
+                </choices>
+                <info><image href="../../../assets/screenshots/community_builder/theme_supernav.png"
+                        width="600" id="image_i14_zg5_xt"/></info>
+                <info>Staff users have three <b>Supernav HTML Positions</b>.</info>
+                <choices id="choices_dht_jg5_xt">
+                    <choice><b>Advanced Settings</b>- Enter the <b>Custom Stylesheet URL</b> to
+                        extend the look and feel of an organization's existing website. By entering
+                        the <b>Custom Stylesheet URL</b>, staff users can override any of the
+                            <b>Theme</b> default configurations.</choice>
+                </choices>
+            </step>
+            <step>
+                <cmd>Once custom configurations are complete, click <b>Save</b>.</cmd>
+            </step>
+        </steps>
+        <result>A new <b>Theme</b> is created and is ready to customize invoices, forms, campaign
+            pages, and pages in the <b>Community Portal</b>.</result>
+    </taskbody>
+</task>

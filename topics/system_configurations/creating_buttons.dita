@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_bdb_1dt_zt">
+    <title>Creating Buttons in the Backend UI</title>
+    <abstract>System Admins can create new buttons and add them to a record's Page
+        Layout.</abstract>
+    <taskbody>
+        <context>
+            <p>Create a <b>Shopping Cart</b> and <b>Preview Event</b> button to add to the Sales
+                Order and Event Page Layouts.</p>
+        </context>
+        <steps id="creating_buttons">
+            <step id="step1_creating_buttons">
+                <cmd>Open the sidebar menu on the record needing a button and click <b>View
+                        Object</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/system_configurations/sales_order_view_object_win16.png"
+                        width="700" id="image_fr3_x2t_zt"/></info>
+            </step>
+            <step>
+                <cmd>Navigate to the <i>Buttons, Links, and Actions</i> related list and click
+                        <b>New Button or Link</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/system_configurations/shopping_cart_new_button_win16.png"
+                        width="700" id="image_dqb_y2t_zt"/></info>
+            </step>
+            <step>
+                <cmd>Enter the button <b>Label</b>, select the <b>Detail Page Button</b> as the
+                        <b>Display Type</b>, and select <b>Display in existing window with
+                        sidebar</b> as the <b>Behavior</b>. </cmd>
+            </step>
+            <step>
+                <cmd>In the text area, enter the redirect URL for the page with the record ID as a
+                    parameter:  </cmd>
+                <choices id="choices_zwn_whc_b5">
+                    <choice><b>Shopping Cart:</b>
+                        <b>/apex/orderapi__sales_order?id={!OrderApi__Sales_Order__c.Id}</b></choice>
+                </choices>
+                <info><image
+                        href="../../assets/screenshots/system_configurations/apex_code_shopping_cart_win16.png"
+                        width="500" id="image_tkw_y2t_zt"/></info>
+                <choices id="choices_rlb_13c_b5">
+                    <choice><b>Preview Event:</b>
+                        <b>/apex/EventApi__simple_event?id={!EventApi__Event__c.Id}&amp;preview=true</b></choice>
+                </choices>
+                <info><image
+                        href="../../assets/screenshots/system_configurations/apex_code_preview_event_win16.png"
+                        width="500" id="image_xbv_m3c_b5"/></info>
+                <substeps id="substeps_efm_rdt_zt">
+                    <substep>
+                        <cmd>Click <b>Save</b>.</cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step id="final_step_creating_buttons">
+                <cmd><b>Edit the Page Layout </b> on the associated record and drag-and-drop the
+                    button onto the Page Layout.</cmd>
+                <info><b>Shopping Cart:</b></info>
+                <info><image
+                        href="../../assets/screenshots/system_configurations/page_layout_adding_buttons_win16.png"
+                        width="700" id="image_dmn_bft_zt"/></info>
+                <info><b>Preview Event:</b></info>
+                <info><image
+                        href="../../assets/screenshots/system_configurations/preview_event_new_button_win16.png"
+                        width="700" id="image_xt4_5pq_b5"/></info>
+                <substeps id="substeps_swy_xdt_zt">
+                    <substep>
+                        <cmd>Click <b>Save</b>.</cmd>
+                    </substep>
+                </substeps>
+            </step>
+        </steps>
+        <result>A new button is created and added to the desired record's Page Layout.<note>The
+                    <b>Preview Event</b> button returns the <i>Event Detail</i> page with limited
+                functionality and is used only to allow staff users a quick view of the event
+                information in the <b>Community Portal</b>. </note></result>
+    </taskbody>
+</task>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_dcj_3lm_nw">
+ <title>Set up the Directory </title>
+ <abstract>Once the initial installation process is complete, staff users can create directories by
+  pulling data from either the Account or Contact objects. After the Directory Object is set, it
+  cannot be edited. All of the data elements in the directory are pulled from this object. </abstract>
+ <conbody>
+  <p>Add the <b>Directories</b> tab to a tab bar; this opens the Directory list view. Next, click on
+   the <b>New</b> button to initiate the Directory Builder. In the modal window, select an available
+   object from the Directory Object drop-down list. Once saved, the <b>Directory </b><b>Object</b>
+   cannot be changed. All of the data elements in the directory come from this object. </p>
+  <p>Enter the <b>Directory Name</b> in order to <b>Save &amp; Continue</b>. The Directory Name came
+   be changed later.</p>
+  <p>
+   <note>With configuration, the system administrator can add the API name of additional objects to
+    this picklist. This will allow the organization to create directories based on data in those
+    objects.</note>
+  </p>
+  <p><image href="../../../assets/screenshots/marketplace_extensions/db_set_up_directory.png"
+        id="image_dvk_x2s_nw"/>
+    </p>
+ </conbody>
+</concept>

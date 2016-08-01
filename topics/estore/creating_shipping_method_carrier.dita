@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_xz1_dqv_ht">
+    <title>Creating a Shipping Carrier and Delivery Method</title>
+    <abstract><b>Shipping Carriers</b> refer to the vendors responsible for delivering customer
+        orders. Examples of Shipping Carriers include: <ul id="ul_rpy_kcw_ht">
+            <li>US Postal Service</li>
+            <li>UPS</li>
+            <li>FedEx</li>
+        </ul>A <b>Delivery Method</b> is the delivery option from that carrier. Examples of Delivery
+        Methods include: <ul id="ul_rzl_4cw_ht">
+            <li>Overnight Air</li>
+            <li>Express 2-3 Day Ground</li>
+            <li>Standard 5-7 Day Ground</li>
+        </ul></abstract>
+    <taskbody>
+        <prereq><b>Navigate to the related Business Group record and ensure the desired shipping
+                configurations are set:</b><ul id="ul_mfk_xt2_x5">
+                <li>Set up <b><xref
+                            href="../accounting/business_groups/bg_glaccounts_task.dita#task_fys_vtv_kr"
+                            >Shipping GL Account</xref></b></li>
+            </ul><ul id="ul_x1j_cr2_x5">
+                <li>Check the <b>Enable Shipping by Order Total</b> checkbox to allow customers to
+                    see a single shipping rate for the entire order. If left unchecked, customers
+                    will instead see shipping rates for each unique item in their order. In both
+                    cases, shipping is calculated only for the items that have <b>Require
+                        Shipping</b> enabled. For new Business Groups, the default is checked.</li>
+                <li>Use the <b>Shipping Rate Basis</b> picklist to calculate the shipping rate based
+                    on <b>Item Weight</b> or <b>Item Value</b>. For new Business Groups, the default
+                    value is <b>Item Weight</b>.<p><image
+                            href="../../assets/screenshots/estore/shipping_configs_business_group_win16.png"
+                            width="700" id="image_tm4_ms2_x5"/></p></li>
+            </ul></prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Item Classes</b> tab in the <b>eStore</b> app and click
+                        <b>New</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the Shipping Carrier <b>Name</b>.</cmd>
+                <info>Optionally, enter a <b>Description</b>.</info>
+            </step>
+            <step>
+                <cmd>Select the <b>Business Group</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Active</b> and <b>Is Shipping Carrier</b> checkboxes.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Shipping GL Account</b> and click <b>Save</b>.</cmd>
+                <info>All subsequent <b>Shipping Rate</b> items created using the same Shipping
+                    Carrier will inherit the related <b>Shipping GL Account</b>. However, Admins can
+                    override the inheritance by selecting an alternative GL account on the Shipping
+                    Rate item itself.</info>
+                <info><image href="../../assets/screenshots/estore/shipping_carrier_win16.png"
+                        width="700" id="image_zby_pkw_ht"/></info>
+            </step>
+            <stepsection><b>Creating the Delivery Method</b></stepsection>
+            <step>
+                <cmd>Navigate to the <i>Delivery Methods</i> related list and click <b>New Delivery
+                        Method</b>.</cmd>
+                <info>Each Shipping Carrier can have multiple Delivery Methods. For example, FedEx
+                    may have both “Overnight Air” and “Express 2-3 Day Ground" as delivery options.
+                </info>
+            </step>
+            <step>
+                <cmd>Enter the Delivery Method <b>Name</b>, <b>Description</b>, and click
+                        <b>Save</b>.</cmd>
+                <info>The <b>Shipping Carrier</b> lookup field is autopopulated.</info>
+            </step>
+          
+        </steps>
+        <result>The Shipping Carrier and Delivery Method are created.</result>
+        <postreq>
+            <ul id="ul_xk5_gsv_ht">
+                <li><xref href="creating_shipping_region.dita#task_dmf_nrv_ht">Create the Shipping
+                        Region</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

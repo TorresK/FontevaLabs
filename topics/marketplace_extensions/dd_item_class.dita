@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_w5z_fyt_qv">
+ <title>Creating an Item Class for Direct Debit</title>
+ <abstract>Direct Debit subscription items inherit attributes set up on the related Item Class
+   record.<p>First, navigate to the <b>eStore</b> app and click the <b>Item Classes</b> tab. Click
+    <b>New</b>. Next, enter the <b>Name</b> of the Item Class and identify the <b>Business Group</b>
+   via the lookup field. Optionally, enter a <b>Description</b>.</p><p><b>Configure Item Class
+    Attributes</b>
+  </p><ul id="ul_l1p_km5_qv">
+   <li><b>Is Subscription</b> (Required)</li>
+   <li><b>Is Direct Debit Enabled</b> (Required)</li>
+   <li><b>Enable Assignments</b> (Enable Online Assignment Management)</li>
+   <li><b>Require Assignments</b> (Enable Online Assignment Management)</li>
+   <li><b>Tax Locale</b></li>
+   <li><b>Is Taxable</b> (may deselect on the Item)</li>
+   <li><b>Is Shippable</b> (may deselect on the Item)<ul id="ul_oth_2n5_qv">
+     <li><b>Supports VAT Taxes and Shippable Subscription (fees): Is Taxable / Is Shippable must be
+       enabled on the Item Class to be enabled on the Item, but there is an option to disable the
+       Taxable flag on the Item.</b></li>
+    </ul></li>
+  </ul><p>Lastly, check the <b>Is Active</b> checkbox and click <b>Save</b>.</p><p>The Price Rule
+   determines the amount of each payment. This amount is withdrawn from the customer’s bank account
+   at the frequency designated on the subscription plan, until the agreement end date. The
+   subscription plan(s) is assigned as a price attribute on the Price Rule for the appropriate
+   payment amount. </p><p><image
+    href="../../assets/screenshots/marketplace_extensions/dd_item_class_price_rule.png" width="700"
+    id="image_j4h_fyk_rv"/></p><p><b>Known Issues</b></p><p>Currently, additional attributes cannot
+   be added (“AND”) when a subscription plan(s) is used as a Price Attribute. This means that a
+   price rule cannot support additional price variables. For example: Badge Types, Subscription
+   Plans, Filter Selection (Contact Billing_Country = “UK”), and Subscription Plans.</p><p><b>Will
+    Not Support</b><ul id="ul_vqj_qp5_qv">
+    <li>Enabling Direct Direct on non-subscription items</li>
+    <li>Adding subscription items as Package Items </li>
+   </ul></p></abstract>
+</concept>

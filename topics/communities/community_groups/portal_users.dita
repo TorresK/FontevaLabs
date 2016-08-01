@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_x1s_1kb_5r" audience="portal users">
+  <title>Exploring Groups for Portal Users</title>
+  <abstract>Authenticated and unauthenticated portal users can search for groups, view the Group
+    Detail page, search and view group members, and view and register for events. Authenticated
+    portal users can also: <ul id="ul_nws_b2m_zt">
+      <li>Join or leave a group</li>
+      <li>Update their profile details</li>
+      <li>Collaborate with fellow group members </li>
+    </ul><p>
+      <note>Only <b>Public</b> and <b>Private Groups</b> are displayed on the <i>Groups Search</i>
+        page. <b>Unlisted Groups</b> will not appear in any search results or lists and can only be
+        seen by members. Additionally, the  <b>Group Owner</b> must enable <b>Show Search
+          Filters</b> on the Community Group record for portal users to filter group and member
+        search results.</note>
+    </p><p><b><i>Groups Search</i> Page</b></p><p>On the <i>Groups Search</i> page, portal users can
+      filter group search results by selecting a value from a picklist or entering text in the
+      available fields within the sidebar. The filters applied display as a pillbox in the sidebar.
+      Portal users can remove a field from the filter by clicking the "X" in the pillbox.
+        </p><p><image
+        href="../../../assets/screenshots/community_builder/group_search_filters_cpu_win16.png"
+        width="600" id="image_odq_xhn_zt"/></p><p><b><i>Group Detail</i> Page</b></p><p>Groups are
+      displayed in a tile view. Staff users can assign fields within the tiles that display when
+      portal users hover over the group or member tiles. Click on the Group tile to return the
+        <i>Group Detail</i> page. <b>Group Owners</b> can update information from the <i>Group
+        Detail</i> page by first clicking on the <b>More Detail</b> link and then clicking the
+        <b>Edit Group</b> button in the pop up window. </p><p><image
+        href="../../../assets/screenshots/community_builder/edit_group_modal_win16.png" width="600"
+        id="image_jzf_zjn_zt"/></p><p>In a <b>Public Group</b>, non-members can view the group's
+        <b>Community Feed</b>, <b>Members</b>, and <b>Events</b> tabs. Members and non-members can
+      leave or join a <b>Public Group</b> by clicking the <b>Leave</b> and <b>Join</b> buttons on
+      the banner. In a <b>Private Group</b>, both the <b>Members</b> and <b>Events</b> tabs are
+      visible to non-members, but only if it is enabled by the <b>Group Owner</b>. Non-members of a
+        <b>Private Group</b> do not have access to the <b>Community Feed</b> tab.</p><p>Click the
+        <b>More Detail</b> link on the group's Banner image to read the full text of the group
+      description. </p><p>Group members can click the <b>My Profile</b> button to view and edit the
+      profile information that is available to view by other portal users:</p><p><image
+        href="../../../assets/screenshots/community_builder/view_edit_member_profile_win16.png"
+        width="600" id="image_xzd_5kt_zt"/></p><p>To update the profile of the logged in user,
+      select or enter values for the fields to display on the member's profile by clicking the
+        <b>Edit Member</b> button. To update profile photo, click <b>Change Picture</b>. Edit the
+      desired fields to display to other portal users and click <b>Save</b>.</p><p><image
+        href="../../../assets/screenshots/community_builder/edit_member_profile_win16.png"
+        width="500" id="image_ayx_hlt_zt"/></p><p><b>Community Feed</b></p><p>Members can post
+      comments and share files with other group members on the <b>Community Feed</b>, if enabled by
+      the <b>Group Owner</b>. The <b>Community Feed</b> provides live updates based on member
+      participation.</p><p><image
+        href="../../../assets/screenshots/community_builder/community_feed_win16.png" width="600"
+        id="image_yby_ppn_zt"/></p><ul id="ul_jtd_bmn_zt">
+      <li>Post comments viewable to all Community Group members via the text field.</li>
+      <li>Share files up to 2 GB with Community Group members by clicking the <b>File</b> tab.</li>
+      <li>Provide feedback on the posts of other Community Group members by clicking the
+          <b>Comment</b> link or by clicking the <b>Like</b> button.<note>All file types, including
+          Microsoft® PowerPoint presentations, Excel spreadsheets, Adobe® PDFs, image files, audio
+          files, and video files, are supported.</note></li>
+    </ul><p><b>Members</b></p><p>Portal users can search for fellow group members by configuring the
+      fields available as filters in the sidebar of the <b>Members</b> tab. Similar to the <i>Groups
+        Search</i> page, portal users hover on a member tile to view the available information.
+      Clicking a member tile will return the full member details.</p><p><image
+        href="../../../assets/screenshots/community_builder/members_tab_win16.png" width="600"
+        id="image_bqg_jqn_zt"/></p><p><b>Events</b></p><p>The <b>Events</b> tab provides
+        <b>Community Portal</b> users with the ability to both view and register for upcoming
+      events.</p><p><image href="../../../assets/screenshots/community_builder/events_tab_win16.png"
+        width="600" id="image_zmb_4qn_zt"/></p></abstract>
+</concept>

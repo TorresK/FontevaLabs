@@ -1,0 +1,91 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+<head><meta name="description" content="Deferred Revenue is a liability because it refers to revenue that has not yet been earned, but represents products or services that are owed to the customer. As the product or service is delivered ..."></meta><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><meta name="copyright" content="(C) Copyright 2005"></meta><meta name="DC.rights.owner" content="(C) Copyright 2005"></meta><meta name="DC.Type" content="task"></meta><meta name="DC.Title" content="Setting up Deferred Revenue"></meta><meta name="DC.Format" content="XHTML"></meta><meta name="DC.Identifier" content="task_itr_pzs_35"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/commonltr.css"><!----></link><title>Setting up Deferred Revenue</title><!--  Generated with Oxygen version 17.1, build number 2016032212.  --><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_topic.css"><!----></link><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/skins/skin.css"><!----></link><script type="text/javascript"><!--
+          
+          var prefix = "index.html";
+          
+          --></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-1.8.2.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="oxygen-webhelp/resources/js/webhelp_topic.js"><!----></script></head>
+<body onload="highlightSearchTerm()" class="frmBody" id="task_itr_pzs_35">
+<table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td width="75%"></td><td><div class="navheader"></div></td></tr></tbody></table>
+
+    <h1 class="title topictitle1">Setting up Deferred Revenue</h1>
+
+    
+    <div class="body taskbody"><div class="abstract"><strong class="ph b">Deferred Revenue</strong> is a liability because it refers to revenue that has not yet
+        been earned, but represents products or services that are owed to the customer. As the
+        product or service is delivered over time, it is recognized as revenue on the income
+        statement. When the deferred revenue becomes earned, an adjusting entry is prepared that
+        will debit the Unearned Revenues or Deferred Revenues account and will credit the Sales
+        Revenues or Service Revenues account. <div class="note note"><span class="notetitle">Note:</span> <strong class="ph b">Users can enable Defer Revenue on a per item
+                basis. Additionally, revenue cannot be deferred for items with Lifetime Subscription
+                Plans.</strong></div>
+</div>
+
+        <ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd">Navigate to the <strong class="ph b">Items</strong> tab in the <strong class="ph b">eStore</strong> app and click the
+                        <strong class="ph b">New</strong> button.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Enter the item <strong class="ph b">Name</strong>.</span>
+                <div class="itemgroup info">Identify the <strong class="ph b">Business Group</strong> via the lookup and enter the
+                        <strong class="ph b">Description</strong> for the item. </div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Check the <strong class="ph b">Defer Revenue</strong> checkbox to initiate Deferred Revenue
+                    Recognition Rules and identify the <strong class="ph b">Deferred Revenue Account</strong> via the
+                    lookup.</span>
+                <div class="itemgroup info"><img class="image" id="task_itr_pzs_35__image_tbv_bmy_35" src="../../assets/screenshots/estore/enabling_defer_revenue_win16.png" width="700"></img></div>
+                <div class="itemgroup info">The GL Account for Deferred Revenue/Income, like all <a class="xref" href="../accounting/business_groups/bg_glaccounts_task.html#task_fys_vtv_kr">GL Accounts</a>, is created and maintained on the related Business Group
+                    record.</div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Select the <strong class="ph b">Revenue Recognition Rule</strong> from the picklist:  </span>
+                <ul class="ul choices" id="task_itr_pzs_35__choices_r2p_nnf_j5">
+                    <li class="li choice"><strong class="ph b">Over Time</strong>- Select this value to recognize revenue over a period
+                        of time. <strong class="ph b">This value is most often used for Subscriptions</strong>. If the
+                            <strong class="ph b">Revenue Recognition Rule</strong> is set to <strong class="ph b">Over Time</strong>, then select
+                        the <strong class="ph b">Revenue Recognition Term Rule</strong> from the picklist: <p class="p"><img class="image" id="task_itr_pzs_35__image_r1k_5wm_j5" src="../../assets/screenshots/estore/item_class_deferred_revenue_fields_win16.png" width="400"></img></p>
+<ul class="ul" id="task_itr_pzs_35__ul_nqm_rnf_j5">
+                            <li class="li"><strong class="ph b">No Partial Credit</strong>-The first month’s revenue is recognized on
+                                the last day of the month for the duration of the term, regardless
+                                of the day it was purchased. For example, if an annual membership is
+                                purchased in January, the first revenue recognition entry is made on
+                                January 31st.  </li>
+
+                            <li class="li"><strong class="ph b">Flex Day</strong>-Revenue is recognized in the first month as long the
+                                purchase is on or prior to the Flex Day of the Month. For example,
+                                if a membership is purchased on January 7, but the Flex Day is set
+                                to 5, the first revenue recognition entry will not occur until the
+                                last day of the following month, February 28/29.</li>
+
+                            <li class="li"><strong class="ph b">Daily</strong>- Revenue is recognized on the last day of the month,
+                                but is calculated based on the total cost of the item divided by
+                                365. For example, if a $1,200 annual membership is purchased and
+                                paid for on January 15, then the first credit to the revenue account
+                                is made for $55.89 on January 31. </li>
+
+                        </ul>
+</li>
+
+                    <li class="li choice"><strong class="ph b">Specific Date</strong>-Revenue is recognized on a specific day of the
+                        year. <strong class="ph b">This is most often used for Event items</strong>. If Specific Date is
+                        selected as the Revenue Recognition Rule, then the Revenue Recognition Date
+                        field must be populated with the date the system is to recognize revenue. </li>
+
+                </ul>
+
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Check the <strong class="ph b">Is Active</strong> checkbox and click <strong class="ph b">Save</strong>.</span>
+            </li>
+</ol>
+
+        <div class="section result">Deferred Revenue is set up on an item.</div>
+
+    </div>
+
+<div class="navfooter"><!----></div><div class="footer">WebHelp output generated by<a class="oxyFooter" href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"></img></span><span class="xmlauthor">XML Author</span></a></div>
+</body>
+</html>

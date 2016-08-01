@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_lbt_dhx_rs" audience="System Administrator">
+ <title>Managing Framework Configuration Summary</title>
+ <abstract>System Administrators configure the Framework services to maintain the system and
+  initiate troubleshooting. <p><image
+    href="../../assets/screenshots/framework/framework_dashboard_sum16.png" width="700"
+    id="image_xld_1g3_rw"/></p></abstract>
+ <conbody>
+  <p>Click <b>Configuration Summary</b> in the <b>Spark Framework</b> app to return the Framework
+   Configurations. Admin users have two options: </p>
+  <p>
+   <ol id="ul_r4s_tby_rs">
+    <li><b>Reset Configurations</b>-Click the <b>Reset Configurations</b> button to clear data from
+     all <b>Registered Apps</b>, <b>Registered Objects</b>, <b>Routing Rules</b>, <b>Custom
+      Scripts</b>, <b>Rollup Summary Fields</b>, and <b>Settings Pages</b>. <note>Best use case
+      occurs when the Admin is attempting to refresh their Sandbox environment and the
+      configurations are not correctly copied from the Production environment; <b>Reset
+       Configurations</b> for a fresh start. </note></li>
+    <li><b>Run Install Scripts</b>-Click the <b>Run Install Scripts</b> button when a new Salesforce
+     environment is created in order to insert new records.</li>
+    <li><b>Run Jobs</b> - Click <b>Run</b> on the related Custom Script to manually run the job. </li>
+   </ol>
+  </p>
+ </conbody>
+</concept>
+
+
+ 

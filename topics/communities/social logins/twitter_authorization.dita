@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_jbz_4sv_qs">
+    <title>Configuring Authorization Providers: Twitter</title>
+    <abstract>The Authorization Provider page allows staff users to configure alternate means to
+        register for or log in to a Community.<note>Salesforce will only allow one email per user.
+            Therefore, a unique email must be used for each federated login. Otherwise an Error page
+            will display notifying the user that the authentication attempt has failed.
+        </note></abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to <xref href="https://developer.twitter.com" format="html"
+                        scope="external"/>
+                </cmd>
+                <choices id="choices_grb_hh4_rs">
+                    <choice>Sign in to an existing Twitter account. If this is for implementation
+                        purposes, use the customer's preferred Twitter account. In <b>Tools</b>,
+                        click <b>Manage Your Apps</b>. Next, select the app and in <b>Application
+                            Settings</b>, click <b>Keys and Access Tokens</b>. Click the <b>Create
+                            my Access Token</b>. Navigate to Salesforce to create an <b>Auth.
+                            Provider</b>.</choice>
+                    <choice>If no Twitter account currently exists, <b>create a new account</b>.
+                        Confirm the new Twitter account via email on file. </choice>
+                </choices>
+                <info><image href="../../../assets/screenshots/setup/new_app_twitter.png"
+                        width="600" id="image_fzj_lk4_rs"/></info>
+            </step>
+            <step>
+                <cmd>Click <b>Create New App</b> button to return the <b>Create an application</b>
+                    form. Enter the requested information, check the <b>Yes, I agree</b> to
+                    Developer Agreement checkbox, and click <b>Create your Twitter
+                    application</b>.</cmd>
+                <info><u>Required Fields</u><ul id="ul_e4g_1l4_rs">
+                        <li><b>Name</b>-This is used to attribute the source of a tweet and in
+                            user-facing authorization screens. 32 characters max. </li>
+                        <li><b>Description</b>-Displays in user-facing authorization screens.
+                            Between 10 and 200 characters max.</li>
+                        <li><b>Website</b>-The application's publicly accessible home page, where
+                            users can go to download, make use of, or find out more information
+                            about the application. This fully-qualified URL is used in the source
+                            attribution for tweets created by the application and will be shown in
+                            user-facing authorization screens.</li>
+                    </ul></info>
+                <info><u>Optional Fields</u><ul id="ul_lbw_bl4_rs">
+                        <li><b>Callback URL</b></li>
+                    </ul></info>
+            </step>
+            <step>
+                <cmd>Click <b>Keys and Access Tokens</b> and click <b>Create my Access
+                    Token</b>.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/setup/twitter_create_access_token.png"
+                        width="600" id="image_ebq_2x4_rs"/></info>
+            </step>
+            <step>
+                <cmd>Open up a new tab and navigate to Salesforce environment. </cmd>
+            </step>
+            <stepsection><b>Create an Auth. Provider</b></stepsection>
+            <step>
+                <cmd>Navigate to <b>Setup</b> > <b>Administer</b> > <b>Security Controls</b> >
+                        <b>Auth. Providers</b> > Click <b>New</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Select <b>Twitter</b> from the <b>Provider Type</b> picklist. Populate the
+                    desired fields and click <b>Save</b>.</cmd>
+                <info><u>Required Fields</u><ul id="ul_qn5_l23_rs">
+                        <li><b>Name</b>- Enter a unique, identifying name for the Auth.
+                            Provider.</li>
+                        <li><b>URL Suffix</b>- Enter a value to use in the callback URL. This field
+                            will default to the value entered in the <b>Name</b> field. </li>
+                        <li><b>Consumer Key</b>- Paste the <b>Client ID</b>.</li>
+                        <li><b>Consumer Secret</b>- Paste the <b>Client Secret</b>.</li>
+                    </ul></info>
+                <info><u>Optional Fields</u><ul id="ul_rn5_l23_rs">
+                        <li><b>Default Scopes</b>- Enter the level of access that this user has to
+                            that profile, i.e., read-only access or profile email openid. Otherwise,
+                            the field will default to <b>Salesforce</b>.</li>
+                        <li><b>Custom Error URL</b>- Enter a URL to display a custom error
+                            message.</li>
+                        <li><b>Custom Logout URL</b>- Enter a URL to display a logout error message </li>
+                        <li><b>Registration Handler</b>- Enter "Twitter" into the lookup.</li>
+                        <li><b>Execute Registration As</b>- Enter the name of a full user in the
+                            system associated to a Role. <b>Cannot be a Community User</b>. </li>
+                        <li><b>Portal</b>- Leave as "None." </li>
+                        <li><b>Icon URL</b>- Enter a secure URL to the icon, or choose from among
+                            Twitter's sample icons.</li>
+                    </ul></info>
+                <info><image href="../../../assets/screenshots/setup/twitter_auth_provider.png"
+                        width="600" id="image_wfk_rq4_rs"/></info>
+                <stepresult>The Auth. Provider record populates the <b>Client Configuration</b>
+                    fields: <ul id="ul_ywx_gdl_rs">
+                        <li><b>Test-Only Initialization URL</b></li>
+                        <li><b>Single Sign-On Initialization URL</b></li>
+                        <li><b>Existing User Linking URL</b></li>
+                        <li><b>OAuth-Only Initialization URL</b></li>
+                        <li><b>Callback URL</b></li>
+                    </ul></stepresult>
+            </step>
+            <step>
+                <cmd>Copy the <b>Callback URL</b> and navigate to the <b>Twitter Developers
+                        Console</b> tab in the browser window, click the Settings tab, and paste the
+                        <b>Callback URL</b> into the <b>Callback URL</b> field and click <b>Update
+                        Settings</b>.</cmd>
+            </step>
+            <stepsection><b>Enable Social Login</b></stepsection>
+            <step>
+                <cmd>Navigate to <b>Setup</b> > Search: <b>Communities</b> > Select <b>All
+                        Communities</b> > Click <b>Manage</b> next to the intended Community.</cmd>
+            </step>
+            <step>
+                <cmd>Navigate to <b>Administration</b> > <b>Login &amp; Registration</b> > Check the
+                        <b>Twitter</b> checkbox and click <b>Save</b>.</cmd>
+                <info><image href="../../../assets/screenshots/setup/twitter_login.png" width="600"
+                        id="image_dz4_wr4_rs"/></info>
+            </step>
+            <step>
+                <cmd>Open a new tab, navigate to the <b>Communities</b> app, and select the
+                        <b>Sites</b> tab. </cmd>
+                <info><image
+                        href="../../../assets/screenshots/community_builder/sites_sum15july.png"
+                        width="600" id="image_bmx_yr4_rs"/></info>
+            </step>
+            <step>
+                <cmd>Navigate to the Community's related Site record and click <b>Edit</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Auth Provider Default Account</b> using the lookup. </cmd>
+            </step>
+            <step>
+                <cmd>Copy the <b>Single Sign-On Initialization URL</b> generated during the Auth.
+                    Provider configuration and paste it into the <b>Twitter Login URL</b>
+                        field.<b>Click Save</b>.</cmd>
+            </step>
+        </steps>
+        <result>Authenticated and unauthenticated users can log in to the Community Portal through
+            their Twitter accounts. </result>
+        <postreq>
+            <ul id="ul_hbb_ks4_rs">
+                <li><xref href="../enabling_portal_users_task.dita#task_m5t_3sq_3r">Enable Community
+                        Portal Users</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>
+
+
+
+
+

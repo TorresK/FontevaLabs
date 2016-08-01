@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_zvy_mqh_ks">
+  <title><b>Selling Additional Seats</b></title>
+  <body>
+    <p>
+      <b>Overview:</b> For those organizations that sell a limited number of assignments (seats) for
+      their organizational subscriptions (memberships), there is often a need to sell additional
+      seats at a nominal price of the organizational subscription. This page reviews the process for
+      creating a Sales Order that contains the correct Sales Order Lines with the appropriate Items. </p>
+    <p><b>User Story 1:</b> The National Association of Partners (NAP) sells a Corporate membership
+      that allows the assignment of 3 seats for $1,200. They also allow their members to purchase
+      additional seats at $500 per person. The NAP has a partnership that wishes to purchase 4
+      assignments for membership. Follow the story below to meet this requirement. </p>
+      <p><b>User Story 2:</b></p>
+      <p>A few months later, the NAP's customer wishes to add an additional seat to a subscription
+        mid-term. They wish to purchase the Corporate Membership Additional Seat for $500.</p>
+      <p><b>Prerequisites:</b>
+    </p>
+      <p>The following items must be created prior to creating the Sales Order. Both these items
+        should share the same Item Class.</p>
+      <ul id="ul_ib4_nqh_ks">
+        <li>An Item, "Corporate Membership," that restricts the number of assignments to 3.</li>
+      <li>
+        <p> An Item, "Corporate Membership Additional Seat" that restricts the number of assignments
+          to 1.</p>
+      </li>
+      <li>
+        <p>Because the organization does not allow the Corporate Membership Additional Seat item to
+          be sold without a Corporate Membership, you should mark the Not Available for Individual
+          Sale checkbox. This will not allow the item to be displayed in the shopping cart unless it
+          is presented as a Packaged Item.</p>
+      </li>
+      <li>The Corporate Membership Additional Seat product should be a Package Item for the
+        Corporate Membership.<ul id="ul_mtz_jrh_ks">
+          <li>Link the Additional Seat to the Corporate Membership by clicking the <b>New Package
+              Item</b> button in the <i>Package Item</i> related list of the Corporate Membership
+            Item.</li>
+          <li>Select the item to package, <b>"Corporate Membership Additional Seat"</b></li>
+          <li>Be sure to add a <b>Display Label, </b>"Additional Seats," to easily identify there
+            are additional seats available for purchase.</li>
+          <li>Enter an <b>Add to Cart Button Label</b>, "Add Seats".</li>
+          <li>Enter Display Instructions for your users to easily understand how to add the package
+            item, Additional Seat.</li>
+        </ul></li>
+      </ul>
+  <p><b>Assign the Subscription Plan to your Items</b></p>
+  <p>Once your Items have been created and they are ready to be purchased, follow the steps
+    below:</p>
+  <ul id="ul_hg5_mrh_ks">
+    <li>Create a Sales Order for the customer and fill out all necessary fields.</li>
+    <li>Create a Sales Order Line for the Sales Order that includes the Corporate Membership with
+      all relevant Subscription fields populated.</li>
+    <li>Add an Additional Sales Order Line for the Corporate Membership Additional Seat.<ul
+        id="ul_ig5_mrh_ks">
+        <li>When creating the additional line, copy the Subscription Line Name of the Sales Order
+          Line that has the Corporate Membership. You will need to define this Sales Order Line as
+          the parent so that the subscription is populated correctly.</li>
+        <li>Create the second Sales Order Line.<ul id="ul_jg5_mrh_ks">
+            <li>Select the Corporate Membership Additional Seat as the <b>Item.</b></li>
+            <li>Populate the<b> Sales Order Line </b>field with the <b>Name</b> of the Sales Order
+              Line with the Corporate Membership.</li>
+          </ul></li>
+        <li>Click <b>Save.</b></li>
+      </ul></li>
+    <li>Once the Sales Order has been completed, update the<b> Status </b>to "Closed," then update
+      the <b>Posting Status</b> to "Posted."</li>
+  </ul>
+  <p>Remember that marking the Sales Order as "Posted" is the action that triggers the creation of
+    the Subscription and Subscription Lines.</p>
+    <p><b>Using the Shopping Cart</b></p>
+    <p>Follow these steps to add your additional seats in the shopping cart</p>
+    <ul id="ul_ovr_5rh_ks">
+      <li>Create a Sales Order.</li>
+      <li>Click the <b>Shopping Cart</b> button</li>
+      <li>Find the Corporate Membership and click <b>Add to Cart</b>.</li>
+      <li>Click the <b>Additional Seats</b> navigation button.</li>
+      <li>Select the number of Additional Seats to add to the order.</li>
+      <li>Click <b>Add to Cart.</b></li>
+    </ul>
+    <p><b>What you should see...</b></p>
+    <p>The image to the right shows the resulting Subscription that is created after posting the
+      Sales Order. The following are areas you should look for when creating a Subscription that
+      aggregates seats.</p><ul>
+    <li>
+      <p>The total number of Assigned Seats equals the sum of Allowed Assignments for both
+        Items.</p>
+    </li>
+    <li>Notice also that the <b>Primary Item</b> is defined on the Subscription detail.</li>
+      <li>Two Subscription Lines representing the two products purchased.</li>
+      </ul>
+    <p><b>Creating the Sales Order and Sales Order Lines</b></p>
+    <p>Once your Items have been created and they are ready to be purchased, follow the steps
+      below:</p>
+    <ul id="ul_k4q_hsh_ks">
+      <li>Create a Sales Order for the customer and fill out all necessary fields.</li>
+      <li>Create a Sales Order Line for the Sales Order.<ul id="ul_l4q_hsh_ks">
+          <li>Populate the <b>Item </b>with the "Corporate Membership Additional Seat."</li>
+          <li>Populate the <b>Subscription (Upgrade/Renew)</b> field with the Subscription to which
+            the seat is to be added.</li>
+          <li>Click <b>Save.</b></li>
+        </ul></li>
+      <li>Once the Sales Order has been completed, update the<b> Status </b>to "Closed." Then update
+        the <b>Posting Status</b> to "Posted."</li>
+    </ul>
+    <p>Remember that marking the Sales Order as "Posted" is the action that triggers the creation of
+      the Subscription, Subscription Lines, and Logs.</p>
+    <p><b>What you should see...</b></p>
+    <p>The image to the right shows the resulting Subscription that is created after posting the
+      Sales Order. The following are areas you should look for when creating a Subscription that
+      aggregates seats.</p>
+    <ul id="ul_snq_ksh_ks">
+      <li>The total number of Assigned Seats should show the total number of <b>Assignments
+          Allowed</b>.</li>
+      <li>A new Subscription Line added to the Subscription.</li>
+    </ul>
+  </body></topic>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_dyx_111_rr">
+    <title>Enabling the Waitlist for Ticket Types and Schedule Items</title>
+    <abstract>The waitlist for ticket types and schedule items allows users to view an event and
+        sign up for the waitlist if the desired event or sessions are full. The user will not be
+        required to complete the event registration process until contact is made regarding
+        availability. <note>Staff users can override waitlists by selecting the <b>Enable
+                Waitlisting</b> checkbox on the Event record.</note></abstract>
+    <taskbody>
+        <prereq><b>Prerequisites:</b> 
+        <ul>
+        <li>Create an event.</li>
+        <li>Create a ticket type.</li>
+        <li>Create a schedule item.</li>
+        </ul></prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the Event record and select the <b>Enable Waitlisting</b>
+                checkbox.</cmd>
+            </step>
+            <step>
+                <cmd>Enter a value for the <b>Capacity</b> field. Click <b>Save</b>.</cmd>
+                <info>The <b>Capacity</b> field is conditionally required if the <b>Enable
+                        Waitlisting</b> checkbox is selected, however, it is best practice to
+                    populate the field regardless because, unless waitlists are enabled, the event
+                    is automatically closed upon reaching capacity.</info>
+            </step>
+            <step>
+                <cmd>Select the ticket type from the <i>Ticket Type</i> related list and select the
+                        <b>Enable Waitlist</b> checkbox. Click <b>Save</b>.</cmd>
+                <info>Alternatively, select the schedule item from the <i>Schedule</i> related list
+                    and select the <b>Enable Waitlist</b> checkbox.</info>
+            </step>
+        </steps>
+        <result>The waitlist is enabled for the ticket type and schedule item. <p>Staff users can
+                manually register a waitlisted user.</p></result>
+    </taskbody>
+</task>

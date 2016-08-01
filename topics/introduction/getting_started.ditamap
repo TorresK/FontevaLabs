@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>Getting Started</title>
+ <topicref href="system_introduction_win16.dita"/>
+ <topicref href="system_requirements.dita"/>
+ <topicref href="salesforce_limitations_win16.dita"/>
+ <topicref href="../accounting/business_groups/bg_setup_task.dita"/>
+ <topicref href="../accounting/business_groups/bg_paymentgateway_task.dita"></topicref>
+ <topicref href="../estore/creating_stores_task.dita"></topicref>
+ <topicref href="../communities/sites/sites_concept.dita"></topicref>
+ <topicref href="../communities/themes/creating_themes_task.dita"/>
+ <topicref href="../communities/enabling_portal_users_task.dita"></topicref>
+ 
+</map>

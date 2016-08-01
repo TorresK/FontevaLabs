@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="task_tlq_vpm_lw">
+    <title>Directory Builder</title>
+    <abstract>A directory is a useful addition to any Customer Community. The <b>Directory
+            Builder</b> is dynamic tool for creating and maintaining these online listings. The
+        application’s design allows the portal users to personalize the directory’s output based on
+        the data elements in the defined object.</abstract>
+</task>

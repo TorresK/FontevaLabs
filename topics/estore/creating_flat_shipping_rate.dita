@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_tgj_xdc_3t">
+    <title>Creating a Flat Shipping Rate
+    </title>
+    <abstract>Rather than create multiple rates to account for different Shipping Regions and item
+        weights/values, Admins can create a simple Flat Rate per item or for the order
+        total.</abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_w1y_qgc_3t">
+                <li><xref href="creating_shipping_method_carrier.dita#task_xz1_dqv_ht">Create the
+                        Shipping Carrier and Delivery Method</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Items</b> tab in the <b>eStore</b> app and click
+                    <b>New</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Name</b> for the Shipping Rate.</cmd>
+            </step>
+            <step>
+                <cmd>Enter a <b>Display Name</b>. </cmd>
+                <info>The <b>Display Name</b> appears on the <b>eStore</b> checkout screen and on
+                    the customer's receipt. </info>
+            </step>
+            <step>
+                <cmd>Identify the <b>Shipping Carrier</b> using the <b>Item Class</b> lookup.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the cost of shipping applied to the item in the <b>Item Price</b>
+                    field.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Business Group</b> and check the <b>Is Active</b>, <b>Is Shipping
+                        Rate</b>, and <b>Is Default Shipping Rate</b> checkboxes.</cmd>
+                <info>Admins cannot specify a Shipping Region when the <b>Is Default Shipping
+                        Rate</b> is enabled.</info>
+            </step>
+            <step>
+                <cmd>Select the <b>Delivery Method</b> associated with the new Shipping Rate using
+                    the lookup.</cmd>
+            </step>
+            <step>
+                <cmd>Enter a value of "0" into the <b>Minimum Weight</b> field and enter a large
+                    value into the <b>Maximum Weight</b> field. Ensure the <b>Maximum Weight</b> has
+                    a value large enough to accommodate all possible shipping items. </cmd>
+                <info>If the <b>Shipping Rate Basis</b> is set to <b>Item Value</b>, then enter the
+                        <b>Minimum Value</b> and <b>Maximum Value</b>. </info>
+            </step>
+            <step>
+                <cmd>Select the <b>Item Weight UOM</b> (Unit of Measurement) using the
+                    picklist.</cmd>
+                <info>The <b>Item Weight UOM</b> value is used when creating an eStore item that
+                    requires shipping and when creating a Shipping Rate item. Admins do not have to
+                    use the same units for items and Shipping Rates. For example, the Shipping Rate
+                    might be defined in pounds and the <b>Item Weight</b> in ounces. The system
+                    performs the conversion on the backend and will apply the correct rate in the
+                        <b>eStore</b> checkout, regardless of the unit. </info>
+            </step>
+            <step>
+                <cmd>The new Shipping Rate inherits the GL Accounts of the associated Shipping
+                    Carrier. To override and link to an alternative account, select the GL account
+                    using the <b>Income Account</b> and <b>Refund/Credit Account</b> lookups.  Click
+                        <b>Save</b>.</cmd>
+            </step>
+        </steps>
+        <result>A Flat Rate is created for shipping items.</result>
+        <postreq>
+            <ul id="ul_bmd_j3c_3t">
+                <li><xref href="creating_shipping_items.dita#task_scq_w1w_ht">Create an Item
+                        Requiring Shipment</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+    
+</task>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_swg_psj_5r">
+    <title>Creating a Community Group</title>
+    <abstract>Create a new Community Group that can be made available for <b>Community Portal</b>
+        users to explore.</abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Community Groups</b> tab in the <b>Communities</b> app and
+                    click the <b>New</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Enter a value for the <b>Community Group Name</b> field.</cmd>
+            </step>
+            <step>
+                <cmd>Select the entity type from the <b>Member Entity
+                    Type</b> picklist field.</cmd>  
+                    <info>If the <b>Member Entity Type</b> is set to Contact, the system will create
+                    a Community Group member for the related contact when the selected user has the
+                    Community Portal User profile.</info>
+            </step>
+            <step>
+                <cmd>Select the Community Group Owner using the lookup field. In the adjacent picklist field, assign
+                    the Community Group Owner a user profile.</cmd>               
+                    <info>In order for the Community Group Owner to be included as a Community Group
+                    member, assign the Community Portal User profile to the Community Group Owner
+                    prior to enabling the <b>Is Published</b> field.</info> 
+            </step>
+                <step>
+                <cmd>Select the <b>Site</b> using the lookup and enable the <b>Is Published</b>
+                    field to display the group in the <b>Community Portal</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Optionally, populate the <b>Group Image URL</b> field with
+                    the link containing the image that will display as the group's profile image
+                    on the <i>Group Search</i> page and in front of the banner image 
+                    of the <i>Group Detail</i> page.
+                Populate the <b>Banner</b> field with the link containing the image that will display
+                as the group's background image on the <i>Group Detail</i> page. Enter any text 
+                    to display on the <i>Group Detail</i> page in the <b>Description</b> field.</cmd> 
+                <info>If the entirety of text does not fit onto the <i>Group Detail</i> page, <b>
+                        Community Portal</b> users can click the <b>Read More</b> link to display
+                    the full text.</info>
+            </step>
+            <step>
+                <cmd>Configure group privacy and feature settings. Click the <b>Save</b> button. </cmd>
+                <info>The default <b>Privacy Setting</b> is set to "Public." </info>
+            </step>
+        </steps>
+        <result>A new Community Group is created and is displayed in the <i>Group Search</i> page
+            for Community Portal Users. <note>To view the newly created Community Group, staff users
+                must append cpbase__group_detail?id="Community Group Id" to the community site URL.
+                    <b>Example:
+                    https://community.force.com/cpbase__group_detail?id=003j000000IdKS1</b></note></result>
+        
+        
+    </taskbody>
+</task>

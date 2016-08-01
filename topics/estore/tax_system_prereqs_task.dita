@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_mps_mcg_1s">
+    <title>Setting up a Tax Liability Account</title>
+    <taskbody>
+        <context>A specific GL account for Tax Liabilities is essential in order to generate
+            matching journal entries. </context>
+    </taskbody>
+    <task id="id_tlj_p3g_1s"
+        conref="../accounting/business_groups/bg_glaccounts_task.dita#task_fys_vtv_kr">
+        <title/>
+    </task>
+</task>

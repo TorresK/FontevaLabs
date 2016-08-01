@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_w2b_vmf_1s">
+ <title>Event Registration Home Page</title>
+ <abstract>Staff users can configure the attributes of an event and it's related
+  objects to present the details in the <b>Community Portal</b>.</abstract>
+<conbody>
+ <p>Staff user configurations allow the portal user to navigate to view all related details of an
+   event on the  <i>Event Registration Home</i> page, such as the <b>Event Name</b> and
+    <b>Description</b>. Both the <b>Event Name</b> and <b>Description</b> fields are populated
+   through the <b>Display Name</b> and <b>Description</b> fields, respectively, on the <i>Event
+    Detail</i> page. The full range of details available for portal viewing include: <ul>
+    <li><b>Banner Image-</b>Configured on the <i>Event Detail</i> page via the <b>Image URL</b>
+     field.</li>
+    <li><b>Social Media Channels-</b></li>
+    <li><b>Event Totals-</b></li>
+    <li><b>Venue Info-</b>Configured on the <i>Event Detail</i> page via the <b>Venue/Location</b>
+     and <b>Location Information</b> fields.</li>
+    <li><b>Date Info-</b>Configured on the <i>Event Detail</i> page via the <b>Start Date/Time</b>
+     and <b>End Date/Time</b> fields.</li>
+   </ul></p>
+ <p>Additionally, tabular navigation on the <i>Event Registration Home</i> page provides portal
+   users with the functionality to view different elements of the event via: <ul>
+    <li><b>Overview Tab-</b>Displays as the <i>Event Registration Home</i> page and opens by
+     default.</li>
+    <li><b>Agenda Tab-</b></li>
+    <li><b>Speakers Tab-</b></li>
+    <li><b>Sponsors Tab-</b></li>
+    <li><b>Exhibitors Tab-</b></li>
+   </ul></p>
+</conbody>
+</concept>

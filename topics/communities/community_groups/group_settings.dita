@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_jxw_sxy_sr">
+  <title>Community Group Settings</title>
+  <abstract>Staff users configure the fields in the <b>Community Group Settings</b> section of the
+    Community Group record to control privacy and feature settings in the <b>Community Portal</b>. </abstract>
+  <conbody id="conbody_e2q_sxy_5r">
+    <section id="section_vnq_d1z_5r"><b>Group Feature Settings</b>
+      <p>Display and/or hide group features to <b>Community Portal</b> users by
+        selecting/deselecting the following checkboxes: <ul>
+          <li><b>Enable Community Feed</b>-Select the checkbox to display the group's <b>Community
+              Feed</b> tab. In a Public Group, the <b>Community Feed</b> is to all <b>Community
+              Portal</b> users by default when enabled. Private and Unlisted Groups display the
+              <b>Community Feed</b> to only members, if enabled by the Administrator.</li>
+          <li><b>Enable Members</b>-Select the checkbox to display the group's <b>Members</b> tab.
+            In both Public and Private Groups, the <b>Members</b> tab is visible to all <b>Community
+              Portal</b> users by default when enabled. Unlisted Groups display the <b>Members</b>
+            tab to only members, if enabled by the Administrator.</li>
+          <li><b>Enable Events</b>-Select the checkbox to display the group's <b>Events</b> tab. In
+            a Public Group, the <b>Events</b> tab is visible to all <b>Community Portal</b> users by
+            default when enabled. Private and Unlisted Groups display the <b>Events</b> tab to only
+            members, if enabled by the Administrator.</li>
+        </ul><note>Selecting the <b>Private Community Feed</b>, <b>Private Members</b>, and
+            <b>Private Events</b> checkboxes hide their associated tabs from non-members of Public
+          Groups, overriding group privacy settings. In a Private Group, selecting the <b>Private
+            Members</b> checkbox will hide the associated tab from non-members.</note></p></section>
+    <section><b>Group Roster Settings</b>
+      <p>Staff users can create a button on the <i>Community Group Detail</i> page that links to a
+        custom Roster page by configuring fields in the Community Group record. <ul>
+          <li><b>Show Group Roster</b>-Select the checkbox to display the group roster link on the
+              <i>Community Group Detail</i> page.</li>
+          <li><b>Group Roster Label</b>-Enter the text for the button label that will display on the
+              <i>Community Group Detail</i> page.</li>
+          <li><b>Group Roster Link</b>-Enter the external link that will redirect Community users to
+            the correct page when clicking the <b>Roster</b> link on the <i>Community Group
+              Detail</i> page.<note>External link must be from a secured site. </note></li>
+        </ul></p>
+    </section>
+  </conbody>
+</concept>

@@ -1,0 +1,112 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+<head><meta name="description" content="Price Rules enable System Admins and staff users to manage dynamic pricing primarily through assigning Badge Types and applying discounts. The default Price Rule is created when the item is created; ..."></meta><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><meta name="copyright" content="(C) Copyright 2005"></meta><meta name="DC.rights.owner" content="(C) Copyright 2005"></meta><meta name="DC.Type" content="task"></meta><meta name="DC.Title" content="Creating a Price Rule"></meta><meta name="DC.Relation" scheme="URI" content="estore_customizations.html"></meta><meta name="DC.Format" content="XHTML"></meta><meta name="DC.Identifier" content="task_adk_fml_gs"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/commonltr.css"><!----></link><title>Creating a Price Rule</title><!--  Generated with Oxygen version 17.1, build number 2016032212.  --><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_topic.css"><!----></link><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/skins/skin.css"><!----></link><script type="text/javascript"><!--
+          
+          var prefix = "index.html";
+          
+          --></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-1.8.2.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="oxygen-webhelp/resources/js/webhelp_topic.js"><!----></script></head>
+<body onload="highlightSearchTerm()" class="frmBody" id="task_adk_fml_gs">
+<table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td width="75%"><a class="navheader_parent_path" href="estore_customizations.html" title="Customizations">Customizations</a></td><td><div class="navheader">
+<span class="navparent"><a class="link" href="estore_customizations.html" title="Customizations"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Customizations</span></a></span>  </div></td></tr></tbody></table>
+
+    <h1 class="title topictitle1">Creating a Price Rule</h1>
+
+    
+    <div class="body taskbody"><div class="abstract"><strong class="ph b">Price Rules</strong> enable System Admins and staff users to manage dynamic pricing
+        primarily through assigning <strong class="ph b">Badge Types</strong> and applying discounts. The default <strong class="ph b">Price
+            Rule</strong> is created when the item is created; creating a new <strong class="ph b">Price Rule</strong> populates
+        the Item record with a new custom <strong class="ph b">Price Rule</strong>. The newly created <strong class="ph b">Price Rule</strong> is
+        applied to all users who meet the acceptance criteria of the <strong class="ph b">Price Rule</strong> variables.
+            <div class="note note"><span class="notetitle">Note:</span> All new items inherit the <strong class="ph b">Price Rule</strong> configurations that are linked to that
+            specific <strong class="ph b">Item Class</strong>. After a new item is created, item pricing rules can be
+            refreshed to include the new default <strong class="ph b">Price Rule</strong> assigned to the <strong class="ph b">Item
+            Class</strong>.</div>
+</div>
+
+        <div class="section prereq p">
+            <ul class="ul" id="task_adk_fml_gs__ul_cbp_z2n_jt">
+                <li class="li"><a class="xref" href="creating_items_task.html#task_nc2_hll_gs">Create an
+                        Item</a><div class="note note"><span class="notetitle">Note:</span> The <strong class="ph b">Not for Individual Sale</strong> flag is available only
+                        on the item. Otherwise, ticket types, schedule items, and sponsor packages
+                        all have an associated, mirror-image item created upon saving the respective
+                        record. Occasionally, there are instances when it is helpful to compare the
+                        two records to check for any missing configurations. </div>
+</li>
+
+            </ul>
+
+        </div>
+
+        <ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd">Navigate to the <em class="ph i">Price Rules</em> related list on the Item record and click
+                    the <strong class="ph b">New Price Rule</strong> button.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Enter a <strong class="ph b">Price Rule Name</strong> and <strong class="ph b">Price</strong>.</span>
+                <div class="itemgroup info">Default is set to the <strong class="ph b">Item Name</strong> and <strong class="ph b">Item Price</strong> entered on the
+                    Item record. When using a <strong class="ph b"> Source Code</strong>, make sure the <strong class="ph b">Price</strong>
+                    entered is the <strong class="ph b">Price</strong> customers will pay after the <strong class="ph b">Discount Code</strong> is
+                    applied.</div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">If required, select the applicable <strong class="ph b">Badge Types</strong>, <strong class="ph b">Subscription
+                        Plans</strong>, or <strong class="ph b">Source Codes</strong>.</span>
+                <div class="itemgroup info"><img class="image" id="task_adk_fml_gs__image_wwl_rny_pt" src="../../assets/screenshots/estore/price_rules_win16.png" width="600"></img></div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Optionally, specify the acceptance criteria by populating the <strong class="ph b">Start
+                    Date</strong>, <strong class="ph b">End Date</strong>, <strong class="ph b">Min. Quantity</strong>, <strong class="ph b">Max. Quantity</strong>, and
+                        <strong class="ph b">Max. Num. Available</strong> fields.</span>
+                <div class="itemgroup info">If the <strong class="ph b">Max. Quantity</strong> field is left null, there will be no constraint on
+                    the maximum quantity of items purchased. If the <strong class="ph b">Min. Quantity</strong> field is
+                    left null, there will be no constraint on the minimum quantity of items allowed
+                    for purchase. Populating the <strong class="ph b">Max. Num. Available</strong> field defines the
+                    maximum number of times the <strong class="ph b">Price Rule</strong> can be applied; generally used to
+                    incentivize customers to purchase products early or for flash/date-driven
+                    sales.</div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">For <a class="xref" href="item_price_rule_support_win16.html#concept_s4r_ypr_5t">item
+                        price rule support</a>, enter the <strong class="ph b">Shopping Cart Item</strong> that must be
+                    present in order for customers to receive beneficial pricing on the item.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Populate the <strong class="ph b">Object</strong>, <strong class="ph b">Field</strong>, <strong class="ph b">Operator</strong>, and <strong class="ph b">Value</strong>
+                    fields to establish <strong class="ph b">Price Rule Variables</strong>.</span>
+                <div class="itemgroup info">The <strong class="ph b">Object</strong> field identifies the object hosting the field attribute to
+                    assign the <strong class="ph b">Price Rule</strong>. The <strong class="ph b">Field</strong> value identifies the attribute to
+                    assign to the <strong class="ph b">Price Rule</strong>. The <strong class="ph b">Operator</strong> field identifies the
+                    operation that helps define the criteria used to evaluate the attribute's value
+                    for the <strong class="ph b">Price Rule</strong>. The <strong class="ph b">Value</strong> field displays the attribute's value
+                    for the <strong class="ph b">Price Rule</strong>.</div>
+                <div class="itemgroup info">Leave the <strong class="ph b">Value</strong> as null to exclude <strong class="ph b">Price Rule Variables</strong>.</div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Check the <strong class="ph b">Is Active</strong> checkbox and click <strong class="ph b">Save</strong>.</span>
+                <div class="itemgroup info">Only active <strong class="ph b">Price Rules</strong> are applied to new purchases related to the
+                    item.</div>
+            </li>
+</ol>
+
+        <div class="section result">A new <strong class="ph b">Price Rule</strong> is created and will appear in the <em class="ph i">Pricing Rules</em>
+            related list on the related Item record.<p class="p"><img class="image" id="task_adk_fml_gs__image_kqm_14y_pt" src="../../assets/screenshots/estore/pricing_rules_related_list_win16.png" width="600"></img></p>
+</div>
+
+        <div class="section postreq">
+            <ul class="ul" id="task_adk_fml_gs__ul_apl_b4y_pt">
+                <li class="li"><a class="xref" href="applying_discount_codes_task.html#task_zc4_3xx_pt">Apply a Discount
+                        Code to an Item or an Event</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+<div class="related-links"></div>
+<div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="estore_customizations.html" title="Customizations"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Customizations</span></a></span>  </div><div class="footer">WebHelp output generated by<a class="oxyFooter" href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"></img></span><span class="xmlauthor">XML Author</span></a></div>
+</body>
+</html>

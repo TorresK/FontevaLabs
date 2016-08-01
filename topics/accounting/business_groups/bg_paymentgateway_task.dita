@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_rc1_52w_kr">
+    <title>Connecting to a Payment Gateway</title>
+    <abstract><keyword>A Payment Gateway is set up for eBusiness transactions and is related to a
+            Business Group.</keyword> A Business Group can have multiple payment gateways, but a
+        payment gateway is not required for a Business Group if that Business Group is not set up
+        for transactions. <p>If a payment gateway has been set up for a Business Group, the <b>Is
+                Master</b> checkbox must be selected on the Business Group record. Only one gateway
+            type can be selected when setting up a payment gateway. The system is set up to support
+            many payment gateways. </p><note><b>Payflow Pro</b> is a PayPal product and is the only
+            PayPal product that allows processing through API. </note></abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_ktf_dhj_rs">
+                <li><xref href="bg_setup_task.dita#task_scm_ytg_kr">Create a Business
+                    Group</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Accounting</b> app and click the <b>Business Groups</b>
+                    tab.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Name</b> of the Business Group that will be linked to the new
+                    payment gateway on the Business Group record.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>New Payment Gateway</b> button in the <i>Payment Gateways</i>
+                    related list. The <i>Payment Gateways</i> form will display.</cmd>
+                <info>The first payment gateway created is set as the default payment method and
+                    cannot be changed. Subsequently created payment gateways can be related to a
+                    Store. </info>
+            </step>
+            <step>
+                <cmd>Enter a <b>Payment Gateway Name</b> that allows users to associate it with the
+                    gateway type.</cmd>
+            </step>
+            <step>
+                <cmd>Confirm that the autopopulated <b>Business Group</b> and <b>Deposit Account</b>
+                    are correct.</cmd>
+                <info>The <b>Require CVV</b> checkbox is selected by default. Additionally, the
+                    option exists to check the <b>Require Email</b> and <b>Require Phone</b>
+                    checkboxes for gathering further information on the credit card holder. </info>
+            </step>
+            <step>
+                <cmd>The <b>AVS Configuration</b> field is set to "<b>None</b>" by default, in which
+                    case an optional <b>Billing Address</b> section is added to the <b>New Payment
+                        Method</b> modal. </cmd>
+                <info><image
+                        href="../../../assets/screenshots/accounting/billing_address_avs_config.png"
+                        width="400" id="image_mrw_ltp_rs"/></info>
+                <info>Staff users can alternatively select from among three other <b>AVS
+                        Configurations</b>.</info>
+                <choices id="choices_s2n_nsp_rs">
+                    <choice><b>Validate Billing Address</b>-Requires the user to populate the
+                            <b>City</b>, <b>State</b>, <b>Street</b>, <b>Zip</b>, and <b>Country</b>
+                        fields.</choice>
+                    <choice><b>Validate Postal Code</b>-Requires the user to populate only the
+                            <b>Zip</b> field. </choice>
+                    <choice><b>Disable AVS</b>-The entire <b>Billing Address</b> section will not be
+                        visible in the <b>New Payment Method</b> modal. </choice>
+                </choices>
+            </step>
+            <step>
+                <cmd>Click the <b>Gateway Type</b> picklist, select the gateway to configure, and
+                    enter the login details for the required payment gateway fields. Click the
+                        <b>Connect</b> button.</cmd>
+                <info>Each gateway type requires a different set of field values. If unable to
+                    complete the requested information, contact the payment gateway provider for
+                    assistance. </info>
+            </step>
+        </steps>
+        <result>The <i>Payment Gateways</i> related list is populated with the newly created Payment
+            Gateway.</result>
+        <postreq>
+            <ul id="ul_edv_fhj_rs">
+                <li><xref href="../../estore/creating_stores_task.dita#task_p3m_trm_js">Create a
+                        Store</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

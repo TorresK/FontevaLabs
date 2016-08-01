@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_upz_1ww_wr">
+    <title>Creating a Partial Refund</title>
+    <abstract>A partial refund adjusts a Sales Order by placing a credit balance on the order using
+        the original payment method. After the refund is posted, the Sales Order includes an
+        additional receipt with the <b>Type</b> field set to <b>Refund</b>.</abstract>
+    <taskbody>
+        <steps>
+            <step conref="refund_creating_task.dita#task_dnk_npv_wr/step_1_task_refund"
+                conrefend="refund_creating_task.dita#task_dnk_npv_wr/final_step_task_refund">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Navigate to the <i>Receipt Lines</i> related list and click <b>Edit</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/ebusiness/refunds_receipt_line_edit_win16.png"
+                        width="600" id="image_d5l_wvy_st"/></info>
+            </step>
+            <step>
+                <cmd>Enter the amount to be refunded in the <b>Sale Price</b> field and click
+                        <b>Save</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/ebusiness/receipt_lines_edit_page_win16.png"
+                        width="600" id="image_ylx_rwy_st"/></info>
+                <info>Check the <b>Price Override</b> checkbox. If not checked, the price will
+                    remain the same regardless of any changes.</info>
+                <info><image
+                        href="../../assets/screenshots/ebusiness/refund_created_not_posted_win16.png"
+                        width="600" id="image_ocb_ngz_st"/></info>
+                <stepresult>A new Receipt Line is created, but the refund is not yet
+                    posted.</stepresult>
+            </step>
+            <step>
+                <cmd>Click <b>Process Refund</b>.</cmd>
+                <info><image href="../../assets/screenshots/ebusiness/posted_refund_win16.png"
+                        width="600" id="image_apr_xgz_st"/></info>
+                <info><b>Refresh</b> the page to update the Receipt record.</info>
+            </step>
+        </steps>
+        <result>The refund is posted and the adjustments to the GL Accounts are made via the newly
+            created Transaction Lines.</result>
+    </taskbody>
+</task>

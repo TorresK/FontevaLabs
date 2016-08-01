@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_spv_ndh_ks">
+  <title>Checking Out </title>
+  <body>
+    <p>On the <i>Checkout</i> page you can review your cart and choose either the Existing User, New
+      or Guest profile to use when checking out. The checkout user profile is displayed beside the
+      payment information section. The cart total is displayed in the Cart Summary section and an
+      itemized list of purchases is displayed in the Checkout Summary section.</p>
+    <p><b>Review your order</b></p>
+    <p>You can manage your order on the <i>Checkout</i> page. To increase or decrease order
+      quantities or remove an item you should do the following.</p>
+    <ul id="ul_qxd_42h_ks">
+      <li>Locate the item you wish to manage in the Checkout Summary.</li>
+      <li>To increase or decrease the quantity to purchase type a number or press the arrow
+        keys.</li>
+      <li>To remove an item from the Checkout Summary, click the <b>Remove</b> button.</li>
+      <li>To complete the checkout process chose your profile and payment method.</li>
+    </ul>
+    <p><b>User Persona - Authenticated User</b></p>
+    <p>As an <b>Existing User</b>, after reviewing your purchases, you will log into your account to
+      complete your purchase.</p>
+    <ul id="ul_fqm_q2h_ks">
+      <li>Click the <b>Existing User</b> tab.</li>
+      <li>Enter the email address and password associated with your account.</li>
+      <li>Click <b>Login</b>.<b> T</b>o stay logged on, click the checkbox <b>Keep me logged</b><b>
+          in</b>.</li>
+      <li>Your profile information stored with your account will display, e.g., email address,
+        username, phone number, company, first and last name.</li>
+    </ul>
+    <p><b>New users</b> should use the following steps to complete your purchase:</p>
+    <ul id="ul_gqm_q2h_ks">
+      <li>Review your purchases.</li>
+      <li>Click the <b>New User</b> tab to create a profile.</li>
+      <li>Provide a username and your email address. </li>
+      <li>Type an password and confirm your password in the next field.</li>
+      <li>Provide your first and last name, company name, if applicable, and your phone number.</li>
+      <li>Click the <b>Register Now</b> button.</li>
+    </ul>
+    <p><b>Note:</b> If there is an account associated with the supplied email address you will be
+      prompted to use the existing account.</p>
+    <p><b>User Persona - Unauthenticated User</b></p>
+    <p>You have the option to checkout without logging in. An email address and name are required to
+      process guest payments, however no user account will be created. If there is an account
+      associated with the supplied email address you will be prompted to use the existing account,
+      but you may opt to continue the checkout process as a Guest.</p>
+    <p>To checkout as a Guest you should do the following:</p>
+    <ul id="ul_hz4_s2h_ks">
+      <li>Click the <b>Guest</b> tab.</li>
+      <li>Provide your first and last name, and email address.</li>
+    </ul>
+    <p><b>What you should see...</b>
+      <ul><li>After the payment is received, the Confirmation Page will display.</li> </ul></p>
+  </body>
+</topic>

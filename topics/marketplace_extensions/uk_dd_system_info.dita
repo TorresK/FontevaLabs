@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_zzs_c2w_qv">
+ <title>UK Direct Debit System Info </title>
+ <conbody>
+  <p><b>Agreement Acceptances, Rejections and Failures</b></p>
+  <p>For UK Direct Debit to function properly, the Direct Debit Scheduler Apex Class must be updated
+   to run nightly. </p>
+  <p><b>Acceptance and Rejections</b></p>
+  <p>It takes at least 12 business days for a direct debit agreement to be approved. When the
+   agreement is accepted, a scheduled payment record is created. The status is flagged as Processed
+   and Succeeded. The corresponding ePayment, Receipt and Transaction records are created.</p>
+  <p>If the bank or financial institution rejects the agreement, a scheduled payment record is still
+   created. But instead of succeeding, it is flagged as <b>Has Errors</b> and the <b>Direct Debit
+    Error</b> field is populated.</p>
+  <p><image href="../../assets/screenshots/marketplace_extensions/dd_system_info.png"
+    id="image_zdv_y1l_rv"/></p>
+  <p><b>Failures</b></p>
+  <p>After the agreement is initially accepted or rejected, additional updates may be made to the
+   scheduled payment record to provide additional information or identify individual payments that
+   were unsuccessfully processed. In each instance, the Scheduled Payment record will be flagged as
+     <b><i>“Has Errors”</i></b> and the <b>Direct Debit Error</b> field. </p>
+  <p>There are four separate failure reports produced: AUDDIS, ADDACS, DDICA and ARUDD. AUDDIS and
+   ADDACS identifies errors with the Sales Order. DDICA and ARUDD report a failed payment. </p>
+  <p><b>Payment Processor Email Notifications</b></p>
+  <p>It is required that all Direct Debit Agreements include a valid email address. The payment
+   processing agent uses this email address to communicate directly with the customer in relation to
+   their Direct Debit Agreement. The customer will receive direct communication from SmartDebit
+   when:</p>
+  <ul id="ul_sd2_q2w_qv">
+   <li><b>Direct Debit agreement is submitted</b></li>
+   <li><b>Direct Debit Agreement is accepted or rejected</b></li>
+   <li><b>Changes are made to the agreement</b></li>
+   <li><b>The agreement is cancelled</b></li>
+  </ul>
+  <p>Salesforce email templates and email automation can be by the merchant to set up any additional
+   notifications.</p>
+ </conbody>
+</concept>

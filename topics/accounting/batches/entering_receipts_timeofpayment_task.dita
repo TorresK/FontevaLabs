@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_pqx_4cr_5r">
+    <title>Entering Receipts: Time of Payment</title>
+    <abstract>
+        Users can execute a batch at the time of payment.</abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Sales Order</b> tab in the <b>eBusiness</b> application and
+                    click the <b>New</b> button. </cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Contact</b>, <b>Posting Entity</b>, and <b>Schedule Type</b>.
+                    Click <b>Save</b>. </cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>Shopping Cart</b> button and add an item to the cart.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>Checkout</b> button.</cmd>
+                <info>On the <i>Payment</i> page, select the batch to assign to the <b>Receipt</b>
+                    using the <b>Batch</b> lookup.</info>
+            </step>
+        </steps>
+        <result>Batching is completed at the time of payment.</result>
+    </taskbody>
+</task>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_nz4_pdt_xs">
+ <title>Advanced Form Building </title>
+ <conbody>
+  <p>The <b>Form Builder</b> allows staff users to utilize advanced functionalities to:<ul
+        id="ul_lz3_nzt_xs">
+        <li>Register for an event</li>
+        <li>Respond to pre-event and post-event surveys</li>
+        <li> Purchase items in the Store</li>
+        <li>Add Community Group members </li>
+        <li>Capture Community Group information, e.g. demographics, areas of interest, etc. </li>
+        <li>Create Speaker engagments </li>
+        <li>Provide feedback to event Sponsors<p><b>User Scenarios: </b><ul id="ul_tyc_wg1_ts">
+              <li>Whenever someone registers for a conference, the organization needs to find out
+                what size t-shirt they want, if they have any dietary restrictions, and if they have
+                a disability that requires special accommodation. </li>
+              <li>After the conference, the organization sends a survey to participants to get their
+                feedback. </li>
+              <li>When someone applies for membership, they are asked to supply background
+                information so the organization can determine if they are qualified to join. </li>
+              <li>A community group wants to know more about its members—why they joined the group,
+                what they hope to get out of it, and what their interests are. </li>
+              <li>The event organizers would like to open their conference to submissions from the
+                community. Submitters must include the talk title and abstract, upload a copy of
+                their slides, and provide links to audio or video of their previous speaker
+                engagements. </li>
+            </ul></p></li>
+      </ul></p>
+ </conbody>
+</concept>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ud3_j3c_pw">
+  <title>Abstracts</title>
+  <body>
+    <p>The <b>Abstracts</b> application gathers content for publication or subject matter for an
+      event or session. The staff user sets the criteria for an <b>Abstract Call</b> and opens it up
+      for submission.  A submitter creates an entry. The submission then undergoes a review (open,
+      blind or double-blind) to determine whether it meets the defined criteria of the <b>Abstract
+        Call</b>. The staff user assigns the submission to the reviewer for review. To participate
+      in the <b>Abstract Call</b>, both submitters and reviewers must have Contact records. </p>
+    <p>Approved submissions are then related to the event, session or publication item.</p>
+    <p><image href="../../../assets/screenshots/marketplace_extensions/abstract_overview.png"
+        width="500" id="image_gpg_wqd_pw"/></p>
+  </body>
+</topic>

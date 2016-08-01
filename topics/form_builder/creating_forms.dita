@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_jdk_12p_yr">
+    <title>Creating a Form</title>
+    <abstract>The <b>Forms</b> object provides staff users with the ability to build and publish
+        responsive HTML5 web forms to the <b>Community Portal</b>. <b>Forms</b> are used to gather
+        more information on attendees to customize the event experience, provide feedback to an
+        organization, and detail the level of user engagement.</abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Forms</b> tab in the <b>Form Builder</b> app and click the
+                        <b>New</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Form Name</b>.</cmd>
+                <info>Optionally, enter a form <b>Description</b> and any necessary <b>User
+                        Instructions</b>. </info>
+            </step>
+            <step>
+                <cmd>Select the <b>Display Style</b> using the picklist and click <b>Save</b>.</cmd>
+                <choices id="choices_yp4_vf3_y5">
+                    <choice><b>Standard</b>- Renders the entire form as one continuous page.
+                        Selected by default. </choice>
+                    <choice><b>Accordian</b>- Renders the form in collapsible sections. Each section
+                        is equal to one Field Group. </choice>
+                    <choice><b>Wizard</b>- Renders the form with tabs for separate sections. Each
+                        tab is equal to one Field Group. </choice>
+                </choices>
+            </step>
+            <stepsection><b>Field Group Configuration</b></stepsection>
+            <step id="step_vlm_lnt_xs">
+                <cmd>Click the <b>Form Builder</b> button and then click the <b>New Field Group</b>
+                    button to add a <b>Field Group</b>.</cmd>
+                <info><image href="../../assets/screenshots/forms/new_field_group_win16.png"
+                        width="700" id="image_ipd_2g3_y5"/></info>
+            </step>
+            <step id="step_lrm_lnt_xs">
+                <cmd>Populate the <b>Field Group Name</b> with the form's section heading and
+                    provide any <b>Instructions</b> and click <b>Save</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/forms/new_field_group_form_builder_win16.png"
+                        width="700" id="image_ts1_tn2_z5"/></info>
+                <info>If the <b>Field Group Name</b> is left blank, the system will automatically
+                    insert the <b>Field Group ID</b> number as the name.</info>
+            </step>
+            <stepsection><b>Field Configuration</b><p><image
+                        href="../../assets/screenshots/forms/new_field_form_builder_win16.png"
+                        width="700" id="image_jls_sq2_z5"/></p></stepsection>
+            <step>
+                <cmd>After saving the Field Group, click the <b>New Field</b> button and enter the
+                        <b>Field Label</b>.</cmd>
+                <info>The <b>Field Label</b> displays as the question or statement that attendees
+                    are asked to evaluate. Select the <b>Is Required</b> checkbox to ensure
+                    attendees provide a response.</info>
+            </step>
+            <step>
+                <cmd>Select a value or option from the <b>Type</b> picklist.</cmd>
+                <info>The system will validate field contents prior to submission. For example, when
+                    the <b>Type</b> is set to <b>Email</b>, a validation error will occur if the
+                    entered form response is not in the format of a valid email. </info>
+                <info>The <b>Type</b> restricts the options available for linking to fields of the
+                    related object. </info>
+                <info>If the <b>Type</b> is a single or multi-select picklist and is <b>not</b>
+                    linked to a field on the related object, enter the available <b>Options</b>. </info>
+                <info><image href="../../assets/screenshots/forms/new_field_label_modal_win16.png"
+                        width="700" id="image_jqg_dt2_z5"/></info>
+                <info>If the <b>Type</b> is a single or multi-select picklist and is mapped to a
+                    field on the related object, then <b>Options</b> will autopopulate. Next, select
+                    the <b>Database Operation</b> on the field and click the <b>Save</b>
+                    button.</info>
+            </step>
+            <step>
+                <cmd>Click the <b>Preview</b> button to return the newly created form from the
+                    viewpoint of a <b>Community Portal</b> user.</cmd>
+            </step>
+        </steps>
+        <result>The form is ready to be added to any item. <p><image
+                    href="../../assets/screenshots/forms/field_label_components_form_builder_win16.png"
+                    width="700" id="image_qkp_mw2_z5"/></p><note>Staff users can reorder Field
+                Groups, or the fields within a Field Group, through drag-and-drop. </note></result>
+    </taskbody>
+</task>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_wlt_jw2_x5">
+    <title>Creating a Default Shipping Region</title>
+    <abstract>The <b>Default Shipping Region</b> matches any shipping destination that is not
+        explicitly defined in another region; in other words, a region that covers "everywhere
+        else." <note>The Default Shipping Region is different from the Default Shipping Rate. The
+            System Admin can define multiple shipping rates on the Default Shipping Region, whereas
+            the Default Shipping Rate is defined on the Shipping Carrier and applies the same rate
+            across all item weights/values and shipping addresses.</note></abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_xym_3y2_x5">
+                <li><xref href="creating_shipping_method_carrier.dita#task_xz1_dqv_ht">Create the
+                        Shipping Carrier and Delivery Method</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Shipping Regions</b> tab in the <b>eStore</b> app and click
+                        <b>New</b>. </cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Shipping Region Name</b>.</cmd>
+                <info>The <b>Shipping Region Name</b> appears in the <b>Shipping Rates</b> lookup.
+                    Optionally, enter a <b>Display Name</b> and <b>Description</b>.</info>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Default Region</b> checkbox and click <b>Save</b>.</cmd>
+                <info>Leave the <b>Address Field Values (CSV)</b> field blank when enabling <b>Is
+                        Default Region</b>. The checkbox is unchecked by default.</info>
+            </step>
+        </steps>
+        <result>With the <b>Is Default Region</b> feature enabled, staff users can create shipping
+            rates on a Default Shipping Region. The Default Shipping Region references the Shipping
+            Region field and is then defined as any value that is not found within another Shipping
+            Region.</result>
+    </taskbody>
+</task>

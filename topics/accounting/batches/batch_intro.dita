@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_pcg_m45_mr">
+ <title>Batch Processing</title>
+ <abstract><keyword>Batch Processing ("Batching") is grouping payments, such as checks, in order to
+   process transactions together.</keyword> While batch processing can be carried out at any time,
+  it is particularly suited to end-of-cycle processing, such as processing a bank's reports at the
+  end of a day. As batches enter the bank, they are reconciled with what is recorded on the bank
+  statement and what is recorded in the organization's system. The Accounting system allows the grouping of
+  payments directly into a batch, as well as the creation of receipts for a batch at the time of
+  payment.</abstract>
+ <conbody>
+  <p><b>The batch process consists of:</b></p>
+  <ol>
+   <li>Creating a Batch</li>
+   <li>Entering Receipts</li>
+   <li>Closing a Batch</li>
+   <li>Posting a Batch</li>
+  </ol>
+  <section><b>Batch Processing Methods to Enter a Receipt</b>
+   <p>Create a batch before executing any batching methods. There are three different methods to
+    execute batching: <ul id="ul_ajk_pny_bs">
+     <li>At the time of payment</li>
+     <li>Using the List View on the Receipt object</li>
+     <li>Via the <i>Batch Receipt Entry</i> page (Visualforce Page)</li>
+    </ul></p></section>
+  <section>
+   <p>Journal entries are created for the batch receipts upon posting the batch.</p>
+  </section>
+ </conbody>
+</concept>

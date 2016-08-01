@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_wbz_gyf_cs">
+  <title>eBusiness Overview</title>
+  <body>
+    <p>The <b>eBusiness</b> application allows staff users to easily process donations, dues,
+      payments, purchases, and subscriptions. Staff users have the ability to track:<ul
+        id="ul_ifn_pbg_cs">
+        <li>Sales Orders</li>
+        <li>Refunds and Cancellations</li>
+        <li>Shipping and Payments</li>
+      </ul></p>
+    <p>Credit card authorizations are processed in real time for all transactions. Furthermore,
+      journal entries are automatically created when an order or refund is paid in full. </p>
+  </body>
+</topic>

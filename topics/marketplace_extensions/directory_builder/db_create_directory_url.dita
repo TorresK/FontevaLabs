@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_z1m_5fk_nw">
+    <title>Create Directory URL</title>
+    <shortdesc/>
+    <taskbody>
+        <context>
+            <p>The same directory can be related to any number of Sites on the same org. Each
+                relationship is given a unique Site ID. The Site ID is incorporated into the
+                Directory URL. </p>
+            <p><b>Build your directory URL:</b></p>
+            <p>http://<i>[Community
+                URL]</i>/DirectoryApi__Directory?autonumber=<i>[SD-000000]</i></p>
+            <p> </p>
+        </context>
+        <steps>
+            <step>
+                <context>
+                    <p>To build the directory URL, you must first relate the directory to a Site.
+                        This generates the <b>Directory Site ID</b> key = <i>SD-00000000</i>.
+                        Navigate from the Directory to the Site that relates to the <b>Site ID</b>
+                        key. You can use one of the URLs auto-generated for this site as a
+                        guide:</p>
+                    <p><image href="clip_image001_1209578765.png" height="60" width="642"
+                            id="image_g5r_jgk_nw"/></p>
+                </context>
+            </step>
+            <step>
+                <context>Start with the site domain<p> </p><p> </p><p><image
+                            href="clip_image003_-284959110.png" height="136" width="468"
+                            id="image_r5r_jgk_nw"/></p><p> </p></context>
+            </step>
+            <step>
+                <context>
+                    <p/>
+                    <p>Add Directory Details: <b>DirectoryApi__Directory</b></p>
+                </context>
+            </step>
+            <step>
+                <context>Append Site Directory ID: <b>autonumber=<u>SD-00000000</u>
+                    </b>(site specific)<p> </p><p><image href="clip_image005_678536051.png"
+                            height="116" width="468" id="image_dvr_jgk_nw"/></p><p> </p><p><xref
+                            href="http://communityurl.com/DirectoryApi__MemDirectory?autonumber=SD-0000000&amp;sitekey"
+                            format="html" scope="external"
+                                ><i>http://communityurl.com/DirectoryApi__Directory?autonumber=SD-0000000</i></xref></p><p/></context>
+                <cmd/>
+                <!--Your System Admin may add a custom formaula field (Directory URL) to the Site Directory object. -->
+            </step>
+        </steps>
+    </taskbody>
+</task>

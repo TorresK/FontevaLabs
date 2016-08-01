@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_m12_zhh_ks">
+  <title>Package Items</title>
+  <body>
+      <p><b>Overview:</b></p>
+      <p>The Package Item object allows users to bundle items together for sale. For instance, an
+        organization selling a membership might want to include a magazine subscription with their
+        membership. By using this object to define package items to be included at the time of sale,
+        customers can also have the option of excluding packaged items or purchasing a higher
+        quantity of these items. Package Items is a very useful tool to create upselling
+        opportunities. In addition, package items can be used when setting up an event that has
+        scheduled items or sessions for the customers to choose from, in order to make the
+        purchasing process easier for them. You can also use the package item functionality when
+        creating Sponsor Packages for an event.</p>
+      <p><b>User Story 1: Creating a Single Package Item</b></p>
+      <p>The association wants to create an opportunity to upsell advertising for sponsors. To do
+        so, the Association would like the advertising banner to be included in the sale of the
+        sponsorship. The customer will have the ability to opt out of purchasing this item or
+        purchase more than one item. This item will be included with the Annual Conference
+        Sponsorship item.</p>
+      <p><b>User Story 2: Creating a Group of Package Items</b></p>
+      <p>The association wants to offer an incentive for purchasing advertising space on their
+        website, so that if you purchase an advertising banner, you get an item from their
+        Association Merchandise for free. The customer must choose one item, but cannot choose both.
+      </p>
+    <p>
+      <b>Creating a Package Item: User Story 1</b>
+    </p>
+    <p>Follow the steps below to create the package item to meet the user story requirements: <ul
+        id="ul_wvs_c3h_ks">
+        <li>Navigate to the <i>Package Items</i> related list for the Item, Annual Conference
+          Sponsorship, and click <b>New Package Item</b>.</li>
+        <li>Choose the <b>Single Item</b> option.</li>
+        <li>Use the <b>Item</b> field lookup dialog to select the item, Advertising Banner, to be
+          offered with the Annual Conference Sponsorship.</li>
+        <li>Do NOT choose to <b>always include this item as part of the package</b>, as it is
+          optional.</li>
+        <li>Leave the <b>Minimum</b>
+          <b>Quantity</b> and <b>Maximum Quantity </b>fields at 0, the default value, as the
+          customer may want to purchase more than one item, but is not required to purchase it.</li>
+        <li>Enter "Available Package Items" as the <b>Display Label</b>.</li>
+        <li>Complete the other optional fields as needed.</li>
+        <li>Click <b>Save.</b></li>
+      </ul>
+     <b>What you should see...</b></p><ul id="ul_isz_g3h_ks">
+        <li>A Package Item record will be created.</li>
+        <li>The Package Item will now appear when the Parent Item is selected in the Shopping
+          Cart.</li>
+      </ul><p><b>Creating a Package Item: User Story 2</b></p><p>Follow the steps below to create
+        the package item to meet the user story requirements:</p><ul id="ul_jsz_g3h_ks">
+        <li>Navigate to the <i>Package Items</i> related list for the Item, Advertising Banner, and
+          click <b>New Package Item</b>.</li>
+        <li>Choose the <b>Group of Items</b> option.</li>
+        <li>Use the <b>Item Class</b> field lookup dialog to select the items, Association
+          Merchandise, to be offered with the Advertising Banner.</li>
+        <li>Choose to<b> Require at least one item in the group to be purchased as part of this
+            package</b>.</li>
+        <li>Enter "1" to limit the quantity per item allowed.</li>
+        <li>Enter "Available Package Items" as the <b>Display Label</b>.</li>
+        <li>Complete the other optional fields as needed.</li>
+        <li>Click <b>Save.</b></li>
+      </ul>
+    <p><b>What you should see...</b></p>
+    <ul id="ul_ijq_m3h_ks">
+      <li>A Package Item record will be created.</li>
+      <li>The Package Items will now appear when the Parent Item is selected in the Shopping
+        Cart.</li>  </ul> 
+  </body>
+
+</topic>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_bqh_c54_vr">
+    <title>Creating an Item Class with Deferred Revenue</title>
+    <abstract>Deferred revenue refers to revenue that has not yet been earned, but represents products or services that are owed to the customer.
+        As the product or service is delivered over time, it is recognized as revenue on the income statement.
+        When choosing to defer revenue for an item class, create Revenue Recognition Rules.</abstract>
+    <taskbody>
+            <steps>
+                <step>
+                    <cmd>Create the item class. Select the <b>Is Subscription</b> checkbox.</cmd>
+                </step>
+                <step>
+                    <cmd>In the <i>Deferred Revenue</i> section of the <i>New Item Class</i> form, select <b>Defer Revenue</b>.</cmd>
+                    <info>When selecting <b>Defer Revenue</b>, the <b>Deferred Revenue Account</b> and the <b>Revenue Recognition Rule</b>
+                        fields must be populated as well, or an error message will display.</info></step>
+                <step>
+                    <cmd>Select the <b>Deferred Revenue Account</b> to use.</cmd>
+                </step>
+                <step>
+                    <cmd>For the <b>Revenue Recognition Rules</b>, select "Over Time."</cmd>
+                    <info>When selecting "Over Time," select a <b>Revenue Recognition Term Rule</b>, or an error message will display.</info>
+                </step>
+                <step>
+                    <cmd>For the<b> Revenue Recognition Term Rules</b>, select one of the following options:</cmd>
+                        <substeps>
+                            <substep>
+                            <cmd><b>No Partial Credit</b> - Recognize revenue for the entire month of purchase (no partial month credit).</cmd>
+                        </substep>
+                            <substep>
+                                <cmd><b>Flex Day</b> - Recognize revenue for the first month if an order is on or before the specified <b>Flex Day of the Month</b> the month it was purchased.</cmd>
+                            </substep>
+                            <substep>
+                                <cmd><b>Daily</b> - Recognize revenue using a daily calculation for the number of days left in the month over the total number of days in the term.
+                                    (Days Left in the Month/Total Number of Days in Term * Price of the Membership = Amount of revenue recognized in the first month.)</cmd>
+                            </substep>
+                </substeps>
+                </step>
+                <step>
+                    <cmd>Select "Flex Day" for the <b>Revenue Recognition Term Rule</b>, and enter the <b>Flex Day of the Month</b>.</cmd>
+                    <info>When selecting "Flex Day," enter a <b>Flex Day of the Month</b>, or an error message will display.</info></step>
+                <step>
+                    <cmd>Click <b>Save</b>.</cmd>
+                </step>    
+            </steps>
+        <result>Now, when a new item is created with the deferred revenue item class, the Deferred Revenue fields will populate as well,
+            according to the selections made on the item class. With the purchase of a membership, the system will automatically create
+            all the appropriate deferred revenue entries for the entire term of the product with the appropriate dates for each entry.
+            Remember to filter reports by the Journal Entry Date to pull the correct entries into monthly reports.</result>
+        <postreq><b>Accounting Impact</b>
+            <p>Posting a Receipt will create journal entries called Transaction and Transaction Lines.
+                This section follows the expected transactions to be viewed from both the <i>Sales Order</i> and <i>Receipt</i> related lists.
+                To view information related to Transactions as well as Transaction Lines, click here to navigate to the Transactions and Transaction Lines chapter.</p>
+            <p>The expected results are to appear on the <i>Receipt Detail</i> page in the related lists:</p>
+            <p><i>Receipt Detail Page</i></p>
+            <p>First, there is the Receipt of Cash, where a debit entry to the cash (deposit) account is booked:</p>
+            <ul>
+                <li><b>Debit</b> field is populated in the amount of the <b>Total</b> on the Receipt record.</li>
+                <li><b>GL Account</b> is populated with the value of the <b>Deposit Account</b> field on the Receipt record, derived from the related Business Group.</li>
+                <li><b>Date</b> is populated with the value in the <b>Posted Date</b> on the Receipt.</li></ul>
+            <p>A credit entry to deferred income/revenue account is booked:</p>
+            <ul>
+                <li><b>Credit</b> field is populated in the amount of the <b>Total</b> on the Receipt Line for the correct Item.</li>
+                <li><b>GL Account</b> is populated with the value of the <b>Deferred Revenue</b> field from the Item's related Item Class record.</li>
+                <li><b>Date</b> is populated with the value in the <b>Posted Date</b> on the Receipt.</li></ul>
+            <p>The next three entries represent the Recognition of Revenue and are for each of the three months over which the revenue will be deferred:</p>
+            <p>The debit entry:</p>
+            <ul>
+                <li><b>Debit</b> field is populated with the deferred amount, <b>$400</b> (Total / 3 months) on the Receipt Line for the correct Item.</li>
+                <li><b>GL Account</b> is populated with the value of the <b>Deferred Revenue</b> field from the Item's related Item Class record.</li>
+                <li>Because the purchase date is on October, 21st (after the <b>Flex Date),</b> the<b> Date</b> is populated with the last day of the following month.</li></ul>
+            <p>The credit entry:</p>
+            <ul>
+                <li><b>Credit</b> field is populated with the deferred amount, <b>$400</b> (Total / 3 months) on the Receipt Line for the correct Item.</li>
+                <li><b>GL Account</b> is populated with the value of the <b>Income/Revenue Account</b> field derived from the related Item.</li>
+                <li>Because the purchase date is on October 21st (after the <b>Flex Date),</b> the<b> Date</b> is populated with the last day of the following month.</li></ul>
+        </postreq>
+    </taskbody>
+</task>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_i1s_mwt_js">
+    <title>Creating Subscription Items</title>
+    <abstract>The subscription item is the consideration granted to the subscription's
+        beneficiaries. For example, if an organization hosts a weekly webinar for subscribers, the
+        subscription item is the webinar. <p>For subscription items with multiple subscription
+            plans, best practices recommend setting the highest price as the product's default
+            price; the default price is displayed in the <b>Store</b> and on the <i>Item Detail</i>
+            page. </p><p><image href="../../assets/screenshots/estore/sub_item_modal_win16.png"
+                width="700" id="image_fxq_kxg_q5"/></p><p>Admins must create a price rule to link
+            each additional, cheaper plan to the subscription item; additional prices display in the
+                <i>Subscription Plan</i> modal after the item is added to the cart.</p><p><image
+                href="../../assets/screenshots/estore/sub_plan_modal_added_plans_win16.png"
+                width="700" id="image_drk_yxg_q5"/></p></abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_g2v_mxt_js">
+                <li><xref href="../estore/subscription_plans.dita#topic_clp_hfx_ds">Create a
+                        Subscription Plan</xref></li>
+                <li><xref href="subscription_item_class.dita#task_glq_zf1_ft">Create an Item Class
+                        for Subscriptions</xref></li>
+            </ul>
+        </prereq>
+     <steps>
+            <step>
+                <cmd>Navigate to the <b>Item Class</b> tab in the <b>eStore</b> app and select the
+                    related <b>Item Class</b> record.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>New Item</b> button on the <i>Items</i> related list.</cmd>
+                <info><image href="../../assets/screenshots/estore/new_subscription_item.png"
+                        width="700" id="image_tzk_3l1_ft"/></info>
+            </step>
+            <step>
+                <cmd>Enter the <b>Item Name</b> and <b>Item Price</b>. Click <b>Save</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/estore/saved_subscription_item_win16.png"
+                        width="700" id="image_jtz_tm1_ft"/></info>
+                <info>Best practices recommend entering the <b>Display Name</b>, <b>Line
+                        Description</b>, and <b>Image URL</b>.</info>
+                <info><image
+                        href="../../assets/screenshots/estore/restricting_assignments_subscriptions_win16.png"
+                        width="700" id="image_kzt_yj4_ft"/><note>If there is a definitive number of
+                        subscription beneficiaries, check the <b>Restrict Number of Assignments</b>
+                        checkbox and enter the value into the <b>Maximum Number of Assignments</b>
+                        field. </note></info>
+            </step>
+            <step>
+                <cmd>Navigate to the <i>Subscription Plans</i> related list and click <b>Manage
+                        Subscription Plans</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/estore/subscription_plans_related_list_win16.png"
+                        width="700" id="image_nyh_2n1_ft"/></info>
+            </step>
+            <step>
+                <cmd><b>Select</b> the applicable <b>Subscription Plan</b> and mark it as the
+                        <b>Default</b> Subscription Plan. Click <b>Save</b>.</cmd>
+                <info>Multiple Subscription Plans can be selected, but only one Subscription Plan
+                    can be marked as <b>Default</b>. </info>
+                <info><image
+                        href="../../assets/screenshots/estore/assigning_subscription_plan_win16.png"
+                        width="700" id="image_qfp_vn1_ft"/></info>
+            </step>
+            <step>
+                <cmd>Enable the <b>Is Active</b> checkbox and click <b>Save</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/estore/active_subscription_item_win16.png"
+                        width="700" id="image_ks2_j41_ft"/></info>
+            </step>
+        </steps>
+        <result>The subscription item is created and assigned to one or more subscription plans. Any
+            number of subscription items can be added to a single subscription plan. </result>
+        <postreq>
+            <ul id="ul_mmd_4h5_js">
+                <li><xref href="../estore/creating_catalogs_task.dita#task_yrs_bln_js">Create a
+                        Catalog and Add Catalog Items</xref></li>
+                <li><xref href="managing_subscriptions.dita#task_asr_ppm_ss">Manage Subscriptions in
+                        the Community Portal</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_vfg_42j_rs">
+    <title>Configuring Login &amp; Registration Information</title>
+    <taskbody>
+        <prereq>
+            <ul id="ul_pvc_r2j_rs">
+                <li><xref href="creating_community_portal_task.dita#task_y45_ycc_nt">Prepare the
+                        Environment</xref></li>
+                <li><xref href="community_portal_profile_task.dita#task_gth_3y3_rs">Set up New
+                        Profiles</xref></li>
+                <li><xref href="configuring_community_task.dita#task_kvc_bbj_rs"/></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Enter <b>Communities</b> into the <b>Search</b> bar, select <b>All
+                        Communities,</b> and click the <b>Manage</b> link related to the active
+                    Community.</cmd>
+            </step>
+            <step>
+                <cmd>In the sidebar nav, select <b>Administration</b>&gt;<b>Login &amp;
+                        Registration</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Visualforce Page</b> option from the picklist as the login page
+                    and use the lookup to select <b>custom_login</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Visualforce Page</b> option from the picklist as the forgot
+                    password management page and use the lookup to select
+                    <b>forgot_password</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Visualforce Page</b> option from the picklist as the change
+                    password management page and use the lookup to select
+                    <b>reset_password</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Check the <b>Allow external users to self-register </b>checkbox.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Visualforce Page</b> from the picklist as the self-registration
+                    page and use the lookup to select <b>CommunitiesSelfReg</b>.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/community_builder/login_registration_setup_win16.png"
+                        width="600" id="image_pxr_r1l_zs"/></info>
+            </step>
+            <step>
+                <cmd>Assign registering users to the newly created <b>Profile</b>, either the cloned
+                        <b>Customer Community Login User</b> or the <b>Customer Community User</b>,
+                    and use the lookup to assign registering users to a default <b>Account</b>.
+                    Click <b>Save</b>.</cmd>
+            </step>
+        </steps>
+        <result> Login &amp; Registration information for the Community is properly
+            configured.</result>
+        <postreq>
+            <ul id="ul_jsz_cty_bt">
+                <li><xref href="../../accounting/business_groups/bg_setup_task.dita#task_scm_ytg_kr"
+                        >Create a Business Group</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

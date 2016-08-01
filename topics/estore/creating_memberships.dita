@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "task.dtd">
+<task id="task_jrw_qmk_rs">
+    <title>Creating Subscriptions / Memberships</title>
+    <abstract>Memberships are time related items managed in a term, calendar, or lifetime Subscription Plan that is available for purchase on the eStore.</abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Create a Subscription Plan, and <xref href="creating_items_task.dita"
+                        >Items</xref> with the attributes Is Subscription, Enable Assignments, and,
+                    optionally, Require Assignments.</cmd>
+            </step>
+            <step>
+                <cmd>Create a <xref href="creating_catalogs_task.dita">Catalog</xref> then add the
+                    subscription items.</cmd>
+            </step>
+            <step>
+                <cmd>Create a <xref href="subscription_plans.dita">Subscription Plan</xref></cmd>
+            </step>
+            <step>
+                <cmd><xref href="assign_subscription_plan.dita">Assign the Subscription Plan</xref> to the Item.</cmd>
+            </step>
+        </steps>
+        <postreq>
+            <ul>
+                <li>Add the Catalog to a Store.</li>
+                <li>Optionally, add Interview Questions.</li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

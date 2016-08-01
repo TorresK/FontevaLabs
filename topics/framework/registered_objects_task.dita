@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_uyg_2vk_ls">
+    <title>Managing Registered Objects</title>
+    <abstract>Registered objects ensure the structural code required to support API functions is
+        correctly installed and ready for use.<p><image
+                href="../../assets/screenshots/framework/registered_objects_dashboard_sum16.png"
+                width="700" id="image_tc2_h33_rw"/></p><p><b>Through managing the Registered
+                Objects, staff users can: </b></p><ul id="ul_nxt_jvk_ls">
+            <li><b>Create a new object</b></li>
+            <li><b>Enable/Disable objects</b></li>
+            <li><b>Enable/Disable triggers</b></li>
+            <li><b>Disable validations</b><note>Before enabling triggers on a Registered Object,
+                    specify the Apex Class in the Registered Object Settings.</note></li>
+        </ul></abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Click <b>Objects</b> in the <b>Spark Framework</b> app.</cmd>
+            </step>
+            <stepsection><b>Creating a New Object</b></stepsection>
+            <step>
+                <cmd>To create a new object, click <b>New Object</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/framework/new_registered_object_sum16.png"
+                        id="image_vpx_zj3_rw" width="400"/></info>
+            </step>
+            <step>
+                <cmd>Select the object <b>Name</b> from the picklist and enter the object
+                        <b>Namespace</b> and <b>Apex Class</b>. Click <b>Save</b>.</cmd>
+                <info>Optionally, populate the <b>SOQL Limit</b> and <b>SOQL Order By</b> fields.
+                </info>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Enabled</b>, <b>Triggers Enabled</b>, and/or <b>Validation
+                        Disabled</b> checkboxes.</cmd>
+                <info>The <b>Is Enabled</b> flag activates the newly registered object to use all
+                    Framework code functionality, such as triggers and rollup summaries. The
+                        <b>Triggers Enabled</b> flag activates the trigger on the newly registered
+                    object, and if properly used, will allow the user to activate/deactivate
+                    triggers on that particular object in a production environment without a deploy.
+                    The <b>Validation Disabled</b> flag disables validations in the Domain class of
+                    the object. </info>
+                <stepresult>The newly registered object will display in the list of Objects.
+                </stepresult>
+            </step>
+            <stepsection><b>Enabling/Disabling Objects, Triggers, and Validations</b></stepsection>
+            <step>
+                <cmd>Click the <b>Edit</b> action on the related object to review and make changes
+                    to the object.</cmd>
+                <info><image
+                        href="../../assets/screenshots/framework/edit_registered_object_sum16.png"
+                        width="400" id="image_twz_k1j_rw"/></info>
+                <info>Enable/disable checkboxes as needed and click <b>Save</b>.</info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_elv_ffl_rv">
+ <title>Grace Period</title>
+ <abstract>The <b>Grace Period</b> functionality allows staff users to define a period of time
+  called a <b>Grace Period</b> on the subscription plan that will allow for two pieces of
+  functionality: <ul id="ul_l4t_hfl_rv">
+   <li>The subscriber will receive benefits of the subscription through the end of the grace period.
+    This means that badges assigned to the subscriber will have an <b>Expired Date </b>defined by
+    the <b>Grace Period End Date</b> on the Subscription record.</li>
+   <li> If a subscriber allows their subscription to lapse but remains within the grace period upon
+        renewal, the start date of the new term will start the day after the subscription’s paid
+        through date just as if they had renewed on without letting their membership expire.
+            <note><b>Example: Paid Through Date = 12/31/2016, Grace Period End Date = 2/28/2017,
+            Renewal Date = 1/15/2017, New Term Start Date: 1/1/2017</b></note></li>
+  </ul></abstract>
+ <conbody>
+  <p><b>Setup</b><ol id="ol_zlv_4fl_rv">
+    <li>Navigate to the <b>Subscription Plan</b> record. </li>
+    <li>Enter the number of days you wish to give as a grace period in the <b>Grace Period</b>
+     field. <p>You can now navigate to any subscription and see the Grace Period End Date populated
+      to be the <b>Paid Through Date</b> plus the <b>Grace Period</b>. </p></li>
+   </ol></p>
+ </conbody>
+</concept>

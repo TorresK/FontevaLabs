@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_n51_1vp_rs">
+    <title>Modifying Payment Methods in the Community Portal</title>
+    <abstract>Authenticated portal users can control which payment methods to apply to both single
+        and scheduled payments.<note>The process for modifying payment methods is the same for staff
+            users in the backend. </note></abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_bxf_2vp_rs">
+                <li><xref
+                        href="../accounting/business_groups/bg_paymentgateway_task.dita#task_rc1_52w_kr"
+                        >Connect to a Payment Gateway</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Log in to the Community Portal.</cmd>
+            </step>
+            <step>
+                <cmd>Click on the <b>Payment Methods</b> tab in side navbar.</cmd>
+            </step>
+            <step>
+                <cmd>Click on the applicable payment method to reveal modification options.</cmd>
+                <choices id="choices_brs_nwp_rs">
+                    <choice><b>Edit</b>-Users can update the <b>Email</b>, <b>Phone</b>, <b>Billing
+                            Street</b>,<b> Billing City</b>, <b>State</b>, <b>Billing Postal
+                            Code</b>, and <b>Billing Country</b> fields. The <b>Card Holder Name</b>
+                        is autopopulated from the <b>New Payment Method</b> modal and cannot be
+                        changed. </choice>
+                    <choice><b>Delete</b>-Clicking the <b>Delete</b> button verifies whether there
+                        is a scheduled payment associated with the selected payment method. </choice>
+                </choices>
+            </step>
+            <step>
+                <cmd>If there are no scheduled payments associated with the payment method, then a
+                    modal is returned verifying if the user is certain they want to delete the
+                    selected payment method. </cmd>
+                <info><image href="../../assets/screenshots/accounting/delete_payment_modal.png"
+                        width="400" id="image_ezf_31x_wt"/></info>
+                <info>Click <b>Confirm</b> to delete or <b>Cancel</b> for further review.</info>
+            </step>
+            <step>
+                <cmd>If there are scheduled payments associated with the payment method, then a
+                    modal is returned indicating that the user must select an alternate payment
+                    method prior to deletion. </cmd>
+                <info><image href="../../assets/screenshots/accounting/deleting_payment_methods.png"
+                        width="400" id="image_kcj_k1x_wt"/></info>
+            </step>
+            <step>
+                <cmd>Create a new payment method and click <b>Delete</b> on the payment method
+                    needing removal. </cmd>
+                <info><image href="../../assets/screenshots/accounting/update_payment_methods.png"
+                        width="400" id="image_tsb_l1x_wt"/></info>
+                <info>Select the new payment method from the picklist to assign to current scheduled
+                    payments and click <b>Update Scheduled Payments</b>. </info>
+            </step>
+        </steps>
+        <result>Payment methods are successfully updated and/or deleted. </result>
+    </taskbody>
+</task>

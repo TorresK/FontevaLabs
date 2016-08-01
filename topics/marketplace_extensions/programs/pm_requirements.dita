@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_zn4_zft_nw">
+    <title>Requirements</title>
+    <shortdesc>Requirements are tasks that a particapant must complete to meet or maintain a
+        program. Only active requirements are assigned to participant when the program term is
+        generated. A Program cannot be activated unless it has at least one Requirement related to
+        it .</shortdesc>
+    <taskbody>
+        <context>
+            <p>To create a new <b>Requirement</b> from the <b>Program </b>detail page:</p>
+        </context>
+        <steps id="steps_sct_byh_4w">
+            <step>
+                <cmd>Navigte to the <b>Requirements</b> related list. Click the <b>New
+                        Requirement</b> button. (The <b>Program</b> looks up to the Program record
+                    and autopopulates.)</cmd>
+            </step>
+            <step>
+                <cmd>Populate the <b>Requirement Name</b> field.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Requirement Type</b> from picklist. This list can be modified to
+                    meet specific business needs during implementation.</cmd>
+            </step>
+            <step>
+                <cmd>Enter <b>Start Date</b> and <b>End Date</b> if a requirement has a designated
+                    start and or end date. Only requirements with a start date in the past and an
+                    end date in the future will be assigned as a <b>Goal</b>. </cmd>
+            </step>
+            <step>
+                <cmd>Enter a numeric value in the <b>Display Order</b> field to identify the order
+                    the <b>Goals</b> are to be listed.</cmd>
+            </step>
+            <step>
+                <cmd>Click <b>Save</b> button.</cmd>
+                <info><b>Optional Fields </b></info>
+                <info><b>Maintenance</b> (checkbox). Identifies a requirement with the maintenance
+                    term. When unchecked, this requirement is considered for the candidate term </info>
+                <info><b>Published</b> (chekbox). Displays requirement on the Program Profile Page.
+                    If unchecked, the requirement is visibile in the staff view only. </info>
+                <info><b>Required </b>(checkbox). Identifies requirement that must be completed in
+                    order for the program term to be completed. </info>
+                <info><b>Navigation URL</b>. Logic behind the Register button on the Program Profile
+                    page. When the button is clicked, redirects the prorgam participant to
+                    designated location. </info>
+                <info><b>Dependency. </b>List the rewuirements - Requiement Name (auto-number) -
+                    that must be completed in order for the Register button for this requirement to
+                    be active. </info>
+                <info><b>Description. </b>Detailed text about requirement. </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

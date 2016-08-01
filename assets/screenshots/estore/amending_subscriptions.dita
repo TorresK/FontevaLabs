@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_bfx_lj3_ft">
+    <title>Amending Subscriptions</title>
+    <abstract>Admins will amend subscriptions for several reasons, such as increasing the seats for
+        a membership and purchasing additional subscriptions.<note>Admin users are permitted to
+            amend, adjust, and refund subscriptions in the <b>eStore</b>. Admins must create
+            subscription items that are included in Package Items and mark the subscription items as
+            "Not for Individual Sale"; otherwise a new Sales Order is created, rather than amended.
+        </note></abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>eBusiness</b> app, click on the <b>Contacts</b> tab, and
+                    select the Contact requiring a subscription amendment.</cmd>
+            </step>
+            <step>
+                <cmd>Navigate to the <i>Subscriptions</i> related list and click the <b>Subscription
+                        ID</b> to return the Subscription record.</cmd>
+                <info><image href="contact_subscription_related_list_win16.png" width="600"
+                        id="image_alx_js4_ft"/></info>
+            </step>
+            <step>
+                <cmd>Click the <b>Amend Subscription</b> button.</cmd>
+                <info><image href="subscription_amendment_button_win16.png" width="600"
+                        id="image_ry2_ls4_ft"/></info>
+                <info><image href="amendment_new_sales_order_win16.png" width="600"
+                        id="image_azj_ms4_ft"/></info>
+                <stepresult>A new Sales Order is created.</stepresult>
+            </step>
+            <step>
+                <cmd>Navigate to the <i>Sales Order Lines</i> related list and copy the <b>Sales
+                        Order Line ID</b>.</cmd>
+                <info><image href="parent_sales_order_line_id_win16.png" width="600"
+                        id="image_axr_ns4_ft"/></info>
+                <info>The copied Sales Order ID is the number of the <b>Parent Sales Order
+                    Line</b>.</info>
+            </step>
+            <step>
+                <cmd>Click the <b>New Sales Order Line</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Select an <b>Item</b> that is different from the item on the Parent Sales Order
+                    via the lookup and check the <b>Is Amendment</b> checkbox.</cmd>
+                <info>Instead of selecting the same item, create an independent Sales Order.</info>
+            </step>
+            <step>
+                <cmd>Paste the copied ID into the <b>Parent Sales Order Line</b> field and click
+                        <b>Save</b>.</cmd>
+                <info><image href="subscription_amendment_childso_win16.png" width="600"
+                        id="image_l1f_ps4_ft"/></info>
+            </step>
+            <step>
+                <cmd>Click the <b>Sales Order ID</b> to return the Sales Order record.</cmd>
+                <info><image href="parent_sales_order_prepost_win16.png" width="600"
+                        id="image_emp_qs4_ft"/></info>
+            </step>
+            <step>
+                <cmd>Update the <b>Status</b> to <b>Closed</b> and click <b>Save</b>.</cmd>
+                <substeps id="substeps_acg_tf4_ft">
+                    <substep>
+                        <cmd>Update the <b>Posting Status</b> to <b>Posted</b> and click
+                            <b>Save</b>.</cmd>
+                        <info><image href="posted_amendment_so_win16.png" width="600"
+                                id="image_o5m_rs4_ft"/></info>
+                    </substep>
+                </substeps>
+            </step>
+        </steps>
+        <result>The subscription is amended. </result>
+    </taskbody>
+</task>

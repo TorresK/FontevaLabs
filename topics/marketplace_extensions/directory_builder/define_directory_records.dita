@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_ifp_hrm_lw">
+    <title>Define Directory Records</title>
+    <abstract>Staff users can refine the pool of data based on the business need by setting
+        criteria. The records in the directory can be filtered based by active badge assignments
+        (Accounts and Contacts) and/or filter selection.</abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Select <i>Badge Type</i> in the <b>Directory Criteria</b> drop-down list. The
+                        <b>Select Badge Type</b> button is displayed. </cmd>
+            </step>
+            <step>
+                <cmd>Click on the <b>Select BadgeType</b> button to open the <b>Select Badge
+                        Type</b> modal. Drag and drop the <b>Available Badge Types</b> from the left
+                    to the <b>Selected Badge Type</b> list on the left. Once the first selection is
+                    made, the Save button is displayed to your selections can be saved. <i>Note:
+                        Only Account or Contact records with the selected Badge will be included in
+                        the directory. </i> To remove a badge, drag the badge back from right to
+                    left. Click <b>Save.</b></cmd>
+            </step>
+            <step>
+                <cmd>Select <i>Filter Criteria</i> in the <b>Directory Criteria</b> drop-down list.
+                    The <b>Select Filter Criteria</b> button is displayed. </cmd>
+                <info><image
+                        href="../../../assets/screenshots/marketplace_extensions/db_define_criteria.png"
+                        id="image_jtr_2hm_nw" width="500"/></info>
+            </step>
+            <step>
+                <cmd>Click on <b>Select Filter Criteria</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Field</b> and operator. Enter required criteria and click
+                        <b>Save</b>. </cmd>
+                <info>Avoid selecting text area and lookup fields. These fields are not intended for
+                    filtering. Date fields and identifiers are also an issue.</info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

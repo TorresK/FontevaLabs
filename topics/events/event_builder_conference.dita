@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_sbk_2kk_yv">
+    <title>Event Builder: Conference Event</title>
+    <abstract>The <b>Event Builder</b> allows staff users to create both simple and conference style
+        events, greatly speeding up the process of event creation in a unified interface.</abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Step one</cmd>
+                <info><image href="../../assets/screenshots/event_builder/event_name_conference.png"
+                        width="500" id="image_qcc_jq1_1w"/></info>
+            </step>
+            <step>
+                <cmd>Step two</cmd>
+                <info/>
+            </step>
+            <step>
+                <cmd>step three</cmd>
+                <info/>
+            </step>
+            <step>
+                <cmd>step four</cmd>
+                <info/>
+            </step>
+            <step>
+                <cmd>step five</cmd>
+            </step>
+            <step>
+                <cmd>step 6</cmd>
+            </step>
+            <step>
+                <cmd>step 7</cmd>
+            </step>
+            <step>
+                <cmd>step 8</cmd>
+            </step>
+            <step>
+                <cmd>step 9</cmd>
+            </step>
+            <step>
+                <cmd>step 10</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

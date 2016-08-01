@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_svt_2dg_cs">
+  <title>Accounting Overview</title>
+  <body>
+    <p>The <b>Accounting</b> application allows customers to configure business groups and
+      autocreate journal entries for easy export and integration to accounting solutions.
+      Additionally, customers can implement batching to expedite the process of end-of-cycle and
+      end-of-day reporting. </p>
+  </body>
+</topic>

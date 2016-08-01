@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_dnk_npv_wr">
+    <title>Creating a Refund</title>
+    <abstract>Create and process refunds directly from a Receipt record that was created from a paid
+            <b>Sales Order</b> or <b>Invoice</b>. <note>Processing a check refund is the same as
+            processing a credit card refund, except no ePayment is created since the transaction was
+            not completed through a <b>Payment Gateway</b>. </note></abstract>
+    <taskbody>
+        <steps id="task_refund">
+            <step id="step_1_task_refund">
+                <cmd>Navigate to the <b>Receipts</b> tab in the <b>eBusiness</b> app and click the
+                        <b>Receipt Number</b> of the receipt requiring a refund.</cmd>
+                <info><image
+                        href="../../assets/screenshots/ebusiness/receipt_number_refunds_win16.png"
+                        width="600" id="image_kdy_ckb_rt"/></info>
+            </step>
+            <step>
+                <cmd>Click <b>Create Refund</b>.</cmd>
+                <info><image href="../../assets/screenshots/ebusiness/create_refund_win16.png"
+                        width="600" id="image_uh3_fkb_rt"/></info>
+                <info><image
+                        href="../../assets/screenshots/ebusiness/receipt_related_list_refund_win16.png"
+                        width="600" id="image_vn2_pkb_rt"/></info>
+                <stepresult>A new Receipt record is created and displayed in the <i>Refunds</i>
+                    related list on the Receipt record. </stepresult>
+            </step>
+            <step id="final_step_task_refund">
+                <cmd>Click the <b>Receipt Number</b> in the <i>Refunds</i> related list. </cmd>
+                <info><image href="../../assets/screenshots/ebusiness/is_posted_refunds_win16.png"
+                        width="600" id="image_zsx_rmb_rt"/></info>
+                <stepresult>The Receipt record populates the <b>Type</b> field with <b>Refund</b>.
+                        The<b> Is Posted</b> checkbox is not checked, which indicates that zero
+                    transactions have occurred and the payment is not yet processed. The primary
+                    reason for the delay is to allow System Admins and staff users the opportunity
+                    to edit the record.</stepresult>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Posted</b> checkbox to complete the refund and create journal
+                    entries for Offline refunds. Alternatively, click the <b>Process Refund</b>
+                    button to process credit card refunds made via Payment Gateway.</cmd>
+                <info><image
+                        href="../../assets/screenshots/ebusiness/process_refund_button_win16.png"
+                        width="600" id="image_jrf_cdc_r5"/></info>
+            </step>
+        </steps>
+        <result>For credit card refunds, an ePayment record is created in the <i>Refunds
+                ePayments</i> related list on the Receipt record indicating the status of the
+            electronic refund. <p><image
+                    href="../../assets/screenshots/ebusiness/refund_epayments_win16.png" width="600"
+                    id="image_pqd_fdc_r5"/></p></result>
+        <postreq>
+            <ul id="ul_w2y_clc_r5">
+                <li><xref href="refund_partial_task.dita#task_upz_1ww_wr">Create a Partial
+                        Refund</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

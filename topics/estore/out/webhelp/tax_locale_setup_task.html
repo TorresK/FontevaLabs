@@ -1,0 +1,74 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+<head><meta name="description" content="Tax locales refer to the countries, provinces, states, cities, and zip codes that may have various taxation policies related to the selling of products. System Admins must set the tax locale to ..."></meta><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><meta name="copyright" content="(C) Copyright 2005"></meta><meta name="DC.rights.owner" content="(C) Copyright 2005"></meta><meta name="DC.Type" content="task"></meta><meta name="DC.Title" content="Setting up the Tax Locale"></meta><meta name="DC.Relation" scheme="URI" content="taxes_overview_concept.html"></meta><meta name="DC.Format" content="XHTML"></meta><meta name="DC.Identifier" content="task_vpn_5bb_wr"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/commonltr.css"><!----></link><title>Setting up the Tax Locale</title><!--  Generated with Oxygen version 17.1, build number 2016032212.  --><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_topic.css"><!----></link><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/skins/skin.css"><!----></link><script type="text/javascript"><!--
+          
+          var prefix = "index.html";
+          
+          --></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-1.8.2.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="oxygen-webhelp/resources/js/webhelp_topic.js"><!----></script></head>
+<body onload="highlightSearchTerm()" class="frmBody" id="task_vpn_5bb_wr">
+<table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td width="75%"><a class="navheader_parent_path" href="taxes_overview_concept.html" title="Taxes">Taxes</a></td><td><div class="navheader">
+<span class="navparent"><a class="link" href="taxes_overview_concept.html" title="Taxes"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Taxes</span></a></span>  </div></td></tr></tbody></table>
+
+    <h1 class="title topictitle1">Setting up the Tax Locale</h1>
+
+     
+    <div class="body taskbody"><div class="abstract"><span class="keyword">Tax locales refer to the countries, provinces, states, cities, and zip codes
+            that may have various taxation policies related to the selling of products.</span>
+        System Admins must set the tax locale to account for the variations between
+        multijurisdictional tax rates.</div>
+
+        <div class="section prereq p">
+            <ul class="ul" id="task_vpn_5bb_wr__ul_mcy_wmr_bs">
+                <li class="li"><a class="xref" href="../framework/owd_setup_taxes_task.html#task_i3s_pgg_1s">Configure
+                        Organization Default Tax Settings</a>
+                </li>
+
+                <li class="li"><a class="xref" href="../accounting/business_groups/bg_glaccounts_task.html#task_fys_vtv_kr">Designate the GL Account for Tax Liabilities</a></li>
+
+            </ul>
+
+        </div>
+
+        <ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd">Navigate to the <strong class="ph b">Tax Locales</strong> tab in the <strong class="ph b">eStore</strong> app and click the
+                        <strong class="ph b">New</strong> button. </span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Enter the <strong class="ph b">Name</strong> of the tax locale.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Enter the API name of the Sales Order Line field the system is to evaluate for
+                    the tax locale in the the <strong class="ph b">Tax Locale Field</strong>.</span>
+                <div class="itemgroup info">Navigate through the <strong class="ph b">Setup</strong> to the <em class="ph i">Custom Object</em> page for the
+                    Sales Order Line to identify field API names.</div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Enter the field values defined in the <strong class="ph b">Tax Locale Field</strong> into the
+                        <strong class="ph b">Locale Values (CSV)</strong> field.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Designate the tax liability account using the <strong class="ph b">Tax Account</strong> lookup field.
+                    Click <strong class="ph b">Save</strong>. </span>
+            </li>
+</ol>
+
+        <div class="section result">The tax locale is available to configure the tax rate for items.</div>
+
+        <div class="section postreq">
+            <ul class="ul" id="task_vpn_5bb_wr__ul_dyd_rnc_bv">
+                <li class="li"><a class="xref" href="tax_class_setup_task.html#task_pq5_v5h_wr">Set up the Tax
+                        Class</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+<div class="related-links"></div>
+<div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="taxes_overview_concept.html" title="Taxes"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Taxes</span></a></span>  </div><div class="footer">WebHelp output generated by<a class="oxyFooter" href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"></img></span><span class="xmlauthor">XML Author</span></a></div>
+</body>
+</html>

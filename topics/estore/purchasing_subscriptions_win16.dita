@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_qkl_rwb_f5">
+    <title>Purchasing Subscriptions in the Community Portal</title>
+    <abstract>Authenticated and unauthenticated users can purchase subscriptions in the Community
+        Portal via the Store. Authenticated users can additionally <xref
+            href="managing_subscriptions.dita#task_asr_ppm_ss">manage their subscription</xref>
+        using the side navbar on their <i>Profile</i> page. <p><image
+                href="../../assets/screenshots/estore/subscriptions_sidebar_portal_win16.png"
+                width="700" id="image_exm_1jh_h5"/></p></abstract>
+    <taskbody>
+        <prereq><ul><li> Authenticated users should log in to their <b>Community Portal</b>
+                </li></ul></prereq>
+        <steps>
+            <step>
+                <cmd>Click on <b>Store</b> in the top navbar to browse items available for
+                    purchase.</cmd>
+                <info><image
+                        href="../../assets/screenshots/estore/store_subscription_search_win16.png"
+                        width="700" id="image_l5j_ksh_h5"/></info>
+                <substeps id="substeps_mcv_kth_h5">
+                    <substep>
+                        <cmd>Click on the desired subscription to continue to the <i>Subscription
+                                Detail</i> page.</cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>Click the <b>Add to Cart</b> button.</cmd>
+                <info><image
+                        href="../../assets/screenshots/estore/subscription_detail_page_win16.png"
+                        width="700" id="image_iqp_xth_h5"/></info>
+                <stepresult>The Subscription modal is returned for subscribers to select an
+                    available subscription plan, create assignments, and </stepresult>
+            </step>
+            <step>
+                <cmd>If more than one plan is linked to a subscription item, click the <b>Select</b>
+                    button on the desired plan and click <b>Next</b>.</cmd>
+                <info><image href="../../assets/screenshots/estore/subscription_modal_win16.png"
+                        width="700" id="image_br2_bvh_h5"/></info>
+                <substeps id="substeps_f34_4vh_h5">
+                    <substep>
+                        <cmd>If the selected Subscription Plan is enabled for <b>Auto Renewal</b>,
+                            select the <b>Payment Method</b> from the picklist or create a new
+                            payment method. </cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>If the subscription item has a form attachment, both authenticated and
+                    unauthenticated users must complete the form. Click <b>Next</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Authenticated users can select their <b>Role</b> using the picklist and click
+                    the <b>+ Add New Contact</b> button to add additional beneficiaries of the
+                    subscription being purchased. If the additional people are already listed on the
+                    Account, then their contact details will display on the <b>Assign</b> tab in the
+                    modal. The portal user must click the <b>checkbox</b> in the <b>Assign</b>
+                    column to grant each contact the benefits of the subscription. If the desired
+                    contacts are not listed on the Account, then click the <b>+ Add New Contact</b>
+                    button; this will create a Contact record for each entry. Next, click the
+                        <b>checkbox</b> in the <b>Assign</b> column to grant the new contacts the
+                    benefits of the subscription. Click the <b>Next</b> button to add any additional
+                    items or <b>View Shopping Cart</b> to proceed to checkout.</cmd>
+                <info>The <b>Assign</b> tab is not displayed to unauthenticated users.</info>
+                <info><image
+                        href="../../assets/screenshots/estore/subscription_plan_assignments_portal_win16.png"
+                        width="700" id="image_gkb_b13_h5"/></info>
+            </step>
+            <step>
+                <cmd>Review items in the cart. Click <b>Checkout</b> and complete payment
+                    information. </cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>Pay</b> button to complete purchase.</cmd>
+            </step>
+        </steps>
+        <result>Once the subscription is purchased, then the user can view their subscription in the
+                <b>My Subscriptions</b> tab on their <i>Profile</i> page in the portal. </result>
+    </taskbody>
+</task>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>eBusiness</title>
+ <topicref href="ebusiness_landing_page.dita" navtitle="Introduction"/>
+ <topicref href="accounts_contacts_users_overview.dita">
+  <topicref href="creating_accounts_task.dita"/>
+  <topicref href="creating_contacts_task.dita"/>
+ </topicref>
+ <topicref href="./salesorders_intro.dita">
+  <topicref href="posting_sales_receipts.dita"/>
+  <topicref href="creating_invoices_task.dita"/>
+  <topicref href="paying_single_invoice.dita"/>
+  <topicref href="./multipleinvoices_singlepayment_task.dita"/>
+  <topicref href="./invoice_partialpayment_task.dita"/>
+  <topicref href="adjustments_deferred_rev_win16.dita"/>
+  <topicref href="scheduling_payments.dita"/>
+  <topicref href="modifying_payments_task.dita"/>
+ </topicref>
+ <topicref href="./refunds_intro.dita">
+  <topicref href="./refund_creating_task.dita"/>
+  <topicref href="./refund_partial_task.dita"/>
+ </topicref>
+</map>

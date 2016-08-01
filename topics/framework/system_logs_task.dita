@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_jzk_tpr_ls">
+    <title>Managing System Logs</title>
+    <abstract>System Admins can view details of system logs via a table that displays the System Log
+        ID, Registered App, Registered Object, Type, Path, User Type, User Profile, and who created
+        the record. System logs are continuously updated and created in real-time. </abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>System Logs</b> tab in the <b>Spark Framework</b> app.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>New</b> button to create a new System Logs record.</cmd>
+                <info>Click <b>Edit</b> to make changes to the data displayed on the System Logs
+                    record pages through: <b>View Name</b>, <b>Filter Criteria</b>, <b>Fields to
+                        Display</b>, and <b>Visibility</b>.</info>
+            </step>
+            <step>
+                <cmd>Enter values for <b>Type</b>, <b>Registered App</b>, <b>Registered Object</b>,
+                        <b>Path</b>, <b>Data</b>, and <b>Exception Data</b>. Click
+                    <b>Save</b>.</cmd>
+                <info><image href="../../assets/screenshots/framework/system_logs_sum15jun.png"
+                        width="600" id="image_v1s_hwr_ls"/></info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

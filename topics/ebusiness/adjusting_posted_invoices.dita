@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_hww_3t3_3s">
+    <title>Adjusting Posted Invoices</title>
+    <abstract>Invoices are adjusted to account for several reasons, including late fees, loyalty
+        discounts, and refunds. Adding adjustments to posted invoices create adjusting entries in
+        order for the income statement and balance sheet to report the change; adjusting entries
+        almost always involve both a balance sheet account and an income statement account.
+            <note>Invoice lines cannot be added to paid invoices. </note></abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Select the invoice needing adjustment via the <b>Invoices</b> tab in the
+                        <b>eBusiness</b> app.</cmd>
+            </step>
+            <step>
+                <cmd>Navigate to the <i>Invoice Lines </i>related list and click the <b>New Invoice
+                        Line</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Item</b> to adjust using the lookup and enable <b>Price
+                        Override</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the adjusted price in the <b>Sale Price</b> field and select the <b>Is
+                        Adjustment</b> checkbox.</cmd>
+                <info>Best practices recommend identifying an <b>Adjustment Reason</b>.</info>
+            </step>
+            <step>
+                <cmd>Select the <b>Is Posted</b> checkbox and click <b>Save</b>.</cmd>
+            </step>
+        </steps>
+        <result>The adjustment line is posted in the Invoice Line related list, adjusting entries
+            are generated for reporting purposes, and the Adjustments field on the Invoice record
+            populates with the sum of the value of related invoice line's Total field.
+                <note>Multiple adjustments can be made to an Invoice. The "Is Adjustment" field must
+                be checked on each Invoice Line record. </note></result>
+    </taskbody>
+</task>
+
+
+

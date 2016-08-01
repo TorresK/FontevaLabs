@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_o2j_f1w_qv">
+    <title>Back Office Data Entry</title>
+    <abstract>Staff users can purchase subscriptions on behalf of customers and fellow staff
+                members.<p><b>Purchasing a Subscription</b></p></abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Create a <b><xref
+                            href="../ebusiness/posting_sales_receipts.dita#task_ydb_53r_3s">Sales
+                            Receipt</xref></b>.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>New Sales Order Line</b> button to add a Subscription Item.</cmd>
+            </step>
+            <step>
+                <cmd>Close the Sales Order.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>Direct Debit Checkout</b> button.</cmd>
+                <info><image
+                        href="../../assets/screenshots/marketplace_extensions/back_office_renewing_dd.png"
+                        id="image_g13_p1l_rv"/><ol id="ol_kvq_1bw_qv">
+                        <li>The Direct Debit enabled item will be added to its own Sales Order. </li>
+                        <li><i>Acknowledgement</i> page displays and can be printed or saved as a
+                            PDF to be sent to the customer</li>
+                        <li>An email will be sent to provided email address (required) from the
+                            payment processor<note>If customer does not have an email address, the
+                                merchant must provide a valid email address for the customer to
+                                ensure that communication from the payment processor reaches the
+                                customer. </note></li>
+                    </ol></info>
+            </step>
+            <stepsection><b>Renewing a Subscription </b></stepsection>
+            <step>
+                <cmd>Follow the steps to <b><xref
+                            href="../estore/subscription_renewal.dita#task_tjm_3z1_ks">Renew a
+                            subscription</xref></b>.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>Direct Debit Checkout</b> button</cmd>
+                <info>Staff users can make updates to the customers existing Direct Debit Agreement
+                    or create a new agreement. The new agreement will take affect when the current
+                    agreement expires. A new agreement should always be created if there is a change
+                    in the payment frequency.</info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

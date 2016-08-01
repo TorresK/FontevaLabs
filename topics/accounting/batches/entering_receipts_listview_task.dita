@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_vj4_gfr_5r">
+    <title>Entering Receipts: Using the List View on the Receipt Object</title>
+    <abstract> Users can execute a batch using the list view on the <b>Receipt</b>
+        object.</abstract>
+    <taskbody><prereq>
+            <ul id="ul_jff_fpr_wt">
+                <li>Enter a payment</li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Receipts</b> tab in the <b>eBusiness</b> application and
+                    click the <b>Create New View</b> link.</cmd>
+            </step>
+            <step>
+                <cmd>Enter <b>View Name</b></cmd>
+                <info><b>For example:</b> Receipts Not Assigned to a Batch</info>
+            </step>
+            <step>
+                <cmd>Specify the filter criteria by selecting the <b>All Receipts</b> radio button.
+                </cmd>
+            </step>
+            <step>
+                <cmd>Select <b>Batch</b> from the <b>Field</b> picklist, <b>equals</b> from the
+                        <b>Operator</b> picklist, and leave the <b>Value</b> field blank. </cmd>
+            </step>
+            <step>
+                <cmd>Add the <b>Batch</b> field to the <i>Selected Fields</i> column along with any
+                    other necessary fields to display.</cmd>
+            </step>
+            <step>
+                <cmd>Restrict visibility and click the <b>Save</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Select the applicable receipts and click the <b>pencil</b> icon to edit the
+                        <b>Batch</b> field. </cmd>
+            </step>
+            <step>
+                <cmd>Select the batch to assign to the receipt(s). Apply the change to the current
+                    record, or, to all selected records. </cmd>
+            </step>
+        </steps>
+        <result>Receipts are successfully entered into the batch.</result>
+    </taskbody>
+</task>

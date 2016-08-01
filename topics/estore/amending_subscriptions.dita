@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_bfx_lj3_ft">
+    <title>Amending Subscriptions</title>
+    <abstract>System Admins will amend subscriptions for several reasons, such as increasing the
+        seats for a membership and purchasing additional subscriptions. For example, if a customer
+        purchases a Termed Subscription Plan lasting six months for 10 seats, and realizes after two
+        months that three additional seats are needed, the subscription requires an amendment. In
+        this case, the total cost of the three extra seats can be prorated to reflect the four
+        months the subscription is active. Although proration is exclusive to Calendar subscription
+        plans, System Admins will check the <b>Enable Proration</b> checkbox and select the
+            <b>Proration Rule</b> when making a necessary amendment to a Termed subscription that
+        allows for the distribution of the purchase price over a set period of time. </abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Subscriptions</b> tab in the <b>eBusiness</b> app and click
+                    the <b>Subscription ID</b> to return the Subscription record.</cmd>
+                <info><image
+                        href="../../assets/screenshots/estore/contact_subscription_related_list_win16.png"
+                        width="600" id="image_on5_dhp_ft"/></info>
+            </step>
+            <step>
+                <cmd>Click the <b>Amend Subscription</b> button.</cmd>
+                <info><image
+                        href="../../assets/screenshots/estore/subscription_amendment_button_win16.png"
+                        width="600" id="image_ekz_2hp_ft"/></info>
+                <info><image
+                        href="../../assets/screenshots/estore/amendment_new_sales_order_win16.png"
+                        width="600" id="image_vj2_ghp_ft"/></info>
+                <stepresult>A new Sales Order is created.</stepresult>
+            </step>
+            <step>
+                <cmd>Navigate to the <i>Sales Order Lines</i> related list and copy the <b>Sales
+                        Order Line ID</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/estore/parent_sales_order_line_id_win16.png"
+                        width="600" id="image_ydh_hhp_ft"/></info>
+                <info>The copied Sales Order ID is the number of the <b>Parent Sales Order
+                    Line</b>.</info>
+            </step>
+            <step>
+                <cmd>Click the <b>New Sales Order Line</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Select an <b>Item</b> that is different from the item on the Parent Sales Order
+                    via the lookup and check the <b>Is Amendment</b> checkbox.</cmd>
+                <info>Instead of selecting the same item, create an independent Sales Order.</info>
+            </step>
+            <step>
+                <cmd>Paste the copied ID into the <b>Parent Sales Order Line</b> field and click
+                        <b>Save</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/estore/subscription_amendment_childso_win16.png"
+                        width="600" id="image_vqz_3hp_ft"/></info>
+            </step>
+            <step>
+                <cmd>Click the <b>Sales Order ID</b> to return the Sales Order record.</cmd>
+                <info><image
+                        href="../../assets/screenshots/estore/parent_sales_order_prepost_win16.png"
+                        width="600" id="image_usq_lhp_ft"/></info>
+            </step>
+            <step>
+                <cmd>Update the <b>Status</b> to <b>Closed</b> and click <b>Save</b>.</cmd>
+                <substeps id="substeps_acg_tf4_ft">
+                    <substep>
+                        <cmd>If the <b>Posting Entity</b> is set to <b>Receipt</b>, payment is
+                            required in order to complete the renewal request. Click the <b>Sales
+                                Receipt</b> button, enter payment information, and click <b>Pay</b>.
+                            The <b>Posting Status</b> on the Sales Order record automatically
+                            updates to <b>Posted</b> to reflect payment.</cmd>
+                        <info><image
+                                href="../../assets/screenshots/estore/posted_amendment_so_win16.png"
+                                width="600" id="image_fzp_mhp_ft"/></info>
+                    </substep>
+                </substeps>
+            </step>
+        </steps>
+        <result>The subscription is amended. </result>
+        <postreq>Admins can additionally: <ul id="ul_mrb_33c_gt">
+                <li><xref href="modifying_subscriptions_backend.dita#task_a13_4rm_ht">Modify
+                        Subscriptions</xref></li>
+                <li><xref href="subscription_renewal.dita#task_tjm_3z1_ks">Renew
+                        Subscriptions</xref></li>
+            </ul></postreq>
+    </taskbody>
+</task>

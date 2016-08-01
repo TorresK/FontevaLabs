@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_otn_ysx_wr">
+ <title>Refunds</title>
+ <shortdesc>Create and process refunds directly from a Receipt record created via a paid sales order or invoice.</shortdesc>
+ <conbody>
+  <p>Organizations often need to complete refunds in the event of a customer request to remove an item from a receipt, an error on an invoice, 
+   or any other type of adjustment after a sales order or invoice has already been paid.</p>
+  <p>In the system, completing a refund transaction is a two step process:
+  <ol>
+   <li>Creating a Refund</li>
+   <li>Processing a Refund</li>
+  </ol></p>
+  <p>There is the ability in the system to complete a partial refund as well. Refunds can be made in the system for both ePayments (credit cards, etc.)
+  and checks.</p>
+ </conbody>
+</concept>

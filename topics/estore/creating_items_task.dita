@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+
+<task id="task_nc2_hll_gs"><title>Creating an Item</title>
+    <abstract>Staff users create items to represent a good or service that is available
+        for purchase. </abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_rdq_hzl_ss">
+                <li><xref href="creating_item_classes.dita#task_zdr_yqj_gs">Create an Item
+                        Class</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Item</b> tab in the <b>eStore</b> app and click the
+                        <b>New</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Item Name</b> and <b>Item Price</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Item Class</b> and Business Group using the lookups and click
+                        <b>Save</b>.</cmd>
+                <info>Enter the <b>Display Name</b>, <b>Line Description</b>, and <b>Image URL</b>
+                    in order for the fields to display on campaign pages and in the Shopping
+                    Cart.</info>
+                <info>Select the <b>Enable Access Permissions</b> checkbox to implement tiered
+                    pricing.</info>
+            </step>
+            <step>
+                <cmd>Select the <b>Is Active</b> checkbox and click <b>Save</b>.</cmd>
+            </step>
+        </steps>
+        <result>A new item is created and available for sale via the <b>eStore</b>. </result>
+        <postreq>
+            <ul id="ul_d3j_1hl_ss">
+                <li><xref href="creating_catalogs_task.dita#task_yrs_bln_js">Create a
+                    Catalog</xref></li>
+                <li><xref href="taxes_overview_concept.dita#concept_snc_vzb_wr">Configure Taxes for
+                        Items</xref></li>
+            </ul>
+        </postreq>
+    </taskbody></task>

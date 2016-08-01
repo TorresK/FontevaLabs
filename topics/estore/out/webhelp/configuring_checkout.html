@@ -1,0 +1,153 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+<head><meta name="description" content="System Admins must enable and configure the Guest Checkout on the related Store: Click the Store tab in the eStore app and then click the name of the store requiring Guest Checkout configuration. ..."></meta><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><meta name="copyright" content="(C) Copyright 2005"></meta><meta name="DC.rights.owner" content="(C) Copyright 2005"></meta><meta name="DC.Type" content="topic"></meta><meta name="DC.Title" content="Configuring the Guest Checkout"></meta><meta name="DC.Relation" scheme="URI" content="creating_stores_task.html"></meta><meta name="DC.Format" content="XHTML"></meta><meta name="DC.Identifier" content="topic_ihw_t3h_ks"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/commonltr.css"><!----></link><title>Configuring the Guest Checkout</title><!--  Generated with Oxygen version 17.1, build number 2016032212.  --><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_topic.css"><!----></link><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/skins/skin.css"><!----></link><script type="text/javascript"><!--
+          
+          var prefix = "index.html";
+          
+          --></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-1.8.2.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="oxygen-webhelp/resources/js/webhelp_topic.js"><!----></script></head>
+<body onload="highlightSearchTerm()" class="frmBody" id="topic_ihw_t3h_ks">
+<table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td width="75%"><a class="navheader_parent_path" href="creating_stores_task.html" title="Creating a Store">Creating a Store</a></td><td><div class="navheader">
+<span class="navparent"><a class="link" href="creating_stores_task.html" title="Creating a Store"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Creating a Store</span></a></span>  </div></td></tr></tbody></table>
+
+  <h1 class="title topictitle1">Configuring the Guest Checkout</h1>
+
+  <div class="body">
+    <div class="p">System Admins must enable and configure the Guest Checkout on the related Store: <ol class="ol" id="topic_ihw_t3h_ks__ol_nt3_jv3_ks">
+        <li class="li">Click the <strong class="ph b">Store</strong> tab in the <strong class="ph b">eStore</strong> app and then click the name of the store
+          requiring Guest Checkout configuration.</li>
+
+        <li class="li">Click the <strong class="ph b">Edit</strong> button.</li>
+
+        <li class="li">Click the <strong class="ph b">Enable Guest Checkout</strong> checkbox in order to allow unauthenticated users
+          to purchase items.</li>
+
+        <li class="li">Enter the API Name of the field set created on the Contact in the <strong class="ph b">New Contact Field
+            Set(s) CSV</strong> text field; field sets must be separated by a comma without any
+          additional spacing. The <strong class="ph b">First Name</strong>, <strong class="ph b">Last Name</strong>, and <strong class="ph b">Email</strong> fields are
+          displayed by default. The field set will display on the <em class="ph i">Checkout</em> page.</li>
+
+        <li class="li">Enter the name of the Parent Account to use for any Contact records created by guests or
+          new customers in the <strong class="ph b">Guest Checkout Account</strong> field. <strong class="ph b">New Contact records are
+            created as the children of the Guest Checkout Account</strong>.<div class="p">
+            <ol class="ol" type="a" id="topic_ihw_t3h_ks__ol_ot3_jv3_ks">
+              <li class="li">Click the <strong class="ph b">Guest Checkout Account</strong> lookup icon to search for Parent Account
+                records.</li>
+
+            </ol>
+
+          </div>
+<strong class="ph b">New User Profile ID</strong></li>
+
+        <li class="li">To change the <strong class="ph b">Contact Match Rule</strong>, click the <strong class="ph b">Contact Match Rule</strong> drop-down
+          box to select a value to use when matching unauthenticated users to existing Contact
+          records. <strong class="ph b">The Contact Match Rule is set to EMAIL by default.</strong></li>
+
+        <li class="li">Optionally, in the <strong class="ph b">Contact Match Custom Field</strong> type the name of any field,
+          including custom, to match unauthenticated customers to existing contact records.</li>
+
+        <li class="li">Click the <strong class="ph b">Require Contact Match Custom Field</strong> checkbox to publish the <strong class="ph b">Contact
+            Match Custom Field</strong> on the page and allowing the customer to provide the required
+          information. Click <strong class="ph b">Save</strong>.<p class="p"><strong class="ph b">Using the Contact Match Rule and Contact Match Custom
+              Field</strong>
+          </p>
+<p class="p">To determine whether to create a new user profile at Checkout, the system will use
+            the <strong class="ph b">Contact Match Rule</strong> and the <strong class="ph b">Contact Match Custom Field</strong> to match
+            authenticated and unauthenticated users to existing users in the Community. </p>
+<p class="p">The
+            search and comparison process varies according to the <strong class="ph b">Contact Match Rule</strong>. When
+            used in conjunction with the <strong class="ph b">Contact Match Custom Field</strong>, staff users can use a
+            search tailored to the system settings. By default, the <strong class="ph b">Contact Match Custom
+              Field</strong> has no value. Acceptable values for the <strong class="ph b">Contact Match Custom Field</strong>
+            are the name of any field, including custom, found on the user page in the Community. If
+            there is a field in <strong class="ph b">Contact Match Custom Field</strong> that is also in the <strong class="ph b">New Contact
+              Field Set(s)</strong> it is displayed twice on the <em class="ph i">Checkout</em> page. Additionally, in
+            order to be considered matching, the value entered into the <strong class="ph b">Contact Match Custom
+              Field</strong> must match the value in the existing profile,<strong class="ph b"> e.g., abbreviations in
+              street addresses and formatting of phone numbers</strong>. The system determines the
+            following addresses as unique: South 8th Street, S. 8th St., and South 8 St. If <strong class="ph b">Phone
+              Number</strong> is used as a <strong class="ph b">Contact Match Custom Field</strong>, the system determines the
+            following phone numbers as distinct and unique (703)111-1111, 703-111-1111, 7031111111.
+            </p>
+<p class="p">The system uses the given email address to match the email address of an existing
+            user in the Community by default. The picklist values for the <strong class="ph b">Contact Match Rule</strong>
+            are as follows:</p>
+<ul class="ul" id="topic_ihw_t3h_ks__ul_zgw_mkh_ks">
+            <li class="li"><strong class="ph b">EMAIL</strong>- Default value; will only look to the given email without matching to
+              any existing data. </li>
+
+            <li class="li"><strong class="ph b">AND</strong> - The system uses the <strong class="ph b">Contact Match Custom Field</strong> and the
+                <strong class="ph b">Contact Match Rule</strong>, which references the given email, to match to an existing
+              user in the Community. </li>
+
+            <li class="li"><strong class="ph b">OR</strong> - The system uses either the <strong class="ph b">Contact Match Custom Field</strong> or the
+                <strong class="ph b">Contact Match Rule</strong>, which references the given email, to match to an existing
+              user in the Community. </li>
+
+            <li class="li"><strong class="ph b">CUSTOM</strong> - The system uses the <strong class="ph b">Contact Match Custom Field</strong> to match to an
+              existing user in the Community.</li>
+
+            <li class="li"><strong class="ph b">NONE</strong> - The system does not use any contact matching rules. Duplicate contacts
+              will be made in the Guest Checkout Account in the Community.<div class="note note"><span class="notetitle">Note:</span> A new Contact record
+                is created if any of the given fields do not match to fields in an existing Contact
+                record in the Community.</div>
+</li>
+
+          </ul>
+</li>
+
+      </ol>
+</div>
+
+    <p class="p"><strong class="ph b">Validation Rules for Contact Match fields</strong></p>
+
+    <ul class="ul" id="topic_ihw_t3h_ks__ul_kqj_skh_ks">
+      <li class="li"> A validation error is received if the <strong class="ph b"> Require Contact Match Custom Field</strong> is
+        selected and the <strong class="ph b">Contact Match Custom Field</strong> is left blank.</li>
+
+      <li class="li">A validation error is received if the <strong class="ph b">Contact Match Rule</strong> is <strong class="ph b">AND</strong>,
+          <strong class="ph b">CUSTOM</strong>, <strong class="ph b">OR</strong> and the <strong class="ph b">Contact Match Custom Field</strong> is left blank.</li>
+
+    </ul>
+
+    
+ <div class="p"><strong class="ph b">Creating New, Guest, or Duplicate Profiles</strong><ol class="ol" id="topic_ihw_t3h_ks__ol_mfl_wlh_ks">
+        <li class="li">The system creates a guest user profile in the Community when:<ol class="ol" type="a" id="topic_ihw_t3h_ks__ol_nfl_wlh_ks">
+            <li class="li">The guest information provided does not match any existing users in the
+              Community.</li>
+
+            <li class="li">The guest information provided matches multiple contacts; however, none of the users
+              were configured for the <strong class="ph b">eStore</strong>. In this instance, the system records the
+              duplicate IDs in a custom field on the Guest Checkout Account Contact record. </li>
+
+          </ol>
+</li>
+
+        <li class="li">If the <strong class="ph b">Enable Guest Checkout</strong> field is checked, the system links the record to the
+            <strong class="ph b">Sales Order</strong> and will not create a Guest Checkout Account Contact record at the
+            <strong class="ph b">eStore</strong> when:<ol class="ol" type="a" id="topic_ihw_t3h_ks__ol_ofl_wlh_ks">
+            <li class="li">The guest information matches a user profile in the Community. The sales order links
+              to the pre-existing user profile in the Community.</li>
+
+            <li class="li">The guest information matches multiple user profiles, one of which is associated
+              with the Guest Checkout Account.</li>
+
+          </ol>
+</li>
+
+      </ol>
+</div>
+
+    <p class="p"><strong class="ph b">Additional Options</strong></p>
+
+    <p class="p">Select access permissions and invoice payment options.The features to customize the payment
+      confirmation message can be configured in the HTML text box.</p>
+
+  </div>
+
+<div class="related-links"></div>
+<div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="creating_stores_task.html" title="Creating a Store"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Creating a Store</span></a></span>  </div><div class="footer">WebHelp output generated by<a class="oxyFooter" href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"></img></span><span class="xmlauthor">XML Author</span></a></div>
+</body>
+</html>

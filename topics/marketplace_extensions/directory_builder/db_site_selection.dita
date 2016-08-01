@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_dmn_msr_nw">
+  <title>Directory Site Assignment</title>
+  <body>
+    <p>A directory can be related to multiple <b>Sites</b>. Drag and drop the any <b>Available
+        Site</b> to the <b>Selected Sites</b> box. At least one site must be identified for the
+      directory to be used. The Directory is given a Site ID unique to each site and will inherit
+      the Theme from that site. </p>
+    <p><image
+        href="../../../assets/screenshots/marketplace_extensions/db_directory_site_assignment.png"
+        id="image_uzr_2gs_nw"/></p>
+  </body>
+</topic>

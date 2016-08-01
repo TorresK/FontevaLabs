@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_blx_nr5_qv">
+    <title>Purchasing a Subscription in the Community Portal</title>
+    <abstract>Direct Debit enabled subscriptions may be purchased by both authenticated and
+        unauthenticated users in the <b>Community Portal</b>. <p><b>Known Issues</b><ul
+                id="ul_gyh_gv5_qv">
+                <li>Abandoned Sales Orders<ul id="ul_zny_gv5_qv">
+                        <li>If the payment processor agency is offline for any reason, then the
+                            customer will be asked to return at a later time to create their
+                            agreement. However, since the Direct Debit Sales Order is in a
+                                <b>Closed</b> state, the online customer cannot access it and must
+                            start a new purchase.</li>
+                        <li>Another source of abandoned transactions occurs when Direct Debit is
+                            selected by the customer as the form of payment, a new sales order is
+                            created. If there are no additional items in the cart, the original
+                            sales order is abandoned. These records will need to be manually
+                            deleted.</li>
+                    </ul></li>
+            </ul></p></abstract>
+    <taskbody>
+        <prereq>In order for customers to select Direct Debit as a payment method, System Admins
+            must enable Direct Debit on the related Store. The Business Group identified on the
+            Store record must have a Direct Debit Setting saved. Direct Debit enabled items can be
+            purchased from a Store that is not Direct Debit enabled, however the customer will not
+            be able to create a Direct Debit Agreement. <p>Additionally, Direct Debit items must be
+                added to a Catalog in order to be added to the customer’s cart. <b>Only items that
+                    are Direct Debit enabled can be purchased with the Direct Debit payment
+                    option</b>.</p></prereq>
+        <steps>
+            <step>
+                <cmd>Log in to the <b>Community Portal</b> and navigate to the <b>Store</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Add the <b>Subscription Item</b> to the Shopping Cart and select the desired
+                        <b>Subscription Plan</b>. Proceed to <b>Checkout</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/marketplace_extensions/online_transactions_step_1.png"
+                        id="image_ub4_nyk_rv"/></info>
+            </step>
+            <step>
+                <cmd>Click the <b>Direct Debit</b> payment method tab and then click the <b>Setup
+                        Direct Debit</b> button.</cmd>
+                <info><image
+                        href="../../assets/screenshots/marketplace_extensions/online_transactions_step_3.png"
+                        id="image_as4_wyk_rv"/></info>
+                <info>If there are multiple items in the Shopping Cart, then the items will sort
+                    into separate Sales Orders. A separate Sales Order is created for each Direct
+                    Debit enabled subscription plan based on the frequency and duration. <b>Any
+                        items not Direct Debit enabled will remain in the original Sales Order to be
+                        purchased separately</b>.</info>
+            </step>
+            <step>
+                <cmd>Check the <b>I wish to set up Direct Debit</b> checkbox and click
+                        <b>Continue</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/marketplace_extensions/online_transactions_step_6.png"
+                        id="image_sfz_2zk_rv"/></info>
+                <info>The displayed information complies with the legal requirements in the United
+                    Kingdom. The contact information (phone number and email address) is pulled from
+                    the Business Group related to the Store.</info>
+                <info><image
+                        href="../../assets/screenshots/marketplace_extensions/online_transactions_step_7.png"
+                        id="image_qjr_kzk_rv"/></info>
+                <substeps id="substeps_sc2_yt5_qv">
+                    <substep>
+                        <cmd>After clicking <b>Continue</b>, the <b>Amount</b> of each payment will
+                            match the related Sales Order Line. </cmd>
+                    </substep>
+                    <substep>
+                        <cmd>The <b>Frequency</b> is determined by the Subscription Plan.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>The <b>Term </b>is the expected number of payments within the term of
+                            the subscription: <b>1 - Annually, 4 - Quarterly, 12 -
+                            Monthly</b>.</cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>Populate any required fields and click <b>Continue</b>.</cmd>
+                <info>The <b>Email Address</b> is required for all Direct Debit Agreement customers.
+                    After clicking <b>Continue</b>, the <b>Account Number</b> and <b>Bank Sort
+                        Code</b> are validated.</info>
+            </step>
+            <step>
+                <cmd>Review the Agreement:</cmd>
+                <substeps id="substeps_rkq_s55_qv">
+                    <substep>
+                        <cmd>Confirm Agreement</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Review Guarantee</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Preview or Print the Acknowledgment page</cmd>
+                    </substep>
+                </substeps>
+            </step>
+        </steps>
+        <result>The customer has successfully purchased a Direct Debit enabled subscription in the
+                <b>Community Portal</b>. </result>
+    </taskbody>
+</task>

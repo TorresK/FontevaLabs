@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_dzs_5my_sr">
+    <title>Creating a Badge Type</title>
+    <abstract>The scope of the badging function is defined through: <p>
+            <ul id="ul_q4r_wq5_hs">
+                <li><b>Badge Type</b> -Identifies the various badges available in the user's
+                    org.</li>
+                <li><b>Badge Workflow</b>-Defines the assignment rules.</li>
+                <li><b>Badges</b>-Enable specific Accounts and Contacts opportunities for custom
+                    pricing. </li>
+                <li><b>Access Permissions</b>-Restrict visibility across various records.<p>Staff
+                        users can define a numerical score for Badges that accumulate on the Account
+                        or Contact record, thus encouraging and tracking member engagement and
+                        enabling tiered pricing.</p></li>
+            </ul>
+        </p></abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Badge Types</b> tab in the <b>eStore</b> app and click
+                        <b>New.</b></cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Badge Name</b> and click <b>Save</b>.</cmd>
+                <info>Best practices recommend populating the <b>Short Description</b> and <b>Image
+                        Location</b> fields. The <b>Short Description</b> is  used on reports and
+                    provides context to end users looking at a list of Contacts assigned to various
+                    badges. </info>
+               
+            </step>
+            <step>
+                <cmd>Enter the <b>Public Description</b>.</cmd>
+                <info>The content in the <b>Public Description</b> field is displayed in the
+                        <b>Badges</b> tab on the <i>Profile</i> page of the <b>Community Portal</b>. </info>
+                <info><image
+                        href="../../assets/screenshots/estore/badges_public_description_win16.png"
+                        width="700" id="image_edk_phq_y5"/></info>
+                <info>Optionally, assign a numerical value to the Badge via the <b>Engagement
+                        Score</b>.</info>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Active</b> and <b>Is Published</b> checkboxes in order for the
+                    Badge Type to be available for assignment and displayed on the user's
+                        <i>Profile</i> page in the <b>Community Portal</b>. Click <b>Save</b>.</cmd>
+                <info><image href="../../assets/screenshots/estore/badge_type.png" width="600"
+                        id="image_jpy_fjp_ts"/></info>
+            </step>
+        </steps>
+        <result>The newly created Badge Type is available for assignment to an Account or
+            Contact.</result>
+        <postreq>
+            <ul id="ul_wrb_vhp_ts">
+                <li><xref href="creating_price_rules_task.dita#task_adk_fml_gs">Create and Assign a
+                        Price Rule</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

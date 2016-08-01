@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_trz_kzg_ks">
+  <title>Sales Orders for Package Items</title>
+  <body>
+    <p><b>Creating a Sales Order for Package Items: User Story 1</b></p>
+    <ul id="ul_vb4_hfh_ks">
+      <li>To create a sales order for package items.</li>
+      <li>After you have created a new sales order and clicked the <b>Shopping Cart</b> button, add
+        the Annual Conference Sponsorship to your cart. (You may need to filter the results of your
+        shopping cart by Item Class, in this case it will be Corporate Sponsorships.)</li>
+    </ul>
+    <ul id="ul_wqk_3fh_ks">
+      <li>Next, click <b>Available Package Items</b> to view the package items that are available
+        for purchase along with the Annual Conference Sponsorship.</li>
+    </ul>
+    <ul id="ul_scc_jfh_ks">
+      <li>Click the green <b>Add Item</b> button. Your total will update to include both items.</li>
+    </ul>
+    <p><b>Info/Note:</b> You will get an error message if you don't have the minimum number of
+      package items required, or if you go over the maximum number of package items allowed.</p>
+    <p><b>What you should see...</b></p>
+    <ul id="ul_skr_lfh_ks">
+      <li>Once you have made a payment, you will be directed to the Sales Order record, where you
+        will see the Sales Order Lines for the items you purchased, including the package item.</li>
+      <li>The Sales Order will be closed and posted. </li>
+      <li>Transactions and Transactions Lines will be created.</li>
+      <li>A Receipt record will be created.</li>
+      <li>An ePayment record will be created.</li>
+    </ul>
+    <p><b>Creating a Sales Order for Package Items: User Story 2</b></p>
+    <ul id="ul_a1s_mfh_ks">
+      <li>After you have created a new sales order and clicked the <b>Shopping Cart</b> button, add
+        the Advertising Banner to your cart. (You may need to filter the results of your shopping
+        cart by Item Class, in this case it will be Advertising.)</li>
+    </ul>
+    <ul id="ul_rpj_nfh_ks">
+      <li>Next, click <b>Available Package Items</b> to view the package items that are available to
+        choose along with the purchase of the Advertising Banner.</li>
+    </ul>
+    <ul id="ul_xfv_nfh_ks">
+      <li>Select the items you wish to include in your purchase, and then click the <b>Submit</b>
+        button. The total will update to include all the items you have selected.</li>
+    </ul>
+    <p><b>What you should see...</b></p>
+    <ul id="ul_upw_4fh_ks">
+      <li>Once you have made a payment, you will be directed to the Sales Order record, where you
+        will see the Sales Order Lines for the items you purchased, including the package
+        items.</li>
+      <li>The Sales Order will be closed and posted. </li>
+      <li>Transactions and Transactions Lines will be created.</li>
+      <li>A Receipt record will be created.</li>
+      <li>An ePayment record will be created, if you paid with an ePayment method. (In this case, we
+        paid with a offline payment of a check.)</li>
+    </ul>
+    
+  </body>
+</topic>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_dxk_zyt_cs">
+    <title>Creating and Posting an Invoice</title>
+    <abstract>Create invoices from the <b>Sales Order</b> tab by defining the <b>Posting Entity</b>
+        as <b>Invoice</b>. To post invoices created by the sales order, staff users must update the
+            <b>Posting Status</b> to <b>Posted</b>. Consequently, all related invoices are posted,
+        creating the associated journal entries in the GL.</abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Sales Order</b> tab in the <b>eBusiness</b> app and click
+                        <b>New</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Account</b> or <b>Contact</b> using the lookups. Additionally,
+                    select the associated value from the <b>Entity</b> picklist.</cmd>
+            </step>
+            <step>
+                <cmd>Select <b>Invoice</b> and <b>Simple Invoice</b> from the <b>Posting Entity</b>
+                    and <b>Schedule Type</b> picklists. Click <b>Save</b>.</cmd>
+                <info>Enter values for remaining, applicable fields.</info>
+            </step>
+            <step>
+                <cmd>Click the <b>New Sales Order Line</b> button on the <i>Sales Order Lines</i>
+                    related list.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Item</b> related to the invoice from the lookup and enter the
+                        <b>Quantity</b>. Click <b>Save</b>.</cmd>
+                <info>The <b>Price Override</b> option is enabled by default. If applicable,
+                    manually enter a new price to the <b>Sale Price</b> field.</info>
+            </step>
+            <step>
+                <cmd>Navigate to the Sales Order record to review and, if necessary, amend the
+                    invoice. Select <b>Closed</b> from the <b>Status</b> picklist and click
+                        <b>Save</b>.</cmd>
+            </step>
+        </steps>
+        <result>The invoice is created, but not yet posted.</result>
+        <postreq>
+            <ul>
+                <li>Select <b>Posted</b> from the <b>Posting Status</b> picklist and click
+                        <b>Save</b>.</li>
+                <li><xref href="paying_single_invoice.dita#task_blc_dw3_3s">Pay the
+                    Invoice</xref></li>
+            </ul>
+            <p>The related journal entries are entered into the GL once the invoice is posted.</p>
+        </postreq>
+    </taskbody>
+</task>

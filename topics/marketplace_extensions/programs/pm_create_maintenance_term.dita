@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_iwc_whj_pw">
+    <title>Create Maintenance Term</title>
+    <shortdesc/>
+    <taskbody>
+        <context>Validate that the goals related to the current term have been successfully created
+            and the term is deactivated. On the <i>Program Profile Detail Page</i>:</context>
+        <steps id="steps_fl5_mhj_pw">
+            <step>
+                <cmd>Check <b>Maintenance Term</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <b>Save</b> button. </cmd>
+                <info>A term record is created with a <b>Start Date</b> (Today) and <b>End Date</b>
+                    (Today + <b>Maintenance Term</b>). <b>Goal</b> records are created for each
+                    active maintenance requirement associated with the program.</info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

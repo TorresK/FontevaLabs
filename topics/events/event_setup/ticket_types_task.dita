@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_ztb_3gb_rr">
+    <title>Creating Ticket Types </title>
+    <abstract>Ticket types identify the available options of admittance to an event. Staff users can
+        set <b>Early Bird</b> and <b>On-site</b> pricing, restrict the number of tickets available
+        for sale, and establish which attendees can purchase specific tickets. <note><b>All events
+                must have at least one associated ticket type. Additionally, best practices
+                recommend that ticket types be created within the Event Category or within the
+                Event.</b></note></abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_f25_vxg_jt">
+                <li><xref href="event_categories_task.dita#task_bkk_nx1_rr">Create an Event
+                        Category</xref></li>
+                <li>If required, <xref
+                        href="../../estore/deferred_revenue_item_class.dita#task_itr_pzs_35">Set up
+                        Deferred Revenue</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <i>Ticket Types</i> related list and click the <b>New Ticket
+                        Type</b> button.</cmd>
+                <info><image href="../../../assets/screenshots/events/new_ticket_types_win16.png"
+                        width="600" id="image_mfc_yky_nt"/></info>
+            </step>
+            <step>
+                <cmd>Enter the <b>Item Name</b>, <b>Unit of Measure</b>, and <b>Price</b>
+                    fields.</cmd>
+                <info>The <b>Price</b> field can have a value of "0" or a value greater than
+                    "0."</info>
+            </step>
+            <step>
+                <cmd>Enter the <b>Image URL</b> and <b>Description</b>. </cmd>
+                <info>The <b>Image URL</b> and <b>Description</b> displays on the <i>Event
+                        Registration</i> page in the <b>Community Portal</b>.</info>
+                <info>Ensure the ticket type is linked to the associated <b>Event</b> or <b>Event
+                        Category</b> via the lookups. The <b>Event Category</b> will autopopulate if
+                    the ticket type is created directly from the <b>Event Category</b> record.
+                </info>
+                <info><image
+                        href="../../../assets/screenshots/events/creating_new_ticket_types_win16.png"
+                        width="600" id="image_v4v_13v_vt"/></info>
+            </step>
+            <step>
+                <cmd>Enter the <b>Quantity Available</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Optionally:</cmd>
+                <choices id="choices_vbp_bpy_nt">
+                    <choice><b>Enable Access Permissions </b>- Restricts which attendees can
+                        purchase a ticket type. Additionally, if enabled, click the <b>Manage
+                            Permissions</b> button on the <i>Access Permissions</i> related list.
+                            <xref
+                            href="../../estore/badges_access_permissions_task.dita#task_qzc_5s5_sr"
+                            >Access Permissions</xref> are available to authenticated users
+                        only.</choice>
+                    <choice>Attach a <xref
+                            href="../../form_builder/creating_forms.dita#task_jdk_12p_yr"
+                            >form</xref> to the ticket type through the <b>Ticket Type Form</b>
+                        lookup. When a user selects a ticket type in the <b>Community Portal</b>
+                        that has a form attachment, the user is required to complete the form in
+                        order to complete registration.</choice>
+                </choices>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Published</b> checkbox and click <b>Save</b>.</cmd>
+                <info>The <b>Is Active</b> checkbox is enabled based on the <b>Event Category</b>
+                    record. When the <b>Is Active</b> checkbox is checked on the Ticket Type record,
+                    the ticket can be purchased by Admins and staff users through the backend
+                        <b>Shopping Cart</b>. <b>Community Portal</b> users can only purchase the
+                    ticket if the <b>Is Published</b> checkbox is enabled. </info>
+                <info><image href="../../../assets/screenshots/events/ticket_type_detail_win16.png"
+                        width="600" id="image_dpj_hrz_nt"/></info>
+            </step>
+        </steps>
+        <result>The ticket type is created and the system will generate a related Item record and
+            it's price rules.<note>If schedule items are enabled for a Conference event, creating a
+                new ticket type will also create a package item.</note></result>
+        <postreq>
+            <p><b>Simple Events: </b><ul id="ul_sfg_psy_nt">
+                    <li><xref href="venues_sum15r2may.dita#task_wdg_sqz_zr">Configure Venue
+                            Details</xref></li>
+                    <li><xref href="creating_event_task.dita#task_oft_s1b_rr">Create the Event
+                        </xref></li>
+                </ul><b>Conference Events:</b><ul id="ul_n2h_mty_nt">
+                    <li><xref href="schedule_items_task.dita#task_qsp_4gy_rr">Create Schedule
+                            Items</xref></li>
+                    <li><xref href="venues_sum15r2may.dita#task_wdg_sqz_zr">Configure Venue
+                            Details</xref></li>
+                    <li><xref href="speakers_task.dita#task_yys_rwh_1s">Configure Speaker
+                            Details</xref></li>
+                    <li><xref href="sponsor_packages_task.dita#task_vjt_s3b_rr">Create Sponsor
+                            Packages</xref></li>
+                    <li><xref href="creating_event_task.dita#task_oft_s1b_rr">Create the
+                            Event</xref></li>
+                </ul></p>
+        </postreq>
+    </taskbody>
+</task>

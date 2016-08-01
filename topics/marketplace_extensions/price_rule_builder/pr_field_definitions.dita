@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_itv_zjy_pw">
+    <title>Price Rule Field Definitions</title>
+    <taskbody>
+        <context><b>Price Rule Name</b> - name given to the price rule<p> •<b> Percent</b> (Price
+                Rule Percentage) - percentage by which the default price rule will be reduced</p><p>
+                • <b>Is Active</b> - when checked, activates price rule.</p><p> • <b>Start Date</b>
+                - identifies the date when the price rule takes affect if it is date-driven</p><p> •
+                    <b>End Date</b> - identifies the date when the price rule is deactivated if it
+                is date-driven</p><p> • <b>Maximum Quantity</b> - maximum number times that the
+                discount can be applied;leave blank if there are no limit to the number of times
+                that it can be used</p><p> • <b>Minimum Quantity</b> -  maximum number that cannot
+                be exceeded for this rule is applied to a transaction; leave blank if there is no
+                constraint</p><p> • <b>Maximum Number of Uses</b> -  minimum quantity of items that
+                must be purchased for the discount to apply; leave blank if there are no
+                constraints</p><p> • <b>Source Codes</b> - captures comma-separated list of Source
+                Codes that are eligible for the Price Rule.</p><p> • <b>Subscription Plans</b> -
+                captures comma-separated list of  Subscription Plans that the discount may be
+                applied. Leave blank to not constrain rule by Subscription Plan.</p><p> • <b>Badge
+                    Types </b>- captures comma-separated list of badge types that identifies a
+                customers  eligibility for the <b>Price Rule</b>.</p><p> • <b>Item Type</b> -
+                grouping of items which the discount can be applied</p><p> • <b>Item List</b> -
+                captures comma-separated list of  Item/Item Class/Catalog/Store/Business Group that
+                the discount can be applied</p><p> • <b>Event Items </b>- when checked, the item
+                selected in the <b>Price Builder</b> is an event or scheduled item</p><p> •
+                    <b>Subscription Items</b> - when checked, the item selected in the <b>Price
+                    Builder</b> is a subscription item</p></context>
+    </taskbody>
+</task>

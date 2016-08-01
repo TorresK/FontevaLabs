@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_ifp_hrm_lw">
+    <title>Create the Directory URL</title>
+    <abstract>The same directory can be related to any number of Sites on the same org. Each
+        relationship is given a unique Site ID. The Site ID is incorporated into the Directory
+        URL.</abstract>
+    <taskbody>
+        <context><b>Build your directory URL:</b><p>http://<i>[Community
+                    URL]</i>/DirectoryApi__Directory?autonumber=<i>[SD-000000]</i></p><p>To build
+                the directory URL, you must first relate the directory to a Site. This generates the
+                    <b>Directory Site ID</b> key = SD-00000000.</p><p>1. Navigate from the Directory
+                to the Site that relates to the <b>Site ID</b> key. You can use one of the URLs
+                auto-generated for this site as a guide:</p><p>2. Start with the Community URL</p><p>
+                <image href="../../../assets/screenshots/marketplace_extensions/db_site_id.png"
+                    id="image_fcf_lqb_mw" width="350"/></p><p>3. Add directory details:
+                    <b>DirectoryApi__Directory</b></p><p>4. Append Site Directory ID:
+                        <b>autonumber=<u>SD-00000000</u>
+                </b>(site specific)</p><xref
+                href="http://communityurl.com/DirectoryApi__MemDirectory?autonumber=SD-0000000&amp;sitekey"
+                format="html" scope="external"
+                    ><i>http://communityurl.com/DirectoryApi__Directory?autonumber=SD-0000000</i></xref><p> </p><image
+                href="../../../assets/screenshots/marketplace_extensions/db_community_url.png" width='400'
+                id="image_bwq_xqb_mw"/></context>
+    </taskbody>
+</task>

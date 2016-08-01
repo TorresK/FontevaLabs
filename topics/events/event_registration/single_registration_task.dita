@@ -1,0 +1,110 @@
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_ltq_czf_4r">
+    <title>Registering for an Event  </title>
+    <abstract>Staff users can register attendees for an event without using the backened <b>Shopping
+            Cart</b>. Instead, staff users create a new Sales Order Line on the the Sales Order
+        record to add an event's related ticket type and/or schedule item.</abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_yzg_4fy_ns">
+                <li><xref href="../event_setup/creating_event_task.dita#task_oft_s1b_rr">Create an
+                        Event</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Sales Order</b> tab within the <b>eBusiness</b> app. Click
+                        <b>New</b> to create a new Sales Order.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Contact</b> from the lookup field, <b>Contact</b> from the
+                        <b>Entity</b> picklist, <b>Receipt</b> from the <b>Posting Entity</b>
+                    picklist, and <b>Simple Receipt</b> from the <b>Schedule Type</b> picklist.
+                    Click <b>Save</b>.</cmd>
+                <info>Alternatively, select <b>Account</b> from the <b>Entity</b> picklist if an
+                        <b>Account</b>, rather than a <b>Contact</b>, is the registering
+                    entity.</info>
+            </step>
+            <step>
+                <cmd>Click <b>New Sales Order Line</b> on the Sales Order record to add the ticket
+                    type.</cmd>
+            </step>
+            <step>
+                <cmd>Select the ticket type item in the <b>Item</b> lookup and click
+                    <b>Save</b>.</cmd>
+                <info>The <b>Auto Assign</b> checkbox is automatically checked, the <b>Auto Assign
+                        Rule</b> defaults to <b>Contact</b>, and an assignment is created upon
+                    saving the record. </info>
+                <substeps id="substeps_xsg_pnh_v5">
+                    <substep>
+                        <cmd>If the payer is not the attendee, then navigate to the
+                                <i>Assignments</i> related list and click <b>Edit</b> on the newly
+                            created Assignment.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Enter the <b>Full Name</b>,<b> First Name</b>, and <b>Last Name</b> of
+                            the attendee.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>If <b>Receives Email Notifications</b> is checked, then enter the
+                            attendee's <b>Email</b>. Click <b>Save</b>. </cmd>
+                        <info><image
+                                href="../../../assets/screenshots/events/guest_attendee_assignment_sfc_win16.png"
+                                width="700" id="image_zxl_n4h_v5"/></info>
+                    </substep>
+                    <substep>
+                        <cmd>Regardless if the payer is the attendee or not, navigate to the Sales
+                            Order and update the Status to Closed, Save the record, and click the
+                            Sales Receipt button. </cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <stepsection><note>If <b>Schedule Type</b> is set to <b>Invoice</b>, then after updating
+                    the <b>Status</b> to <b>Closed</b> and saving the record, update the <b>Posting
+                        Status</b> to <b>Posted</b> and click <b>Save</b>. </note><b>Conference
+                    Style Event Registration</b></stepsection>
+            <step>
+                <cmd>Navigate to the Sales Order record and copy the ticket type's <b>Sales Order
+                        Line ID</b> from the <i>Sales Order Lines </i> related list. Click the
+                        <b>New Sales Order Line </b>button.</cmd>
+                <info><image href="../../../assets/screenshots/estore/event_reg_sol_win16.png"
+                        width="700" id="image_xxw_2yf_x5"/></info>
+            </step>
+            <step>
+                <cmd>Select the schedule item in the <b>Item</b> lookup. Paste the ticket type's
+                        <b>Sales Order Line ID</b> into the <b>Parent Sales Order Line</b> field.
+                    Click <b>Save</b>.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/estore/schedule_item_backend_reg_win16.png"
+                        width="700" id="image_kjx_nyf_x5"/></info>
+            </step>
+            <step>
+                <cmd>Click the <b>Sales Order</b> field on the Sales Order Line record to navigate
+                    back to the Sales Order record.</cmd>
+                <info><b>Repeat Steps 3-6 to register multiple people.</b></info>
+            </step>
+            <step>
+                <cmd>Select <b>Closed</b> from the <b>Status</b> picklist on the Sales Order record.
+                    Click <b>Save</b>.</cmd>
+                <substeps id="substeps_m4m_kk5_vt">
+                    <substep>
+                        <cmd>If the <b>Schedule Type</b> is <b>Invoice</b>, then after updating the
+                                <b>Status</b> and saving the record, select <b>Posted</b> from the
+                                <b>Posting Status</b> picklist and click <b>Save</b>.</cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>Click the <b>Sales Receipt</b> button and select the correct <b>Payment
+                        Gateway</b> and <b>Payment Method</b>. Complete the required payment
+                    information and click the <b>Pay</b> button.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/ebusiness/sales_receipt_sum15r2may.png"
+                        id="image_qcw_5zr_zr" width="700"/></info>
+            </step>
+        </steps>
+        <result>A record is created in the <i>ePayments</i> and <i>Receipts</i> related lists on the
+            Sales Order record. The payment status is indicated in the <b>Message</b> field of the
+                <i>ePayments</i> related list. </result>
+    </taskbody>
+</task>

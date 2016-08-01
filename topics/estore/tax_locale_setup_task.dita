@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_vpn_5bb_wr">
+    <title>Setting up the Tax Locale</title>
+    <abstract><keyword>Tax locales refer to the countries, provinces, states, cities, and zip codes
+            that may have various taxation policies related to the selling of products.</keyword>
+        System Admins must set the tax locale to account for the variations between
+        multijurisdictional tax rates.</abstract> 
+    <taskbody>
+        <prereq>
+            <ul id="ul_mcy_wmr_bs">
+                <li><xref href="../framework/owd_setup_taxes_task.dita#task_i3s_pgg_1s">Configure
+                        Organization Default Tax Settings</xref>
+                </li>
+                <li><xref
+                        href="../accounting/business_groups/bg_glaccounts_task.dita#task_fys_vtv_kr"
+                        >Designate the GL Account for Tax Liabilities</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Tax Locales</b> tab in the <b>eStore</b> app and click the
+                        <b>New</b> button. </cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Name</b> of the tax locale.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the API name of the Sales Order Line field the system is to evaluate for
+                    the tax locale in the the <b>Tax Locale Field</b>.</cmd>
+                <info>Navigate through the <b>Setup</b> to the <i>Custom Object</i> page for the
+                    Sales Order Line to identify field API names.</info>
+            </step>
+            <step>
+                <cmd>Enter the field values defined in the <b>Tax Locale Field</b> into the
+                        <b>Locale Values (CSV)</b> field.</cmd>
+            </step>
+            <step>
+                <cmd>Designate the tax liability account using the <b>Tax Account</b> lookup field.
+                    Click <b>Save</b>. </cmd>
+            </step>
+        </steps>
+        <result>The tax locale is available to configure the tax rate for items.</result>
+        <postreq>
+            <ul id="ul_dyd_rnc_bv">
+                <li><xref href="tax_class_setup_task.dita#task_pq5_v5h_wr">Set up the Tax
+                        Class</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

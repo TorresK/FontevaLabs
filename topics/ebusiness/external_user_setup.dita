@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_czm_vtv_rs">
+    <title>Setting up the External User</title>
+    <taskbody
+        conref="../communities/setting_up_externaluser#ReusableComponent_e2t_dvv_rs/external_user_setup"/>
+   
+</task>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_snc_vzb_wr">
+ <title>Taxes</title>
+ <abstract>Admins have a wide degree of latitude in how to define tax rules and apply those rules to
+    items sold through the <b>eStore</b> and the <b>Shopping Cart</b>. Taxes are applied at the item
+    level and displayed on the Store and on the sales receipt. The system configures taxes through
+    both Locales and Tax Rates.</abstract>
+ <conbody>
+  <p><b>Admins must <xref href="../framework/owd_setup_taxes_task.dita#task_i3s_pgg_1s">Configure
+          Organization Default Tax Settings</xref> and <xref
+          href="../accounting/business_groups/bg_glaccounts_task.dita#task_fys_vtv_kr">Designate the
+          GL Account for Tax Liabilities</xref> prior to engaging taxes on the Item record level.
+        Optionally, enter the necessary API Names into the Required Tax Fields (CSV) field on the
+        related Business Group record in order to allow staff users to configure the required tax
+        fields on the <i>Checkout</i> page.</b></p>
+    <p>Taxes are composed of four primary components:<ol id="ol_dhb_2d5_2v">
+        <li><b>Tax Locale</b></li>
+        <li><b>Tax Class</b></li>
+        <li><b>Tax Rates</b></li>
+        <li><b>Taxable Items</b></li>
+      </ol></p>
+   <p>Multijurisdictional Sales Tax, as well as the Value Added Tax (VAT) used throughout the
+      European Union, must be configured to present the final price paid for an item. Tax exempted
+      entities need to add a custom field to the Account or Contact record for reporting and
+      accounting purposes.</p>
+ </conbody>
+</concept>

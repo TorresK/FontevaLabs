@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_yvw_hjb_kr">
+ <title>Business Groups</title>
+ <conbody>
+  <section><p>Organizations often separate their individual departments, affiliates, partners, and
+                subsidiaries, etc., into business groups to divide operations for reporting
+                purposes. A business group is made up of a Chart of Accounts, a Merchant Account,
+                and the business group's particular products, or items. </p>
+            <p>In order to link the items available within a specific business group, the system
+                requires the identification of a Deposit account and an Accounts Receivable (AR)
+                account.</p>
+    <p>If an organization consists of only one entity and one set of books, as well as a single
+                payment system, the organization can set up a default business group along with a
+                default set of GLs. First, create the business group and its own set of GL Accounts.
+                Then navigate to the <b>Framework</b> app, select the <b>Apps</b> Quick Link, select
+                    <b>Fonteva Orders</b> and click <i>App Preferences</i> within the <b>App
+                    Configurations</b> text box to edit Organization Account Preferences.</p>
+      <p></p>
+  </section>
+ </conbody>
+</concept>

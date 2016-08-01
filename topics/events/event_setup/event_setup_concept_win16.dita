@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_ftz_15q_wt">
+ <title>Event Setup</title>
+ <abstract>Admins must decide on the event's <b>Registration Style</b>. The <b>Registration
+   Style</b> dictates the features available for the planned event.</abstract>
+ <conbody>
+  <p><image href="../../../assets/screenshots/events/events_matrix_win16.png" width="600"
+    id="image_tzz_cgz_pt"/></p>
+  <p>The <b>Simple Event</b> is best for events that do not have any schedule items or breakout
+      sessions. <b>Community Portal users can purchase an unlimited number of tickets for a Simple
+        Event</b>. Examples of Simple Events include: <ul id="ul_bkh_h5q_wt">
+        <li><b>Comedy Shows</b></li>
+        <li><b>Alumni Bus Trips</b></li>
+        <li><b>Benefit Concerts</b></li>
+        <li><b>Movie Premieres</b></li>
+      </ul></p>
+  <p>The<b> Conference Event</b> is best for events that have schedule items and breakout sessions.
+        <b>Community Portal users are limited to purchasing a single ticket, if registering for
+        themselves, for a Conference Event</b>. Examples of Conference Events include:<ul
+        id="ul_qyw_psg_jt">
+        <li><b>Corporate Conferences</b></li>
+        <li><b>Shareholder Meetings</b></li>
+        <li><b>Alumni Weekends</b></li>
+        <li><b>Academic Symposiums </b></li>
+      </ul></p>
+ </conbody>
+</concept>

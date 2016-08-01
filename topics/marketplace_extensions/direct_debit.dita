@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_xt2_rrj_35">
+    <title>Installing UK Direct Debit</title>
+    <abstract>UK Direct Debit is an economically efficient method of accepting subscription payments
+        throughout the United Kingdom via automatic renewals and installment payments. To implement
+        UK Direct Debit, customers will establish an agreement between <b><xref
+                href="http://home.iatspayments.com/fonteva" format="html" scope="external">iATS
+                Payments</xref></b> and their financial institution. Once approved, payments are
+        applied directly from the customer’s bank account and to the related invoice in
+        MemberNation, thereby activating the subscription. <note><b>Twelve business days are needed
+                to process the initial payment. Funds are withdrawn 5 days prior to the payment due
+                date.</b></note></abstract>
+    <taskbody>
+        <context>UK Direct Debit is Fonteva Labs’ first offering on the Framework Marketplace. </context>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Spark Framework</b> app and click <b>Marketplace</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/framework/marketplace_fonteva_labs_win16.png"
+                        width="700" id="image_bsw_mtj_35"/></info>
+            </step>
+            <step>
+                <cmd>Click the <b>Install</b> button for <b>UK Direct Debits</b>.</cmd>
+                <info><image href="../../assets/screenshots/framework/uk_direct_debit_install.png"
+                        width="700" id="image_rvq_35j_35"/></info>
+                <stepresult>An email notification is sent to confirm the application is installed.
+                        <b>Use the Access Manager to run FLS for relevant profiles and all installed
+                        packages after installing UK Direct Debits.</b></stepresult>
+            </step>
+            <stepsection><b>Set up iATS Credentials</b></stepsection>
+            <step>
+                <cmd>Navigate to <b>Setup > Develop > Custom Metadata Types</b></cmd>
+                <info><image href="../../assets/screenshots/framework/custom_metadata.png"
+                        id="image_fpl_ndl_35"/></info>
+            </step>
+            <step>
+                <cmd>Click on <b>Manage Records</b>. </cmd>
+                <info><image
+                        href="../../assets/screenshots/framework/manage_records_direct_debit.png"
+                        id="image_il2_sdl_35"/></info>
+                <info>Next, click <b>Edit</b>.</info>
+                <info><image href="../../assets/screenshots/framework/edit_link_direct_debit.png"
+                        id="image_zr3_xdl_35"/></info>
+            </step>
+            <step>
+                <cmd>Replace the sample credentials with the <b>UserName</b> and Password provided
+                    by iATS. Additionally, enter the <b>Service User Number</b> associated with the
+                    assignment of these credentials and click <b>Save</b>. If maintaining multiple
+                    SUN accounts, click <b>Save &amp; New</b>. </cmd>
+                <info><image
+                        href="../../assets/screenshots/marketplace_extensions/managed_dd_setting_win16.png"
+                        width="700" id="image_ndd_cm4_1v"/></info>
+            </step>
+            <stepsection><b>Enabling Records for Direct Debit</b></stepsection>
+            <step>
+                <cmd>Navigate to the related Business Group record, enter the <b>Direct Debit Setup
+                        Name</b>, and click <b>Save</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/marketplace_extensions/dd_business_group_win16.png"
+                        width="700" id="image_vdf_kn4_1v"/></info>
+            </step>
+            <step>
+                <cmd>Navigate to the related Store record and check the <b>Enable DirectDebit
+                        Option</b> checkbox. Click <b>Save</b>.</cmd>
+                <info><image href="../../assets/screenshots/framework/direct_debit_store.png"
+                        id="image_bcg_5fl_35" width="700"/></info>
+                <info><b>The Direct Debit Setup Name must be populated on the Business Group prior
+                        to enabling Direct Debit on the Store.</b></info>
+            </step>
+            <step>
+                <cmd>Navigate to the related Subscription Plan record and check <b>Is DirectDebit
+                        Enabled</b> checkbox. Click <b>Save</b>.</cmd>
+                <info><image href="../../assets/screenshots/framework/direct_debit_sub_plan.png"
+                        width="700" id="image_b3l_xcl_35"/></info>
+                <info><b>Customers may not choose Direct Debit as the payment option; the
+                        Subscription Plan supports other saved payment methods. Only customers with
+                        active United Kingdom bank accounts can use Direct Debit as an accepted
+                        payment method.</b></info>
+            </step>
+            <step>
+                <cmd><xref href="dd_item_class.dita#concept_w5z_fyt_qv">Create an Item Class</xref>
+                    to account for all Direct Debit subscription items, or edit an existing Item
+                    Class. Check the <b>Is DirectDebit Enabled</b> and <b>Is Subscription</b>
+                    checkboxes on the Item Class record and click <b>Save</b>.</cmd>
+            </step>
+            <step>
+                <cmd><xref href="../estore/creating_items_task.dita#task_nc2_hll_gs">Create a new
+                        Item</xref> and assign the Direct Debit Enabled Subscription Plan. Check the
+                        <b>Is Active</b> checkbox.</cmd>
+                <info><b>All Items related to an Item Class with Direct Debit Enabled inherit the
+                        attributes of that Item Class. Additionally, staff users can <xref
+                            href="../estore/creating_catalogs_task.dita#task_yrs_bln_js">create a
+                            new Catalog</xref> or edit an existing one. Add Items to the
+                        Catalog.</b></info>
+            </step>
+        </steps>
+        <result>Direct Debit is ready to be displayed as a payment method in the Community Portal.
+            Direct Debit can only be used as a payment method for items enabled for Direct Debit.
+                    <note><b>Customers enabling Direct Debit must have the screenshots of the Direct
+                    Debit agreement approved by their financial institution. </b></note></result>
+    </taskbody>
+</task>

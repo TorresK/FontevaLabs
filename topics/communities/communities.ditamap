@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>Communitites</title>
+ <topicref href="communities_intro.dita"/>
+ <topicref href="media_assets/media_asset_upload_win16.dita"/>
+ <topicref href="sites/sites_concept.dita"/>
+ <topicref href="enabling_portal_users_task.dita"/>
+ <topicref href="social%20logins/social_login_intro.dita">
+  <topicref href="social%20logins/google_authorization.dita"/>
+  <topicref href="social%20logins/linkedin_authorization.dita"/>
+  <topicref href="social%20logins/twitter_authorization.dita"/>
+ </topicref>
+ <topicref href="community_groups/homepage.dita">
+  <topicref href="community_groups/new_community_group.dita"/>
+  <topicref href="community_groups/group_search.dita"/>
+  <topicref href="community_groups/portal_users.dita"/>
+ </topicref>
+</map>

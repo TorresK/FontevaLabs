@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_blc_dw3_3s">
+    <title>Paying an Invoice</title>
+    <abstract>Receipts are created when payment is applied to an invoice. Posting the receipt to the
+        GL creates a transaction record journaling the debit to an <b>Income Account</b> and a
+        credit to <b>Accounts Receivable</b>. The payment terms of an invoice define the schedule
+        type: <ul id="ul_qmw_14p_3s">
+            <li><b>Installment-</b> Customers are invoiced on a set schedule, with the total amount
+                due divided equally or by percentage.</li>
+            <li><b>Recurring-</b> The customer's credit card or bank account is automatically
+                charged for the total amount of the Sales Order on a set schedule.</li>
+            <li><b>Simple-</b> Customers are invoiced the total amount of the Sales Order, due upon
+                the delivery of products/services sold. </li>
+        </ul></abstract>    
+    <taskbody>
+        <prereq>
+            <ul id="ul_s4x_54y_wt">
+                <li><xref href="creating_invoices_task.dita#task_dxk_zyt_cs">Create and Post the
+                        Invoice</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Invoice</b> tab in the <b>eBusiness</b> app and identify the
+                    invoice to be paid. Click the <b>Apply Payment</b> button.</cmd>
+                <info>Alternatively, enter the invoice number into the <b>Global Search
+                    Bar</b>.</info>
+            </step>
+            <step>
+                <cmd>Select the <b>Payment Gateway</b> and the <b>Deposit Account</b>. Click the
+                        <b>Pay</b> button. </cmd>
+                <info>If applicable, enter the <b>Batch</b> and <b>Memo</b> information.</info>
+            </step>
+        </steps>
+        <result>The ePayment record is returned displaying the payment transaction details. </result>
+    </taskbody>
+</task>
+

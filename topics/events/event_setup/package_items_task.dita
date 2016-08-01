@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_y1f_2z3_ks">
+    <title>Creating Package Items</title>
+    <abstract>Package Items allow staff users to bundle items together for sale. </abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_ij5_sz3_ks">
+                <li>Create an Item</li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Items</b> tab in the <b>eStore</b> app and select an
+                    existing item.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>New</b> button on the <i>Package Items</i> related list.</cmd>
+            </step>
+            <step>
+                <cmd>Use the picklist to select:</cmd>
+                <choices id="choices_umg_lkz_5t">
+                    <choice><b>Single Item</b></choice>
+                    <choice><b>Group of Items </b></choice>
+                </choices>
+            </step>
+            <stepsection><b>Single Item</b></stepsection>
+            <step>
+                <cmd>Select the <b>Item</b> using the lookup in order for it to be included with the
+                    purchase.</cmd>
+                <info><image href="../../../assets/screenshots/estore/single_package_item_win16.png"
+                        width="600" id="image_crv_znz_5t"/></info>
+                <info><b>Check the checkbox to always include the selected item as part of the
+                        package.</b></info>
+            </step>
+            <step>
+                <cmd>Enter the quantity per Item allowed for purchase.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Display Label</b> that is shown to registering users in the
+                        <b>Community Portal</b> and the <b>Shopping Cart</b>. Click the <b>Save
+                        Package Item</b> button.</cmd>
+                <info>If necessary, enter the <b>Display Instructions</b>.</info>
+            </step>
+            <stepsection><b>Group of Items</b></stepsection>
+            <step>
+                <cmd>Select the <b>Item Class</b> using the lookup.</cmd>
+                <info><image href="../../../assets/screenshots/estore/group_package_items_win16.png"
+                        width="600" id="image_cgh_1l2_vt"/></info>
+                <info><b>Check the checkbox to require at least one Item in the group to be
+                        purchased as part of this package. </b></info>
+            </step>
+            <step>
+                <cmd>Enter the quantity per Item allowed for purchase.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Display Label</b> that is shown to registering users in the
+                        <b>Community Portal</b> and the <b>Shopping Cart</b>. Click the <b>Save
+                        Package Item</b> button.</cmd>
+                <info>If necessary, enter the <b>Display Instructions</b></info>
+            </step>
+        </steps>
+        <result>The Package Item is created.</result>
+    </taskbody>
+</task>

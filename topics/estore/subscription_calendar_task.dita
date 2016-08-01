@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="task_bxk_rhx_ds">
+    <title>Creating a Calendar Subscription Plan</title>
+    <shortdesc>Calendar Subscription Plans have a defined start and end date. Calendar Subscription
+        Plans can use proration rules to reduce the purchase price for mid-term
+        purchases.</shortdesc>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to <b>Subscription Plans</b> in the <b>eStore</b> app and click
+                        <b>New</b>.</cmd>
+                <info><image href="../../assets/screenshots/estore/new_subscription_plan_win16.png"
+                        width="600" id="image_m5w_qvw_dt"/></info>
+            </step>
+            <step>
+                <cmd>Enter a <b>Name</b> for the <b>Subscription Plan</b>, set the <b>Type</b> to
+                        <b>Calendar</b>, and check the <b>Is Active</b> checkbox.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Auto Renew Option</b>:</cmd>
+                <choices id="choices_pvg_pww_dt">
+                    <choice><b>Disabled</b>- Turns off auto-renew for all related
+                        Subscriptions.</choice>
+                    <choice><b>Enabled</b>- Allows related Subscriptions to optionally enable
+                        auto-renew.</choice>
+                    <choice><b>Required</b>- Enables auto-renew without option.  If selected, then
+                        check the <b>Require Payment Method</b> checkbox. </choice>
+                </choices>
+                <info>If the <b>Auto Renew Option</b> is set to <b>Enabled</b> or <b>Required</b>,
+                    enter the number of days prior to the subscription's expiration date that
+                    customers are invoiced into the <b>Invoice Days Variable</b> field. <b>The
+                        Invoice Days Variable field and the Days to Lapse field must have the same
+                        value; value must be greater than 0.</b></info>
+            </step>
+            <step>
+                <cmd>Select the <b>Calendar End Day</b> and the <b>Calendar End Month</b>. </cmd>
+                <info>If the <b>Calendar End Day</b> is not specified, the last day of the month is
+                    used by default. If a day is selected that does not exist for the selected
+                        <b>End Month</b> (Example: '31' for 'February'), then the <b>End Day</b>
+                    that appears within the Subscription record will fall in the next month
+                    (Example: The End Date would be 'March 3' since the system is counting 31 days
+                    after February 1st). This calculation is to ensure a valid date always appears
+                    within the subscription record.</info>
+                <info>Optionally, select <b>Enable Proration</b> and configure the <b>Proration
+                        Rule</b> field: <b>Daily</b>, <b>Weekly</b>, <b>Monthly</b>,
+                        <b>Quarterly</b>, or <b>Bi-Annually</b>. The <b>Proration Rule</b> allows
+                    for the distribution of the purchase price over a set time period.
+                    <!--Additionally, staff users can choose to configure the <b>Installment Schedule</b>.  --></info>
+            </step>
+            <step>
+                <cmd>Add a <b>Description</b> and click <b>Save</b>.</cmd>
+                <info><image href="../../assets/screenshots/estore/calendar_subscripiton_win16.png"
+                        width="600" id="image_p3f_kmx_dt"/></info>
+            </step>
+        </steps>
+        <result>A Calendar Subscription Plan is created.</result>
+        <postreq>
+            <ul id="ul_wzb_5h1_ft">
+                <li><xref href="subscription_item_class.dita#task_glq_zf1_ft">Create an Item Class
+                        for Subscriptions and Configure Assignment Roles</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

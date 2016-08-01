@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_sgf_kdv_qv">
+  <title>Managing the Subscription in the Community Portal</title>
+  <conbody>
+    <p>The authenticated portal user must have an assignment record for the direct debit enabled
+      subscription in order for the <b>Manage</b> button to display on the subscription modal.</p>
+    <p>Click on the<b> Subscriptions</b> tab on the <i>My Profile</i> page. </p>
+    <p>Click the <b>Manage</b> button on the desired subscription.</p>
+    <p>Note: A system field (CPBase8__Subscription_Management_Page_Override__c) on the Subscription
+      record redirects the portal user to the direct debit agreement page. This field auto-populates
+      when the subscription is created. It must be populated during implementation on any converted
+      direct debit subscription.</p>
+    <p><image href="clip_image002_2116317711.png" height="288" width="387" id="image_nhl_rjv_5w"
+      /></p>
+    <p>The <b>Direct Debit Agreement</b> displays:</p>
+    <p><image href="clip_image004_263692512.png" height="288" width="368" id="image_q3l_rjv_5w"
+      /></p>
+    <ul id="ul_vjl_rjv_5w">
+      <li><i>Amount</i> of each payment</li>
+      <li><i>Frequency</i> of payment collection</li>
+      <li><i>Next Collection</i> date</li>
+    </ul>
+    <p> </p>
+    <ul id="ul_xll_rjv_5w">
+      <li><b>Reference Number</b> and <b>Customer Code</b> are provided by the payment processor and
+        tie the Subscription to the direct debit agreement</li>
+      <li><b>Process Sub Code </b>corresponds to the Direct Debit Setting User name. This is
+        particularly important for merchants with multiple Service Accounts.</li>
+      <li><b>Email Address on Agreement </b>identifies the email which the payment processor will be
+        using to contact the customer in relation to this agreement</li>
+      <li><b>End Date </b>is the end date of the agreement. If it is not set up for auto-renewal a
+        new payment is required.</li>
+      <li>All of the subscription items related to this agreement are listed</li>
+    </ul>
+    <p>To cancel, click the <b>Cancel Agreement</b> button. Once cancelled, no further payments are
+      collected. The <b>Schedule Status</b> on the original sales order is set to <b>Cancelled</b>.
+      Any pending collections, payments within the next 6 business days, will be processed. </p>
+    <p> </p>
+    <p/>
+    <p><b>Managing a Renewal</b></p>
+    <p><b>Payment Method for Auto Renewal</b> is greyed out when the subscription is purchased with
+      a direct debit Agreement.</p>
+    <p><image href="clip_image006_1310986643.png" height="288" width="481" id="image_b4l_rjv_5w"
+      /></p>
+    <p>First, click the <b>Cancel Renewal</b> button to end auto renew on a <b>Calendar</b> or
+        <b>Termed</b> subscription. After auto renewal is cancelled, the <b>Renew button</b> is
+      displayed on the subscription. <b>The terms of the Direct Debit Agreement do no change; it
+        will expire at the end of the current term</b>.</p>
+    <p><image href="../../assets/screenshots/marketplace_extensions/managing_dd.png"
+        id="image_py1_5zk_rv"/></p>
+    <section><b>Managing a Renewal</b><p><b>Payment Method for Auto Renewal</b> is greyed out when
+        the subscription is purchased with a Direct Debit Agreement. </p><p><image
+          href="../../assets/screenshots/marketplace_extensions/managing_renewal.png"
+          id="image_y2n_yzk_rv"/></p><p/><p>First, click the <b>Cancel Renewal</b> button to end
+        auto renew on a <b>Calendar</b> or <b>Termed</b> subscription. After auto renewal is
+        cancelled, the <b>Renew button</b> is displayed on the subscription. <b>The terms of the
+          Direct Debit Agreement do no change; it will expire at the end of the current
+        term</b>.</p><p>The <b>Direct Debit Agreement</b> displays: <ul id="ul_jhj_qxv_qv">
+          <li>Amount of each payment</li>
+          <li>Frequency of payments</li>
+          <li>Next collection date</li>
+          <li><b>Customer Code</b> and <b>Reference Number</b> provided by the payment processor
+            that ties the Subscription to the direct debit agreement</li>
+          <li><b>Process Sub Code </b>corresponds to the Direct Debit Setting User name</li>
+          <li>All of the subscription items related to this agreement are listed<p><image
+                href="../../assets/screenshots/marketplace_extensions/managing_dd_cancel.png"
+                id="image_pjm_21l_rv"/></p><p>To cancel, click the <b>Cancel Agreement</b> button.
+              The <b>Direct Debit Agreement</b> takes 6 days to update; all pending payments are
+              completed. The original Sales Order is updated with a <b>Schedule Status</b> of
+                <b>Cancelled</b>.</p></li>
+        </ul></p></section>
+  </conbody>
+</concept>

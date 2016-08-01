@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="task_bxk_rhx_ds">
+    <title>Creating a Termed Subscription Plan</title>
+    <shortdesc><b>Termed</b> Subscription Plans exist for a set period of months. Termed
+        subscriptions start at the time of purchase and continue through the defined term of the
+        subscription. This is also commonly referred to as an "Anniversary" membership.</shortdesc>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to <b>Subscription Plans</b> in the <b>eStore</b> app and click
+                        <b>New</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter a <b>Name</b> for the <b>Subscription Plan</b>, set the <b>Type</b> to
+                        <b>Termed</b>, and check the <b>Is Active</b> checkbox.</cmd>
+            </step>
+            <step>
+                <cmd>Set the number of months for the <b>Initial Term</b> and <b>Renewal
+                    Term</b>.</cmd>
+                <info>If no value is specified, the <b>Renewal Term</b> defaults to the number of
+                    months set for the <b>Initial Term</b>.</info>
+                <info>Optionally, select the <b>Auto Renew Option</b>:</info>
+                <choices id="choices_vph_c3j_k5">
+                    <choice><b>Disabled</b>-Turns off Auto Renew for all related subscriptions in
+                        the <b>Community Portal</b>.</choice>
+                    <choice><b>Enabled</b>-Allows subscription beneficiaries to turn on Auto Renew
+                        for related subscriptions in the <b>Community Portal</b>.</choice>
+                    <choice><b>Required</b>-Enables Auto Renew without option. If selected, then the
+                            <b>Require Payment Method</b> checkbox must be checked.</choice>
+                </choices>
+                <info>If the <b>Auto Renew Option</b> is set to <b>Enabled</b> or <b>Required</b>,
+                    enter the number of days prior to the subscription's expiration date that
+                    customers are invoiced, into the <b>Invoice Days Variable</b> field. <b>The
+                        Invoice Days Variable field and the Days to Lapse field must have the same
+                        value; value must be greater than 0. </b></info>
+                <info><b>In order to communicate an invoice is created to the customer, build a
+                        custom workflow.</b>
+                </info>
+            </step>
+            <step>
+                <cmd>Add a <b>Description</b> and click <b>Save</b>.</cmd>
+            </step>
+        </steps>
+        <result>A Termed Subscription Plan is created.</result>
+        <postreq>
+            <ul id="ul_hz2_kfl_ss">
+                <li><xref href="subscription_item_class.dita#task_glq_zf1_ft">Create an Item Class
+                        for Subscriptions and Configure Assignment Roles</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

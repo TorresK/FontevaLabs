@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_glq_zf1_ft">
+    <title>Creating an Item Class for Subscriptions</title>
+    <shortdesc>Item Classes group and set options for items at the class level. All items must have
+        an Item Class. </shortdesc>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Item Classes</b> tab in the <b>eStore</b> application and
+                    click the <b>New</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Name</b> of the Item Class.</cmd>
+                <info>Identify the <b>Business Group</b> via the lookup and enter the
+                        <b>Description</b> for the Item Class. </info>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Subscription</b> checkbox and click <b>Save</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/estore/enabling_is_subscription_win16.png"
+                        width="700" id="image_jcc_5jr_35"/></info>
+            </step>
+            <step id="step_1_item_class_assignments">
+                <cmd>Check <b>Enable Assignments</b> if the subscription has a restricted number of
+                    beneficiaries for subscription items. If <b>Enable Assignments</b> is checked,
+                    navigate to the Account record and ensure that <b>Restrict Assignment
+                        Visibility</b> is disabled to allow staff users to assign additional
+                    Contacts within the Account to a subscription plan, and configure Assignment
+                    Roles in the <b>Community Portal</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/estore/enabling_assignments_sub_item_class.png"
+                        width="700" id="image_vff_plr_35"/></info>
+                <info><image
+                        href="../../assets/screenshots/estore/account_restrict_assignment_visibility_win16.png"
+                        width="700" id="image_dzq_fk3_h5"/></info>
+                <info>If <b>Restrict Assignment Visibility</b> is enabled, then only the logged in
+                    user can assign themselves to a subscription plan. If the logged in user has the
+                        <b>Is Active</b> and <b>Is Primary</b> checkboxes enabled on the Assignment
+                    Role record, then the user can manage their Assignment Role in the <b>Community
+                        Portal</b>. </info>
+                <info>Click <b>Save</b>.</info>
+            </step>
+            <stepsection><b>Set Assignment Roles</b><p>If <b>Enable Assignments</b> is checked, then
+                    Assignment Roles must be set for the assignments. Assignment Roles control
+                    access to important functions related viewing and modifying subscriptions in the
+                        <b>Community Portal</b>.</p></stepsection>
+            <step>
+                <cmd>Navigate to the <i>Assignment Roles</i> related list and click the <b>New
+                    Assignment Role</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Assignment Role Name</b> to identify the assignees of the
+                    subscription and, optionally, enter a <b>Description</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Configure the Assignment Role: </cmd>
+                <choices id="choices_rmx_vjf_2t">
+                    <choice><b>Is Active</b>- The <b>Is Active</b> checkbox must be enabled in order
+                        to select the assignment role for the assignment.</choice>
+                    <choice><b>Is Default</b>- When an Assignment Role is not selected, the customer
+                        is auto-assigned a <b>Default</b> role that will allow the assignee to view
+                        their subscription in the <b>Community Portal</b>.</choice>
+                    <choice><b>Is Primary</b>- When a customer is assigned to a subscription with
+                        <b>Is Primary</b> checked, the customer can modify their subscription in
+                        the <b>Community Portal</b>.</choice>
+                </choices>
+                <info>At a minimum, a subscription based Item Class must have at least one
+                    Assignment Role with the <b>Is Default</b> and <b>Is Active</b> checkboxes
+                    enabled. If the Assignment is not the same as the Contact or Account on the
+                    Sales Order, users must navigate to the Sales Order record to identify the
+                    Contact or Account purchasing the subscription. </info>
+            </step>
+            <step id="final_step_item_class_assignments">
+                <cmd>Select the <b>Is Active</b> checkbox on the Item Class record and click
+                    <b>Save</b>.</cmd>
+                <info>For a subscription based Item Class, an <b>Assignment Role</b> must be created
+                    for the Item Class if assignments are enabled in order for the Item Class record
+                    to be considered <b>Active</b>.</info>
+                <info><image href="../../assets/screenshots/estore/subscription_item_class.png"
+                        width="600" id="image_uqt_231_ft"/></info>
+               
+            </step>
+        </steps>
+        <result>The Subscription based Item Class is created and Assignment Roles are set.</result>
+        <postreq>
+            <ul id="ul_kv2_g31_ft">
+                <li><xref href="creating_subscriptions_task.dita#task_i1s_mwt_js">Create a
+                        Subscription Item and Assign the Subscription Plan</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

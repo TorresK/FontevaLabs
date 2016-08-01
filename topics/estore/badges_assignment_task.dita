@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_ocl_tly_sr">
+    <title>Badge Assignment Automation</title>
+    <abstract>Badges can be automatically assigned and unassigned to both Accounts and Contacts
+        based on assignment. When a Sales Order is posted, the system will check all related items.
+        If any of the related items has a <i>Badge Workflow</i> related list, the system will create
+        Badges automatically depending on the <b>Badge Workflow Type</b>. <note>If assigned to an
+            Account, all Contacts under that Account will automatically be assigned a
+        Badge.</note></abstract>
+    <taskbody><prereq>
+            <ul>
+                <li>An active Badge Type record</li>
+                <li>An active Item record to assign the Badge</li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>From the Badge Type record, navigate to the <i>Workflow</i> related list and
+                    click the <b>New Badge Workflow</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Badge Workflow Name</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Select an item to assign the Badge to from the <b>Item</b> lookup.</cmd>
+                <info> The <b>Badge Type</b> field auto-populates with the name of the Badge Type
+                    record for which the workflow is being created.</info>
+            </step>
+            <step>
+                <cmd>Select the <b>Type</b>:</cmd>
+                <choices id="choices_n4p_fqn_ts">
+                    <choice><b>Line Contact</b>-Assigns the Badge to the purchasing customer as
+                        defined in the <b>Contact</b> lookup on the Sales Order Line.</choice>
+                    <choice><b>Assigned Contacts</b>-Grants the Badge to all active and assigned
+                        contacts.</choice>
+                    <choice><b>Line Account</b>-Assigns the Badge to the purchasing account as
+                        defined in the <b>Account</b> lookup on the Sales Order Line.</choice>
+                </choices>
+                <info><image href="../../assets/screenshots/estore/badge_workflow.png" width="600"
+                        id="image_ktg_2wn_ts"/></info>
+                <info>Optionally, select the <b>Auto Expire</b> checkbox to automatically unassign
+                    the Badge from the Contact record when the Assignment record becomes
+                    inactive.</info>
+            </step>
+            <step>
+                <cmd>Create a new Sales Order for an account or contact with a Sales Order Line for
+                    the item that the Badge is to be assigned.</cmd>
+                <info>Complete the purchase of the item, which will close and post the sales
+                    order.</info>
+            </step>
+        </steps>
+        <result>The Badge is assigned to the specified Account or Contact record and is displayed in
+            the <i>Badges</i> related list. </result>
+    </taskbody>
+</task>

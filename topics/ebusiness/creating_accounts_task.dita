@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_emq_yqp_3r">
+    <title>Creating a New Account</title>
+    <abstract>Account records provide an overview of activities through the related lists: <ul
+            id="ul_fzb_dss_js">
+            <li>Contacts</li>
+            <li>Sales Orders</li>
+            <li>Subscriptions</li>
+            <li>Invoices</li>
+            <li>Receipts</li>
+            <li>Payment Methods</li>
+            <li>Badges</li>
+        </ul>Additionally, staff users can sort, filter, and locate specific accounts using standard
+        and custom list views.</abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Accounts</b> tab in the <b>eBusiness</b> app and click
+                        <b>New</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Account Name</b>.</cmd>
+                <info>Best practices recommend selecting the <b>Primary Contact</b> from the lookup.
+                    If no Primary Contact is associated to the Account, a Primary Default Contact
+                    will autopopulate the field when making account transactions.</info>
+                <info>If the newly created account is a subsidiary, use the lookup to select the<b>
+                        Parent Account</b>.</info>
+            </step>
+            <step>
+                <cmd>Click <b>Save.</b>
+                </cmd>
+            </step>
+        </steps>
+        <postreq>
+            <ul id="ul_pcp_mss_js">
+                <li>Create a Sales Order</li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

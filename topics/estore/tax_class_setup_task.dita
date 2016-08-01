@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_pq5_v5h_wr">
+    <title>Setting up a Tax Class</title>
+    <abstract>The tax class for items is set up through the Item Class record and groups rates
+        together according to their related tax class.</abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Item Classes</b> tab in the <b>eStore</b> app and click the
+                        <b>New</b> button. </cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Name</b> of the Item Class and select the <b>Is Active</b>
+                    checkbox.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Is Tax</b> checkbox and click the <b>Save</b> button.</cmd>
+            </step>
+        </steps>
+        <result>A new item is created in the <i>Items</i> related list called <b>Default Tax
+                Rate</b>, with a value of <b>0.00</b>. <note>Each Tax Class can only have one
+                Default Tax Rate.</note><image
+                href="../../assets/screenshots/estore/tax_class_with_default_tax_rate__sum15r2apr.png"
+                id="image_pmm_lsg_yr" width="600" alt="Tax Class with Default Tax Rate"/></result>
+        <postreq>
+            <ul id="ul_i23_r4c_bv">
+                <li><xref href="tax_rate_setup.dita#task_ykx_jhh_yr">Set up the Tax Rate</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

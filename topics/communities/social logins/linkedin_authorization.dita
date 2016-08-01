@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_qxk_t3v_qs">
+    <title>Configuring Authorization Providers: LinkedIn</title>
+    <abstract>The Authorization Provider page allows staff users to configure alternate means to
+        register for or log in to a Community.<note>Salesforce will only allow one email per user.
+            Therefore, a unique email must be used for each federated login. Otherwise an Error page
+            will display notifying the user that the authentication attempt has failed.
+        </note></abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_kl1_rcv_1t">
+                <li>Enable the <b>Is Default</b> checkbox on the Community's default Site. <note>The
+                        System will not automatically assign a default Site, even if there is only
+                        one Site related to the Community.<p><image
+                                href="../../../assets/screenshots/community_builder/linkedin_prereq_default_site.png"
+                                id="image_adv_r2v_1t" width="600"/></p></note></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to<xref href="https://developer.linkedin.com" format="html"
+                        scope="external"> https://developer.linkedin.com</xref></cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>My Apps</b> tab in the menu bar.</cmd>
+            </step>
+            <step>
+                <cmd>Click <b>Create Application</b> and populate the fields to register a new
+                    application:</cmd>
+                <info><u>Required Fields:</u><ul id="ul_tvy_szk_rs">
+                        <li><b>Company Name</b></li>
+                        <li><b>Name</b></li>
+                        <li><b>Description</b></li>
+                        <li><b>Application Logo URL</b></li>
+                        <li><b>Application Use</b></li>
+                        <li><b>Website URL</b></li>
+                        <li><b>Business Email</b></li>
+                        <li><b>Business Phone</b></li>
+                    </ul></info>
+            </step>
+            <step>
+                <cmd>Check the <b>r_emailaddress</b> and <b>r_basicprofile</b> checkboxes. Click
+                        <b>Update</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Open up a new tab and navigate to Salesforce environment. </cmd>
+            </step>
+            <stepsection><b>Create an Auth. Provider</b></stepsection>
+            <step>
+                <cmd>Navigate to <b>Setup</b> > <b>Administer</b> > <b>Security Controls</b> >
+                        <b>Auth. Providers</b> > Click <b>New</b>. </cmd>
+            </step>
+            <step>
+                <cmd>Select <b>LinkedIn</b> from the <b>Provider Type</b> picklist. Populate the
+                    desired fields and click <b>Save</b>. </cmd>
+                <info><u>Required Fields</u><ul id="ul_qn5_l23_rs">
+                        <li><b>Name</b>- Enter a unique, identifying name for the Auth.
+                            Provider.</li>
+                        <li><b>URL Suffix</b>- Enter a value to use in the callback URL. This field
+                            will default to the value entered in the <b>Name</b> field. </li>
+                        <li><b>Consumer Key</b>- Paste the <b>Client ID</b>.</li>
+                        <li><b>Consumer Secret</b>- Paste the <b>Client Secret</b>.</li>
+                    </ul></info>
+                <info><u>Optional Fields</u><ul id="ul_rn5_l23_rs">
+                        <li><b>Default Scopes</b>- Enter the level of access that this user has to
+                            that profile, i.e., read-only access or profile email openid. Otherwise,
+                            the field will default to <b>Salesforce</b>.</li>
+                        <li><b>Custom Error URL</b>- Enter a URL to display a custom error
+                            message.</li>
+                        <li><b>Custom Logout URL</b>- Enter a URL to display a logout error message </li>
+                        <li><b>Registration Handler</b>- Enter "LinkedIn" into the lookup.</li>
+                        <li><b>Execute Registration As</b>- Enter the name of a full user in the
+                            system associated to a Role. <b>Cannot be a Community User</b>. </li>
+                        <li><b>Portal</b>- Leave as "None." </li>
+                        <li><b>Icon URL</b>- Enter a secure URL to the icon, or choose from among
+                            LinkedIn's sample icons.</li>
+                    </ul></info>
+                <info><image href="../../../assets/screenshots/setup/linkedin_auth_backened.png"
+                        width="600" id="image_abh_cdl_rs"/></info>
+                <stepresult>The Auth. Provider record populates the <b>Client Configuration</b>
+                    fields: <ul id="ul_ywx_gdl_rs">
+                        <li><b>Test-Only Initialization URL</b></li>
+                        <li><b>Single Sign-On Initialization URL</b></li>
+                        <li><b>Existing User Linking URL</b></li>
+                        <li><b>OAuth-Only Initialization URL</b></li>
+                        <li><b>Callback URL</b></li>
+                    </ul></stepresult>
+            </step>
+            <step>
+                <cmd>Copy the <b>Callback URL</b> and navigate to the <b>LinkedIn Developers
+                        Console</b> tab in the browser window and paste the <b>Callback URL</b> into
+                    the <b>Authorized Redirect URL</b> field and click <b>Add</b>.</cmd>
+            </step>
+            <stepsection><b>Enable Social Login</b></stepsection>
+            <step>
+                <cmd>Navigate to <b>Setup</b> > Search: <b>Communities</b> > Select <b>All
+                        Communities</b> > Click <b>Manage</b> next to the intended Community.</cmd>
+            </step>
+            <step>
+                <cmd>Navigate to <b>Administration</b> > <b>Login &amp; Registration</b> > Check the
+                        <b>LinkedIn</b> checkbox and click <b>Save</b>.</cmd>
+                <info><image href="../../../assets/screenshots/setup/linkedin_checkbox.png"
+                        width="600" id="image_ylj_l2l_rs"/></info>
+            </step>
+            <step>
+                <cmd>Open a new tab, navigate to the <b>Communities</b> app, and select the
+                        <b>Sites</b> tab. </cmd>
+                <info><image
+                        href="../../../assets/screenshots/community_builder/sites_sum15july.png"
+                        width="600" id="image_vxt_42l_rs"/></info>
+            </step>
+            <step>
+                <cmd>Navigate to the Community's related Site record and click <b>Edit</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Auth Provider Default Account</b> using the lookup. </cmd>
+            </step>
+            <step>
+                <cmd>Copy the <b>Single Sign-On Initialization URL</b> generated during the Auth.
+                    Provider configuration and paste it into the <b>LinkedIn Login URL</b>
+                        field.<b>Click Save</b>.</cmd>
+            </step>
+        </steps>
+        <result>Authenticated and unauthenticated users can log in to the Community Portal through
+            their LinkedIn accounts. </result>
+        <postreq>
+            <ul id="ul_gjn_2fl_rs">
+                <li><xref href="../enabling_portal_users_task.dita#task_m5t_3sq_3r">Enable Community
+                        Portal Users</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

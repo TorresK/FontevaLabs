@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_adk_fml_gs">
+    <title>Creating a Price Rule</title>
+    <abstract><b>Price Rules</b> enable System Admins and staff users to manage dynamic pricing
+        primarily through assigning <b>Badge Types</b> and applying discounts. The default <b>Price
+            Rule</b> is created when the item is created; creating a new <b>Price Rule</b> populates
+        the Item record with a new custom <b>Price Rule</b>. The newly created <b>Price Rule</b> is
+        applied to all users who meet the acceptance criteria of the <b>Price Rule</b> variables.
+            <note>All new items inherit the <b>Price Rule</b> configurations that are linked to that
+            specific <b>Item Class</b>. After a new item is created, item pricing rules can be
+            refreshed to include the new default <b>Price Rule</b> assigned to the <b>Item
+            Class</b>.</note></abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_cbp_z2n_jt">
+                <li><xref href="creating_items_task.dita#task_nc2_hll_gs">Create an
+                        Item</xref><note>The <b>Not for Individual Sale</b> flag is available only
+                        on the item. Otherwise, ticket types, schedule items, and sponsor packages
+                        all have an associated, mirror-image item created upon saving the respective
+                        record. Occasionally, there are instances when it is helpful to compare the
+                        two records to check for any missing configurations. </note></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <i>Price Rules</i> related list on the Item record and click
+                    the <b>New Price Rule</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Enter a <b>Price Rule Name</b> and <b>Price</b>.</cmd>
+                <info>Default is set to the <b>Item Name</b> and <b>Item Price</b> entered on the
+                    Item record. When using a <b> Source Code</b>, make sure the <b>Price</b>
+                    entered is the <b>Price</b> customers will pay after the <b>Discount Code</b> is
+                    applied.</info>
+            </step>
+            <step>
+                <cmd>If required, select the applicable <b>Badge Types</b>, <b>Subscription
+                        Plans</b>, or <b>Source Codes</b>.</cmd>
+                <info><image href="../../assets/screenshots/estore/price_rules_win16.png"
+                        width="600" id="image_wwl_rny_pt"/></info>
+            </step>
+            <step>
+                <cmd>Optionally, specify the acceptance criteria by populating the <b>Start
+                    Date</b>, <b>End Date</b>, <b>Min. Quantity</b>, <b>Max. Quantity</b>, and
+                        <b>Max. Num. Available</b> fields.</cmd>
+                <info>If the <b>Max. Quantity</b> field is left null, there will be no constraint on
+                    the maximum quantity of items purchased. If the <b>Min. Quantity</b> field is
+                    left null, there will be no constraint on the minimum quantity of items allowed
+                    for purchase. Populating the <b>Max. Num. Available</b> field defines the
+                    maximum number of times the <b>Price Rule</b> can be applied; generally used to
+                    incentivize customers to purchase products early or for flash/date-driven
+                    sales.</info>
+            </step>
+            <step>
+                <cmd>For <xref href="item_price_rule_support_win16.dita#concept_s4r_ypr_5t">item
+                        price rule support</xref>, enter the <b>Shopping Cart Item</b> that must be
+                    present in order for customers to receive beneficial pricing on the item.</cmd>
+            </step>
+            <step>
+                <cmd>Populate the <b>Object</b>, <b>Field</b>, <b>Operator</b>, and <b>Value</b>
+                    fields to establish <b>Price Rule Variables</b>.</cmd>
+                <info>The <b>Object</b> field identifies the object hosting the field attribute to
+                    assign the <b>Price Rule</b>. The <b>Field</b> value identifies the attribute to
+                    assign to the <b>Price Rule</b>. The <b>Operator</b> field identifies the
+                    operation that helps define the criteria used to evaluate the attribute's value
+                    for the <b>Price Rule</b>. The <b>Value</b> field displays the attribute's value
+                    for the <b>Price Rule</b>.</info>
+                <info>Leave the <b>Value</b> as null to exclude <b>Price Rule Variables</b>.</info>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Active</b> checkbox and click <b>Save</b>.</cmd>
+                <info>Only active <b>Price Rules</b> are applied to new purchases related to the
+                    item.</info>
+            </step>
+        </steps>
+        <result>A new <b>Price Rule</b> is created and will appear in the <i>Pricing Rules</i>
+            related list on the related Item record.<p><image
+                    href="../../assets/screenshots/estore/pricing_rules_related_list_win16.png"
+                    width="600" id="image_kqm_14y_pt"/></p></result>
+        <postreq>
+            <ul id="ul_apl_b4y_pt">
+                <li><xref href="applying_discount_codes_task.dita#task_zc4_3xx_pt">Apply a Discount
+                        Code to an Item or an Event</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

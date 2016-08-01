@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_tg5_2nf_x5">
+ <title>Customizations</title>
+ <abstract>The eStore app allows staff users to provide additional features through various
+  customizations, such as: <ul id="ul_x3s_lnf_x5">
+   <li><b>Access Permissions</b></li>
+   <li><b>Badges</b></li>
+   <li><b>Bar Codes </b></li>
+   <li><b>Price Rules</b></li>
+   <li><b>Source Codes</b></li>
+  </ul></abstract>
+</concept>

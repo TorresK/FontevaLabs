@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_bt4_xjy_pw">
+    <title>Price Rule Builder</title>
+    <taskbody>
+        <context>The <b>Price Rule Builder</b> allows the staff user to set up discount
+            pricing.</context>
+        <steps>
+            <step>
+                <cmd>Open <b>Price Rules</b> view and click on <b>New</b> button</cmd>
+            </step>
+            <step>
+                <cmd>Enter in the <b>Price Rule Name </b>and <b>Price Rule Percentage</b>
+                        amount.<image
+                        href="../../assets/screenshots/marketplace_extensions/bp_price_rule_builder.png"
+                        width="500" id="image_rkn_2xy_pw"/></cmd>
+            </step>
+            <step>
+                <cmd><b>Define Discount Rules </b>(<xref
+                        href="../estore/creating_price_rules_task.dita#task_adk_fml_gs">See Price
+                        Rules</xref>).  If the discount is date-driven, use the <b>Start </b>and
+                        <b>End Date</b> fields to establish the date range of when the discounts are
+                    given. </cmd>
+                <info><b>Additional Rule Options:</b></info>
+                <info><p><b>Maximum Quantity</b> - maximum number times that the discount can be
+                        applied;leave blank if there are no limit to the number of times that it can
+                        be used</p><p> • <b>Minimum Quantity</b> -  maximum number that cannot be
+                        exceeded for this rule is applied to a transaction; leave blank if there is
+                        no constraint</p><p> • <b>Maximum Number of Uses</b> -  minimum quantity of
+                        items that must be purchased for the discount to apply; leave blank if there
+                        are no constraints</p><p> • <b>Source Codes</b> - captures comma-separated
+                        list of Source Codes that are eligible for the Price Rule.</p><p> •
+                            <b>Subscription Plans</b> - captures comma-separated list of
+                        Subscription Plans that the discount may be applied. Leave blank to not
+                        constrain rule by Subscription Plan.</p>• <b>Badge Types </b>- captures
+                    comma-separated list of badge types that identifies a customers  eligibility for
+                    the <b>Price Rule</b>. Drag and drop badges from tthe <b>Available Badge
+                        Types</b> column to the <b>Selected Badge Type</b> column.</info>
+            </step>
+            <step>
+                <cmd><b>Define Price Rules.</b> Select the <b>Type</b> business groups, catalogs,
+                    event items, item classes, items, stores or subscription items, that will be
+                    used to define the price rule. Once the selection is made, the form refreshes so
+                    a corresponding value(s) can be selected in the adjoining field. Then, choose
+                    the available value from the corresponding field.</cmd>
+            </step>
+            <step>
+                <cmd>Click <b>Generate Price Rule</b> button. This saves the record and generates
+                    the corresponding price rules. The number of price rules that are created is
+                    displayed below the <b>Define Price Rule Items</b> section.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

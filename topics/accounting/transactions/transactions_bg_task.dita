@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_mk1_k1h_mr">
+    <title>Configuring Business Groups for Internal Transfers</title>
+    <abstract>To correctly display the flow of funds between business groups, configure the business
+        groups with the <b>Transfers Payable</b> and <b>Transfers Receivable</b> accounts. </abstract>
+    <taskbody>
+        <prereq><b>Prerequisites:</b>
+            <ul>
+                <li>Two separate business groups</li>
+                <li>General Ledger (GL) accounts are created for the <b>Transfers Payable
+                        Account</b> and <b>Transfers Receivable Account</b> for each business
+                    group</li>
+            </ul></prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the Business Group record and click the <b>Edit</b> button. </cmd>
+            </step>
+            <step>
+                <cmd>From the <b>Transfers Payable Account</b> field, select the account for use
+                    when funds are payabable to another business group.</cmd>
+            </step>
+            <step>
+                <cmd>From the <b>Transfers Receivable Account</b> field, select the account for use
+                    when funds are due from another business group. Click <b>Save</b>.</cmd>
+            </step>
+        </steps>
+        <postreq><b>Post-requisites: </b>Repeat steps 1-3 for the second business group.
+            Additionally, in order to correctly allocate funds, ensure that all business groups have
+            the <b>Transfers Payable Account</b> and <b>Transfers Receivable Account</b> fields
+            populated.</postreq>
+    </taskbody>
+</task>

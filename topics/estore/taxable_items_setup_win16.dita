@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_jtc_mpc_bv">
+    <title>Setting up a Taxable Item</title>
+    <abstract>System Admins must configure their items to apply tax. </abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_smb_xpc_bv">
+                <li><b>Set up the Tax Locale</b></li>
+                <li><b>Set up the Tax Class</b></li>
+                <li><b>Set up the Tax Rate</b></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the individual Item record by clicking the <b>Items</b> tab in the
+                        <b>eStore</b> app.</cmd>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Taxable</b> checkbox.</cmd>
+            </step>
+            <step>
+                <cmd>Identify the Tax Class using the lookup and click <b>Save</b>.</cmd>
+            </step>
+        </steps>
+        <result>Taxes can now be applied to items.</result>
+    </taskbody>
+</task>

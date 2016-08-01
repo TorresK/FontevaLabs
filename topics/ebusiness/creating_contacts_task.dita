@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_gh3_djq_3r">
+    <title>Creating a New Contact</title>
+    <abstract>Contacts are the people associated with an organization's business accounts. Each
+        contact can store various kinds of information, such as phone numbers, addresses, titles,
+        and roles. Similarly to the <b>Accounts</b> tab, the <b>Contacts</b> tab allows staff users
+        to create and locate contacts, view and edit detailed information, and sort and filter
+        contacts using standard and custom list views. <note>Selecting the <b>Email Opt Out</b> and
+                <b>Do Not Call</b> checkboxes will enable any further <b>Email Opt Out</b> and <b>Do
+                Not Call</b> checkboxes. </note></abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Contacts</b> tab in the <b>eBusiness</b> app and click
+                        <b>New</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the contact's <b>First Name</b> and <b>Last Name</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Use the lookup field to select the related <b>Account Name</b>. </cmd>
+                <info>Enter any available information in the remaining fields.</info>
+            </step>
+            <step>
+                <cmd>Click <b>Save.</b></cmd>
+            </step>
+        </steps>
+        <postreq>
+            <ul id="ul_rpp_k3w_rs">
+                <li><xref href="../communities/enabling_portal_users_task.dita#task_m5t_3sq_3r"
+                        >Enable the Community Portal User</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

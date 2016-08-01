@@ -1,0 +1,95 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+<head><meta name="description" content="Discount Codes give organizations the functionality to provide customers reduced prices on specified items or events that are added to their Shopping Cart . System Admins and staff users can apply a ..."></meta><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><meta name="copyright" content="(C) Copyright 2005"></meta><meta name="DC.rights.owner" content="(C) Copyright 2005"></meta><meta name="DC.Type" content="task"></meta><meta name="DC.Title" content="Applying a Discount Code"></meta><meta name="DC.Relation" scheme="URI" content="estore_customizations.html"></meta><meta name="DC.Format" content="XHTML"></meta><meta name="DC.Identifier" content="task_zc4_3xx_pt"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/commonltr.css"><!----></link><title>Applying a Discount Code</title><!--  Generated with Oxygen version 17.1, build number 2016032212.  --><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_topic.css"><!----></link><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/skins/skin.css"><!----></link><script type="text/javascript"><!--
+          
+          var prefix = "index.html";
+          
+          --></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-1.8.2.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="oxygen-webhelp/resources/js/webhelp_topic.js"><!----></script></head>
+<body onload="highlightSearchTerm()" class="frmBody" id="task_zc4_3xx_pt">
+<table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td width="75%"><a class="navheader_parent_path" href="estore_customizations.html" title="Customizations">Customizations</a></td><td><div class="navheader">
+<span class="navparent"><a class="link" href="estore_customizations.html" title="Customizations"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Customizations</span></a></span>  </div></td></tr></tbody></table>
+
+    <h1 class="title topictitle1">Applying a Discount Code </h1>
+
+    
+    <div class="body taskbody"><div class="abstract"><strong class="ph b">Discount Codes</strong> give organizations the functionality to provide customers
+        reduced prices on specified items or events that are added to their <strong class="ph b">Shopping Cart</strong>.
+        System Admins and staff users can apply a <strong class="ph b">Discount Code</strong> to an item on the the Sales
+        Order record by populating the <strong class="ph b">Source Code</strong> field.</div>
+
+<div class="section prereq p">
+            <ol class="ol" id="task_zc4_3xx_pt__ul_llr_kzx_pt">
+                <li class="li"><a class="xref" href="source_codes_task.html#task_u4m_2yx_bs">Create a Source Code
+                    </a></li>
+
+                <li class="li"><a class="xref" href="creating_price_rules_task.html#task_adk_fml_gs">Create a Price
+                        Rule</a></li>
+
+                <li class="li">System Admins must enable <strong class="ph b">Discount Codes</strong> in their environment: <ul class="ul" id="task_zc4_3xx_pt__ul_up2_k14_rt">
+                        <li class="li">Navigate to the username drop down list and click <strong class="ph b">Developer
+                                Console</strong>. <p class="p"><img class="image" id="task_zc4_3xx_pt__image_crc_psy_pt" src="../../assets/screenshots/estore/dev_console_drop_down_win16.png" width="600"></img></p>
+</li>
+
+                        <li class="li">Select the <strong class="ph b">Debug</strong> topbar menu item and click the <strong class="ph b">Open Execute
+                                Anonymous Window</strong> from the drop down list.<p class="p"><img class="image" id="task_zc4_3xx_pt__image_zqq_kty_pt" src="../../assets/screenshots/estore/exec_anon_window_win16.png" width="400"></img></p>
+</li>
+
+                        <li class="li">Enter the following script into the <strong class="ph b">Enter Apex Code</strong> window:
+                            <samp class="ph codeph">Framework.AppUpdate app = Framework.AppUpdate.get('DiscountCode');
+                                app.isActivated = true; Framework.Config.push(app);</samp><p class="p"><img class="image" id="task_zc4_3xx_pt__image_gcx_g5y_pt" src="../../assets/screenshots/estore/apex_code_windown_win16.png" width="600"></img></p>
+<p class="p">Click <strong class="ph b">Execute</strong>
+                                and close the <strong class="ph b">Force.com Developer Console</strong> window.</p>
+</li>
+
+                    </ul>
+</li>
+
+            </ol>
+
+        </div>
+
+        <p class="li stepsection"><strong class="ph b">User Experience</strong></p><ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd">Authenticated users will log in to the <strong class="ph b">Community Portal</strong> and click the
+                        <strong class="ph b">Store</strong> tab in the navbar. </span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Select the item associated with the <strong class="ph b">Discount Code</strong> and click <strong class="ph b">Add to
+                        Cart</strong>.</span>
+                <div class="itemgroup info"><img class="image" id="task_zc4_3xx_pt__image_qcn_qxy_pt" src="../../assets/screenshots/estore/adding_discount_item_shopping_cart_win16.png" width="600"></img></div>
+                <div class="itemgroup stepresult">In the <strong class="ph b">Shopping Cart </strong> modal, <strong class="ph b">Community Portal</strong> users can
+                    click <strong class="ph b">Update Cart</strong> or proceed to <strong class="ph b">Checkout</strong>. Click
+                    <strong class="ph b">Checkout</strong>.</div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Both authenticated and unauthenticated users will enter the <strong class="ph b">Discount
+                        Code</strong> into the <em class="ph i">Order Total</em> pane on the <em class="ph i">Checkout</em> page and
+                    click <strong class="ph b">Apply</strong>.</span>
+                <div class="itemgroup info">Only one <strong class="ph b">Discount Code</strong> can be applied per transaction.</div>
+                <div class="itemgroup info"><img class="image" id="task_zc4_3xx_pt__image_fd3_czy_pt" src="../../assets/screenshots/estore/cpu_applying_discount_code_win16.png" width="600"></img></div>
+                <div class="itemgroup info"><img class="image" id="task_zc4_3xx_pt__image_lzb_m1z_pt" src="../../assets/screenshots/estore/applied_discount_checkout_page_win16.png" width="600"></img></div>
+                <div class="itemgroup stepresult">The <em class="ph i">Checkout</em> page is updated to reflect the applied
+                    discount.</div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Complete <strong class="ph b">Payment Information</strong> and click <strong class="ph b">Pay</strong>.</span>
+                <div class="itemgroup info"><img class="image" id="task_zc4_3xx_pt__image_wd5_x1z_pt" src="../../assets/screenshots/estore/frontend_sales_receipt_win16.png" width="600"></img></div>
+            </li>
+</ol>
+
+        <div class="section result"><strong class="ph b">Discount Codes</strong> are successfully applied allowing backend users and both
+            authenticated and unauthenticated users the benefit of a reduced price on an item or
+                event.<div class="note note"><span class="notetitle">Note:</span> In order to pass a <strong class="ph b">Discount Code</strong> on an event to others, navigate
+                to the Source Code record and copy the <strong class="ph b">Source Code ID</strong> from the URL. Next,
+                append the <strong class="ph b">Source Code ID</strong> to the <strong class="ph b">Community URL</strong>:
+                    {!communityurl}/Eventapi__Router?event={!event.id}&amp;site={!site.id}<strong class="ph b">&amp;sourcecode={!Source_Code__c.id}</strong></div>
+</div>
+
+    </div>
+
+<div class="related-links"></div>
+<div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="estore_customizations.html" title="Customizations"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Customizations</span></a></span>  </div><div class="footer">WebHelp output generated by<a class="oxyFooter" href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"></img></span><span class="xmlauthor">XML Author</span></a></div>
+</body>
+</html>

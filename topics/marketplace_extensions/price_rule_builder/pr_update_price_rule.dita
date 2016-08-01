@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_nzh_wfz_pw">
+    <title>Update Price Rule</title>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Click <b>Edit</b> button on <b>Price Rule Detail</b>page.</cmd>
+            </step>
+            <step>
+                <cmd>Make desired changes.</cmd>
+            </step>
+            <step>
+                <cmd>Click on <b>Update Price Rule</b> button. This will create all new price rules
+                    for the items selected, but it will not delete the existing ones.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

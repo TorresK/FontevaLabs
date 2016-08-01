@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_asr_ppm_ss">
+    <title>Managing Subscriptions in the Community Portal</title>
+    <abstract>Authenticated portal users can manage their subscriptions directly from the
+            <b>Community Portal</b>.. </abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_fyh_t1n_ss">
+                <li>Purchase a subscription through the backend or the <b>Community Portal</b>.</li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Log in to the <b>Community Portal</b> and click the <b>Subscriptions</b> tab in
+                    the side navbar.</cmd>
+                <info><image
+                        href="../../assets/screenshots/estore/manage_subscriptions_portal_win16.png"
+                        width="700" id="image_aqn_qt1_ft"/></info>
+            </step>
+            <step>
+                <cmd>Click on the <b>Manage</b> button to modify the subscription:</cmd>
+                <choices id="choices_h42_dnr_g5">
+                    <choice><b>Change Assignments</b> via the <b>Manage Members</b> tab:<p><image
+                                href="../../assets/screenshots/estore/change_subscription_assignments_portal_win16.png"
+                                width="700" id="image_qky_lqr_g5"/></p><p><b>Only assignees with the
+                                Is Primary and Is Active checkboxes enabled on the Assignment Role
+                                record can modify assignments via the Role picklist.</b>
+                            <note><b>Enable Assignments</b> must be checked on the Subscription Item
+                                record. Disable the <b>Restrict Assignments Visibility</b> field on
+                                the Account record to view assignments of other Contacts on the
+                                Account; default is unchecked.  </note></p><p><image
+                                href="../../assets/screenshots/estore/assigning_new_contacts_portal_win16.png"
+                                width="700" id="image_h33_gks_g5"/></p><p>Click the <b>+Add New
+                                Contact</b> button and enter the <b>First Name</b>, <b>Last
+                            Name</b>, and <b>Email</b> to assign the subscription to any additional
+                            contacts. Click <b>Save</b>.</p></choice>
+                    <choice><b>Disable Auto Renew Option</b> and <b>Update Payment Methods</b> via
+                            <b>Manage Renewal</b> tab:<p><image
+                                href="../../assets/screenshots/estore/manage_renewal_portal_win16.png"
+                                width="700" id="image_s5r_vqr_g5"/></p><p>Select an alternative
+                            Payment Method via the <b>Payment Method for Auto Renewal</b> picklist.
+                            To disable the <b>Auto Renew Option</b>, click the <b>Cancel Renewal</b>
+                            button. </p></choice>
+                </choices>
+            </step>
+        </steps>
+        <result>By managing their subscription in the <b>Community Portal</b>, an authenticated
+            portal user can change assignments, disable the <b>Auto Renew Option</b>, and update
+            their Payment Methods.  </result>
+    </taskbody>
+</task>

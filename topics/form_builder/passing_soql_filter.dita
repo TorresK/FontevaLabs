@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_qkb_gfy_pv">
+    <title>Passing a SOQL Filter using a URL Parameter </title>
+    <abstract>Display data to the end user by passing a SOQL filter in the URL. </abstract>
+    <taskbody>
+        <context>Convert the SOQL query to a URL parameter. </context>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Form Builder</b> app and select the Form that requires
+                    editing.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>Form Builder</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Copy the <b>Field Group</b> id of the record(s) passed through the Form
+                    URL.</cmd>
+            </step>
+            <step>
+                <cmd>Append <b>_SOQL=</b> to the end of the id and define the <b>SOQL
+                    filter</b>.</cmd>
+                <info><b>Example: <codeph>AccountId = 'a0M610000005KbY'</codeph>
+                    </b></info>
+            </step>
+            <step>
+                <cmd>Encode the SOQL query by navigating to <xref
+                        href="http://meyerweb.com/eric/tools/dencoder/" format="html"
+                        scope="external">http://meyerweb.com/eric/tools/dencoder/</xref>.</cmd>
+            </step>
+            <step>
+                <cmd>Append the encoded SOQL filter to the URL. </cmd>
+            </step>
+        </steps>
+        <result><image href="../../assets/screenshots/forms/soql_filter_url_spr16.png" width="700"
+                id="image_w5f_lz4_qv"/></result>
+    </taskbody>
+</task>

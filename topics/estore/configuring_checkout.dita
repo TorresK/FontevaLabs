@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ihw_t3h_ks">
+  <title>Configuring the Guest Checkout</title>
+  <body>
+    <p>System Admins must enable and configure the Guest Checkout on the related Store: <ol
+        id="ol_nt3_jv3_ks">
+        <li>Click the <b>Store</b> tab in the <b>eStore</b> app and then click the name of the store
+          requiring Guest Checkout configuration.</li>
+        <li>Click the <b>Edit</b> button.</li>
+        <li>Click the <b>Enable Guest Checkout</b> checkbox in order to allow unauthenticated users
+          to purchase items.</li>
+        <li>Enter the API Name of the field set created on the Contact in the <b>New Contact Field
+            Set(s) CSV</b> text field; field sets must be separated by a comma without any
+          additional spacing. The <b>First Name</b>, <b>Last Name</b>, and <b>Email</b> fields are
+          displayed by default. The field set will display on the <i>Checkout</i> page.</li>
+        <li>Enter the name of the Parent Account to use for any Contact records created by guests or
+          new customers in the <b>Guest Checkout Account</b> field. <b>New Contact records are
+            created as the children of the Guest Checkout Account</b>.<p>
+            <ol id="ol_ot3_jv3_ks">
+              <li>Click the <b>Guest Checkout Account</b> lookup icon to search for Parent Account
+                records.</li>
+            </ol>
+          </p><b>New User Profile ID</b></li>
+        <li>To change the <b>Contact Match Rule</b>, click the <b>Contact Match Rule</b> drop-down
+          box to select a value to use when matching unauthenticated users to existing Contact
+          records. <b>The Contact Match Rule is set to EMAIL by default.</b></li>
+        <li>Optionally, in the <b>Contact Match Custom Field</b> type the name of any field,
+          including custom, to match unauthenticated customers to existing contact records.</li>
+        <li>Click the <b>Require Contact Match Custom Field</b> checkbox to publish the <b>Contact
+            Match Custom Field</b> on the page and allowing the customer to provide the required
+          information. Click <b>Save</b>.<p><b>Using the Contact Match Rule and Contact Match Custom
+              Field</b>
+          </p><p>To determine whether to create a new user profile at Checkout, the system will use
+            the <b>Contact Match Rule</b> and the <b>Contact Match Custom Field</b> to match
+            authenticated and unauthenticated users to existing users in the Community. </p><p>The
+            search and comparison process varies according to the <b>Contact Match Rule</b>. When
+            used in conjunction with the <b>Contact Match Custom Field</b>, staff users can use a
+            search tailored to the system settings. By default, the <b>Contact Match Custom
+              Field</b> has no value. Acceptable values for the <b>Contact Match Custom Field</b>
+            are the name of any field, including custom, found on the user page in the Community. If
+            there is a field in <b>Contact Match Custom Field</b> that is also in the <b>New Contact
+              Field Set(s)</b> it is displayed twice on the <i>Checkout</i> page. Additionally, in
+            order to be considered matching, the value entered into the <b>Contact Match Custom
+              Field</b> must match the value in the existing profile,<b> e.g., abbreviations in
+              street addresses and formatting of phone numbers</b>. The system determines the
+            following addresses as unique: South 8th Street, S. 8th St., and South 8 St. If <b>Phone
+              Number</b> is used as a <b>Contact Match Custom Field</b>, the system determines the
+            following phone numbers as distinct and unique (703)111-1111, 703-111-1111, 7031111111.
+            </p><p>The system uses the given email address to match the email address of an existing
+            user in the Community by default. The picklist values for the <b>Contact Match Rule</b>
+            are as follows:</p><ul id="ul_zgw_mkh_ks">
+            <li><b>EMAIL</b>- Default value; will only look to the given email without matching to
+              any existing data. </li>
+            <li><b>AND</b> - The system uses the <b>Contact Match Custom Field</b> and the
+                <b>Contact Match Rule</b>, which references the given email, to match to an existing
+              user in the Community. </li>
+            <li><b>OR</b> - The system uses either the <b>Contact Match Custom Field</b> or the
+                <b>Contact Match Rule</b>, which references the given email, to match to an existing
+              user in the Community. </li>
+            <li><b>CUSTOM</b> - The system uses the <b>Contact Match Custom Field</b> to match to an
+              existing user in the Community.</li>
+            <li><b>NONE</b> - The system does not use any contact matching rules. Duplicate contacts
+              will be made in the Guest Checkout Account in the Community.<note>A new Contact record
+                is created if any of the given fields do not match to fields in an existing Contact
+                record in the Community.</note></li>
+          </ul></li>
+      </ol></p>
+    <p><b>Validation Rules for Contact Match fields</b></p>
+    <ul id="ul_kqj_skh_ks">
+      <li> A validation error is received if the <b> Require Contact Match Custom Field</b> is
+        selected and the <b>Contact Match Custom Field</b> is left blank.</li>
+      <li>A validation error is received if the <b>Contact Match Rule</b> is <b>AND</b>,
+          <b>CUSTOM</b>, <b>OR</b> and the <b>Contact Match Custom Field</b> is left blank.</li>
+    </ul>
+    <!-- 
+    <p><b><b>Contact Match Rule</b> - "<b>EMAIL"</b></b></p>
+    <table id="table_vyk_wkh_ks">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1"/>
+        <colspec colnum="2" colname="col2"/>
+        <thead>
+          <row>
+            <entry>Field</entry>
+            <entry>Contact Match Rule 'EMAIL'</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>No Contact Match Custom Field</entry>
+            <entry>
+              <p>Only the user's email is used for matching.</p>
+              <p>To determine whether to create a new user profile in the Community, at checkout,
+                the system will verify whether the new or unauthenticated email matches an existing
+                user profile email. If matching, the system will not create a new user profile and
+                the sales order will be associated with the existing user profile.</p>
+              <p> </p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    
+
+     
+    <p><b><b>Contact Match Rule</b> -"<b>AND"</b></b></p>
+  <table id="table_dwz_ykh_ks">
+    <tgroup cols="2">
+      <colspec colnum="1" colname="col1"/>
+      <colspec colnum="2" colname="col2"/>
+      <thead>
+        <row>
+          <entry>Field</entry>
+          <entry>Contact Match Rule 'AND'</entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>Contact Match Custom Field</entry>
+          <entry>
+            <p><b>Contact Match Rule</b> and <b>Contact Match Custom Field</b> used for
+              matching.</p>
+            <p>When the <b>Contact Match Rule </b>is set to <b>AND</b>, the checkout page will
+                present the <b>Contact Match Custom Field </b>to new and unauthenticated users. The
+                system will use both the <b>Contact Match Rule</b>, which references the given
+                email, and the <b>Contact Match Custom Field</b> to verify whether the new or
+                unauthenticated user matches an existing user in the Community. If matching, the
+                system will not create a new user profile and the sales order will be associated
+                with the existing user profile.</p>
+            <p> </p>
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+    
+  
+    <p><b><b>Contact Match Rule</b> -"<b>OR"</b></b></p>
+  <table id="table_mhf_klh_ks">
+    <tgroup cols="2">
+      <colspec colnum="1" colname="col1"/>
+      <colspec colnum="2" colname="col2"/>
+      <thead>
+        <row>
+          <entry>Field</entry>
+          <entry>Contact Match Rule 'OR'</entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>Contact Match Custom Field</entry>
+          <entry>
+            <p><b>Contact Match Rule</b> and <b>Contact Match Custom Field</b> used for
+              matching.</p>
+            <p>When the <b>Contact Match Rule </b>is set to <b>OR</b>, the <i>Checkout Page</i> will
+                present the <b>Contact Match Custom Field </b>to new and unauthenticated users. The
+                system will use either the <b>Contact Match Rule</b>, which references the given
+                email, or the <b>Contact Match Custom Field</b> to verify whether the new or
+                unauthenticated user matches an existing user in the Community. If either the
+                  <b>Contact Match Rule</b> or the <b>Contact Match Custom Field </b>matches an
+                existing user in the Community the sales order will be associated with the existing
+                user profile.</p>
+            <p> </p>
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+    
+    <p><b><b>Contact Match Rule</b> -"<b>CUSTOM"</b></b></p>
+  <table id="table_v2j_qlh_ks">
+    <tgroup cols="2">
+      <colspec colnum="1" colname="col1"/>
+      <colspec colnum="2" colname="col2"/>
+      <thead>
+        <row>
+          <entry>Field</entry>
+          <entry>Contact Match Rule 'CUSTOM'</entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>Contact Match Custom Field</entry>
+          <entry>
+            <p>Only <b>Contact Match Custom Field</b> used for matching.</p>
+            <p>When only the <b>Contact Match Rule </b>is used, the <i>Checkout</i>
+              <i>Page</i> will present the <b>Contact Match Custom Field </b> to new and
+              unauthenticated users. The system will only use the <b>Contact Match Custom
+              Field</b>to verify whether the new or unauthenticated user matches an existing user in
+              the Community Profile. If matching, the system will not create a new user profile and
+              the sales order will be associated with the existing user profile.</p>
+            <p> </p>
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+  -->
+ <p><b>Creating New, Guest, or Duplicate Profiles</b><ol id="ol_mfl_wlh_ks">
+        <li>The system creates a guest user profile in the Community when:<ol id="ol_nfl_wlh_ks">
+            <li>The guest information provided does not match any existing users in the
+              Community.</li>
+            <li>The guest information provided matches multiple contacts; however, none of the users
+              were configured for the <b>eStore</b>. In this instance, the system records the
+              duplicate IDs in a custom field on the Guest Checkout Account Contact record. </li>
+          </ol></li>
+        <li>If the <b>Enable Guest Checkout</b> field is checked, the system links the record to the
+            <b>Sales Order</b> and will not create a Guest Checkout Account Contact record at the
+            <b>eStore</b> when:<ol id="ol_ofl_wlh_ks">
+            <li>The guest information matches a user profile in the Community. The sales order links
+              to the pre-existing user profile in the Community.</li>
+            <li>The guest information matches multiple user profiles, one of which is associated
+              with the Guest Checkout Account.</li>
+          </ol></li>
+      </ol></p>
+    <p><b>Additional Options</b></p>
+    <p>Select access permissions and invoice payment options.The features to customize the payment
+      confirmation message can be configured in the HTML text box.</p>
+  </body>
+</topic>

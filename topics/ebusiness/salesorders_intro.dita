@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_ibg_xsf_4r">
+  <title>Sales Orders</title>
+  <abstract>The Sales Order (SO) helps manage the Sales Cycle of the products and services offered
+    to customers. The Sales Order can track: <ul id="ul_ms4_nrq_3s">
+      <li><b>Delivery</b></li>
+      <li><b>Payments</b></li>
+      <li><b>Invoices</b></li>
+    </ul>Additionally, the Sales Order drives customer engagement through the tracking of returns,
+    cancellations, and repeat sales. Analyzing purchase history provides staff users with leveraging
+    capabilites, such as: <ul id="ul_yy4_jtq_3s">
+      <li><b>Customer Feedback</b></li>
+      <li><b>Target Marketing</b></li>
+      <li><b>Transactional Loyalty</b></li>
+    </ul><note>The Sales Order defines the customer, products, accounting impact, and payment
+      schedule.</note></abstract> 
+  <conbody>
+    <section><title>Accounting Impact</title><ul>
+        <li><b>Receipt Sales Orders-</b> Journals the receipt of payment at the time of posting. If
+          the receipt does not include an invoice, the receipt will generate a debit to the Deposit
+          Account and a credit to the Revenue or Deferred Revenue Account. <note>Scheduled Sales
+            Orders recorded as a Cash Entry are only made with ePayments.</note></li>
+        <li><b>Invoice Sales Orders-</b> Invoices are created upon closing the Sales Order. When the
+          Sales Order is posted, the GL will reflect a debit to Accounts Receivable and a credit to
+          the Revenue Account. Receipt of payment on an invoiced Sales Order will debit the Deposit
+          Account and credit Accounts Receivable. </li>
+      </ul>
+      <image href="../../assets/screenshots/ebusiness/single_payment_diagram.png"
+        id="image_zsp_g45_1s" width="600"/></section>
+   </conbody>
+</concept>

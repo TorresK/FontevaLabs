@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_xwc_yyq_wt">
+    <title>Managing Media Assets</title>
+    <abstract>Staff users can store all media assets in the <b>Media Collections</b> tab within the
+            <b>Communities</b> app.<note>All file extensions must be lowercase.</note></abstract>
+    <taskbody>
+        <context>In order to upload a previously saved image from the desktop: </context>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Media Collections</b> tab in the <b>Communities</b> app and
+                    click <b>New</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Collection Name</b> and click <b>Save</b>. Click the <b>New Media
+                        Asset</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the media asset's <b>Title</b> and <b>Description</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <b>Choose File</b> and <b>Upload</b> the asset. </cmd>
+                <info><image
+                        href="../../../assets/screenshots/community_builder/new_media_asset.png"
+                        width="600" id="image_ulr_nv5_ts"/></info>
+            </step>
+        </steps>
+        <result>Once the new media asset is successfully uploaded, navigate to the related <b>Media
+                Collection</b> and select the <b>Asset ID</b>; the <b>Path</b> field identifies the
+            asset's URL. </result>
+    </taskbody>
+</task>

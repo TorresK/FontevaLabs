@@ -1,0 +1,114 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+<head><meta name="description" content="Badge Flowdown allows users to assign a badge to a Parent Account and allow the Child Accounts and their related Contacts to receive any benefits of the badge. Badge Flowdown is composed of four ..."></meta><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><meta name="copyright" content="(C) Copyright 2005"></meta><meta name="DC.rights.owner" content="(C) Copyright 2005"></meta><meta name="DC.Type" content="concept"></meta><meta name="DC.Title" content="Badge Flowdown"></meta><meta name="DC.Relation" scheme="URI" content="estore_customizations.html"></meta><meta name="DC.Format" content="XHTML"></meta><meta name="DC.Identifier" content="concept_cmd_dtn_q5"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/commonltr.css"><!----></link><title>Badge Flowdown</title><!--  Generated with Oxygen version 17.1, build number 2016032212.  --><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_topic.css"><!----></link><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/skins/skin.css"><!----></link><script type="text/javascript"><!--
+          
+          var prefix = "index.html";
+          
+          --></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-1.8.2.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="oxygen-webhelp/resources/js/webhelp_topic.js"><!----></script></head>
+<body onload="highlightSearchTerm()" class="frmBody" id="concept_cmd_dtn_q5">
+<table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td width="75%"><a class="navheader_parent_path" href="estore_customizations.html" title="Customizations">Customizations</a></td><td><div class="navheader">
+<span class="navparent"><a class="link" href="estore_customizations.html" title="Customizations"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Customizations</span></a></span>  </div></td></tr></tbody></table>
+
+ <h1 class="title topictitle1">Badge Flowdown</h1>
+
+ 
+ <div class="body conbody"><div class="abstract">Badge Flowdown allows users to assign a badge to a Parent Account and allow the Child
+  Accounts and their related Contacts to receive any benefits of the badge. Badge Flowdown is
+  composed of four primary components: <ul class="ul">
+   <li class="li"><strong class="ph b">Enabling Badge Calculations</strong></li>
+
+   <li class="li"><strong class="ph b">Enabling Badge Flowdown</strong>
+   </li>
+
+   <li class="li"><strong class="ph b">Disabling Badge Flowdown for specific Accounts</strong></li>
+
+   <li class="li"><strong class="ph b">Badges VisualForce Component on the Contact Detail Page</strong></li>
+
+  </ul>
+<div class="p">Badge records are not created for the Child Accounts and their Contacts. The system
+   populates the Badges VisualForce Component on the Contact record for reporting
+     purposes.<div class="note note"><span class="notetitle">Note:</span> <strong class="ph b">In order to view all the badges benefiting a Contact, the user must add the
+     Badges Visualforce Component to the Contact record's page layout.</strong><p class="p"><img class="image" id="image_arg_1fg_x5" src="../../assets/screenshots/estore/badge_contact_component_win16.png" width="700"></img></p>
+</div>
+</div>
+</div>
+
+  <div class="section"><strong class="ph b">Enabling Badge Calculations</strong><p class="p">To enable Badge calculations, navigate to the
+     <strong class="ph b">Spark Admin</strong> tab in the <strong class="ph b">Spark Framework</strong> app and click <strong class="ph b">Apps</strong>. </p>
+<p class="p"><img class="image" id="concept_cmd_dtn_q5__image_sns_rdx_1v" src="../../assets/screenshots/estore/enabling_badge_calculations_win16.png" width="700"></img></p>
+<p class="p">Next, click <strong class="ph b">Charge</strong> and activate the <strong class="ph b">Enables Badge Flow
+     Down</strong> update. This enables the calculation of badges from the <em class="ph i">Badges</em> related list on
+    the Contact record to the <strong class="ph b">Badges</strong> field on the Contact record. </p>
+</div>
+
+  <div class="section"><h2 class="title sectiontitle">Enabling Badge Flowdown</h2>  
+   <div class="p">To enable Badge Flowdown: <ol class="ol">
+     <li class="li">Navigate to the <strong class="ph b">Badge Type</strong> to be enabled for flowdown.</li>
+
+     <li class="li">Check the <strong class="ph b">Enable Badge Flowdown</strong> checkbox and click <strong class="ph b">Save</strong>.<div class="note note"><span class="notetitle">Note:</span> <strong class="ph b">Type</strong>
+              must be set to <strong class="ph b">Line Account</strong>. </div>
+</li>
+
+    </ol>
+</div>
+
+  </div>
+
+<div class="section"><h2 class="title sectiontitle">Disabling Badge Flowdown</h2>
+<div class="p">The <strong class="ph b">Disable Badge Flowdown</strong> checkbox allows users to define specific accounts that cannot
+    receive benefits if flowdown badges are assigned to their parent accounts. To disable badge
+    flowdown: <ol class="ol">
+     <li class="li">Navigate to the Account to be removed from badge flowdown.</li>
+
+     <li class="li">Check the <strong class="ph b">Disable Badge Flowdown</strong> checkbox and click <strong class="ph b">Save</strong>.</li>
+
+    </ol>
+</div>
+</div>
+
+  <div class="section"><h2 class="title sectiontitle">Badges Field and VisualForce Component</h2>
+   <p class="p">Records are not created for all Contacts when badges are assigned to an Account, nor are
+    badges created for Child Accounts and their Contacts when an Account receives a badge that is
+    enabled for badge flowdown. To report on assigned badges, users can use the <strong class="ph b">Badges</strong> field
+    on the Contact record. </p>
+
+   <div class="p"><strong class="ph b">Badges are available to display based upon three relationships:</strong>
+    <ol class="ol">
+     <li class="li">Direct relationships are badges that are directly assigned to the contact record. </li>
+
+     <li class="li">Inherited relationships are the badges that are assigned to the related account
+      record.</li>
+
+     <li class="li">Flowdown relationships are the badges that are assigned to the related account’s parent
+      account and where the badge is enabled for flowdown. <p class="p">The <strong class="ph b">Badges</strong> field is a Long Text
+       Area field that concatenates every badge that gets assigned to a Contact, Account, or Parent
+       Account when the <strong class="ph b">Enable Badge Flowdown</strong> checkbox is checked. To view badges assigned to
+       a contact (inherited, direct, and flowdown) navigate to the Contact record.</p>
+</li>
+
+    </ol>
+</div>
+
+   
+  </div>
+
+  <div class="section"><strong class="ph b">Badges Tab in the Community Portal</strong><p class="p">To display Badges in the <strong class="ph b">Community
+     Portal</strong>, navigate to the <strong class="ph b">Spark Admin</strong> tab in the <strong class="ph b">Spark Framework</strong> app and click
+     <strong class="ph b">Apps</strong>. </p>
+<p class="p"><img class="image" id="concept_cmd_dtn_q5__image_xvs_5dg_x5" src="../../assets/screenshots/estore/spark_admin_apps_badges_win16.png" width="700"></img></p>
+<p class="p">Next, click <strong class="ph b">Engage Member Community</strong> and activate
+     <strong class="ph b">Displays My Badges tab on my profile page</strong>. </p>
+<p class="p"><img class="image" id="concept_cmd_dtn_q5__image_any_m2g_x5" src="../../assets/screenshots/estore/badges_profile_win16.png" width="700"></img></p>
+<p class="p">When logged in to the Community Portal, contacts can click on the
+     <strong class="ph b">Badges</strong> tab to view their associated badges.</p>
+</div>
+
+ </div>
+
+<div class="related-links"></div>
+<div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="estore_customizations.html" title="Customizations"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Customizations</span></a></span>  </div><div class="footer">WebHelp output generated by<a class="oxyFooter" href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"></img></span><span class="xmlauthor">XML Author</span></a></div>
+</body>
+</html>

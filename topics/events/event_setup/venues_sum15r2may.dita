@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_wdg_sqz_zr">
+    <title>Creating Venues</title>
+    <abstract>The <b>Venues</b> object manages the event locations for events: <ul
+            id="ul_yry_1kt_qt">
+            <li><b>Conference style events have multiple venue support</b>. </li>
+            <li><b>Simple style events have single venue support</b>.</li>
+        </ul></abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_qjs_zkt_qt">
+                <li><xref href="event_categories_task.dita#task_bkk_nx1_rr">Create the Event
+                        Category</xref></li>
+                <li><xref href="ticket_types_task.dita#task_ztb_3gb_rr">Create Ticket
+                    Types</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Venues</b> tab in the <b>Events</b> app and click the
+                        <b>New</b> button.</cmd>
+                <info>To store the <b>Venue</b> details for future events, create the <b>Venue</b>
+                    from the <i>Venues</i> related list on the Event Category record.</info>
+            </step>
+            <step>
+                <cmd>Enter the <b>Venue Name</b>.</cmd>
+                <info>Best practices recommend entering a <b>Description</b> and the <b>Image
+                        URL</b>.</info>
+            </step>
+            <step>
+                <cmd>Enter the necessary <i>Contact &amp; Location</i> details. </cmd>
+                <info>A valid address must be entered in order for the <b>Display Map</b> to work in
+                    the <b>Community Portal</b>.</info>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Primary Venue</b> checkbox to identify an event's <b>Primary
+                        Venue</b> and click the <b>Save</b> button.</cmd>
+                <info>The <b>Is Primary Venue</b> checkbox must be checked in order for the <b>Add
+                        to Calendar</b> button to display and the <b>Display Map</b> feature to work
+                    in the <b>Community Portal</b>.</info>
+                <info><image
+                        href="../../../assets/screenshots/events/display_map_venue_sfc_win16.png"
+                        width="700" id="image_oj1_qqf_v5"/></info>
+            </step>
+        </steps>
+        <result>The <b>Venue</b> is linked to the related Event or Event Category. <p><image
+                    href="../../../assets/screenshots/events/venues_sfc_win16.png" width="700"
+                    id="image_bmn_pgp_wt"/></p></result>
+    </taskbody>
+</task>

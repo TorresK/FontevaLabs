@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_e2d_pck_yv">
+    <title>Event Builder: Simple Event</title>
+    <abstract>The <b>Event Builder</b> allows staff users to create both simple and conference style
+        events, greatly speeding up the process of event creation in a unified interface.</abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Events</b> tab and click the <b>New</b> button to launch the
+                        <b>Event Builder</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Event Name</b>, set the <b>Registration Style</b> to
+                    <b>Simple</b>, and select the <b>Event Category</b>. Click <b>Save &amp;
+                        Continue</b>.</cmd>
+                <info><image href="../../assets/screenshots/event_builder/enter_event_name.png"
+                        width="500" id="image_qrv_53k_yv"/></info>
+            </step>
+            <step>
+                <cmd>Enter the <b>Event Display Name</b>, <b>Capacity/Ticket Quantity</b>, <b>Time
+                        Zone</b>, <b>Start Date</b>, <b>Start Time</b>, <b>End Date</b>, and <b>End
+                        Time</b>.</cmd>
+                <info><image href="../../assets/screenshots/event_builder/event_info.png"
+                        width="700" id="image_jpc_y3k_yv"/></info>
+                <info>The <b>Event Display Name</b> is displayed to registrants in the <b>Community
+                        Portal</b>. Check the <b>24-hour Time</b> checkbox to use military time. </info>
+                <info><image href="../../assets/screenshots/event_builder/event_info_overview.png"
+                        width="700" id="image_qr2_z3k_yv"/></info>
+                <info>Use the <b>Browse</b> button to upload a saved image or paste the image URL
+                    into the <b>Banner Image</b> and <b>Thumbnail Image</b> fields. Enter text to
+                    the <b>Event Overview</b> field and customize the way it will display to event
+                    registrants. Enter the <b>Calendar Reminder Text</b> to display on the attendees
+                    Calendar item when using the <b>Add to Calendar</b> feature.</info>
+            </step>
+            <step>
+                <cmd>Click <b>Tickets</b> in the sidebar nav. Enter the <b>Ticket Name</b>,
+                        <b>Price</b>, <b>Ticket Quantity</b>, and <b>Description</b>. The <b>Is
+                        Active</b> checkbox must be checked in order for the ticket to be available
+                    for sale in the <b>Community Portal</b>. Use the <b>Browse</b> button to upload
+                    a saved image or paste the image URL into the <b>Ticket Image URL</b>
+                    field.</cmd>
+                <info><image href="../../assets/screenshots/event_builder/edit_ticket_type.png"
+                        width="500" id="image_xqg_1jk_yv"/></info>
+                <info>Check the <b>Show Tickets Remaining</b> checkbox to show event registrants how
+                    many tickets of that type are available for sale. </info>
+                <info>Click the <b>Attach Form</b> tab to attach a form to the ticket type. Click
+                    the <b>Alternate Pricing</b> tab to enter <b>Early Bird</b> and <b>On-Site</b>
+                    pricing. Click the <b>Accounting</b> tab to specify accounting details for event
+                    revenue. Click <b>Save &amp; Continue</b></info>
+            </step>
+            <step>
+                <cmd>Use the picklist to adjust the <b>Ticket Display Order</b> and use the
+                        <b>Calendar</b> field to select the <b>Ticket Sales Start Date</b>. Enter
+                    any necessary <b>Registration Instructions</b>.</cmd>
+                <info><image href="../../assets/screenshots/event_builder/event_tickets.png"
+                        width="600" id="image_kv3_jjk_yv"/></info>
+            </step>
+            <step>
+                <cmd>Click <b>Access Permissions</b> in the sidebar nav to restrict visibility to
+                    the event and/or ticket type to users with a specific badge type. </cmd>
+                <info><image href="../../assets/screenshots/event_builder/access_permissions.png"
+                        width="600" id="image_rp4_kjk_yv"/></info>
+            </step>
+            <step>
+                <cmd>Click <b>Venue</b> in the sidebar nav. Enter the <b>Primary Venue/Location
+                        Name</b>, <b>Description</b>, and <b>Address</b>. Check the <b>Display
+                        Map</b> checkbox to allow portal users to see a map of where the venue is
+                    located. Use the <b>Browse</b> button to upload a saved image or paste the image
+                    URL into the <b>Venue Image URL</b> field.</cmd>
+                <info><image href="../../assets/screenshots/event_builder/venue_information.png"
+                        width="600" id="image_vn4_mjk_yv"/></info>
+            </step>
+            <step>
+                <cmd>Click the down-arrow in the <b>Preview In</b> tab to preview the event in a
+                    specific site.</cmd>
+                <info><image href="../../assets/screenshots/event_builder/event_preview.png"
+                        width="700" id="image_b4m_njk_yv"/></info>
+            </step>
+            <step>
+                <cmd>In the <b>Status</b> tab, select <b>Publish</b> to allow <b>Community Portal
+                    </b>users to view the event.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

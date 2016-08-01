@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_scm_ytg_kr">
+    <title>Creating a Business Group</title>
+    <abstract><keyword>Business Groups are used when different divisions of an organization need to
+            be tracked for reporting purposes.</keyword><note>A Default Business Group is
+            automatically set up upon package installs. Modify the existing Business Group or
+            continue to create a new one. </note></abstract>
+    <taskbody>
+            <steps>
+        <step>
+                <cmd>Navigate to the <b>Business Groups</b> tab in the <b>Accounting</b> app and
+                    click the <b>New</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Name</b> for the new Business Group and click <b>Save</b>.</cmd>
+                <info>If this Business Group is the child of another Business Group, select the
+                        <b>Parent Business Group</b> from the lookup dialog. It is best practice to
+                    create the records starting with the highest parent record, followed by its
+                    children, when creating a hierarchy of Business Groups.</info>
+            </step>
+            <step>
+                <cmd>Optionally, enter the <b>Default Payment Gateway</b>. If there is no <b>Default
+                        Payment Gateway</b> set on the Business Group record, then the system will
+                    use the <b>Payment Gateway</b> set on the Store or Sales Order records.</cmd>
+            </step>
+            <step>
+                <cmd>Select the appropriate value from the <b>Theme</b> lookup to display the
+                    applicable logo, colors, header/footer, and contact information in the Business
+                    Group's <b>eInvoicing</b> portal.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the necessary field values in the <i>Invoice Display</i> section:
+                        <b>Display Name</b>, <b>Email</b>, <b>Phone</b>, <b>Homepage URL</b>,
+                        <b>Customer Support URL</b>, <b>Support URL</b>, <b>Mailing Address</b>,
+                        <b>Invoice Header</b>, and <b>Invoice Footer</b>. Click <b>Save</b>.</cmd>
+            </step>
+            </steps>  
+        <result>The newly created Business Group is available for selection via lookups for related
+            records in the system such as items, sales orders, invoices, and receipts.</result>
+        <example>There are two business entities within a 501(c)6 Professional Association that also has its own Foundation, which is listed as a
+            501(c)3. Both entities use the same database, but they have
+            their own products and revenue accounts. In this case, they have separate payment
+            gateways and a chart of accounts, for reporting purposes. Therefore, there is a need to
+            create a Business Group for each entity.</example>
+        <postreq>
+            <ul>
+                <li><xref href="bg_paymentgateway_task.dita#task_rc1_52w_kr">Connect to a Payment
+                        Gateway</xref>
+                </li>
+                <li><xref href="bg_glaccounts_task.dita#task_fys_vtv_kr">Add a Chart of
+                        Accounts</xref><note>Default GL Accounts are generated upon creating the
+                        Business Group and must be modified to match the customer's existing
+                        accounting system in order for them to be correctly mapped. </note></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

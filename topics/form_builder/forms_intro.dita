@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_wb3_d5h_1s">
+  <title>Form Builder Overview</title>
+  <abstract>The <b>Form Builder</b> allows staff users to create customized, multi-page registration
+    forms featuring interview questions, sponsors, vendors, venues, etc. on a website or member
+    portal. <p><b>User Scenarios: </b><ul id="ul_a2c_bqn_qv">
+        <li>
+          <p>Whenever someone registers for a conference, the organization needs to find out what
+            size t-shirt they want, if they have any dietary restrictions, and if they have a
+            disability that requires special accommodation. </p>
+        </li>
+        <li>
+          <p>After the conference, the organization sends a survey to participants to get their
+            feedback. </p>
+        </li>
+        <li>
+          <p>When someone applies for membership, they are asked to supply background information so
+            the organization can determine if they are qualified to join. </p>
+        </li>
+        <li>
+          <p>A community group wants to know more about its members—why they joined the group, what
+            they hope to get out of it, and what their interests are. </p>
+        </li>
+        <li>
+          <p>The event organizers would like to open their conference to submissions from the
+            community. Submitters must include the talk title and abstract, upload a copy of their
+            slides, and provide links to audio or video of their previous speaker engagements. </p>
+        </li>
+      </ul></p></abstract>
+</concept>

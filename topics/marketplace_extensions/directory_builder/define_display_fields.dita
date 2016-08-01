@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_ifp_hrm_lw">
+    <title>Define Display Fields</title>
+    <abstract>Select the data elements to include in the directory output by dragging and dropping
+        the <b>Available Fields</b> into the <b>Selected </b>fields box. Drag and drop the fields in
+        the <b>Selected Fields</b> list until they are in the desired order. As the fields are
+        selected and arranged, they are added to the <b>Profile Fields</b> list. The <b>Profile
+            Fields</b> appear in this order on the <b>Profile</b> modal. <p><image
+                href="../../../assets/screenshots/marketplace_extensions/db_select_fields.png"
+                id="image_vbd_vhm_nw" width="700"/></p></abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd><i>Profile Display Name Fields</i> identify the fields that display on the
+                    profile modal header. Check the fields to be displayed. The remaining fields are
+                    displayed in the body of the modal window.</cmd>
+            </step>
+            <step>
+                <cmd>Check the <i>Search Fields</i>. These are the fields which the portal user can
+                    query to define the directory output. </cmd>
+                <info>Best practices recommend to avoid using email addresses and dates as
+                    searchable data elements.</info>
+            </step>
+            <step>
+                <cmd>Check the <i>Search Result Fields</i> to identify what data will be displayed
+                    in the search result list.When the portal user clicks on a result, it opens the
+                    Profile modal with all of the fields that were selected to appear in the
+                    directory. The number of records that display on a single search result page is
+                    defined by the value saved in the <i>Display Result</i>. </cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

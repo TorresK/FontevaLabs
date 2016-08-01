@@ -1,0 +1,108 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+<head><meta name="description" content="Stores are fundamental for event registration, renewing subscriptions, and paying invoices in the Community Portal . Staff users can additionally configure payment information, catalogs and catalog ..."></meta><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><meta name="copyright" content="(C) Copyright 2005"></meta><meta name="DC.rights.owner" content="(C) Copyright 2005"></meta><meta name="DC.Type" content="task"></meta><meta name="DC.Title" content="Creating a Store"></meta><meta name="DC.Relation" scheme="URI" content="configuring_checkout.html"></meta><meta name="DC.Format" content="XHTML"></meta><meta name="DC.Identifier" content="task_p3m_trm_js"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/commonltr.css"><!----></link><title>Creating a Store</title><!--  Generated with Oxygen version 17.1, build number 2016032212.  --><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_topic.css"><!----></link><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/skins/skin.css"><!----></link><script type="text/javascript"><!--
+          
+          var prefix = "index.html";
+          
+          --></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-1.8.2.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="oxygen-webhelp/resources/js/webhelp_topic.js"><!----></script></head>
+<body onload="highlightSearchTerm()" class="frmBody" id="task_p3m_trm_js">
+<table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td width="75%"></td><td><div class="navheader"></div></td></tr></tbody></table>
+
+    <h1 class="title topictitle1">Creating a Store</h1>
+
+    
+    <div class="body taskbody"><div class="abstract">Stores are fundamental for event registration, renewing subscriptions, and paying
+        invoices in the <strong class="ph b">Community Portal</strong>. Staff users can additionally configure payment
+        information, catalogs and catalog items, and <a class="xref" href="configuring_checkout.html#topic_ihw_t3h_ks">guest checkout settings</a>. <strong class="ph b">The
+            system permits one Store for every Site.</strong><div class="note note"><span class="notetitle">Note:</span> <strong class="ph b">Configuring the guest checkout
+                settings match unauthenticated portal users to existing contacts.
+        </strong></div>
+</div>
+
+        <div class="section prereq p">
+            <ul class="ul" id="task_p3m_trm_js__ul_ihl_ks4_ps">
+                <li class="li"><a class="xref" href="../accounting/business_groups/bg_setup_task.html#task_scm_ytg_kr">Create a Business Group</a></li>
+
+                <li class="li"><a class="xref" href="../accounting/business_groups/bg_paymentgateway_task.html#task_rc1_52w_kr">Connect to a Payment Gateway</a></li>
+
+                <li class="li">Ensure that the user creating the Store has a <strong class="ph b">Role</strong> assigned to their User
+                    record. </li>
+
+            </ul>
+
+        </div>
+
+        <ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd">Navigate to the <strong class="ph b">Stores</strong> tab in the <strong class="ph b">eStore</strong> app and click
+                    <strong class="ph b">New</strong>.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Enter the <strong class="ph b">Store Name</strong> and select the <strong class="ph b">Business Group</strong> and <strong class="ph b">Payment
+                        Gateway</strong> using the lookups.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Check the <strong class="ph b">Enable Guest Checkout</strong> checkbox.</span>
+                <div class="itemgroup info">Enabling the guest checkout allows an unauthenticated portal user to process
+                    transactions without creating a new user account. Default is unchecked.</div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Configure the <strong class="ph b">Default Checkout:</strong></span>
+                <ul class="ul choices" id="task_p3m_trm_js__choices_kn5_t2n_cv">
+                    <li class="li choice"><strong class="ph b">Guest Checkout</strong> - Customers will view the <em class="ph i">Checkout as Guest</em>
+                        page as the first option during checkout. <strong class="ph b">Guest Checkout</strong> is the
+                        default value when the <strong class="ph b">Enable Guest Checkout</strong> field is
+                        checked.</li>
+
+                </ul>
+
+                <div class="itemgroup info"><img class="image" id="task_p3m_trm_js__image_q5r_mgn_cv" src="../../assets/screenshots/estore/guest_checkout_ui_win16.png" width="500"></img><div class="note note"><span class="notetitle">Note:</span> The <strong class="ph b">Create an account</strong>
+                        checkbox and <strong class="ph b">Create Password</strong> text field will display only if
+                            <strong class="ph b">Self-Registration</strong> is enabled for the community. </div>
+</div>
+                <ul class="ul choices" id="task_p3m_trm_js__choices_nvm_lgn_cv">
+                    <li class="li choice"><strong class="ph b">Account Login</strong> - Customers are asked to log in to their account as
+                        the first option during checkout. <strong class="ph b">Account Login</strong> is the default value
+                        if the <strong class="ph b">Enable Guest Checkout</strong> field is not checked.</li>
+
+                </ul>
+
+                <div class="itemgroup info"><img class="image" id="task_p3m_trm_js__image_lv5_tgn_cv" src="../../assets/screenshots/estore/account_login_checkout_win16.png" width="500"></img></div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Enter the <strong class="ph b">Payment Confirmation Message</strong> to display to users after
+                    successfully processing payment on the <em class="ph i">Checkout</em> page. Click
+                    <strong class="ph b">Save</strong>.</span>
+            </li>
+</ol>
+
+        <div class="section postreq">
+            <ul class="ul" id="task_p3m_trm_js__ul_c5j_zhn_js">
+                <li class="li"><a class="xref" href="creating_item_classes.html#task_zdr_yqj_gs">Create an Item
+                        Class</a> and the included <a class="xref" href="creating_items_task.html#task_nc2_hll_gs">Items</a> that will be
+                    added to the catalog. Then, <a class="xref" href="creating_catalogs_task.html#task_yrs_bln_js">create a catalog and add
+                        it to the Store</a>.</li>
+
+                <li class="li"><a class="xref" href="../communities/sites/sites_concept.html#concept_kwb_srp_ks">Create a
+                        Site</a> and enable the eStore on the Site record.<div class="note note"><span class="notetitle">Note:</span> <strong class="ph b">Every Store
+                            must have a catalog in order for public users to make purchases in the
+                            Community Portal. Staff users should create the catalog's Item Class
+                            along with its items before creating the catalog. </strong></div>
+</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+<div class="related-links">
+<ul class="ullinks">
+<li class="link ulchildlink"><strong><a href="configuring_checkout.html">Configuring the Guest Checkout</a></strong><br xmlns="http://www.w3.org/1999/xhtml" />
+</li>
+</ul>
+</div>
+<div class="navfooter"><!----></div><div class="footer">WebHelp output generated by<a class="oxyFooter" href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"></img></span><span class="xmlauthor">XML Author</span></a></div>
+</body>
+</html>

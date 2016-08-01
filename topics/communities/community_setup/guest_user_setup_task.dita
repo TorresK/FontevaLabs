@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_fpj_ndj_rs">
+    <title>Setting up the Public Site Guest User</title>
+    <taskbody>
+        <prereq>
+            <ul id="ul_ocp_qdj_rs">
+                <li><xref href="creating_community_portal_task.dita#task_ksy_bw3_rs">Create &amp;
+                        Activate a Community Portal</xref></li>
+                <li><xref href="community_portal_profile_task.dita#task_gth_3y3_rs">Set up the
+                        Community Portal Profile</xref></li>
+                <li><xref href="configuring_community_task.dita#task_kvc_bbj_rs">Configure the
+                        Community</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Click the <b>Public Access Settings</b> button and click <b>Edit</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Enable CRUD access for the <b>Guest User</b> profile:</cmd>
+                <info>
+                    <ul>
+                        <li>
+                            <p>Click <b>Edit </b>and then <b>right </b>click on the main body of the
+                                page and select <b>Inspect Element</b>.</p>
+                        </li>
+                        <li>
+                            <p>Select <b>Console </b>from the top nav bar.</p>
+                        </li>
+                        <li>Copy the script and paste it into the <b>Console </b>window:
+                            <pre>var c = document.getElementsByTagName('input'); for (var i = 0; i &lt; c.length; i++) { if (c[i].type == 'checkbox') {c[i].checked = true;} }</pre></li>
+                        <li>
+                            <p>Hit the <b>Enter </b>key and exit the <b>Developer</b> view.</p>
+                        </li>
+                    </ul>
+                </info>
+            </step>
+            <step>
+                <cmd>Click <b>Save</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Navigate to the <i>Enabled Apex Class Access </i>related list and click
+                        <b>Edit</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Add the entire list of <i>Available Apex Classes </i>column to the <i>Enabled
+                        Apex Classes </i><i>column</i>. Click <b>Save</b>.</cmd>
+                <info>Repeat the process in steps 4 and 5 to enable <i>Visualforce Page
+                    Access</i>.</info>
+            </step>
+        </steps>
+        <result>The setup for the Public Site Guest User is complete.</result>
+        <postreq>
+            <ul id="ul_ykx_k2j_rs">
+                <li><xref href="login_registration_task.dita#task_vfg_42j_rs">Configure Login &amp;
+                        Registration Information</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

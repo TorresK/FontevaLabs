@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_j3l_qgl_rv">
+ <title>Advance Calendar Period</title>
+ <abstract>The <b>Advance Calendar Period</b> functionality is specific to Calendar type
+  subscription plans. This functionality allows the staff user to define a period of time prior to
+  the end of their fiscal calendar year end that first time purchasing subscribers will be
+  purchasing the next fiscal year’s subscription while receiving the remaining current fiscal year’s
+  subscription free of charge. This means that the first Term of the subscription and any Badges
+  assigned to the subscriber will have a start date of Today with an end date being the end of the
+  fiscal year. <note>For subscriptions purchased in the <b>Advance Calendar Period</b>, the product
+   will not begin recognizing revenue until the end of the first month of the fiscal year purchased.
+   No revenue will be recognized for the current term’s free months. </note></abstract>
+ <conbody>
+  <p><b>Setup</b><ol id="ol_ngg_xgl_rv">
+    <li>Navigate to the <b>Subscription Plan</b> record. </li>
+    <li>Enter the number of days you wish to define as free in the <b>Advance Calendar Period</b>
+       field.<p><b>Example: The Organization’s fiscal year ends on 12/31 but they want anyone that
+       purchases a subscription on or after 10/1 to get the remainder of the current term for
+       free---->Advance Calendar Period = 92 </b></p></li>
+   </ol></p>
+ </conbody>
+</concept>

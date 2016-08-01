@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_xlq_dmr_sr">
+    <title>Applying Payment to Multiple Invoices</title>
+    <abstract>Users can pay multiple invoices through a single payment, 
+        saving both time and excess bank fees per transaction.</abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Invoice</b> tab within the <b>eBusiness</b> application.</cmd>
+            </step>
+            <step>
+                <cmd>Select the box next to each invoice that requires payment. Click <b>Apply Payment</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <b>Process Payment</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Select payment method and enter the required values.
+                    Select the <b>Save</b> checkbox to save payment information.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>Pay</b> button to apply payment to the selected invoices.</cmd>
+            </step>
+        </steps>
+        <result>The associated Sales Order record for each invoice updates the ePayment and Receipt
+            transaction history following the successful application of payment.</result>
+    </taskbody>
+</task>

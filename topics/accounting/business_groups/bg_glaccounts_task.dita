@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_fys_vtv_kr">
+    <title>Adding a Chart of Accounts</title>
+    <abstract><keyword>A chart of accounts consists of GL accounts.</keyword> Assign GL accounts to
+        items so journal entries can be automatically created in the system for various
+        transactions. The Chart of Accounts is often set up during the initial implementation, but
+        organizations can create new GL accounts as business needs arise. Look at org system and
+        match all GL accounts to current accounting software. </abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_dqr_c52_x5">
+                <li><xref href="bg_setup_task.dita#task_scm_ytg_kr">Create a Business
+                    Group</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Click the <b>New GL Account</b> button within the <i>Chart of Accounts</i>
+                    related list on the Business Group record.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the GL account name in the <b>Description</b> field. Click
+                    <b>Save</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter any optional field values as needed. Click <b>Save</b>.</cmd>
+            </step>
+        </steps>
+        <result>The required GL accounts are created and viewable in the <i>Chart of Accounts</i>
+            related list present on the Business Group record.</result>
+        <postreq>
+            <ul id="ul_j3h_jnd_bv">
+                <li><xref href="../../estore/taxes_overview_concept.dita#concept_snc_vzb_wr">Set up
+                        Taxes</xref>
+                </li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

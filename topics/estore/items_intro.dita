@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_zy1_2ll_gs">
+ <title>Items</title>
+ <abstract>An item is any good or service available for sale. Items can be: <ul id="ul_sfb_vhp_hs">
+   <li>Digital (eBooks, apps)</li>
+   <li>Donations</li>
+   <li>Inventory </li>
+   <li>Subscriptions</li>
+  </ul></abstract>
+ <conbody>
+  <p>Items are also automatically created once any ticket type, schedule item, or sponsor package is
+   created for an event, sharing a 1:1 relationship. Through the Item record, staff users can
+   configure the fields related to the item's tax/vat, attributes, assignment options, price rules,
+   and catalogs.  </p>
+  <p>All items within an Item Class will inherit access permissions when the <b>Enable Access
+        Permissions</b> checkbox is selected on the Item Class record.</p>
+ </conbody>
+</concept>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_bhc_4d3_kv">
+ <title>Salesforce Limitations</title>
+ <abstract>Currently, there are a few Salesforce solutions that are not compatible with the system. </abstract>
+ <conbody>
+  <p>
+   <ul id="ul_vwp_vd3_kv">
+    <li>Workflow Field Updates cause Too Many SOQL when setup on the Subscription object.<p><b>Use
+       Framework Triggers (Routing Rules) for field updates to resolve this issue.</b></p></li>
+    <li>Batch size of 200 causes errors during Data Load for Subscriptions.<p><b>Change the Batch
+       size to 100 for Data Loading subscriptions to resolve this issue.</b></p></li>
+    <li>API names for custom objects cannot match the API names of existing custom objects in any of
+     the managed packages. <p><b>When creating new custom objects, do not use the same API name of
+       custom objects in the managed packages.</b></p></li>
+   </ul>
+  </p>
+ </conbody>
+</concept>

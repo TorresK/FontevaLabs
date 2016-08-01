@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_psb_jmb_rr">
+    <title>Purchasing a Sponsor Package</title>
+    <abstract>Sponsor Packages are available for purchase by users through the <b>Shopping Cart</b>
+        and the <b>Community Portal</b>. </abstract>
+    <taskbody>
+        <prereq><b>Prerequisites:</b>
+            <ul>
+                <li>Create a Sponsor Package.</li>
+                <li>Add package items to a Sponsor Package.</li>
+            </ul></prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the Sales Order tab in the ebusiness application. Click the New
+                    button. </cmd>
+            </step>
+            <step>
+                <cmd>Enter a value for the <b>Contact</b> field using the lookup. Click <b>Save</b>. </cmd>
+                <info>It is best practice to select "Receipt" and "Simple Receipt" from the
+                        <b>Posting Entity</b> and <b>Schedule Type</b> picklists, respectively.
+                </info>
+            </step>
+            <step>
+                <cmd>Click the <b>Shopping Cart</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Search for the Sponsor Package in the <b>Filter Results</b> searchbar and add
+                    it to the <b>Shopping Cart</b>.</cmd>
+                <info>If there is a package item related to the Sponsor Package, select the
+                    associated tab and click the <b>Add to Cart</b> button. </info>
+            </step>
+            <step>
+                <cmd>Click the <b>Checkout</b> button and enter payment information. Click the
+                        <b>Pay</b> button. </cmd>
+            </step>
+        </steps>
+        <result>
+            <ul>
+                <li>The Sales Order will display a <b>Status</b> of <b>Closed</b> and a <b>Posting
+                        Status</b> of <b>Posted</b>.</li>
+                <li>A Sales Order Line is created for each purchased item along with the package
+                    item.</li>
+                <li>Transaction Summary, Receipt, and ePayment records are automatically created and
+                    will display in their respective related lists on the Sales Order record. </li>
+                <li>A Sponsor record is created in the <i>Sponsors</i> related list on the Event
+                    record. </li>
+            </ul>
+        </result>
+    </taskbody>
+</task>

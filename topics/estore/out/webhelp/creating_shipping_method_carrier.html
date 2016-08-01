@@ -1,0 +1,109 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+<head><meta name="description" content="Shipping Carriers refer to the vendors responsible for delivering customer orders. Examples of Shipping Carriers include: US Postal Service UPS FedEx A Delivery Method is the delivery option from that ..."></meta><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><meta name="copyright" content="(C) Copyright 2005"></meta><meta name="DC.rights.owner" content="(C) Copyright 2005"></meta><meta name="DC.Type" content="task"></meta><meta name="DC.Title" content="Creating a Shipping Carrier and Delivery Method"></meta><meta name="DC.Relation" scheme="URI" content="shipping_introduction.html"></meta><meta name="DC.Format" content="XHTML"></meta><meta name="DC.Identifier" content="task_xz1_dqv_ht"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/commonltr.css"><!----></link><title>Creating a Shipping Carrier and Delivery Method</title><!--  Generated with Oxygen version 17.1, build number 2016032212.  --><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_topic.css"><!----></link><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/skins/skin.css"><!----></link><script type="text/javascript"><!--
+          
+          var prefix = "index.html";
+          
+          --></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-1.8.2.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="oxygen-webhelp/resources/js/webhelp_topic.js"><!----></script></head>
+<body onload="highlightSearchTerm()" class="frmBody" id="task_xz1_dqv_ht">
+<table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td width="75%"><a class="navheader_parent_path" href="shipping_introduction.html" title="Shipping">Shipping</a></td><td><div class="navheader">
+<span class="navparent"><a class="link" href="shipping_introduction.html" title="Shipping"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Shipping</span></a></span>  </div></td></tr></tbody></table>
+
+    <h1 class="title topictitle1">Creating a Shipping Carrier and Delivery Method</h1>
+
+    
+    <div class="body taskbody"><div class="abstract"><strong class="ph b">Shipping Carriers</strong> refer to the vendors responsible for delivering customer
+        orders. Examples of Shipping Carriers include: <ul class="ul" id="ul_rpy_kcw_ht">
+            <li class="li">US Postal Service</li>
+
+            <li class="li">UPS</li>
+
+            <li class="li">FedEx</li>
+
+        </ul>
+A <strong class="ph b">Delivery Method</strong> is the delivery option from that carrier. Examples of Delivery
+        Methods include: <ul class="ul" id="ul_rzl_4cw_ht">
+            <li class="li">Overnight Air</li>
+
+            <li class="li">Express 2-3 Day Ground</li>
+
+            <li class="li">Standard 5-7 Day Ground</li>
+
+        </ul>
+</div>
+
+        <div class="section prereq p"><strong class="ph b">Navigate to the related Business Group record and ensure the desired shipping
+                configurations are set:</strong><ul class="ul" id="task_xz1_dqv_ht__ul_mfk_xt2_x5">
+                <li class="li">Set up <strong class="ph b"><a class="xref" href="../accounting/business_groups/bg_glaccounts_task.html#task_fys_vtv_kr">Shipping GL Account</a></strong></li>
+
+            </ul>
+<ul class="ul" id="task_xz1_dqv_ht__ul_x1j_cr2_x5">
+                <li class="li">Check the <strong class="ph b">Enable Shipping by Order Total</strong> checkbox to allow customers to
+                    see a single shipping rate for the entire order. If left unchecked, customers
+                    will instead see shipping rates for each unique item in their order. In both
+                    cases, shipping is calculated only for the items that have <strong class="ph b">Require
+                        Shipping</strong> enabled. For new Business Groups, the default is checked.</li>
+
+                <li class="li">Use the <strong class="ph b">Shipping Rate Basis</strong> picklist to calculate the shipping rate based
+                    on <strong class="ph b">Item Weight</strong> or <strong class="ph b">Item Value</strong>. For new Business Groups, the default
+                    value is <strong class="ph b">Item Weight</strong>.<p class="p"><img class="image" id="task_xz1_dqv_ht__image_tm4_ms2_x5" src="../../assets/screenshots/estore/shipping_configs_business_group_win16.png" width="700"></img></p>
+</li>
+
+            </ul>
+</div>
+
+        <ol><li class="li step stepexpand">
+                <span class="ph cmd">Navigate to the <strong class="ph b">Item Classes</strong> tab in the <strong class="ph b">eStore</strong> app and click
+                        <strong class="ph b">New</strong>.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Enter the Shipping Carrier <strong class="ph b">Name</strong>.</span>
+                <div class="itemgroup info">Optionally, enter a <strong class="ph b">Description</strong>.</div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Select the <strong class="ph b">Business Group</strong>.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Check the <strong class="ph b">Is Active</strong> and <strong class="ph b">Is Shipping Carrier</strong> checkboxes.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Select the <strong class="ph b">Shipping GL Account</strong> and click <strong class="ph b">Save</strong>.</span>
+                <div class="itemgroup info">All subsequent <strong class="ph b">Shipping Rate</strong> items created using the same Shipping
+                    Carrier will inherit the related <strong class="ph b">Shipping GL Account</strong>. However, Admins can
+                    override the inheritance by selecting an alternative GL account on the Shipping
+                    Rate item itself.</div>
+                <div class="itemgroup info"><img class="image" id="task_xz1_dqv_ht__image_zby_pkw_ht" src="../../assets/screenshots/estore/shipping_carrier_win16.png" width="700"></img></div>
+            </li>
+</ol><p class="li stepsection"><strong class="ph b">Creating the Delivery Method</strong></p><ol start="6"><li class="li step stepexpand">
+                <span class="ph cmd">Navigate to the <em class="ph i">Delivery Methods</em> related list and click <strong class="ph b">New Delivery
+                        Method</strong>.</span>
+                <div class="itemgroup info">Each Shipping Carrier can have multiple Delivery Methods. For example, FedEx
+                    may have both “Overnight Air” and “Express 2-3 Day Ground" as delivery options.
+                </div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Enter the Delivery Method <strong class="ph b">Name</strong>, <strong class="ph b">Description</strong>, and click
+                        <strong class="ph b">Save</strong>.</span>
+                <div class="itemgroup info">The <strong class="ph b">Shipping Carrier</strong> lookup field is autopopulated.</div>
+            </li>
+</ol>
+        <div class="section result">The Shipping Carrier and Delivery Method are created.</div>
+
+        <div class="section postreq">
+            <ul class="ul" id="task_xz1_dqv_ht__ul_xk5_gsv_ht">
+                <li class="li"><a class="xref" href="creating_shipping_region.html#task_dmf_nrv_ht">Create the Shipping
+                        Region</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+<div class="related-links"></div>
+<div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="shipping_introduction.html" title="Shipping"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Shipping</span></a></span>  </div><div class="footer">WebHelp output generated by<a class="oxyFooter" href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"></img></span><span class="xmlauthor">XML Author</span></a></div>
+</body>
+</html>

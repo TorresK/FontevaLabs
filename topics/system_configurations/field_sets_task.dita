@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_op1_4ll_zt">
+    <title>Creating a Field Set</title>
+    <abstract>A field set is a grouping of fields. Staff users can create new field sets displaying
+        a user's <b>Name</b>, <b>Email</b>,<b>Role</b>, and <b>Job Title</b>. When a field set is
+        added to a <b>Visualforce</b>page, developers can loop over its fields and render them. New
+        field sets can customize the display of information on pages in the <b>Community Portal</b>,
+        such as the <i>Profile</i> page and the <i>Checkout</i> page, as well as pages within
+        Community Groups and Events. </abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to <b>Setup > Build > Create > Objects</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the desired object to navigate to the <i>Custom Object </i> page.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>New</b> button on the <i>Field Sets</i> related list.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the desired <b>Field Set Label</b>. The <b>Field Set Name</b> will
+                    autopopulate.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the required text to provide a brief description of where and how the
+                    field set is used. Click the <b>Save</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Drag-and-drop the fields to be listed in the field set. Arrange the fields in
+                    the order they will appear. Click the <b>Save</b> button.</cmd>
+            </step>
+        </steps>
+        <result>A new field set is created.</result>
+    </taskbody>
+</task>

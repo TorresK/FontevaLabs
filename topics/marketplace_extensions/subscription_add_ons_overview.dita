@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_fnn_ldl_rv">
+ <title>Subscription Add-Ons</title>
+ <abstract>Includes <b><xref href="grace_period.dita#concept_elv_ffl_rv">Grace Period</xref></b> and
+    <b><xref href="advance_calendar_period.dita#concept_j3l_qgl_rv">Advance Calendar
+   Period</xref></b> functionality. <b>Grace Period</b> defines a period of time to receive benefits
+  past the subscriptions paid through date. <b>Advance Calendar Period</b> define the period in
+  which a subscriber can purchase a subscription for the following fiscal year while receiving the
+  remainder of the current year free of charge. <p>
+   <note>This is an unmanaged package. This means that you will not be able to update this package
+    if a new version is available. You will need to uninstall the old version and install the new
+    version. When uninstalling packages you will be at risk of losing data that was defined with the
+    previous version’s package. As this is a free, unmanaged package, Fonteva does not offer support
+    for <b>Subscription Add-Ons</b>. </note>
+  </p><p><b>Installation</b></p><p>After installing the <b>Subscription Add-Ons</b> package,
+   complete the following steps to complete installation: <ol id="ol_wwx_q2l_rv">
+    <li>Run the install scripts: <b>Navigate to your name > Developer Console > Debug > Open Execute
+      Anonymous Window</b>
+    </li>
+     <li>Paste <b><codeph>new Sub_PackageScripts.Install().run();</codeph></b> in the window and
+          click <b>Execute</b>. </li>
+    <li>Add new fields to page layouts: <ul id="ul_ivh_w2l_rv">
+      <li> Subscription Plan object: <b>Grace Period</b>, <b>Advance Calendar Period </b></li>
+      <li>Subscription object: <b>Grace Period End Date</b></li>
+     </ul></li>
+   </ol></p></abstract>
+</concept>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <title>eStore</title>
+  <topicref href="estore_landing_page.dita" keys="estore_map"/>
+  <topicref href="creating_stores_task.dita" keys="create_stores">
+    <topicref href="configuring_checkout.dita"/>
+  </topicref>
+  <topicref href="creating_catalogs_task.dita" keys="create_catalogs">
+    <topicref href="item_campaign_pages_task.dita" keys="campaign_page"/>
+  </topicref>
+  <topicref href="item_classes_intro.dita" keys="estore_intro">
+    <topicref href="creating_item_classes.dita" keys="item_class_create"/>
+    <topicref href="creating_items_task.dita" keys="item_create"/>
+    <topicref href="package_items_task.dita"/>
+  </topicref>
+  <topicref href="deferred_revenue_item_class.dita"/>
+  <topicref href="shipping_introduction.dita">
+    <topicref href="creating_shipping_method_carrier.dita"/>
+    <topicref href="creating_shipping_region.dita"/>
+    <topicref href="default_shipping_region_win16.dita"/>
+    <topicref href="creating_will_not_ship_region.dita"/>
+    <topicref href="creating_shipping_rates.dita"/>
+    <topicref href="default_shipping_rate_overview.dita"/>
+    <topicref href="creating_flat_shipping_rate.dita"/>
+    <topicref href="creating_shipping_items.dita"/>
+  </topicref>
+  <topicref href="subscriptions_intro.dita">
+    <topicref href="subscriptions_invoicing_options_win16.dita"/>
+    <topicref href="subscription_calendar_task.dita" keys="subscript_cal"/>
+    <topicref href="subscription_termed_task.dita" keys="subscript_term"/>
+    <topicref href="subscription_lifetime_task.dita" keys="subscript_life"/>
+    <topicref href="subscription_item_class.dita"/>
+    <topicref href="creating_subscriptions_task.dita"/>
+    <topicref href="purchasing_subscriptions_win16.dita"/>
+    <topicref href="managing_subscriptions.dita"/>
+    <topicref href="subscription_renewal.dita"/>
+    <topicref href="modifying_subscriptions_backend.dita"/>
+    <topicref href="amending_subscriptions.dita"/>
+  </topicref>
+  <topicref href="taxes_overview_concept.dita" keys="tax_overview">
+    <topicref href="tax_locale_setup_task.dita" keys="tax_locale"/>
+    <topicref href="tax_class_setup_task.dita" keys="tax_class"/>
+    <topicref href="tax_rate_setup.dita" keys="tax_rate_setup"/>
+    <topicref href="taxable_items_setup_win16.dita"/>
+  </topicref>
+  <topicref href="tax_class_expected_results.dita" keys="tax_expect_results"/>
+  <topicref href="estore_customizations.dita">
+    <topicref href="badges_access_permissions_task.dita" keys="badge_access_permission"/>
+    <topicref href="creating_price_rules_task.dita"/>
+    <topicref href="item_price_rule_support_win16.dita"/>
+    <topicref href="badges_creating_task.dita" keys="badge_create"/>
+    <topicref href="badge_flowdown.dita"/>
+    <topicref href="badges_assignment_task.dita" keys="badge_assign"/>
+    <topicref href="adding_bar_codes.dita" keys="bar_codes"/>
+    <topicref href="applying_discount_codes_task.dita"/>
+    <topicref href="source_codes_task.dita" keys="source_code_task"/>
+  </topicref>
+</map>

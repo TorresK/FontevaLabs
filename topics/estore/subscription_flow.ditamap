@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>Subscription Flow</title>
+ <topicref href="subscriptions_intro.dita">
+  <topicref href="subscription_plans.dita">
+   <topicref href="subscription_calendar_task.dita"/>
+   <topicref href="subscription_lifetime_task.dita"/>
+  </topicref>
+  <topicref href="subscription_termed_task.dita"/>
+  <topicref href="subscription_item_class.dita"/>
+  <topicref href="creating_subscriptions_task.dita"/>
+  <topicref href="creating_catalogs_task.dita"/>
+  <topicref href="managing_subscriptions.dita">
+   <topicref href="amending_subscriptions.dita"/>
+   <topicref href="modifying_subscriptions_backend.dita"/>
+   <topicref href="subscription_renewal.dita"/>
+  </topicref>
+ </topicref>
+</map>

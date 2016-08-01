@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_nhb_vjy_pw">
+    <title>Price Rule Builder</title>
+    <abstract><b>Price Rule Builder</b> is a feature that allows to create a large number of price
+        rules for your items. By specifying a percentage, the price rule criteria and the list of
+        items to receive the price rule you can easily generate price rules in mass. </abstract>
+</task>

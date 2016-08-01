@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE oXygen:ReusableComponent [
+<!ELEMENT oXygen:ReusableComponent (oXygen:ComponentDescription, oXygen:ComponentDefinition)>
+<!ATTLIST oXygen:ReusableComponent 
+    xmlns:oXygen CDATA #FIXED "http://www.oxygenxml.com/ns/dita/reuse" 
+    id CDATA #IMPLIED
+    domains CDATA "(topic task)                            (topic hi-d)                             (topic ut-d)                             (topic indexing-d)                            (topic hazard-d)                            (topic abbrev-d)                            (topic pr-d)                             (topic sw-d)                            (topic ui-d)                            (topic task strictTaskbody-c)     (topic oXygen-reuse-d) "
+    class CDATA "- topic/topic oXygen:ReusableComponent/oXygen:ReusableComponent "    
+    xmlns:ditaarch CDATA #FIXED "http://dita.oasis-open.org/architecture/2005/"
+    ditaarch:DITAArchVersion CDATA #FIXED "1.2" 
+    >
+<!ELEMENT oXygen:ComponentDescription (#PCDATA)>
+<!ATTLIST oXygen:ComponentDescription 
+ class CDATA "- topic/title oXygen:ReusableComponent/oXygen:ComponentDescription ">
+<!ELEMENT oXygen:ComponentDefinition ANY>
+<!ATTLIST oXygen:ComponentDefinition
+    class CDATA "- topic/body oXygen:ReusableComponent/oXygen:ComponentDefinition ">
+
+<!ENTITY % dtd PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+%dtd;
+
+]>
+<oXygen:ReusableComponent id="ReusableComponent_w4r_j2c_3t">
+    <oXygen:ComponentDescription></oXygen:ComponentDescription>
+    <oXygen:ComponentDefinition><steps id="steps_apr_j2c_3t"><step><cmd>Navigate to the <b>Items</b> tab in the <b>eStore</b> app and click <b>New</b>.</cmd></step><step><cmd>Enter <b>Name</b> for the Shipping Rate.</cmd></step><step><cmd>Enter a <b>Display Name</b>. </cmd><info>The <b>Display Name</b> appears on the <b>eStore</b> checkout screen and on the customer's receipt. </info></step><step><cmd>Identify the <b>Shipping Carrier</b> using the <b>Item Class</b> lookup.</cmd></step><step><cmd>Enter the cost of shipping applied to the item in the <b>Item Price</b> field.</cmd></step><step><cmd>Select the <b>Business Group</b> and check the <b>Is Active</b> and <b>Is Shipping Rate</b> checkboxes.</cmd></step><step><cmd>Select the <b>Delivery Method</b> associated with the new Shipping Rate using the lookup.</cmd></step><step><cmd>Select the <b>Shipping Region</b>.</cmd></step><step><cmd>Enter the shipping item's <b>Minimum Weight</b> and <b>Maximum Weight</b>.</cmd></step><step><cmd>Select the <b>Item Weight UOM</b> (Unit of Measurement) using the picklist.</cmd><info>The <b>Item Weight UOM</b> value is used when creating an eStore item that requires shipping and when creating a Shipping Rate item. Admins do not have to use the same units for items and Shipping Rates. For example, the Shipping Rate might be defined in pounds and the <b>Item Weight</b> in ounces. The system performs the conversion on the backend and will apply the correct rate in the <b>eStore</b> checkout, regardless of the unit. </info></step><step><cmd>The new Shipping Rate inherits the GL Accounts of the associated Shipping Carrier. To override and link to an alternative account, select the GL account using the <b>Income Account</b> and <b>Refund/Credit Account</b> lookups.  Click <b>Save</b>.</cmd><info><image href="../../assets/screenshots/estore/shipping_rate_win16.png" width="600" id="image_a4v_r1c_3t"/></info></step></steps></oXygen:ComponentDefinition>
+</oXygen:ReusableComponent>

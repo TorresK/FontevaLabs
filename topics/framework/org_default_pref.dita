@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_rkw_pkt_ls">
+ <title>eBusiness User/Profile Preferences </title>
+ <abstract> Set an organization's Account, Contact, and Accounting Preferences. Hierarchical custom
+    preferences allow Admins to divide an organization into separate functional areas by assigning a
+    different set of preferences to users and profiles.</abstract>
+ <conbody>
+    <p><b>System Hierarchy:</b><ol id="ol_gbj_shd_y5">
+        <li><b>Any value selected while creating a record</b></li>
+        <li><b>User Default Settings</b></li>
+        <li><b>Profile Default Settings</b></li>
+        <li><b>Organization Default Settings</b><p>The system hierarchy first defers to whatever
+            value is input during record creation, then the User Settings, Profile Settings, and
+            lastly, the Organization Settings. </p></li>
+      </ol></p>
+    <section><b>Organization Default Account &amp; Contact Preferences</b>
+      <p><image href="../../assets/screenshots/framework/enable_account_contacts_win16.png"
+          width="700" id="image_xv1_dhd_y5"/></p><sectiondiv>
+        <ul>
+          <li><b>Enable Individual Accounts</b>- Enables the system to automatically create an
+            Account by populating the new account's name with the First and Last Name of the Contact
+            and appending the <b>Individual Account Name Extension</b>.</li>
+          <li><b>Individual Account Name Extension</b>- The default value for this field is
+              <b>Person</b>. The value specified in this field appends to the end of the account's
+            name and is conditionally required when selecting the <b>Enable Individual Accounts</b>
+            checkbox.</li>
+          <li><b>Update Contact Standard Phone Field</b>- Updates the contact's standard phone
+            number when the preferred phone type field defines a populated phone field.</li>
+          <li><b>Update Contact Standard Email Field</b>- Updates the contact's standard email
+            address when the preferred email type field defines a populated email field.</li>
+        </ul>
+      </sectiondiv></section>
+    <section><b>Creating New User or Profile Preferences</b>
+      <p><b>Setting New User or Profile Preferences will override the Organization Default Account,
+          Contact, and Accounting Preferences for that User or Profile.</b></p><sectiondiv>
+        <ol>
+          <li>Click the <b>Create New User/Profile Preference</b> button to return the <b>New
+              Settings</b> modal.</li>
+          <li>Select an <b>Owner Type</b> from the picklist.</li>
+          <li>Select the <b>Profile</b> to assign to the <b>Owner Type</b>.<p>If <b>Owner Type</b>
+              is set to <b>User</b>, assign a user through lookup.</p></li>
+        </ol>
+      </sectiondiv><sectiondiv><b>Set Account &amp; Contact Preferences:</b>
+        <p>
+          <lines><b>Update Contact Standard Phone Field</b>-Copies the preferred phone number for the contact
+        and pastes it into the <b>Phone</b> field. </lines>
+          <lines><b>Update Contact Standard Email 
+          Field</b>-Copies the preferred email for the contact and pastes it into the <b>Email</b> field.</lines>
+          <lines><b>Enable Individual Accounts</b>-When a new contact is created, an account with the
+          contact name is also created and appended to the <b>Individual Account Name Extension</b>.</lines>
+        </p></sectiondiv><sectiondiv><b>Accounting Preferences</b><p>Enter the <b>Business Group</b> and <b>Payment
+          Terms</b>.</p><p>Next, enter the <b>Income Account</b>, <b>A/R Account</b>, <b>Adjustment
+            Account</b>, <b>Discount Account</b>, and <b>Refund Account</b>. </p><p>Click
+            <b>Submit</b> to finish customizing a User or Profile's accounting preferences.
+        </p></sectiondiv></section>
+  </conbody>
+</concept>

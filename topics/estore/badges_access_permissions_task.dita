@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_qzc_5s5_sr">
+    <title>Access Permissions</title>
+    <abstract>Admins can configure access permissions directly on the Item record to restrict
+        visibility in the <b>Community Portal</b>. Badge assignments are granted to portal users in
+        order to provide them with exclusive opportunities and full functionality of the
+            <b>Community Portal</b>. <note>Badges cannot be assigned to guest users nor can guest
+            users view any item with a badge assignment. Further, if access permissions are enabled,
+            but there are no assigned badges, access to the item is restricted to staff users and
+            the System Administrator.</note></abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the Item record in the <b>eStore</b> application that requires
+                    restricted access and select the <b>Enable Access Permissions</b> checkbox.
+                    Click <b>Save</b>.</cmd>
+                <info>Alternatively, navigate to the Item Class record to apply access permissions
+                    to an entire group of items. </info>
+            </step>
+            <step>
+                <cmd>Click the <b>Manage Permissions</b> button on the <i>Access Permissions</i>
+                    related list.</cmd>
+            </step>
+            <step>
+                <cmd>Select the permissible badge types and click <b>></b> to grant access. Click
+                        <b>Save</b>.</cmd>
+                <info>All available badge types are present. </info>
+            </step>
+        </steps>
+        <result>Newly enabled badge types will display in the <i>Access Permissions</i> related list
+            on the Item record.  </result>
+    </taskbody>
+</task>

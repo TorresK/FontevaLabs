@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_j3w_hnk_rs">
+ <title>Configuring Auth. Providers for Single Sign-On </title>
+ <conbody>
+  <p>System Admins can configure authorization providers to use as an alternate means of login for
+   communities. Supported auth. providers include: <b>Google +</b>, <b>LinkedIn</b>,
+    <b>Twitter</b>.<note>Please remove the values from the social login fields if the org is not
+    planning to use social logins.</note></p>
+ </conbody>
+</concept>

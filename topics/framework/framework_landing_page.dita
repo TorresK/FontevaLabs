@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ytc_cvl_cs">
+  <title>Spark Framework Overview</title>
+  <body>
+    <p>The <b>Spark</b> app assists development teams in building simple, flexible, and reactive
+      applications in the cloud.</p>
+    <p><image href="../../assets/screenshots/framework/framework_quick_links.png" width="600"
+        id="image_bsl_ktw_rs"/></p>
+    <p>Configure the system settings through: <ul id="ul_mdx_m5p_ks">
+        <li><b>Objects</b> - Manage custom objects registered with Spark.</li>
+        <li><b>Marketplace</b> - Upgrade environments, install new packages, or shop and install
+          third party apps.</li>
+        <li><b>Rollup Summary Fields</b> - Configure fields to aggregate data from child
+          objects.</li>
+        <li><b>Help Resources</b> - Provides users with Spark API documentation and additional
+          resources for staff user support.</li>
+        <li><b>API Services</b> - Manage API services, resources, and mappings. </li>
+        <li><b>Routing Rules</b> - Control how the system routes logic and processing when changes
+          are made to objects in the database.</li>
+        <li><b>Configuration Summary</b> - Reset org configurations and manually run install
+          scripts.</li>
+        <li><b>Access Manager</b> - Modify object permissions, Apex class and VisualForce page
+          access, and field permissions using the <b>Spark Toolkit</b>. </li>
+      </ul></p>
+  </body>
+</topic>

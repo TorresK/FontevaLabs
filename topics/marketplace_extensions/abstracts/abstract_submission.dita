@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_e2c_p3c_pw">
+    <title>Abstract Submission</title>
+    <shortdesc>During the alotted period of time, a portal user may access the Abstract Call page.
+        Once on the page, the portal user may click on a Call Topic link to access and complete the
+        abstract submission.</shortdesc>
+    <taskbody>
+        <context>
+            <p></p>
+        </context>
+        <steps>
+            <step>
+                <cmd></cmd>
+            </step>
+            <step>
+                <cmd>Click <b>Save</b> button</cmd>
+                <info><b>Optional fields: </b><ul id="ul_y3h_tyc_4w">
+                        <li><b>Enable Attachments</b> - when checked, submitters can upload
+                            documentation to support their submission</li>
+                        <li><b>Enable Access Permissions</b> - when checked, staff user can identify
+                            active badge assignments that must be held to participate as submitter
+                            or a reviewer</li>
+                        <li><b>Description</b> - explanation of <b>Abstract Call</b></li>
+                        <li><b>Page URL</b> - display URL through which portal users can review
+                                <b>Abstract Call</b>, make submission or access submissions assigned
+                            for review</li>
+                        <li><b>Submission Dates </b>- date range for making submissions</li>
+                        <li><b>Review Dates</b> - date range given to the reviewers to complete
+                            assignments</li>
+                        <li><b>Maximum Number of Submissions</b> - total number of submission that a
+                            single submitter can make within an <b>Abstract Call</b></li>
+                        <li><b>Submissions Field Set</b> - API name of field set that defines the
+                            fields to be displayed on the submission form</li>
+                        <li><b>Filter Field</b> - API name for the field that will populate the
+                            filter field on the <b>Call Topic</b> table</li>
+                        <li><b>Author Field Set</b> - API name fof the field set to gather details
+                            about the authors</li>
+                        <li><b>Reviewer Field Set</b>- API name of field set used to capture details
+                            about the reviewer</li>
+                        <li><b>Reviewer Submission Field Set</b>-API name of field set that defines
+                            the submission fields to be displayed to the reviewer</li>
+                        <li><b>Review Instructions</b> - Intructional text that will be displayed to
+                            the reviewer about the review process and their responsibilities</li>
+                    </ul></info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

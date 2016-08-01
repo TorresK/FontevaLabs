@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_r3r_2yj_5r">
+    <title>Group Event Registration </title>
+    <abstract>Only authenticated users can register for an event as a group and purchase multiple
+        ticket types in the <b>Community Portal</b>.</abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_kmz_sgh_1s">
+                <li><b>Enable Registration Groups</b> on the Event Category record<p><image
+                            href="../../../assets/screenshots/events/registration_groups_sfc_win16.png"
+                            width="600" id="image_wfh_chp_wt"/></p></li>
+                <li>Ensure the <b>Status</b> picklist is set to <b>Active</b> and the <b>Is
+                        Published</b> checkbox is enabled on the Event record</li>
+                <li>Authenticated users should log in to their <b>Community Portal</b></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Click on <b>Events</b> in the top navbar to search for events.</cmd>
+            </step>
+            <step>
+                <cmd>Click on the desired event to navigate to the <i>Event Detail</i> page and then
+                    click the <b>Register Now</b> button to continue to the <i>Event
+                        Registration</i> page.</cmd>
+                <info><image href="../../../assets/screenshots/events/event_detail_page_cp.png"
+                        width="600" id="image_ljs_nqq_k5"/></info>
+            </step>
+            <step>
+                <cmd>Click <b>Yourself</b> in the pop-up modal.</cmd>
+                <info><image href="../../../assets/screenshots/events/register_now_modal_win16.png"
+                        width="600" id="image_mkm_pqq_k5"/></info>
+            </step>
+            <step>
+                <cmd>Select the ticket type and click <b>Continue</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Use the sidebar nav to view additional event details and the <b>Agenda
+                        Builder</b> to select any available sessions and click
+                    <b>Continue</b>.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/events/selecting_sessions_cp_win16.png"
+                        width="600" id="image_tjn_rqq_k5"/></info>
+            </step>
+            <step>
+                <cmd>Click the <b>Add Guests</b> button in the pop-up modal.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/events/group_registration_sum15r2may.png"
+                        id="image_sqs_ljh_1s" width="600"/></info>
+            </step>
+            <step>
+                <cmd>Click the <b>Plus</b> button to add an attendee and enter the requested
+                    information. Click the <b>Plus</b> button to enter additional attendees and
+                    click the <b>Save Invitees</b> button after all attendees are entered into the
+                    form.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/events/group_registration_invitees_sum15r2may.png"
+                        id="image_x4l_jkh_1s" width="600"/></info>
+                <info>The logged in user can choose to populate the <b>First Name</b>, <b>Last
+                        Name</b>, and <b>Email</b> of each attendee during the initial purchase, or
+                    alternatively, purchase tickets in bulk via clicking the <b>Plus</b> button
+                    without providing attendee details. </info>
+            </step>
+            <step>
+                <cmd>Review the group attendees and click the <b>Continue</b> button.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/events/group_attendees_sum15r2may.png"
+                        id="image_awq_3mh_1s" width="600"/>
+                </info>
+            </step>
+            <step>
+                <cmd>Select the <b>Payment Method</b>, enter any required information, and click the
+                        <b>Pay</b> button. </cmd>
+                <info><image href="../../../assets/screenshots/events/group_payment_sum15r2may.png"
+                        id="image_rtv_5nh_1s" width="600"/></info>
+            </step>
+        </steps>
+        <result>A receipt is returned along with an email enclosed with the option for registrants
+            to further customize their event experience via the <b>Agenda Builder</b>.</result>
+    </taskbody>
+</task>

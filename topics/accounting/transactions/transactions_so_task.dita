@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_hmp_fth_mr">
+    <title>Purchasing Items from Separate Business Groups</title>
+    <abstract>Use the <b>Transfers Payable Account</b> and <b>Transfers Receivable Account</b>
+        fields on the Business Group record to ensure funds are directed to the appropriate business
+        groups and the resulting transactions. The payments are allocated when a customer purchases
+        items from different business groups via a single sales order.</abstract>
+    <taskbody>
+        <prereq><b>Prerequisites:</b>
+            <ul>
+                <li>Configure two business groups: business group 1 with <b>Transfers Payable
+                        Account</b>, business group 2 with <b>Transfers Receivable Account</b></li>
+                <li>Each business group must have an item</li>
+            </ul></prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Sales Orders</b> tab in the <b>eBusiness</b> app and click
+                    the <b>New</b> button. </cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Contact</b>, <b>Posting Entity</b>, and <b>Schedule Type</b>.
+                    Click <b>Save</b>. </cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>Shopping Cart</b> button. </cmd>
+            </step>
+            <step>
+                <cmd>Select the membership item from Business Group 1 and add it to the cart. Select
+                    the donation item from Business Group 2 and add it to the cart. Complete the
+                    payment. </cmd>
+            </step>
+        </steps>
+        <result>Successfully creating a sales order results in... <ul>
+                <li>a Sales Order Line for each purchased item.</li>
+                <li>the Receipt record generated from the Receipt Lines.</li>
+                <li>two Transaction Summaries.</li>
+                <li>two sets of Transaction Lines.</li>
+            </ul></result>
+    </taskbody>
+</task>

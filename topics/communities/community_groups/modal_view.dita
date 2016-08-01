@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_mbt_xn5_tr">
+ <title>Member Profiles: Edit and View</title>
+ <abstract>Objects on specific pages in the <b>Community Portal</b> present a modal when clicked.
+  Staff users can assign the field set that is displayed in the <b>Profile View</b> and <b>Profile
+   Edit</b> view on the <i>Community Group Detail</i> page.</abstract>
+ <conbody>
+  <p>The <b>Members</b> tab presents group members in a tile view listing. When portal users click
+   on a tile, the <b>Member Profile</b> will appear displaying the information for the current field
+   set assigned by the Administrator. </p>
+  <p>The <b>My Profile</b> button is displayed for group members in the <b>Community Portal</b>.
+   Click the <b>My Profile</b> button on the banner to view the profile as it looks to other
+    <b>Community Portal</b> users. Click the <b>Edit Member</b> button to update personal group
+   member profile.</p>
+  <p>A field set is a grouping of fields. To define the profile views, staff users can assign a
+   field set via: <ul id="ul_hm4_1mg_tr">
+    <li><b>Group Member Edit Field Sets</b>-References the field set that defines the attributes to
+     be updated by the group member when editing their group member profile.</li>
+    <li><b>Group Member View Field Sets</b>-References the field set that defines the attributes to
+     be seen on the group member profile.</li>
+   </ul>
+  </p>
+ </conbody>
+</concept>
+ 

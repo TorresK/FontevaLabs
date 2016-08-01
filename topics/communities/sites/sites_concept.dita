@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_kwb_srp_ks">
+ <title>Creating a Site Using the Site Setup Wizard</title>
+ <abstract><b>Sites</b> allow System Admins and staff users to create websites that run natively on
+  Force.com and link to Salesforce Communities. With Sites, Admins can extend the reach of existing
+  applications to new, external audiences. Sites are a cornerstone of the <b>Communities</b> app and
+  integral to successful portal deployment.<p><image
+    href="../../../assets/screenshots/community_builder/sites_sum15july.png" width="600"
+    id="image_bgh_zfg_qs"/></p><b>Sites have a "many-to-one" relationship with the Salesforce
+   Community, and each community is permitted one default Site</b>. All pertinent data is pulled
+  from the Community into the Site object as soon as the two are linked. <note>Do <b>not</b> include
+   any special characters in the name of a Site.</note><p>Sites control the configurations for: <ul
+    id="ul_njr_mgg_qs">
+    <li><b>Group Settings </b></li>
+    <li><b>Social Logins</b></li>
+    <li><b>Pages</b></li>
+    <li><b>Branding</b></li>
+   </ul></p><p>The Site record hosts the profile and account that are assigned to new users on the
+    <i>Login &amp; Registration</i> page in <b>Setup</b>. </p><p><b>Creating a New Site via the Site
+    Setup Wizard: </b></p><p><image
+    href="../../../assets/screenshots/community_builder/site_wizard_sum15july.png" width="600"
+    id="image_rc1_d4l_qs"/></p><p>
+   <ol id="ol_om5_55g_qs">
+    <li>Navigate to the <b>Sites</b> tab within the <b>Communities</b> app and click <b>New</b> to
+     return the <b>Site Setup Wizard</b>.</li>
+    <li>Select the <b>Community</b> and click <b>Next</b>. </li>
+    <li>Choose the <b>Template</b> and click <b>Next</b>.</li>
+    <li>Enter the <b>Site Name</b>, and optionally, enter a <b>Description</b>. Click
+     <b>Next</b>.</li>
+    <li>Click <b>Submit</b>.<note><b>Ensure the assigned registered users profile is populated on
+       the Community. Otherwise, the Site autopopulation will not occur. </b></note><p>Once the Site
+      record is returned, <b>refresh the page</b> in order for the system to autopopulate the
+      applicable fields. Admins have the added ability to overwrite custom <i>Salesforce
+       Community</i> error pages, add navigation links, and link to events. </p><p><b>Customizing
+       Site Configurations</b>
+      <ul>
+       <li>Change the default theme using the <b>Theme</b> lookup.</li>
+       <li>Use the <b>Store</b> lookup to link to a Site in the <b>Community Portal</b>.</li>
+       <li>Check the <b>Enable eStore</b> checkbox to offer items in the <b>Store</b> for sale.</li>
+       <li>Check the <b>Is Published</b> checkbox.</li>
+      </ul><note>In the event the <b>Community Portal</b> will not offer items for sale in the
+       Store, hide the <b>Store</b> tab by navigating to the <i>Pages</i> related list and clicking
+       the <b>Page Name</b> for the Store. Uncheck the <b>Is Published</b> checkbox to remove the
+       Store link and click <b>Save</b>. To make the Store visible only to authenticated portal
+       users, check the <b>Auth Required</b> checkbox.<p><image
+         href="../../../assets/screenshots/community_builder/pages_auth_required_nav_links.png"
+         width="600" id="image_u2y_ngv_ts"/></p></note></p><p><b>What to do Next:</b><ul
+       id="ul_xbb_gxd_y5">
+       <li><xref href="../themes/creating_themes_task.dita#task_oqw_zgj_ks">Modify the
+        Theme</xref></li>
+      </ul></p><p>System Admins can further enhance to their Site's usability by enabling social
+      logins such as <xref href="../social%20logins/google_authorization.dita#task_ghl_2l5_qs"
+       >Google</xref>, <xref href="../social%20logins/linkedin_authorization.dita#task_qxk_t3v_qs"
+       >LinkedIn</xref>, and <xref
+       href="../social%20logins/twitter_authorization.dita#task_jbz_4sv_qs">Twitter</xref>.
+      </p><p>Otherwise, <xref href="../enabling_portal_users_task.dita#task_m5t_3sq_3r">Enable
+       Community Portal Users</xref>.</p></li>
+   </ol>
+  </p></abstract>
+</concept>

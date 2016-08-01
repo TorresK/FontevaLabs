@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_u5c_bkj_pw">
+    <title>Advanced Options</title>
+    <shortdesc>When Contact is chosen as the Directory entity, the staff user can add value the
+        authenticated portal users experience by using the advanced directory options.</shortdesc>
+    <taskbody>
+        <context><b>Enable Profile Link.</b> When checked, adds Update Profile button to an
+            authenticated portal users profile modal. The portal user is redirected to <i>My Profile
+            </i>page to update personal information. Note: If this option is used, the field set(s)
+            on the My Profile page should include the fields included in the directory. <p><b>Enable
+                    Access Permissions</b> When checked, <b>Select Badge Type</b> button appears.
+                The <b>Access Permission</b> modal allows the user to select badges by dragging and
+                dropping them. from left to right. Only authenticated portal users with an active
+                badge assignment that matches a selected badge can open the directory search page.
+                </p><image
+                href="../../../assets/screenshots/marketplace_extensions/db_advanced_options.png"
+                id="image_p5f_yld_mw" width="350"/>
+            <p/><b>Enable 'Contact Me'</b> An email button is displayed on the profile modal window
+            when the staff user checks <b>Enable Contact Me</b>is checked. Drop-down fields are
+            provided so the staff user can identify which email address preference will be used for
+            the addressee and the sender. Note: "Update Contact Standard Email Field" must be check
+            on the Organization Wide Default Preferences for this option to work properly.
+                <p/><image
+                href="../../../assets/screenshots/marketplace_extensions/db_contact_me_modal.png"
+                id="image_etk_t5d_mw" width="350"/></context>
+    </taskbody>
+</task>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_bds_slt_g5">
+ <title>Configuring Installment Schedule Options </title>
+ <abstract><i>Installment Schedule Options</i> detail the frequency a subscriber is invoiced, or
+    automatically charged, for a subscription. The frequency and payment amount is driven by the
+      <b>Payment Terms</b>, <b>Schedule Frequency</b>, and <b>Schedule Type</b>. Subscription plans
+    can link to <b>Payment Terms</b> to use for <b>Invoice</b> installment schedules. </abstract>
+ <conbody>
+  <section>
+   <p><image href="../../assets/screenshots/estore/installment_schedule_options_win16.png"
+     width="700" id="image_k2c_221_h5"/></p>
+      <p><b>When allowing members to pay for a subscription in installments, the System Admin must
+          check the Enable Schedule checkbox, set the Schedule Type to Invoice, define the Schedule
+          Frequency, and enter the Number of Installments on the Subscription Plan record. </b></p>
+      <p><b>The Installment Schedule on the Subscription Plan takes precedence over the Schedule
+          Frequency established on the Sales Order, as it pertains to subscriptions; additional
+          items for purchase adhere to the Schedule Frequency on the Sales Order. </b></p>
+      <p><b>Revenue cannot be deferred for Lifetime Subscription Plans.</b></p>
+   <p>
+    <ul id="ul_vsy_vlt_g5">
+     <li><b>Enable Schedule</b> - Subscribers pay for the subscription in installments. When the
+       <b>Enable Schedule</b> field is checked, payment scheduling for subscriptions is ignored on
+      the Sales Order.</li>
+     <li><b>Schedule Type</b> - Determines the type of payment being scheduled:<ul
+       id="ul_pl5_424_c5">
+       <li>Select <b>Invoice</b> to invoice the subscriber for each installment. If the <b>Schedule
+         Type</b> is set to <b>Invoice</b>, then revenue is booked to Accounts Receivable. </li>
+       <li>Select <b>Automatic Payment</b> to automatically charge the subscriber using a stored
+        Payment Method. <b>If Automatic Payment is selected, then the Subscription Plan must be
+         Lifetime and the Posting Entity on the Sales Order must be Receipt.</b>
+       </li>
+      </ul></li>
+     <li><b>Schedule Frequency</b> - Determines the frequency the subscriber is invoiced, or
+            charged, for their plan. <ul id="ul_upb_jsb_f5">
+              <li>If the <b>Schedule Frequency</b> is set to <b>Semi-Monthly</b> and the subscriber
+                purchases a subscription on January 14, then the next payment is due the following
+                day on January 15. Similarly, if the subscriber purchases a subscription on January
+                16, then the next payment is due Februrary 1. All subsequent payments are due on the
+                1st and 15th of every month. </li>
+            </ul></li>
+     <li><b>Number of Installments</b> - The number of invoices to create for the payment schedule.
+       <b>Required when Enable Schedule is checked.</b></li>
+     <li><b>Invoice Days Variable</b> - When using the <b>Invoice Days Variable</b> field, the
+            system automatically creates a Sales Order that mirrors the current active subscription
+            "X" number of days prior to subscription expiration. Therefore, enter the number of days
+            prior to the subscription's expiration date that customers can be invoiced.
+              <b>Applicable for Calendar and Termed Subscription Plans that have the Auto Renew
+              Option set to Enabled or Required. </b></li>
+     <li><b>Payment Terms</b> - Due date of the invoice. Required for all Subscription Plans with
+       <b>Enable Schedule</b> checked and the <b>Schedule Type</b> set to <b>Invoice</b>. </li>
+     <li><b>Bill Cycle</b> - Drives the day of the month a subscriber is invoiced, or automatically
+            charged for a subscription. The Bill Cycle only applies to monthly, quarterly,
+            semi-annually, and annually (Schedule Frequency)<ul id="ul_yny_hg1_f5">
+              <li><b>AUTO</b> derives the day of month based on the <b>Activation/Last Renewal
+                  Date</b>.</li>
+              <li><b>FIRST</b> uses the first day of the month.</li>
+              <li><b>LAST</b> uses the last day of the month.</li>
+              <li><b>15</b> sets the fifteenth day of the month.</li>
+              <li><b>CUSTOM</b> allows a specific day to be set.</li>
+            </ul></li>
+     <li><b>Bill Cycle Day</b> - If the <b>Bill Cycle</b> is set to <b>CUSTOM</b>, then enter the
+            specific day. <b>If Schedule Frequency is set to Monthly and Bill Cycle is set to
+              CUSTOM, then the Bill Cycle Day must be a number between 1 and 28.</b>
+          </li>
+    </ul>
+   </p>
+  </section>
+ </conbody>
+</concept>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_gf5_4pj_mv">
+  <title>Event Builder</title>
+  <abstract>The <b>Event Builder</b> allows staff users to create both simple and conference style
+    events, greatly speeding up the process of event creation in a unified interface.<p>Navigate to
+      the <b>Events</b> tab and click the <b>New</b> button to launch the <b>Event Selector</b>
+      modal and the <b>Event Form</b>. </p><p><image
+        href="../../../assets/screenshots/events/event_selector_modal.png" width="400"
+        id="image_rvw_bjw_mv"/></p><p>Enter the <b>Registration Style</b>, the <b>Event
+      Category</b>, and the <b>Event Name</b>. <note>The values in the <b>Event Category</b> and the
+          <b>Preview</b> image are determined by the <b>Registration Style</b>. The available
+          <b>Options</b> are determined by the <b>Event Category</b>. </note></p><p>Click
+        <b>Cancel</b> to close the <b>Event Selector</b> modal and return to the Event record.
+      Clicking <b>Save &amp; Continue</b> will save the Event record with the current date, hide the
+      modal, and direct users to the <b>Event Form</b>.</p><p><image
+        href="../../../assets/screenshots/events/event_form_1.png" width="700" id="image_bsz_ysw_mv"
+      /></p><p>When using the <b>Event Builder</b> to create simple events, staff users can: <ul
+        id="ul_oyj_fqj_mv">
+        <li>Create a <b>Default Simple Event</b> event category that is automatically published on
+          the default Site.</li>
+        <li>Create a <b>Default Ticket Type</b> of $0.00 on the <b>Default Simple Event</b>.</li>
+        <li>Enter event and venue details, as well as images, from a unified interface by creating a
+          form using the Lightning Design Components.</li>
+        <li>Check the <b>24-hour Time</b> checkbox to toggle the <b>Start Date</b> and <b>End
+            Date</b> time-date fields between 12-hour and 24-hour time fields; date fields and
+            <b>Duration</b> will not change.<p><image
+              href="../../../assets/screenshots/events/event_form_2.png" width="700"
+              id="image_nqs_43x_mv"/></p></li>
+        <li><b>Preview</b> the event directly from the form on different Sites.</li>
+        <li>Create the Event, Venue, and Ticket Type records upon clicking <b>Submit</b>.</li>
+        <li>Upload any files to an automatically created Media Collection upon clicking
+            <b>Submit</b>.</li>
+      </ul></p></abstract>
+  <conbody>
+    <p>Click the <b>Save</b> button to save the form and create the related records without closing
+      the <b>Event Form</b>. Click the <b>Close &amp; Save</b> button to save all records and close
+      the <b>Event Form</b>; the user is returned to the Event record.</p>
+    <p>After a simple event has been created:</p>
+    <ul id="ul_mzc_bvj_mv">
+      <li>Enter the Venue <b>Description</b>.</li>
+      <li>Configure <b>Ticket Types</b>.</li>
+      <li>Navigate to the Event record and check the <b>Is Published </b>checkbox to publish the
+          Event.<note>The <b>Event Builder</b> cannot be used to edit an existing event; it is only
+          for creating new events.</note></li>
+    </ul>
+  </conbody>
+</concept>

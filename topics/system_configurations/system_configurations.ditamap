@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>System Configurations</title>
+ <topicref href="system_configuration_overview_win16.dita"/>
+ <topicref href="field_sets_task.dita"/>
+ <topicref href="creating_buttons.dita"/>
+</map>
+

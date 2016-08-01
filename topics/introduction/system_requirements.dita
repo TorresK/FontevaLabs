@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_iz5_mxg_tt">
+ <title> System Requirements</title>
+ <abstract>System Admins and staff users must initiate the proper system requirements in order for
+  the apps to work as intended.</abstract>
+ <conbody>
+  <p><b>Supported Browsers:</b><ul id="ul_tn5_szg_tt">
+    <li><b>Firefox</b>-Most recent stable version; <b>Tracking Protection must be disabled in order
+            for certain custom pages on MemberNation to properly format.</b></li>
+    <li><b>Internet Explorer</b>-Version 10 and up</li>
+    <li><b>Safari</b>-Version 5 and up</li>
+    <li><b>Chrome</b>-Most recent stable version</li>
+    <li><b>Opera</b>-Most recent stable version</li>
+   </ul></p>
+  <p><b>Multi-Currency Environments</b></p>
+  <p>In a single currency environment, the currency symbol is displayed both in the backend and in
+      the <b>Community Portal</b>. For <xref
+        href="../marketplace_extensions/configuring_multi_currency_win16.dita#task_drf_rdv_1v"
+        >multi-currency environments</xref>:<ul id="ul_cbk_c3h_tt">
+        <li>The record's currency is always displayed, instead of the user's currency.</li>
+        <li>No currency symbols are displayed; instead the system will always display the ISO
+          code.</li>
+        <li>The currency ISO code for a record is propagated from the Business Group that owns the
+          related item. </li>
+      </ul></p>
+    <p><b>Page Layouts</b></p>
+    <p>Page Layouts are modified on the record by clicking the <b>Edit Layout</b> button.</p>
+    <p><image href="../../assets/screenshots/introduction/modifying_layouts_win16.png" width="600"
+        id="image_kfl_snc_b5"/></p>
+    <p>Staff users must edit the Page Layouts to add the required fields, buttons, links, and
+      related lists. </p>
+  <p><b>Image Size Recommendations</b></p>
+    <p><image href="../../assets/screenshots/events/system_requirements_images.png" width="800"
+        id="image_myc_1yg_tt"/></p>
+ </conbody>
+</concept>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_oqh_ksv_ht">
+    <title>Creating a "Will Not Ship" Region</title>
+    <abstract>Admins can create a <b>Will Not Ship</b> region to identify a country that will not be
+        able to receive shipping items. When enabled, the <b>Will Not Ship</b> feature displays a
+        custom message to the shopper indicating that the region they are trying to ship to is not
+        supported; the shopper is prevented from completing their purchase. </abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_q45_ssv_ht">
+                <li><xref href="creating_shipping_method_carrier.dita#task_xz1_dqv_ht">Create the
+                        Shipping Carrier and Delivery Method</xref></li>
+                <li><xref href="creating_shipping_region.dita#task_dmf_nrv_ht">Create the Shipping
+                        Region</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Shipping Regions</b> tab in the <b>eStore</b> app and click
+                        <b>New</b>. </cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Shipping Region Name</b>.</cmd>
+                <info>The <b>Shipping Region Name</b> appears in the <b>Shipping Rates</b> lookup.
+                    Optionally, enter a <b>Display Name</b> and <b>Description</b>.</info>
+            </step>
+            <step>
+                <cmd>Enter the countries that will not be able to receive shipments within the named
+                        <b>Shipping Region</b> into the <b>Address Field Values (CSV)</b>
+                    field.</cmd>
+                <info>Best practices recommend including any common abbreviations for country names.
+                    For example, customers may enter "USA", "US", or "United States" for the
+                    shipping country. Consequently, it is important to include each into the
+                        <b>Address Field Values (CSV)</b> field so the customer can complete the
+                    purchase. Country names are not case sensitive.</info>
+            </step>
+            <step>
+                <cmd>Check the <b>Will Not Ship</b> checkbox.</cmd>
+            </step>
+            <step>
+                <cmd>Enter a <b>Will Not Ship Message</b> to display to customers attempting to ship
+                    purchases to an unsupported destination. Click <b>Save</b>.</cmd>
+                <info><image href="../../assets/screenshots/estore/will_not_ship_region_win16.png"
+                        width="600" id="image_g3r_vtw_ht"/></info>
+            </step>
+        </steps>
+        <result>Shoppers will not be able to ship to any region designated as <b>Will Not Ship</b>.
+            If a customer tries to ship to a country in this region, they will see the custom
+            message and are prevented from completing the purchase.</result>
+        <postreq>
+            <ul id="ul_cz3_h5w_ht">
+                <li><xref href="creating_shipping_rates.dita#task_ug1_ytv_ht">Create the Shipping
+                        Rate</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

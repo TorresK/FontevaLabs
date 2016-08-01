@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_f3r_hqm_mr">
+  <title>Accounting Impact of Internal Transfers</title>
+  <abstract>The <i>Transaction Summary</i> related list on the sales order's Receipt record displays
+    the Accounting impact of the related transfers between business groups.</abstract>
+  <conbody>
+    <p><b>Business Group 1</b></p>
+    <p>Journal a debit to the Cash account:</p>
+    <ul>
+      <li><b>Debit</b> field is populated in the amount of the <b>Total</b> on the Receipt.</li>
+      <li><b>GL Account</b> is populated with the value of the <b>Deposit Account</b> field on the
+        Receipt record.</li>
+      <li><b>Date</b> is populated with the value in the <b>Posted Date</b> on the Receipt.</li>
+    </ul>
+    <p>Journal a credit to the Income/Revenue account:</p>
+    <ul>
+      <li><b>Credit</b> field is populated in the amount of the <b>Total</b> on the Receipt Line for
+        the correct item.</li>
+      <li><b>GL Account</b> is populated with the value of the <b>Income Account</b> field on the
+        Item record.</li>
+      <li><b>Date</b> is populated with the value in the <b>Posted Date</b> on the Receipt.</li>
+    </ul>
+    <p>Journal a credit to the Transfers Payable Account of Business Group 2:</p>
+    <ul>
+      <li><b>Credit</b> field is populated in the amount of the <b>Total</b> on the Receipt Line for
+        the correct item.</li>
+      <li><b>GL Account</b> is populated with the value of the <b>Transfers Payable Account</b>
+        field on the Item's related Business Group record.</li>
+      <li><b>Date</b> is populated with the value in the <b>Posted Date</b> on the Receipt.</li>
+    </ul>
+    <p><b>Business Group 2</b></p>
+    <p>Journal a debit to the Transfers Receivable Account:</p>
+    <ul>
+      <li><b>Debit</b> field is populated in the amount of the <b>Total</b> on the Receipt Line for
+        the correct Item.</li>
+      <li><b>GL Account</b> is populated with the value of the <b>Transfers Receivables Account</b>
+        field on the Item's associated Business Group record.</li>
+      <li><b>Date</b> is populated with the value in the <b>Posted Date</b> on the Receipt.</li>
+    </ul>
+    <p>Journal a credit to the Income/Revenue account:</p>
+    <ul>
+      <li><b>Credit</b> field is populated in the amount of the <b>Total</b> on the Receipt Line for
+        the correct Item.</li>
+      <li><b>GL Account</b> is populated with the value of the <b>Income Account</b> field on the
+        Item record.</li>
+      <li><b>Date</b> is populated with the value in the <b>Posted Date</b> on the Receipt.</li>
+    </ul>
+  </conbody>
+</concept>

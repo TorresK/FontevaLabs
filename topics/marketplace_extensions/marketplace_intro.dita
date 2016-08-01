@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ilj_1g5_5w">
+  <title>Marketplace Extensions</title>
+  <body>
+    <p><b>Marketplace</b> applications are developed to support common business practices that are
+      not met by MemberNation's core functionality. The additional functionality builds upon the
+      core applications framework to reduce implementation costs, and enusre the solutions can be
+      supported and withstand upgrades.</p>
+    <p>In order to install any of these applications, the customer must be on the latest core
+      package versions. </p>
+  </body>
+</topic>

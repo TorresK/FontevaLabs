@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_ewl_dwm_lw">
+ <title>Filter Criteria Example</title>
+ <shortdesc></shortdesc>
+ <conbody>
+  <p>Checkbox = TRUE or FALSE</p>
+  <p>Multi-select or Picklist INCLUDE or EXCLUDE values </p>
+  <p> </p>
+  <p>Note: The operator you choose must make sense for the type of filter you are trying to create.
+   There are some Salesforce limitations so text area fields are excluded.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p>After saving, click the blue “x” to the right of a filter criteria row to remove it.</p>
+ </conbody>
+</concept>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_mbk_hst_js">
+  <title>Subscriptions</title>
+  <abstract>Subscriptions are products with time parameters that can be assigned to Accounts and
+    Contacts. Subscriptions are purchased in the <b>eStore</b> and modified by customers in their
+      <b>Community Portal</b>; modifications include renewing subscriptions, changing payment
+    methods for auto-renewals, and upgrading subscription plans. System Admins can add an infinite
+    number of plans to offer subscription items. The system supports three types of Subscription
+    statuses: <b>Active</b>, <b>Expired</b>, <b>Pending</b>. <note><b>Community portal users can
+        manage subscriptions for all Accounts for which they are the Primary Contact. To view
+        subscription beneficiaries across multiple accounts, it is necessary to have Restrict
+        Assignments disabled on each Account. Additionally, if revenue from subscriptions is
+        recognized at a later date, <xref href="deferred_revenue_item_class.dita#task_itr_pzs_35"
+          >Set up Deferred Revenue</xref>.</b></note><p><b>Subscription Plans</b></p><p>Subscription
+      Plans define the term of the subscription, auto-renew options, and proration rules.
+      Subscription plans are assigned to one or more items. It is not necessary to create
+      subscription plans for multiple subscription items. </p><p><b>Types of Subscription
+      Plans</b></p><p>The system supports three types of Subscription Plans:<ul id="ul_tzf_jq1_h5">
+        <li><b><xref href="subscription_calendar_task.dita#task_bxk_rhx_ds">Calendar</xref></b>-
+          Calendar Subscription Plans have a defined start and end date.</li>
+        <li><b><xref href="subscription_termed_task.dita#task_bxk_rhx_ds">Termed</xref></b>- Termed
+          Subscription Plans start at the time of purchase and continue through the defined term of
+          the subscription, set by populating the Initial Term (Months) and Renewal Term (Months)
+          fields on the Subscription Plan record.</li>
+        <li><b><xref href="subscription_lifetime_task.dita#task_bxk_rhx_ds">Lifetime</xref></b>- A
+          Lifetime Subscription Plan defines a term of 100 years from the purchase date. <b>Deferred
+            Revenue must be disabled on the Subscription Item for Lifetime Subscriptions. If the
+            Schedule Type is set to Automatic Payment, then the Subscription Plan must be Lifetime.
+            A Lifetime Subscription Plan cannot be set up for the Auto Renew Option. </b></li>
+      </ul></p><p><b>Billing Terms</b></p><p>Billing terms determine the details of the billing
+      cycle:</p><p><image href="../../assets/screenshots/estore/billing_terms_subplans_win16.png"
+        width="700" id="image_qj3_pq1_h5"/></p><p>
+      <ul>
+        <li><b>Initial Term (Months)</b> - The initial term, in number of months, for new
+          subscribers of the plan. <b>Required for Termed Subscription Plans.</b></li>
+        <li><b>Renewal Term (Months)</b> - The renewal term, in number of months, for subscribers of
+          the plan. Defaults to the <b>Initial Term</b>, but there are several use cases it will be
+          different from the initial term. For example, "Buy now, get 2 months free." In this case,
+          the <b>Initial Term (Months)</b> is 14 and the <b>Renewal Term (Months)</b> is 12. </li>
+        <li><b>Auto Renew Option</b> - Available for Calendar and Termed Subscription Plans only.
+            <ul id="ul_b1g_5tn_c5">
+            <li>Select <b>Disabled</b> to turn off auto-renew for all related Subscriptions.</li>
+            <li>Select <b>Enabled</b> to allow related Subscriptions to optionally enable
+              auto-renew.</li>
+            <li>Select <b>Required</b> to enable auto-renew without option. <b>If set to Required,
+                Require Payment Method must be enabled.</b><note>If the <b>Enable Auto Renew</b>
+                checkbox is checked on the Subscription record, then a Sales Order is created and
+                closed on the date that is the <b>Subscription End Date</b> less the <b>Invoice Days
+                  Variable</b>. <b>If the Auto Renew Option is set to Enabled or Required, then the
+                  Invoice Days Variable field and the Days to Lapse field must have the same value;
+                  value must be greater than 0</b>. Additionally, a <b>Scheduled Payment</b> is
+                created. On the date the Subscription is set to expire, the system will make the
+                payment. </note></li>
+          </ul></li>
+        <li><b>Require Payment Method</b> - Subscribers are required to maintain an active and valid
+          Payment Method on file.</li>
+      </ul>
+    </p><p><b>Calendar Term Options</b></p><p><image
+        href="../../assets/screenshots/estore/calendar_term_options_subplans_win16.png" width="700"
+        id="image_yxb_vq1_h5"/></p><p>Configure the <b>Calendar End Day</b> and <b>Calendar End
+        Month</b> when the Subscription Plan <b>Type</b> is <b>Calendar</b>.</p></abstract>
+</concept>

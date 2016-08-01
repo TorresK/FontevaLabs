@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_npk_wx5_mr">
+    <title>Creating a Batch</title>
+    <abstract>Users can create ad hoc payments for a batch. </abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Batches</b> tab in the <b>Accounting</b> application and
+                    click the <b>New</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the field values for <b>Batch Name</b>, <b>Expected Count</b>, and
+                        <b>Expected Amount</b>.</cmd>
+            </step>
+            <step>
+                <cmd>If a default payment gateway on the <i>Preferences</i> page of the
+                        <b>Framework</b> application has not been selected, select a <b>Payment
+                        Gateway</b> using the lookup. Click the <b>Save</b> button.</cmd>
+            </step>
+        </steps>
+        <result>After saving the new batch...<ul id="ul_tkh_vpy_bs">
+                <li>The <b>Opened Date</b> will default to today's date.</li>
+                <li>The <b>Business Group</b> is linked to the related business group from the batch
+                    inherited from the logged in user's assigned business group.</li>
+                <li>The <b>Deposit Account</b> field autopopulates with the GL account related to
+                    the Deposit account for the batch.</li>
+                <li>The <b>Default Entity</b> and <b>Payment Type</b> fields autopopulate with the
+                    default configurations from the receipt.</li>
+            </ul></result>
+        <postreq><b>Post-requisites: </b>Enter receipts for the newly created batch.</postreq>
+    </taskbody>
+</task>

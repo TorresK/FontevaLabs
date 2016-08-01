@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_xqm_jzl_ls">
+    <title>Managing Framework Settings</title>
+    <abstract>System Admins can enable or disable platform settings and triggers, as well as create
+        a custom domain name for Visualforce pages. <note>Disabling the default platform settings
+            deactivates all related Registered Objects on the platform, as well as the associated
+            triggers. Consequently, data is entered into the system without triggering automatic
+            workflows and notifications to users. </note></abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Spark Framework</b> app, click <b>Apps</b>, and click
+                        <b>Spark</b> from the dropdown menu.</cmd>
+                <info><image
+                        href="../../assets/screenshots/framework/apps_system_settings_sum16.png"
+                        width="700" id="image_ulq_whj_rw"/></info>
+            </step>
+            <step>
+                <cmd>Click <b>Settings</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/framework/spark_framework_settings_sum16.png"
+                        width="700" id="image_ulg_23j_rw"/></info>
+                <stepresult><image
+                        href="../../assets/screenshots/framework/configure_framework_settings_sum16.png"
+                        width="500" id="image_dvk_k3j_rw"/></stepresult>
+            </step>
+            <step>
+                <cmd>Enter a new <b>Custom Domain</b> name for Visualforce pages.</cmd>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Enabled</b> checkbox to enable the Framework. </cmd>
+                <info>If not selected, the application and any registered objects to the Framework
+                    will be disabled. <b>Enabled by default.</b></info>
+            </step>
+            <step>
+                <cmd>Check the <b>Triggers Enabled</b> checkbox to enable all triggers for the
+                    Framework. </cmd>
+                <info>If not selected, all triggers are disabled. <b>Enabled by default</b>.</info>
+            </step>
+            <step>
+                <cmd>Check the <b>Enable Async Rollups</b> checkbox to enable async rollups in the
+                    system. <b>Enabled by default</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <b>Submit</b>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_lbz_553_ks">
+  <title>Enabling Self Registration</title>
+  <body>
+    <p>
+      <ol>
+      <li>Go to <b>Setup &gt; Customize.</b></li>
+      <li>Click the arrow next to<b> Communities </b>and select<b> All Communities.</b></li>
+      <li>Click the down arrow in the <i>Action</i> column next to the name of the community you
+        wish to edit and select<b> Administration Settings.</b></li>
+      <li>Click the<b> Login &amp; Registration </b>button.</li>
+      <li>Under <i>Registration</i>, select the <b>Allow external users to self-register</b>
+        checkbox. </li>
+      <li>Click <b>Save</b>. </li></ol>
+    </p>
+  </body>
+</topic>

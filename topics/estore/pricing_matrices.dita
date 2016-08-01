@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ibl_wfh_ks">
+  <title>Creating Items with Pricing Matrices</title>
+  <body>
+    <p>Often there is the need to assign pricing by a predefined attribute on the <i>Account </i>or
+        <i>Contact </i>object much like the previous example. But sometimes the <i>Item </i>needs to
+      have different prices defined by different variables of an attribute. This section follows the
+      use case of a company that has a membership category that offers pricing by different groups
+      of Annual Revenue.</p>
+    <p><b>User Story:</b></p>
+    <p>The company needs to create tiered membership pricing for their "Tiered Membership" item. The
+      pricing is dependent upon the member's annual revenue, a field on the Account object potential
+      members must fill out to apply for membership.</p>
+    <p>The items pricing should be assigned as follows:</p>
+    <ul id="ul_jd2_chh_ks">
+      <li>Annual Revenue = $0 - $500,000: <b>$1,000/year</b></li>
+      <li>Annual Revenue = $500,000 - $1,000,000: <b>$2,000/year</b></li>
+      <li>Annual Revenue = $1,000,000 - $5,000,000: <b>$3,000/year</b></li>
+      <li>Annual Revenue = $5,000,000+: <b>$5,000/year</b></li>
+    </ul>
+    <p>Follow the steps below to create the pricing matrix defined by the Annual Revenue attribute
+      for their membership item.</p>
+    <p>
+      <b>Pricing Matrices</b>
+      <ol id="ol_ocs_tgh_ks">
+        <li>Create the item for the membership.</li>
+        <li>Create the first tier of pricing.<ol id="ol_pcs_tgh_ks">
+            <li>Click <b>New Pricing Rule</b> on the item's related list</li>
+            <li>Enter a name for the pricing rule. The example shows, "$0 - $500,000"</li>
+            <li>In the <i>Price Rule Variables</i> section of the page select <b>Account</b>.</li>
+            <li>Select the <b>Annual </b><b>Revenue</b> field from the <b>Field</b> picklist.</li>
+            <li>In the <b>Operator </b>picklist, select <b>less or equal</b>, which means less than
+              or equal to.</li>
+            <li>Enter "500,000" in the <b>Value</b> text box.</li>
+            <li>Click <b>Save.</b></li>
+          </ol></li>
+        <li>Create the second tier of pricing.<ol id="ol_qcs_tgh_ks">
+            <li>Click <b>New Pricing Rule</b> on the item's related list</li>
+            <li>Enter a name for the pricing rule. The example shows, "$500,000 - $1,000,000"</li>
+            <li>In the <i>Price Rule Variables</i> section of the page select <b>Account</b>.</li>
+            <li>Select the <b>Annual </b><b>Revenue</b> field from the <b>Field</b> picklist.</li>
+            <li>In the <b>Operator </b>picklist, select <b>greater than</b>.</li>
+            <li>Enter "500,000" in the <b>Value</b> text box.</li>
+            <li>In the second row of the <b>Price Rule Variables</b> section of the page, select
+                <b>Account</b>.</li>
+            <li>Select the <b>Annual </b><b>Revenue</b> field from the <b>Field</b> picklist.</li>
+            <li>In the <b>Operator </b>picklist, select <b>less or equal</b>.</li>
+            <li>Enter "1,000,000" in the <b>Value</b> text box.</li>
+            <li>Click <b>Save.</b></li>
+          </ol></li>
+        <li>Repeat step three to create the third tier of pricing, but be sure to enter the
+          appropriate values on the third row.</li>
+        <li>For the final tier, follow step two, but include <b>greater than</b> for the <b>Operator
+          </b>and "5,000,000" for the <b>Value.</b><p>Note that many of the fields on the top
+            section of the price rule are left blank. In this user story, these fields do not need
+            to be filled out to meet the item's pricing requirements.</p><p><b>What you should
+              see...</b></p><p>Once you have completed creating the various price rules for the
+            Tiered Membership item, you should see the item with a default price of $2,000. The
+            default price is the catch-all price. If there is an account that has their Annual
+            Revenue field left blank or a value that is not identified by the system, the default
+            price will be assigned to the transaction. This can always be updated on the Sales
+            Order, Invoice, or Receipt with a price override.</p><p>Beneath the default price rule,
+            you should see the four different levels or tiers of pricing in the <i>Pricing Rules</i>
+            related list of the item. </p><p>It is best practice to always test your items by
+            creating a Sales Order that should populate the desired price based on the customer's
+            attributes. In this case, create Sales Orders for Account entities that have the various
+            levels of Annual Revenue to ensure the item's pricing accuracy.</p>
+        </li>
+      </ol></p>
+  </body>
+</topic>

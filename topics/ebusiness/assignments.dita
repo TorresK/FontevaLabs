@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_szn_qkj_ps">
+ <title>Assignments</title>
+ <abstract>Staff users can segment subscribers via Assignments in order to identify and analyze
+  levels of customer engagement. </abstract>
+ <conbody>
+  <p>Staff users must assign assignments when purchasing a subscription item via the Sales Order
+   Line. Assignments for Subscriptions is necessary to identify the beneficiary of a subscription
+   and to provide the beneficiary's contact information. The Assignment record will not detail the
+   actual purchaser of the subscription. Instead, users must navigate to the Sales Order record to
+   identify the contact purchasing the subscription. </p>
+ </conbody>
+</concept>

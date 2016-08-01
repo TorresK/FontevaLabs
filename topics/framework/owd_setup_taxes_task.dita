@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_i3s_pgg_1s">
+    <title>Managing Tax Default Settings</title>
+    <abstract>System Admins must set organization wide defaults to ensure taxes are consistently
+        applied in the same manner to items within the organization. </abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Spark Admin</b> tab in the <b>Spark Framework</b> app and
+                    click <b>Apps</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>Charge</b> menu item and then click on <b>eBusiness User/Profile
+                        Preferences</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Check the <b>Calculate Sales Tax</b> checkbox to enable taxes on items.</cmd>
+                <info><image
+                        href="../../assets/screenshots/framework/framework_tax_settings_win16.png"
+                        width="700" id="image_abz_npd_y5"/></info>
+            </step>
+            <step>
+                <cmd>Enter the <b>Tax Account</b> and <b>Tax Locale </b>. </cmd>
+            </step>
+            <step>
+                <cmd>Click <b>Update Organization Wide Default Preferences</b>. </cmd>
+            </step>
+        </steps>
+        <result>Tax calculations are enabled for the organization. </result>
+        <postreq>
+            <ul id="ul_q5z_bcr_bs">
+                <li><xref
+                        href="../accounting/business_groups/bg_glaccounts_task.dita#task_fys_vtv_kr"
+                        >Designate the GL Account for Tax Liabilities</xref>
+                </li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

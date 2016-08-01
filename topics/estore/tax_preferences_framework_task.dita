@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_i3s_pgg_1s">
+    <title>Setting the Organization Default Account Preferences</title>
+    <abstract>Staff users must set organziational defaults to ensure taxes are accurately and
+        reliablely applied to items, and that there are designated default accounts for tax
+        liability and tax locale.</abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Apps</b> Quick Link in the <b>Framework</b> application.
+                </cmd>
+            </step>
+            <step>
+                <cmd>Select <b>Fonteva Orders</b> from among the list of Registered Apps and click
+                    on <b>eBusiness User/Profile Preferences</b> to display the Organization Default
+                    Accounting Preferences. </cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Calculate Sales Tax</b> checkbox to enable taxes on items.</cmd>
+            </step>
+            <step>
+                <cmd>Designate the appropriate GL account using the <b>Tax Account</b> lookup.
+                </cmd>
+            </step>
+            <step>
+                <cmd>Enter the default <b>Tax Locale</b> and click the <b>Update Organization Wide
+                        Default Preferences</b> button. <image
+                        href="../../assets/screenshots/estore/default_tax_preferences_sum15r2apr.png"
+                        id="image_dqj_4s5_yr" width="600" alt="Default Tax Preferences"/></cmd>
+            </step>
+        </steps>
+        <result>Tax calculations are enabled for the organization. </result>
+        <postreq><b>Post-requisites:</b></postreq>
+    </taskbody>
+</task>

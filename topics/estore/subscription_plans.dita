@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="topic_clp_hfx_ds">
+  <title>Subscription Plans</title>
+  <abstract>Subscription Plans define the term of the subscription, auto-renew options, and
+    proration rules. Subscription plans are assigned to one or more items. It is not necessary to
+    create subscription plans for multiple subscription items. </abstract>
+  <conbody>
+    <section>
+      <title>Types of Subscription Plans</title>
+      <p>The system supports three types of Subscription Plans:<ul>
+          <li><b><xref href="subscription_calendar_task.dita#task_bxk_rhx_ds">Calendar</xref></b>-
+            Calendar Subscription Plans have a defined start and end date.</li>
+          <li><b><xref href="subscription_termed_task.dita#task_bxk_rhx_ds">Termed</xref></b>-
+            Termed Subscription Plans start at the time of purchase and continue through the defined
+            term of the subscription, set by populating the Initial Term (Months) and Renewal Term
+            (Months) fields on the Subscription Plan record.<note>Calendar and Termed Subscription
+              Plans have definite end dates and therefore revenue is deferred; their related
+              subscription items must have <b>Deferred Revenue</b> enabled. </note></li>
+          <li><b><xref href="subscription_lifetime_task.dita#task_bxk_rhx_ds">Lifetime</xref></b>- A
+            Lifetime Subscription Plan defines a term of 100 years from the purchase date.
+              <b>Deferred Revenue must be disabled on the Subscription Item for Lifetime
+              Subscriptions; revenue cannot be deferred for Lifetime Subscriptions. If the Schedule
+              Type is set to Automatic Payment, then the Subscription Plan must be Lifetime. A
+              Lifetime Subscription Plan cannot be set up for the Auto Renew Option. </b></li>
+        </ul></p>
+    </section>
+    <section>
+      <title>Billing Terms</title>
+      <p>Billing terms determine the details of the billing cycle:</p>
+      <p><image href="../../assets/screenshots/estore/billing_terms_subplans_win16.png" width="700"
+          id="image_tjj_r31_f5"/></p>
+      <p>
+        <ul id="ul_dvh_sqm_c5">
+          <li><b>Initial Term (Months)</b> - The initial term, in number of months, for new
+            subscribers of the plan. <b>Required for Termed and Lifetime Subscription
+            Plans.</b></li>
+          <li><b>Renewal Term (Months)</b> - The renewal term, in number of months, for subscribers
+            of the plan. Defaults to the <b>Initial Term</b>, but there are several use cases it
+            will be different from the initial term. For example, "Buy now, get 2 months free." In
+            this case, the <b>Initial Term (Months)</b> is 14 and the <b>Renewal Term (Months)</b>
+            is 12. </li>
+          <li><b>Auto Renew Option</b> - Available for Calendar and Termed Subscription Plans only.
+              <b>Selecting the Auto Renew Option will not defer revenue, and therefore, will not
+              have any effect on Accounts Receivable. </b><ul id="ul_b1g_5tn_c5">
+              <li>Select <b>Disabled</b> to turn off auto-renew for all related Subscriptions.</li>
+              <li>Select <b>Enabled</b> to allow related Subscriptions to optionally enable
+                auto-renew.</li>
+              <li>Select <b>Required</b> to enable auto-renew without option. <b>If set to Required,
+                  Require Payment Method must be enabled.</b></li>
+            </ul></li>
+          <li><b>Require Payment Method</b> - Subscribers are required to maintain an active and
+            valid Payment Method on file.</li>
+        </ul>
+      </p>
+    </section>
+    <section><b>Calendar Term Options</b><p><image
+          href="../../assets/screenshots/estore/calendar_term_options_subplans_win16.png"
+          width="700" id="image_sgw_m31_f5"/></p><p>Configure the <b>Calendar End Day</b> and
+          <b>Calendar End Month</b> when the Subscription Plan <b>Type</b> is
+      <b>Calendar</b>.</p></section>
+  </conbody>
+</concept>

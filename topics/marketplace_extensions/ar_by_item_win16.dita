@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_ftj_xjn_cv">
+ <title>A/R by Item </title>
+ <abstract><b>A/R by Item</b> tracks accounts receivable at the item level for the posting of
+  invoices, adjustments to invoices, full payments, and full refunds. Partial payments and refunds
+  are identified in a report to assist in any adjustments to the financial records.</abstract>
+ <conbody>
+  <section><b>Setup</b><ol id="ol_x4g_ckn_cv">
+    <li>Install the <b>A/R by Item</b> package. </li>
+    <li>Click <b>Edit Layout</b> on the Item record and add the <b>Accounts Receivable Account</b>
+     field to the page layout. </li>
+    <li>Enter the applicable <b>Accounts Receivable Account</b> on all Item records.<note><b>The
+       installation of this application will not alter any existing Transactions.</b></note></li>
+   </ol></section>
+  <section><b>Expected Results</b><ul id="ul_w4l_fkn_cv">
+    <li><b>Posting Invoice(s)</b> - After posting an Invoiced Sales Order, the following will occur:
+      <ul id="ul_ypx_hkn_cv">
+      <li>The system will create a transaction line for each Invoice Line where: <ul
+        id="ul_jj1_gqn_cv">
+        <li>The item's <b>Accounts Receivable Account</b> to the <b>GL Account</b> field.</li>
+        <li>The <b>Sale Price</b> on the Invoice Line to the Transaction Lines <b>Debit</b> field
+          (<b>Credit</b> for a negative adjustment). </li>
+       </ul><image
+        href="../../assets/screenshots/marketplace_extensions/ar_posting_invoices_win16.png"
+        width="700" id="image_cdn_fln_cv"/></li>
+     </ul></li>
+    <li><b>Paying an Invoice in full</b> - Once the Receipt is posted, the following will occur:
+      <ul id="ul_vmr_pkn_cv">
+      <li> The system will create a transaction line for each Invoice Line where: <ul
+        id="ul_x1g_xqn_cv">
+        <li>The item's <b>Accounts Receivable Account</b> to the <b>GL Account</b> field.</li>
+        <li>The <b>Sale Price</b> on the Invoice Line to the Transaction Lines <b>Credit</b>
+         field.</li>
+       </ul><image href="../../assets/screenshots/marketplace_extensions/ar_full_receipt_win16.png"
+        width="700" id="image_yw3_lln_cv"/></li>
+     </ul></li>
+    <li><b>Refunding a Receipt in full</b> - Once the Receipt is posted, the following will occur:
+      <ul id="ul_oxg_skn_cv">
+      <li> The system will create a transaction line for each Transaction Line where:<ul
+        id="ul_fq5_brn_cv">
+        <li>The item's <b>Accounts Receivable Account</b> to the <b>GL Account</b> field.</li>
+        <li>The <b>Sale Price</b> on the Receipt Line to the Transaction Lines <b>Debit</b> field.
+        </li>
+       </ul><p><image
+         href="../../assets/screenshots/marketplace_extensions/ar_full_refund_win16.png" width="700"
+         id="image_k44_qln_cv"/></p></li>
+     </ul></li>
+    <li><b>Partial Payments and Refunds</b> - When a partial payment or refund is made, the
+     following will occur:  <ul id="ul_xl4_tkn_cv">
+      <li> The system will create Transaction Lines for each Invoice Line Item where:<ul
+        id="ul_dzd_grn_cv">
+        <li>The item's <b>Accounts Receivable Account</b> to the <b>GL Account</b> field.</li>
+        <li>The <b>Debit</b> and <b>Credit</b> fields are empty.</li>
+       </ul><image
+        href="../../assets/screenshots/marketplace_extensions/ar_partial_payment_win16.png"
+        width="700" id="image_ph3_n4n_cv"/></li>
+      <li>The Transaction record’s <b>Partial Payment Transaction</b> checkbox is checked and will
+       add the transaction to the <b>Partial Payments and Refunds</b> report. Next, edit the
+       Transaction Lines to appropriate the partial payments/refunds. Navigate to the report by
+       clicking <b>Reports</b> > Search: <b>Partial Payment</b><p><image
+         href="../../assets/screenshots/marketplace_extensions/ar_report_win16.png" width="700"
+         id="image_j3p_cmn_cv"/></p></li>
+     </ul></li>
+   </ul></section>
+ </conbody>
+</concept>

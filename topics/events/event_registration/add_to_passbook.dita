@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_yvw_q5h_jt">
+ <title>Add to PassBook</title>
+ <shortdesc>When using Mac OS X, iOS 6 or later devices with an enabled iCloud account, the system
+  will generate an eTicket that can be used for event check-in. <b>The Passbook feature is only
+   available to users registering for Conference style events</b>. </shortdesc>
+ <conbody>
+  <image href="../../../assets/screenshots/events/passbook_event_detail_win16.png" width="600"
+   id="image_wgr_rz5_tt"/>
+  <p>The <b>Add to Passbook</b> feature is automatically enabled for all Mac OSx users and iOS 6 or
+   later devices. The system generates a QR code from the event information and produces an eTicket
+   for the purchaser to download to their iOS device. The <b>Add to Passbook</b> feature stores the
+   eTicket on the Attendee record. The system ensures the eTicket cannot be used multiple times.  </p>
+  <p><image href="../../../assets/screenshots/events/passbook_eticket_win16.png" width="400"
+    id="image_ucz_tz5_tt"/></p>
+  <p>The <b>Add to Passbook</b> feature is used for ticket types and the configuration of the
+   eTicket cannot be altered. However, staff users can alter the color for the fonts and values on
+   the related <xref href="../event_setup/creating_event_task.dita#task_oft_s1b_rr">Event</xref>
+   record: <ul id="ul_tj5_cf2_z5">
+    <li>The <b>ETicket Label Color</b> controls the font color of the label</li>
+    <li>The <b>ETicket Value Color</b> controls the color of the field value</li>
+   </ul></p>
+ </conbody>
+</concept>

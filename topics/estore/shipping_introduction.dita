@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_vlp_cxn_ht">
+ <title>Shipping</title>
+ <abstract>The <b>eStore</b> app allows organizations to charge for shipping as a seamless part of
+  the checkout process. There are four components to the Shipping feature:<ol id="ul_w4w_4c4_ht">
+   <li><b>Shipping Carrier</b></li>
+   <li><b>Delivery Method</b></li>
+   <li><b>Shipping Region</b></li>
+   <li><b>Shipping Rate</b></li>
+  </ol></abstract>
+ <conbody>
+  <p>On checkout, authenticated and unauthenticated shoppers will be asked to enter a shipping
+   address only if their order contains shipping items. <b>Shipping Rates </b>are calculated based
+   on: <ul id="ul_kk1_dtc_3t">
+    <li><b>Destination Country</b></li>
+    <li><b>Item Weight</b> or <b>Item Value</b></li>
+    <li><b>Item Quantity</b></li>
+   </ul>Shipping can be configured to accommodate most business and marketing scenarios, such as:<ul
+    id="ul_fjk_lk2_x5">
+    <li>Free shipping if the order total exceeds, or is below, a threshold weight or price.</li>
+    <li>Encouraging customers to add more items to their Shopping Cart to qualify for free
+     shipping.</li>
+    <li>Flat shipping on every order with the ability to adjust the flat rate for promotion periods
+     or seasonal buying patterns.</li>
+    <li>Tiered shipping rates for common destinations and flat rates for the rest of the world.</li>
+    <li>Allow shipping to specific countries and prevent shipping to everywhere else.</li>
+   </ul></p>
+  <p>Shipping costs appear as individual lines on the Sales Order, allowing staff users to
+   accommodate partial refunds, without refunding the shipping cost. Shipping costs can be assigned
+   to individual GL accounts to track spending with individual carriers, such as UPS and Fedex.
+    <note>Admins can configure as many <b>Shipping Rates</b> as needed based on:<ul
+     id="ul_rh1_4f4_ht">
+     <li><b>Destination Country</b></li>
+     <li><b>Shipping Carrier</b></li>
+     <li><b>Delivery Method</b></li>
+     <li><b>Item Weight</b> or <b>Item Value</b></li>
+    </ul></note></p>
+ </conbody>
+</concept>

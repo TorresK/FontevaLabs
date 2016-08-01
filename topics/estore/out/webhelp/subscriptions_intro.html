@@ -1,0 +1,124 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+<head><meta name="description" content=""></meta><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><meta name="copyright" content="(C) Copyright 2005"></meta><meta name="DC.rights.owner" content="(C) Copyright 2005"></meta><meta name="DC.Type" content="concept"></meta><meta name="DC.Title" content="Subscriptions"></meta><meta name="DC.Relation" scheme="URI" content="subscriptions_invoicing_options_win16.html"></meta><meta name="DC.Relation" scheme="URI" content="subscription_calendar_task.html"></meta><meta name="DC.Relation" scheme="URI" content="subscription_termed_task.html"></meta><meta name="DC.Relation" scheme="URI" content="subscription_lifetime_task.html"></meta><meta name="DC.Relation" scheme="URI" content="subscription_item_class.html"></meta><meta name="DC.Relation" scheme="URI" content="creating_subscriptions_task.html"></meta><meta name="DC.Relation" scheme="URI" content="purchasing_subscriptions_win16.html"></meta><meta name="DC.Relation" scheme="URI" content="managing_subscriptions.html"></meta><meta name="DC.Relation" scheme="URI" content="subscription_renewal.html"></meta><meta name="DC.Relation" scheme="URI" content="modifying_subscriptions_backend.html"></meta><meta name="DC.Relation" scheme="URI" content="amending_subscriptions.html"></meta><meta name="DC.Format" content="XHTML"></meta><meta name="DC.Identifier" content="concept_mbk_hst_js"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/commonltr.css"><!----></link><title>Subscriptions</title><!--  Generated with Oxygen version 17.1, build number 2016032212.  --><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_topic.css"><!----></link><link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/skins/skin.css"><!----></link><script type="text/javascript"><!--
+          
+          var prefix = "index.html";
+          
+          --></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-1.8.2.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.custom.min.js"><!----></script><script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="oxygen-webhelp/resources/js/webhelp_topic.js"><!----></script></head>
+<body onload="highlightSearchTerm()" class="frmBody" id="concept_mbk_hst_js">
+<table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td width="75%"></td><td><div class="navheader"></div></td></tr></tbody></table>
+
+  <h1 class="title topictitle1">Subscriptions</h1>
+
+  <div class="abstract">Subscriptions are products with time parameters that can be assigned to Accounts and
+    Contacts. Subscriptions are purchased in the <strong class="ph b">eStore</strong> and modified by customers in their
+      <strong class="ph b">Community Portal</strong>; modifications include renewing subscriptions, changing payment
+    methods for auto-renewals, and upgrading subscription plans. System Admins can add an infinite
+    number of plans to offer subscription items. <div class="note note"><span class="notetitle">Note:</span> <strong class="ph b">Community portal users can manage
+        subscriptions for all Accounts for which they are the Primary Contact. To view subscription
+        beneficiaries across multiple accounts, it is necessary to have Restrict Assignments
+        disabled on each Account. Additionally, if revenue from subscriptions is recognized at a
+        later date, <a class="xref" href="deferred_revenue_item_class.html#task_itr_pzs_35">Set up Deferred
+          Revenue</a>.</strong></div>
+<p class="p"><strong class="ph b">Subscription Plans</strong></p>
+<p class="p">Subscription Plans define the
+      term of the subscription, auto-renew options, and proration rules. Subscription plans are
+      assigned to one or more items. It is not necessary to create subscription plans for multiple
+      subscription items. </p>
+<p class="p"><strong class="ph b">Types of Subscription Plans</strong></p>
+<div class="p">The system supports three
+      types of Subscription Plans:<ul class="ul" id="ul_tzf_jq1_h5">
+        <li class="li"><strong class="ph b"><a class="xref" href="subscription_calendar_task.html#task_bxk_rhx_ds" title="Calendar Subscription Plans have a defined start and end date. Calendar Subscription Plans can use proration rules to reduce the purchase price for mid-term purchases.">Calendar</a></strong>-
+          Calendar Subscription Plans have a defined start and end date.</li>
+
+        <li class="li"><strong class="ph b"><a class="xref" href="subscription_termed_task.html#task_bxk_rhx_ds" title="Termed Subscription Plans exist for a set period of months. Termed subscriptions start at the time of purchase and continue through the defined term of the subscription. This is also commonly referred to as an &#34;Anniversary&#34; membership.">Termed</a></strong>- Termed
+          Subscription Plans start at the time of purchase and continue through the defined term of
+          the subscription, set by populating the Initial Term (Months) and Renewal Term (Months)
+          fields on the Subscription Plan record.</li>
+
+        <li class="li"><strong class="ph b"><a class="xref" href="subscription_lifetime_task.html#task_bxk_rhx_ds">Lifetime</a></strong>- A
+          Lifetime Subscription Plan defines a term of 100 years from the purchase date. <strong class="ph b">Deferred
+            Revenue must be disabled on the Subscription Item for Lifetime Subscriptions. If the
+            Schedule Type is set to Automatic Payment, then the Subscription Plan must be Lifetime.
+            A Lifetime Subscription Plan cannot be set up for the Auto Renew Option. </strong></li>
+
+      </ul>
+</div>
+<p class="p"><strong class="ph b">Billing Terms</strong></p>
+<p class="p">Billing terms determine the details of the billing
+      cycle:</p>
+<p class="p"><img class="image" id="image_qj3_pq1_h5" src="../../assets/screenshots/estore/billing_terms_subplans_win16.png" width="700"></img></p>
+<div class="p">
+      <ul class="ul">
+        <li class="li"><strong class="ph b">Initial Term (Months)</strong> - The initial term, in number of months, for new
+          subscribers of the plan. <strong class="ph b">Required for Termed Subscription Plans.</strong></li>
+
+        <li class="li"><strong class="ph b">Renewal Term (Months)</strong> - The renewal term, in number of months, for subscribers of
+          the plan. Defaults to the <strong class="ph b">Initial Term</strong>, but there are several use cases it will be
+          different from the initial term. For example, "Buy now, get 2 months free." In this case,
+          the <strong class="ph b">Initial Term (Months)</strong> is 14 and the <strong class="ph b">Renewal Term (Months)</strong> is 12. </li>
+
+        <li class="li"><strong class="ph b">Auto Renew Option</strong> - Available for Calendar and Termed Subscription Plans only.
+            <ul class="ul" id="ul_b1g_5tn_c5">
+            <li class="li">Select <strong class="ph b">Disabled</strong> to turn off auto-renew for all related Subscriptions.</li>
+
+            <li class="li">Select <strong class="ph b">Enabled</strong> to allow related Subscriptions to optionally enable
+              auto-renew.</li>
+
+            <li class="li">Select <strong class="ph b">Required</strong> to enable auto-renew without option. <strong class="ph b">If set to Required,
+                Require Payment Method must be enabled.</strong><div class="note note"><span class="notetitle">Note:</span> If the <strong class="ph b">Enable Auto Renew</strong>
+                checkbox is checked on the Subscription record, then a Sales Order is created and
+                closed on the date that is the <strong class="ph b">Subscription End Date</strong> less the <strong class="ph b">Invoice Days
+                  Variable</strong>. <strong class="ph b">If the Auto Renew Option is set to Enabled or Required, then the
+                  Invoice Days Variable field and the Days to Lapse field must have the same value;
+                  value must be greater than 0</strong>. Additionally, a <strong class="ph b">Scheduled Payment</strong> is
+                created. On the date the Subscription is set to expire, the system will make the
+                payment. </div>
+</li>
+
+          </ul>
+</li>
+
+        <li class="li"><strong class="ph b">Require Payment Method</strong> - Subscribers are required to maintain an active and valid
+          Payment Method on file.</li>
+
+      </ul>
+
+    </div>
+<p class="p"><strong class="ph b">Calendar Term Options</strong></p>
+<p class="p"><img class="image" id="image_yxb_vq1_h5" src="../../assets/screenshots/estore/calendar_term_options_subplans_win16.png" width="700"></img></p>
+<p class="p">Configure the <strong class="ph b">Calendar End Day</strong> and <strong class="ph b">Calendar End
+        Month</strong> when the Subscription Plan <strong class="ph b">Type</strong> is <strong class="ph b">Calendar</strong>.</p>
+</div>
+
+<div class="related-links">
+<ul class="ullinks">
+<li class="link ulchildlink"><strong><a href="subscriptions_invoicing_options_win16.html">Configuring Installment Schedule Options</a></strong><br xmlns="http://www.w3.org/1999/xhtml" />
+</li>
+<li class="link ulchildlink"><strong><a href="subscription_calendar_task.html">Creating a Calendar Subscription Plan</a></strong><br xmlns="http://www.w3.org/1999/xhtml" />
+Calendar Subscription Plans have a defined start and end date. Calendar Subscription         Plans can use proration rules to reduce the purchase price for mid-term         purchases.</li>
+<li class="link ulchildlink"><strong><a href="subscription_termed_task.html">Creating a Termed Subscription Plan</a></strong><br xmlns="http://www.w3.org/1999/xhtml" />
+<strong class="ph b">Termed</strong> Subscription Plans exist for a set period of months. Termed         subscriptions start at the time of purchase and continue through the defined term of the         subscription. This is also commonly referred to as an "Anniversary" membership.</li>
+<li class="link ulchildlink"><strong><a href="subscription_lifetime_task.html">Creating a Lifetime Subscription Plan</a></strong><br xmlns="http://www.w3.org/1999/xhtml" />
+</li>
+<li class="link ulchildlink"><strong><a href="subscription_item_class.html">Creating an Item Class for Subscriptions</a></strong><br xmlns="http://www.w3.org/1999/xhtml" />
+Item Classes group and set options for items at the class level. All items must have         an Item Class. </li>
+<li class="link ulchildlink"><strong><a href="creating_subscriptions_task.html">Creating Subscription Items</a></strong><br xmlns="http://www.w3.org/1999/xhtml" />
+</li>
+<li class="link ulchildlink"><strong><a href="purchasing_subscriptions_win16.html">Purchasing Subscriptions in the Community Portal</a></strong><br xmlns="http://www.w3.org/1999/xhtml" />
+</li>
+<li class="link ulchildlink"><strong><a href="managing_subscriptions.html">Managing Subscriptions in the Community Portal</a></strong><br xmlns="http://www.w3.org/1999/xhtml" />
+</li>
+<li class="link ulchildlink"><strong><a href="subscription_renewal.html">Renewing a Subscription</a></strong><br xmlns="http://www.w3.org/1999/xhtml" />
+</li>
+<li class="link ulchildlink"><strong><a href="modifying_subscriptions_backend.html">Modifying Subscriptions</a></strong><br xmlns="http://www.w3.org/1999/xhtml" />
+</li>
+<li class="link ulchildlink"><strong><a href="amending_subscriptions.html">Amending Subscriptions</a></strong><br xmlns="http://www.w3.org/1999/xhtml" />
+</li>
+</ul>
+</div>
+<div class="navfooter"><!----></div><div class="footer">WebHelp output generated by<a class="oxyFooter" href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"></img></span><span class="xmlauthor">XML Author</span></a></div>
+</body>
+</html>

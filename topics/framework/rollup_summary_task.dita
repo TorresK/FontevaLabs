@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_f5m_xbl_ls">
+    <title>Managing Rollup Summary Fields</title>
+    <abstract>System Admins can calculate the sum, count, average, maximum, or minimum values from
+        related child records and map them to a field on the Parent SObject with clicks, instead of
+            code.<p>For example, in a fundraising campaign, substantial value is derived from being
+            able to view a summary of the total dollar amount of donations. Staff users can further
+            filter down to donations per calendar year to date, largest donation amount, last date
+            of donation for a contact, etc. </p><p><image
+                href="../../assets/screenshots/framework/dashboard_rollup_summaries_sum16.png"
+                width="700" id="image_ub3_wbj_rw"/></p></abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Click <b>Rollup Summary Fields</b> in the <b>Spark Framework</b> app.</cmd>
+            </step>
+            <step>
+                <cmd>Configure the fields to create a new <b>Rollup Summary Field</b>:</cmd>
+                <info><image href="../../assets/screenshots/framework/edit_rollups_sum16.png"
+                        width="400" id="image_rmv_lcj_rw"/></info>
+                <substeps id="substeps_dzh_4cl_ls">
+                    <substep>
+                        <cmd><b>Parent SObject</b>- The object that displays the calculated rollup
+                            summary.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd><b>Parent Field</b>- The field that displays the rollup summary.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd><b>Child SObject</b>- The object or item to be included in calculations
+                            for the rollup summary.</cmd>
+                        <stepxmp>In calculating the number of contacts related to an account, the
+                            contact is the <b>Child SObject</b>.</stepxmp>
+                    </substep>
+                    <substep>
+                        <cmd><b>Relationship Field</b>- Defines the lookup relationship that
+                            determines the relationship for the calculation.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd><b>Child Field</b>- Defines the calculated value in the parent
+                            object.</cmd>
+                        <info>Leave null if the <b>Operation</b> is set to "<b>Count</b>".</info>
+                    </substep>
+                    <substep>
+                        <cmd><b>Operation</b>- Select between: <b>Sum</b>, <b>Count</b>,
+                                <b>Maximum</b>, <b>Average</b>, <b>Minimum</b>.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd><b>Filter</b>- Enter a SOQL filter to narrow results.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd><b>Is Enabled- must be checked in order to activate the new Rollup
+                                Summary field</b></cmd>
+                        <info><image
+                                href="../../assets/screenshots/framework/edit_rollups_batch_scope_sum16.png"
+                                width="400" id="image_jmb_b2j_rw"/></info>
+                    </substep>
+                    <substep>
+                        <cmd><b>Enable Batching</b>- Check the <b>Enable Batching</b> checkbox in
+                            order to run the Rollup Summary field whenever the scheduled job
+                                (<b>Rollup_Scheduler</b>) is scheduled.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd><b>Parent Batch Scope</b>- If batching is enabled, enter "2000" into
+                            the <b>Parent Batch Scope</b> field.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd><b>Child Batch Scope</b>- If batching is enabled, enter "2000" into the
+                                <b>Child Batch Scope</b> field.</cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>Click <b>Submit</b>.</cmd>
+                <info>System Admins can manually run a Rollup Summary by clicking the related
+                        <b>Run</b> action. Additionally, System Admins can edit or delete existing
+                    Rollup Summary fields via the related <b>Edit </b>and <b>Remove</b>
+                    actions.</info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

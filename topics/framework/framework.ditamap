@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>Spark Framework</title>
+  <topicref href="framework_landing_page.dita"/>
+ <topicref href="spark_toolkit.dita"/>
+ <topicref href="spark_registered_app.dita">
+  <topicref href="org_default_pref.dita"/>
+  <topicref href="owd_setup_taxes_task.dita"/>
+ </topicref>
+  <topicref href="framework_configurations.dita"/>
+  <topicref href="registered_objects_task.dita"/>
+  <topicref href="rollup_summary_task.dita"/>
+  <topicref href="routing_rules_task.dita"/>
+  <topicref href="managing_settings_task.dita"/>
+  <topicref href="system_logs_task.dita"/>
+ 
+</map>

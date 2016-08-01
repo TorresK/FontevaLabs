@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_oft_s1b_rr">
+    <title>Creating an Event</title>
+    <abstract>The <b>Events</b> object is the primary configuration object for the full details of
+        an event, regardless of the Registration Style. </abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_vqh_gtw_ns">
+                <li><xref href="event_categories_task.dita#task_bkk_nx1_rr">Create the Event
+                        Category</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <stepsection><b>Event Details</b></stepsection>
+            <step>
+                <cmd>Navigate to the <b>Events</b> tab from the <b>Events</b> app and click the
+                        <b>New</b> button in the <i>Recent Events</i> related list. </cmd>
+                <info><image href="../../../assets/screenshots/events/recurring_event_win16.png"
+                        width="700" id="image_d4c_3tt_qt"/></info>
+                <info>Use the <i>Events</i> related list on the Event Category record to easily
+                    store, access, and configure the details for subsequent events.</info>
+            </step>
+            <step>
+                <cmd>Enter the <b>Event Name</b> and the <b>Display Name.</b></cmd>
+                <info>The <b>Display Name</b> is viewable on the <i>Events Search</i> page in the
+                        <b>Community Portal</b>.</info>
+                <info><image
+                        href="../../../assets/screenshots/events/events_search_display_name_win16.png"
+                        width="700" id="image_byn_g3v_qt"/></info>
+                <info>Link the new event to a previously created <b>Event Category</b>. If left
+                    unpopulated, the <b>Event Category</b> will default to <b>Uncategorized</b>. The
+                        <b>Status</b> field's default is set to <b>Planned</b>; <b>do not alter the
+                        predefined values of Planned and Active. </b></info>
+                <info><image
+                        href="../../../assets/screenshots/events/event_status_picklist_sfclassic_win16.png"
+                        width="700" id="image_cgy_5jv_vt"/></info>
+                <info><b>Change the Status picklist to Active to enable backend and Community Portal
+                        registration. </b></info>
+            </step>
+            <step>
+                <cmd>Enter the <b>Ticket Sales Start Date</b>, <b>Time Zone</b>, and <b>Event
+                        Key</b>.</cmd>
+                <info>The <b>Event Key</b> is a unique identifier that differentiates the different
+                    item classes created for the event.</info>
+            </step>
+            <step>
+                <cmd>Enter the hex values for the <b>ETicket Label Color</b> and <b>ETicket Value
+                        Color</b>.</cmd>
+                <info><image href="../../../assets/screenshots/events/eticket_hex_values_win16.png"
+                        width="700" id="image_ryw_dnm_2v"/></info>
+                <info>The <b>ETicket Label Color</b> controls the font color of the label on the
+                            <b><xref
+                            href="../event_registration/add_to_passbook.dita#concept_yvw_q5h_jt"
+                            >Passbook</xref></b>. The <b>ETicket Value Color</b> controls the color
+                    of the field value.</info>
+            </step>
+            <step>
+                <cmd>Enter the <b>Event Times</b>:</cmd>
+                <info><image href="../../../assets/screenshots/events/event_times_win16.png"
+                        width="700" id="image_tyk_t3m_2v"/><ul id="ul_zwn_k3m_2v">
+                        <li><b>Start Date, Start Time, Start Date/Time</b></li>
+                        <li><b>End Date, End Time, End Date/Time</b></li>
+                    </ul></info>
+            </step>
+            <step>
+                <cmd>Configure the <b>Registration</b> details:</cmd>
+                <info><image
+                        href="../../../assets/screenshots/events/registration_information_win16.png"
+                        width="700" id="image_iwx_mmm_2v"/><ul id="ul_pmd_bkm_2v">
+                        <li><b>Registration Style</b> - Autopopulated based on the values entered on
+                            the Event Category record.</li>
+                        <li><b>Guest Registrant Field Sets (CSV)</b> - This field must be populated
+                            when registering additional attendees. <b>Applies to Conference Style
+                                events only</b>. </li>
+                        <li><b>Registration Instructions</b> - Autopopulated based on the values
+                            entered on the Event Category record.</li>
+                        <li><b>Calendar Reminder Text</b> - When a customer clicks the <b>Add to
+                                Calendar</b> link on an event, the details entered into the
+                                <b>Calendar Reminder Text</b> field compose the body of the calendar
+                            item. The <b>Event Name</b>, <b>Start Time</b>, <b>End Time</b>, and
+                                <b>Venue</b> information are included by default. <b>Applies to
+                                Simple Events only.</b>
+                        </li>
+                        <li><b>Email Notification Text</b> - Enter the text that is the body of the
+                            email attendees receive upon initial registration. The <b>Event
+                            Name</b>, <b>Start Time</b>, <b>End Time</b>, and <b>Venue</b>
+                            information are included in the email by default.</li>
+                    </ul></info>
+            </step>
+            <stepsection><b>Advanced Options</b></stepsection>
+            <step>
+                <cmd>Enable any additional <b>Advanced Options</b> that are required for the
+                    event:</cmd>
+                <info><image
+                        href="../../../assets/screenshots/events/advanced_options_events_win16.png"
+                        width="700" id="image_erp_2rm_2v"/><ul id="ul_jxq_5n3_1v">
+                        <li>If <b>Waitlisting</b> is enabled, enter a value for the <b>Capacity</b>
+                            field. </li>
+                        <li>Define the fields used for sorting ticket types displayed on the
+                                <i>Event Registration</i> page in the <b>Community Portal</b> by
+                            entering the full API name in the <b>Ticket Type Sort Field</b>. Best
+                            practices recommend sorting on <b>Name</b> and <b>Price</b>. Defaults to
+                                <b>Name</b>. </li>
+                        <li>Define the display order of the ticket types, ascending or descending,
+                            via the <b>Ticket Type Sort Order</b> field. Defaults to
+                            <b>ASC</b>.</li>
+                        <li><b>Enable Registration Groups</b> to allow authenticated users to
+                            register additional attendees. <b>Applies to Conference Style events
+                                only</b>. </li>
+                        <li><b>Enable Access Permissions</b> to prevent displaying the event to
+                            users in the <b>Community Portal</b> without the required
+                                    Badge.<note><b>Ticket Type Sort Field and Ticket Type Sort Order
+                                    must be populated to create a new event.</b> For previously
+                                created events, <b>Ticket Type Sort Field</b> and <b>Ticket Type
+                                    Sort Order</b> are only required upon editing the Event record.
+                                Additionally, <b>Schedule Items</b> and <b>Sponsor Sales</b> are
+                                available for Conference Style events only and must be enabled prior
+                                to saving the Event record to autocreate the related item classes.
+                            </note></li>
+                    </ul></info>
+            </step>
+            <stepsection><b>Event Site Detail</b></stepsection>
+            <step>
+                <cmd>Populate the <b>Event Site Detail </b> fields; the fields will map directly to
+                    the pages in the <b>Community Portal</b>. </cmd>
+                <info><image href="../../../assets/screenshots/events/event_site_details_win16.png"
+                        width="600" id="image_lmg_rln_2v"/><ul id="ul_pyz_wdj_5s">
+                        <li><b>Thumbnail Image URL</b>-Displays on the <i>Events Search</i> page.
+                            For Conference style events, the <b>Thumbnail Image URL</b> will also
+                            display along with the Agenda Builder on the <i>Event Detail</i> page. </li>
+                        <li><b>Image URL</b>-Displays as the banner image on the <i>Event
+                                Registration</i> page in the <b>Community Portal</b>.</li>
+                        <li><b>Overview HTML</b>-Provides an overview of the scheduled event and
+                            maps to the <b>Overview</b> tab on the sidebar nav of the <i>Event
+                                Detail </i>page.</li>
+                        <li><b>Agenda HTML</b>-Provides a description of the event's schedule items
+                            and maps to the <b>Agenda</b> tab on the sidebar nav of the Event Detail
+                            page. <b>Applies to Conference Style events only</b>.</li>
+                        <li><b>Speakers HTML</b>-Provides a description, or introduction, to the
+                            event's speakers and maps to the <b>Speakers</b> tab on the sidebar nav
+                            of the Event Detail page. <b>Applies to Conference Style events
+                            only</b>.</li>
+                        <li><b>Sponsors HTML</b>-Provides a description, or introduction, to the
+                            event's sponsors and maps to the <b>Sponsors</b> tab on the sidebar nav
+                            of the Event Detail page. <b>Applies to Conference Style events
+                                only.</b></li>
+                        <li><b>Venue HTML</b>-Provides a description of the <b>Primary Venue</b> and
+                            directly maps to the <b>Venues</b> tab on the sidebar nav of the
+                                <i>Event Detail</i> page.</li>
+                        <li><b>Group Manager HTML</b> - Provides any further details for attendees
+                            of a group registration. <b>Applies to Conference Style events
+                            only</b>.</li>
+                        <li><b>Schedule Item(s) Display Name</b> - Provides shoppers guidance when
+                            selecting and adding sessions to the backend Shopping Cart. <b>Applies
+                                to Conference Style events only</b>.</li>
+                    </ul></info>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Published</b> checkbox to publish the event in the <b>Community
+                        Portal</b> and click <b>Save</b>.</cmd>
+            </step>
+        </steps>
+        <result>Creating a new event will automatically generate <b>Assignment Roles</b> and a
+                <b>Ticket Type Item Class</b>. <note>If <b>Schedule Items</b> and <b>Sponsor
+                    Sales</b> are enabled, a <b>Schedule Item Item Class</b> and <b>Sponsor Item
+                    Class</b> are also created upon saving the new Event record. Additionally,
+                    <i>Related Lists</i> autopopulate with the configurations set on the Event
+                Category record.</note></result>
+        <postreq>
+            <ul id="ul_o13_h1l_w5">
+                <li>To view the event in the <b>Community Portal</b>, append the Event ID to the
+                    Community URL: <b>{!communityurl}/eventapi__router?event={!event.ID}</b><p>The
+                        {!event.ID} is the last 15 characters of the Event record's
+                            URL:</p><p><image
+                            href="../../../assets/screenshots/events/appending_event_id_win16.png"
+                            id="image_cyp_5bl_w5"/></p><p>The event is ready for registration in the
+                            <b>Community Portal</b>.</p></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

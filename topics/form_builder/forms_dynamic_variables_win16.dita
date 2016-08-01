@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_clk_c4d_bv">
+ <title>Creating Forms with Dynamic Variables</title>
+ <abstract><b>System Admins can create more robust and reusable forms for events and other business
+   needs by allowing the system to dynamically assign values to form fields.</b><p>Use Case: An
+   organization wants to distribute a post-event survey form to event attendees. The staff user
+   would like to create one reusable form that will be distributed after each event.
+   </p><p>Solution: Staff users can create one form to send to all attendees regardless of the event
+   using dynamic variables; form responses will populate the related records upon submission.
+  </p></abstract>
+ <conbody>
+  <p>Form URL</p>
+  <p>The URL for the form (replace domain and [formID]):
+   https://DOMAIN.force.com/cpbase__form?ID=[formID]. Fields can be visible or hidden. For example,
+   a status or a lookup (ID) Always available (don't need to have in URL of Form) {{user.accountid}}
+   > Dynamically pulls in a lookup to the Account {{user.contactid}} {{user.id}} URL-based
+   {{url.param}} > In the url add: ?param=1234 For example, use {{url.eventid}} then put
+   ?eventid=[eventid] in the URL link. This will populate the EventID in the field indicated (would
+   want to map to an event lookup field). This is great if you are trying to populate Attendees via
+   a form.</p>
+  <p/>
+ </conbody>
+</concept>

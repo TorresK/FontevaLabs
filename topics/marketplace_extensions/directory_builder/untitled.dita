@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_aqy_53k_nw">
+    <title>Create Directory URL Formal Field</title>
+    <shortdesc/>
+    <taskbody>
+        <context>System Admin can add Directory URL field to the Directory Site object.
+            <p/></context>
+        <steps>
+            <step>
+                <cmd>Go to Setup>>Create>>Objects</cmd>
+            </step>
+            <step>
+                <cmd>Select double click on Site Directory Object</cmd>
+            </step>
+            <step>
+                <cmd>Navigate to Custom Fields and Relationships. Click New button.</cmd>
+            </step>
+            <step>
+                <cmd>Mark FoRmula Data Type. Click Next.</cmd>
+            </step>
+            <step>
+                <cmd>Enter Field Label name: <i>Directory URL</i>. Tab. The Field Name field
+                    auto-populates</cmd>
+            </step>
+            <step>
+                <cmd>Build the Directory URL expression in the Advanced Formula text box. <ul
+                        id="ul_tk1_bkk_nw">
+                        <li>Enter single quote</li>
+                        <li>Paste Community Domain URL for your org:
+                                <i>https://communityurl.force.com</i></li>
+                        <li>Follow with the following text:
+                                <i>/DirectoryApi__Directory?autonumber='</i></li>
+                        <li>Paste Site Directory Name (e.g. <i>SD-0000000</i>)</li>
+                        <li>Add single quote to close expression</li>
+                        <li>Click Check Syntax button to confirm logic</li>
+                        <li>If there are no errors, click Save</li>
+                    </ul></cmd>
+            </step>
+            <step>
+                <cmd>Save. </cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

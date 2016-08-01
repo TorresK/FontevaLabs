@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_tg2_23t_nw">
+    <title>Program Goals</title>
+    <shortdesc>Goals are created for each Program Term.  They are used to gauge whether the
+        participant meets the program's standards or are maintaining those standards. They may or
+        may not be displayed to the participant so that they can track their progress and be
+        directed to step through the program process.</shortdesc>
+    <taskbody>
+        <context>Goals are automatically created when a new Program Term is created. A goal is
+            created for each active requirement that corresponds to the specific term checked. The
+            Program and associated requirements are active and the Program Profile does not have an
+            active Program Term. The attributes of each Goal are inherited from the corresponding
+                requirement.<p>The <b>Goal</b> inherits its attributes from the corresponding
+                requirement.</p><p/><p><image
+                    href="../../../assets/screenshots/marketplace_extensions/pm_goal_and_req.png"
+                    width="700" id="image_vpx_4wh_4w"/></p></context>
+    </taskbody>
+</task>

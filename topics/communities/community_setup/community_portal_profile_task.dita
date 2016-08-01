@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_gth_3y3_rs">
+    <title>Setting up New Profiles</title>
+    <abstract>If the customer does not yet have <b>Engage-Member Community</b> installed, then omit
+        the process for setting up a <b>Community Portal Profile</b>. </abstract>
+    <taskbody>
+<prereq>
+            <ul id="ul_csc_h3j_rs">
+                <li><xref href="creating_community_portal_task.dita#task_y45_ycc_nt">Prepare the
+                        Environment</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Navigate to <b>Setup </b>&gt; <b>Administer </b>&gt; <b>Manage Users </b>&gt;
+                        <b>Profiles</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>Clone</b> link associated with the applicable profiles: </cmd>
+                <info>
+                    <ul id="ul_rgs_xy3_rs">
+                        <li><b>Standard Platform User</b> or <b>Standard User</b></li>
+                        <li><b>Customer Community Login User</b> or <b>Customer Community
+                                    User</b><note><b>Selected profiles are client dependent. The
+                                    "Login" licenses are for logins-per-month pricing, while the
+                                    vanilla "Community" licenses are for named-user
+                                licensing.</b></note></li>
+                    </ul>
+                </info>
+                <info><image
+                        href="../../../assets/screenshots/community_builder/cloning_profiles_win16.png"
+                        width="700" id="image_y3x_3gy_bt"/></info>
+                <info>Next, click <b>Edit</b> on each cloned Profile and navigate to the
+                    Administrative Permissions section. Ensure the <b>Password Never Expires</b>
+                    checkbox is <b>unchecked</b> in order for new community users to specify a
+                    password when logging into the community for the first time. Click
+                    <b>Save</b>.</info>
+                <info><image
+                        href="../../../assets/screenshots/community_builder/password_expiry_unchecked_win16.png"
+                        width="700" id="image_nmv_vgy_bt"/></info>
+            </step>
+            <stepsection><b>Setting Profile CRUD Access and FLS for all Cloned
+                Profiles</b></stepsection>
+            <step>
+                <cmd>Navigate to the <b>Spark Framework</b> > <b>Spark Admin</b> > <b>Tools</b> >
+                        <b>Access Manager</b></cmd>
+                <substeps id="substeps_mc4_khy_bt">
+                    <substep>
+                        <cmd>For brand new orgs, users must click the <b>Create Remote Site
+                                Setting</b> button prior to viewing the <b>Access Manager</b>.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>After Remote Site Settings are created, click <b>Access
+                            Manager</b>.</cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>Select the profiles to update: <b>Site Guest User</b>, <b>cloned Profiles</b>,
+                        <b>System Administrator</b>.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/introduction/access_manager_profiles_win16.png"
+                        width="700" id="image_nng_3td_y5"/></info>
+            </step>
+            <step>
+                <cmd>Check the <b>Grant Full Access</b> checkbox and then click the <b>Grant Access
+                        to Selected Profile(s)</b> button.</cmd>
+                <info><image
+                        href="../../../assets/screenshots/introduction/access_manger_fls_win16.png"
+                        width="700" id="image_o3z_mtd_y5"/></info>
+            </step>
+        </steps>
+        <result>New profiles are set up; selected profiles have CRUD access, FLS is set, and Apex
+            Classes and Visualforce Page Access is granted.<note><b>Repeat Steps 3b-5 everytime a
+                    new package is installed or upgraded.</b></note></result>
+        <postreq>
+            <ul id="ul_k5w_s1j_rs">
+                <li><xref href="configuring_community_task.dita#task_kvc_bbj_rs">Configure the
+                        Community</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

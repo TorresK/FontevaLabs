@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_enc_5ft_nw">
+    <title>Create a Program</title>
+    <shortdesc> Programs are setup and administered by the designated staff user(s) in a given
+        business area. </shortdesc> 
+    <taskbody>
+        <context>To create a <b>Program</b> from the <b>Program Type </b>detail page: </context>
+        <steps>
+            <step>
+                <cmd>Navigte to the <b>Programs</b> related list. Click the <b>New</b> button. (The
+                        <b>Program Type</b> looks up to the Program Type record and
+                    autopopulates.)</cmd>
+            </step>
+            <step>
+                <cmd>Select the <b>Program Entity</b>: Contact or Account. The Entity is required
+                    and identifies the participant's record type. Once the record is created, this
+                    cannot be changed.</cmd>
+            </step>
+            <step>
+                <cmd> Populate the <b>Program Name</b>. </cmd>
+            </step>
+            <step>
+                <cmd>Click <b>Save</b> button to create the Program record.</cmd>
+                <info><b>Optional fields: </b><ul id="ul_y3h_tyc_4w">
+                        <li><b>Display Name</b> - the Program's full or formal name that displays on
+                            the Program Profile Page.</li>
+                        <li><b>Discipline</b> - picklist values defined during implementation to
+                            support report needs</li>
+                        <li><b>Start </b>and <b>End Dates</b> - optional dates used to define the
+                            lifecycle of the program</li>
+                        <li><b>Active</b> (chekbox) - when checked, activates the Program; dependent
+                            on the existence of at least one requirement</li>
+                        <li><b>Designation </b>- acronym awarded for successfully completing the
+                            program</li>
+                        <li><b>Image</b> - brand or logo associated with the program</li>
+                        <li><b>Description</b> - definition or explanation of program</li>
+                        <li><b>Requirement Field Set</b> - captures API name associated with the
+                            requirement object. It determines which fields displays to program
+                            participant; default (Default Requirement Field Set) autopopulates on
+                            save</li>
+                        <li><b>Progress Bar</b> (checkbox) - when checked, progress bar displays
+                            Program section of Program Profile Page. Percentage of completed
+                            requirements  is calclated based on the number completed goals over the
+                            total number of goals</li>
+                        <li><b>Candidate</b> and <b>Maintenance Terms</b> - captures the duration
+                            (months) that a participant has to complete all of the goals associated
+                            with a <b>Program Term</b></li>
+                        <li><b>Lifetime Term</b> - identifies programs that have been successfully
+                            completed but neither expire nor need to be maintained</li>
+                        <li><b>Email Address</b> and <b>Phone Number</b>- stores contact information
+                            specific to the support and maintenance of the program</li>
+                    </ul></info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

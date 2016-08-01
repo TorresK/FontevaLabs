@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_bkk_nx1_rr">
+    <title>Creating an Event Category</title>
+    <abstract>Organizing events into categories gives Admins the ability to efficiently plan,
+        implement, and manage their events. Event Categories are effectively used as a staging area
+        for future events; event components, such as ticket types, schedule items, venues, etc.,
+        that are created directly from the <b>Event Category</b> record will be available for reuse
+        when planning future events. <note>All events must have an <b>Event Category</b>; the system
+            automatically creates an <b>Event Category</b> of "Uncategorized." For recurring events,
+            Admins must create all event objects directly from the <b>Event Category</b>
+            record.</note></abstract>
+    <taskbody>
+        <prereq>
+            <ul id="ul_kdz_1gn_ss">
+                <li><xref href="../../communities/themes/creating_themes_task.dita#task_oqw_zgj_ks"
+                        >Create a Theme</xref></li>
+                <li><xref href="../../accounting/business_groups/bg_setup_task.dita#task_scm_ytg_kr"
+                        >Create a Business Group</xref></li>
+                <li><xref href="../../accounting/business_groups/bg_setup_task.dita#task_scm_ytg_kr"
+                        >Connect to a Payment Gateway</xref></li>
+                <li><xref href="../../estore/creating_stores_task.dita#task_p3m_trm_js">Create a
+                        Store</xref></li>
+                <li><xref href="../../communities/sites/sites_concept.dita#concept_kwb_srp_ks"
+                        >Create a Site</xref></li>
+            </ul>
+        </prereq>
+        <steps>
+            <step>
+                <cmd>Select the <b>Event Categories</b> tab within the <b>Events</b> app and click
+                    the <b>New</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Event Category Name</b>.</cmd>
+                <info>For example, an <b>Event Category Name</b> of <b>Alumni Foundation Simple
+                        Events</b> is used as the template for all recurring simple events related
+                    to the Alumni Foundation.  </info>
+            </step>
+            <step>
+                <cmd>Identify the <b>Business Group</b> using the lookup.</cmd>
+            </step>
+            <step>
+                <cmd>Select the event's <b>Registration Style</b> using the picklist:</cmd>
+                <choices id="choices_xrt_fkg_jt">
+                    <choice><b>Simple</b></choice>
+                    <choice><b>Conference</b></choice>
+                </choices>
+                <info>Simple Events <b>do not</b> support schedule items or sponsor packages.</info>
+            </step>
+            <step>
+                <cmd>Enter a value for the <b>Capacity</b> field.</cmd>
+            </step>
+            <step>
+                <cmd>Enable the <i>Ticketing &amp; Registration</i> features that are available for
+                    events within this<b> Event Category</b>.</cmd>
+                <info>All events must have at least one associated ticket type. Check the <b>Enable
+                        Waitlisting</b> checkbox if there are multiple ticket types for the event,
+                    so if all ticket types are sold out, unauthenticated and authenticated users can
+                    join a waitlist for the event.</info>
+            </step>
+            <step>
+                <cmd>Enter the <b>Organizer Name</b> and <b>Registration Instructions</b>. Click
+                        <b>Save</b>.</cmd>
+                <info>The <b>Organizer Name</b> and <b>Registration Instructions</b> display on the
+                        <i>Event Detail</i> page in the <b>Community Portal</b> and must be updated
+                    for any new events associated with the <b>Event Category</b>. The
+                        <b>Description</b> field is used to provide staff users with further
+                    information on the <b>Event Category</b>. </info>
+            </step>
+            <step>
+                <cmd>Navigate to the <i>Site Event Category</i> related list and click the <b>New
+                        Site Event Category</b> button. Select the associated <b>Site</b> using the
+                    lookup and click <b>Save</b>.</cmd>
+                <info>The <b>Site Event Category</b> must be linked to the Site record in order for
+                    the event to display in the <b>Community Portal</b>. </info>
+            </step>
+        </steps>
+        <result> The <b>Event Category</b> is created and will allow Admins to store event
+            components on the record for future use. </result>
+        <postreq>
+            <ul>
+                <li><xref href="ticket_types_task.dita#task_ztb_3gb_rr">Create Ticket
+                    Types</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_zfp_nhh_ks">
+  <title>Adding Bar Codes and Identifiers</title>
+  <abstract>Staff users have the ability to add bar codes and other identifiers such as SKU, UPC, EAN, and
+    ISBN numbers on items.</abstract>
+  <body>
+    <p><b>Adding Bar Codes &amp; Identifiers</b><ul id="ul_y3s_phh_ks">
+        <li><b>SKU</b> - A SKU (Stock Keeping Unit) is a unique Item identifier that references
+          attributes associated with the Item and that distinguish it from all other Items primarily
+          used for inventory control and management.</li>
+        <li><b>UPC</b> - A UPC (Universal Product Code) is a 13 digit catalog number uniquely
+          assigned to an Item required to generate UPC barcodes.</li>
+        <li><b>EAN</b> - An EAN (European Article Number) is a bar code symbology consisting of a
+          unique 13-digit Global Trade Item Number for identifying non-book products in Europe.</li>
+        <li><b>ISBN</b> - An ISBN (International Standard Book Number) is a unique 10 or 13-digit
+          Global Trade Item Number used to identify books and publications.</li>
+      </ul></p>
+  </body>
+</topic>

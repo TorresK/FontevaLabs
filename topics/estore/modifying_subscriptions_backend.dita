@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_a13_4rm_ht">
+    <title>Modifying Subscriptions</title>
+    <abstract>Upgrading or downgrading a subscription will renew an existing, active subscription
+        with a different subscription item and Subscription Plan. </abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>eBusiness</b> app, click the <b>Sales Orders</b> tab, and
+                    click <b>New</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Create a Sales Order with <b>Receipt</b> as the <b>Posting Entity</b> and
+                        <b>Simple Receipt</b> as the <b>Schedule Type</b>. Click <b>Save</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/estore/upgrading_subscription_so_win16.png"
+                        width="600" id="image_csc_p5m_ht"/></info>
+            </step>
+            <step>
+                <cmd>Navigate to the <i>Sales Order Lines</i> related list and click the <b>New
+                        Sales Order Line</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Select a different subscription item using the <b>Item</b> lookup.</cmd>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Renewal</b> checkbox and select a different <b>Subscription
+                        Plan</b> using the lookup.</cmd>
+            </step>
+            <step>
+                <cmd>Select the original subscription using the <b>Subscription (Upgrade/Renew)</b>
+                    lookup. Click <b>Save</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/estore/modifying_subscriptions_backened_win16.png"
+                        width="600" id="image_ec3_cjn_ht"/></info>
+            </step>
+            <step>
+                <cmd>Click the <b>Sales Order </b>ID and update the <b>Status</b> to
+                    <b>Closed</b>.</cmd>
+                <info><image
+                        href="../../assets/screenshots/estore/sales_order_id_modifying_subs_win16.png"
+                        width="600" id="image_cml_4kn_ht"/></info>
+            </step>
+            <step>
+                <cmd>Complete <xref href="../ebusiness/posting_sales_receipts.dita#task_ydb_53r_3s"
+                        >payment</xref> on the Sales Order.</cmd>
+                <substeps id="substeps_x5j_wdn_jt">
+                    <substep>
+                        <cmd> If the <b>Posting Entity</b> is set to <b>Receipt</b>, payment is
+                            required in order to complete the renewal request. Click the <b>Sales
+                                Receipt</b> button, enter payment information, and click <b>Pay</b>.
+                            The <b>Posting Status</b> on the Sales Order record automatically
+                            updates to <b>Posted</b> to reflect payment.</cmd>
+                    </substep>
+                </substeps>
+            </step>
+        </steps>
+        <result>The original subscription will reflect a <b>Status</b> of <b>Active</b> and the new
+            subscription will have a <b>Status</b> of <b>Pending</b> until the <b>Current Term Start
+                Date</b> begins.</result>
+        <postreq>Admins can additionally:<ul id="ul_v1z_wmn_ht">
+                <li><xref href="amending_subscriptions.dita#task_bfx_lj3_ft">Amend
+                        Subscriptions</xref></li>
+                <li><xref href="subscription_renewal.dita#task_tjm_3z1_ks">Renew
+                        Subscriptions</xref></li>
+            </ul></postreq>
+    </taskbody>
+</task>

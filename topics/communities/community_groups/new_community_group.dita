@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_urd_m4y_wt">
+    <title>Creating a Community Group</title>
+    <abstract>Create a new Community Group that can be made available for <b>Community Portal</b>
+                users.<note><b>For private groups, group members can only be created and modified by
+                the Group Owner or the Group Manager.</b></note></abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Community Groups</b> tab in the <b>Communities</b> app and
+                    click <b>New</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Community Group Name</b> and use the picklist to select the
+                        <b>Member Entity Type</b>. <b>Every Community Group must have a unique Name,
+                        even when using multiple Sites.</b></cmd>
+                <info>The <b>Member Entity Type</b> defines the type of group members allowed in a
+                        group:<ul id="ul_kvz_rwf_v5">
+                        <li><b>Contacts</b></li>
+                        <li><b>Accounts</b></li>
+                        <li><b>Groups</b></li>
+                    </ul><b>A group cannot contain more than one Member Entity Type</b>. If the
+                        <b>Member Entity Type</b> is set to Contact, the system will create a
+                    Community Group member for the related contact when the selected user has the
+                        <b>Community Portal User</b> profile. The default is set to <b>Contact</b>.
+                    Best practices recommend entering the <b>Email</b> associated with the Group and
+                    the Group <b>Type</b>.</info>
+                <info><image
+                        href="../../../assets/screenshots/community_builder/email_group_detail_win16.png"
+                        width="700" id="image_amw_brk_zt"/></info>
+            </step>
+            <step>
+                <cmd>Enter the <b>Group Image URL</b>, <b>Banner</b>, and the
+                    <b>Description</b>.</cmd>
+                <substeps id="substeps_dqm_3zv_yt">
+                    <substep>
+                        <cmd><b>Group Image URL</b> - Displays on the <i>Groups Search</i> page and
+                            the <i>Group Detail</i> page in the <b>Community Portal</b>. The
+                                <b>Group Owner</b> can change the Group's profile image from within
+                            the <b>Community Portal</b> by hovering over the image and clicking on
+                            the <b>Change Photo</b> button. </cmd>
+                    </substep>
+                    <substep>
+                        <cmd><b>Banner</b> - Displays on the <i>Group Detail</i> page in the
+                                <b>Community Portal</b>. The <b>Group Owner</b> can change the
+                            Banner image from within the <b>Community Portal</b> by clicking the
+                                <b>Change Background</b> button.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd><b>Description</b> - Displays within the Banner image on the <i>Group
+                                Detail</i> page. If the created text is too long to fully appear in
+                            the provided area, users can click the <b>More Detail</b> button to view
+                            a pop up window.</cmd>
+                        <info><image
+                                href="../../../assets/screenshots/community_builder/group_description_modal_win16.png"
+                                width="700" id="image_dwp_fcx_yt"/></info>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>Link the Community Group to the <b>Site</b> via the lookup.</cmd>
+            </step>
+            <step>
+                <cmd>Select <b>Customer Portal User</b> from the <b>Group Owner</b> picklist. In the
+                    adjacent picklist field, assign the Community Group Owner a <b>User</b>
+                    profile.</cmd>
+                <info>The <b>Group Owner</b> serves as the Group Administrator. In order for the
+                    Group Owner to be included as a Community Group member, assign the <b>Community
+                        Portal User</b> profile to the Group Owner prior to enabling the <b>Is
+                        Published</b> field.</info>
+                <info>Selecting the <b>Customer Portal User</b> as the <b>Group Owner</b> allows for
+                    the <b>User</b> to modify Group details, such as description, images, and tabs,
+                    directly from the <i>Group Detail</i> page in the <b>Community
+                    Portal</b>.</info>
+            </step>
+            <stepsection><b>Configure Feature Support and Privacy Settings</b></stepsection>
+            <step>
+                <cmd>Determine the visibility of Community Group record elements and the process to
+                    join a group for <b>Community Portal</b> users via <i>Privacy
+                    Settings</i>:</cmd>
+                <info><image
+                        href="../../../assets/screenshots/community_builder/group_privacy_settings_win16.png"
+                        width="700" id="image_y2q_25x_yt"/></info>
+                <info><b>Privacy Setting:</b><ul id="ul_ash_gsx_yt">
+                        <li><b>Public</b>- Defines a group that allows portal users to freely join
+                            without approval by clicking the <b>Join</b> button. If enabled by the
+                                <b>Group Owner</b>, users that are not members of the group can view
+                            the group's <b>Community Feed</b>, <b>Members</b>, and
+                            <b>Events</b>.</li>
+                        <li><b>Private</b>- Defines a join process where the member requesting to
+                            join must be approved by a <b>Group Manager</b>. Whereas the
+                                <b>Members</b> and <b>Events</b> tabs are visible to non-members, if
+                            enabled by the Administrator, the <b>Community Feed</b> tab is only
+                            available for members.</li>
+                        <li><b>Unlisted</b>- Defines a group where a non-member cannot join because
+                            the group is not visible to anyone outside the group. Only the <b>Group
+                                Owner</b> can assign a portal user to an Unlisted Group. Unlisted
+                            Groups will not appear in any search results or lists and can only be
+                            seen by members.</li>
+                    </ul></info>
+                <info>The default <b>Privacy Setting</b> is set to <b>Public</b>.</info>
+                <info><b>Feature Support:</b><ul id="ul_ckq_mz2_j5">
+                        <li>Enabling the <b>Private Members</b>, <b>Private Community Feed</b>, and
+                                <b>Private Events</b> checkboxes will hide the tabs from non-members
+                            of Public Groups, overriding the <b>Privacy Setting</b>.</li>
+                        <li>Checking the <b>Disable Join</b> checkbox will hide the <b>Join</b>
+                            button on the Banner image for Groups in the <b>Community Portal</b>.
+                        </li>
+                    </ul></info>
+                <info>
+                    <image
+                        href="../../../assets/screenshots/community_builder/features_support_win16.png"
+                        width="700" id="image_l5z_rz2_j5"/></info>
+            </step>
+            <step>
+                <cmd>Check the <b>Is Published</b> checkbox and click <b>Save</b>.</cmd>
+            </step>
+        </steps>
+        <result>A new Community Group is created and displayed in the <i>Groups Search</i> page of
+            the <b>Community Portal</b>.<p><image
+                    href="../../../assets/screenshots/community_builder/group_search_page_win16.png"
+                    width="700" id="image_jfl_q2x_yt"/></p></result>
+        <postreq>
+            <ul id="ul_cw2_rbm_zt">
+                <li><xref href="group_search.dita#concept_a1b_w4w_tr">Configure Advanced
+                        Settings</xref></li>
+            </ul>
+        </postreq>
+    </taskbody>
+</task>

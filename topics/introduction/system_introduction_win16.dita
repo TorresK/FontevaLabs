@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_jy2_szv_y5">
+ <title>System Introduction</title>
+ <abstract>The Fonteva Product Suite is installed during implementation. The following pages will
+    complete initial org set up, enabling customers to access the system: <ol id="ol_r1q_31w_y5">
+      <li><xref href="system_requirements.dita#concept_iz5_mxg_tt">System Requirements</xref></li>
+      <li><xref href="../accounting/business_groups/bg_setup_task.dita#task_scm_ytg_kr">Creating a
+          Business Group</xref></li>
+      <li><xref href="../accounting/business_groups/bg_paymentgateway_task.dita#task_rc1_52w_kr"
+          >Connecting to a Payment Gateway</xref></li>
+      <li><xref href="../estore/creating_stores_task.dita#task_p3m_trm_js">Creating a
+        Store</xref></li>
+      <li><xref href="../communities/sites/sites_concept.dita#concept_kwb_srp_ks">Creating a
+          Site</xref></li>
+      <li><xref href="../communities/themes/creating_themes_task.dita#task_oqw_zgj_ks">Modifying the
+          Theme</xref></li>
+      <li><xref href="../communities/enabling_portal_users_task.dita#task_m5t_3sq_3r">Enabling
+          Community Portal Users</xref></li>
+    </ol></abstract>
+</concept>

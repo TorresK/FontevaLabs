@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_fb5_twt_qv">
+ <title>Enabling Subscriptions for Deferred Revenue</title>
+ <abstract>If the revenue for a membership is deferred, then the merchant must set up the related
+  subscription plans so that the term of the subscription is aligned to offset the journal entries.
+    <note><b>Calendar Subscription Plans can only defer revenue annually.</b></note></abstract>
+ <conbody>
+  <section><b>Monthly Recognition - Termed Subscription Plan</b><ol id="ol_hwd_ywt_qv">
+    <li>Navigate to the <b>eStore</b> app and click the <b>Subscription Plans</b> tab. Click
+      <b>New</b>.</li>
+    <li>Select <b>Termed</b> in the <b>Type</b> picklist.</li>
+    <li>Check the <b>Is Active</b> checkbox.</li>
+    <li>Check the <b>Is Direct Debit Enabled</b> checkbox.</li>
+    <li>Select <b>Required</b> in the <b>Auto Renewed</b> picklist</li>
+    <li>Enter <b>1</b> for the <b>Initial Term Months</b>.</li>
+    <li>Enter <b>1</b> for the <b>Renewal Term Months</b>.</li>
+    <li>Select <b>Monthly</b> in the <b>Schedule Frequency</b> picklist.</li>
+    <li>Click <b>Save</b>.</li>
+   </ol></section>
+  <section><b>Quarterly Recognition - Termed Subscription Plan</b><ol id="ol_spn_jxt_qv">
+    <li>Navigate to the <b>eStore</b> app and click the <b>Subscription Plans</b> tab. Click
+      <b>New</b>.</li>
+    <li>Select <b>Termed</b> in the <b>Type</b> picklist.</li>
+    <li>Check the <b>Is Active</b> checkbox.</li>
+    <li>Check the <b>Is Direct Debit Enabled</b> checkbox.</li>
+    <li>Select <b>Required</b> in the <b>Auto Renewed</b> picklist.</li>
+    <li>Enter <b>3</b> for the <b>Initial Term Months</b>.</li>
+    <li>Enter <b>3</b> for the <b>Renewal Term Months</b>.</li>
+    <li>Select <b>Quarterly</b> in the <b>Schedule Frequency</b> picklist.</li>
+    <li>Click <b>Save</b>.</li>
+   </ol></section>
+  <section><b>Annual Recognition - Termed Subscription Plan</b><ol id="ol_ow4_5xt_qv">
+    <li>Navigate to the <b>eStore</b> app and click the <b>Subscription Plans</b> tab. Click
+      <b>New</b>.</li>
+    <li>Select <b>Termed</b> in the <b>Type</b> picklist.</li>
+    <li>Check the <b>Is Active</b> checkbox.</li>
+    <li>Check the <b>Is Direct Debit Enabled</b> checkbox.</li>
+    <li>Select <b>Required</b> in the <b>Auto Renewed</b> picklist.</li>
+    <li>Enter <b>12</b> for the <b>Initial Term Months</b>.</li>
+    <li>Enter <b>12</b> for the <b>Renewal Term Months</b>.</li>
+    <li>Select <b>Annually</b> in the <b>Schedule Frequency</b> picklist.</li>
+    <li>Click <b>Save</b>.</li>
+   </ol></section>
+ </conbody>
+</concept>

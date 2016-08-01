@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_e3q_14t_xs">
+    <title>Creating a Form with Enhanced Data Bindings</title>
+    <abstract>The advanced functionality in the <b>Form Builder</b> allows staff users to:<ul
+            id="ul_sgc_1yy_pv">
+            <li>Define the type of action that will occur when the user clicks the <b>Submit</b>
+                button on the form.</li>
+            <li>Define a SOQL filter that presents records to the end user directly on the
+                form.</li>
+            <li>Link an existing sObject through a query string parameter on the <b>Field
+                Group</b>.</li>
+            <li>Return records to display information to the end users by searching a group of
+                records using a SOQL query.</li>
+        </ul></abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Forms</b> tab in the <b>Form Builder</b> app and click the
+                    <b>New</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the <b>Form Name</b>.</cmd>
+                <info>Optionally, enter a form <b>Description</b> and any necessary <b>User
+                    Instructions</b>. </info>
+            </step>
+            <step>
+                <cmd>Select the <b>Display Style</b> using the picklist and click <b>Save</b>.</cmd>
+                <choices id="choices_yp4_vf3_y5">
+                    <choice><b>Standard</b>- Renders the entire form as one continuous page.
+                        Selected by default. </choice>
+                    <choice><b>Accordian</b>- Renders the form in collapsible sections. Each section
+                        is equal to one Field Group. </choice>
+                    <choice><b>Wizard</b>- Renders the form with tabs for separate sections. Each
+                        tab is equal to one Field Group. </choice>
+                </choices>
+            </step>
+            <step>
+                <cmd>Select the <b>Submit Style</b> via the picklist: </cmd>
+                <choices id="choices_opb_wcp_qv">
+                    <choice><b>None</b> - The field values will create, or update, the record based
+                        on the Field Group. Users are returned to the blank form after clicking
+                        <b>Submit</b> on the form. Selected by default. </choice>
+                    <choice><b>URL</b> - If URL is the selected <b>Submit Style</b>, then users are
+                        directed to the URL entered into the <b>Submit Value</b> field after
+                        clicking <b>Submit</b> on the form. </choice>
+                    <choice><b>Javascript</b> - If Javascript is the selected <b>Submit Style</b>,
+                        then enter a Javascript command into the <b>Submit Value</b> field.
+                        <note><b>When using forms outside of the natural registration or
+                            purchasing flow, best practices recommend using the Submit Style and
+                            Submit Value fields to create a more customized experience for the
+                            end user.</b></note></choice>
+                </choices>
+            </step>
+            <stepsection><b>Field Group Configuration</b></stepsection>
+            <step id="step_vlm_lnt_xs">
+                <cmd>Click the <b>Form Builder</b> button and then click the <b>New Field Group</b>
+                    button to add a <b>Field Group</b>.</cmd>
+                <info><image href="../../assets/screenshots/forms/new_field_group_win16.png"
+                    width="700" id="image_ipd_2g3_y5"/></info>
+            </step>
+            <step id="step_lrm_lnt_xs">
+                <cmd>Populate the <b>Field Group Name</b> with the form's section heading and
+                    provide any <b>Instructions</b>.</cmd>
+                <info><image
+                    href="../../assets/screenshots/forms/new_field_group_form_builder_win16.png"
+                    width="700" id="image_ts1_tn2_z5"/></info>
+                <info>If the <b>Field Group Name</b> is left blank, the system will automatically
+                    insert the <b>Field Group ID</b> number as the name.</info>
+            </step>
+            <stepsection>
+                <p><b>SOQL Query</b></p>
+                <p>Display data to the end user by defining a SOQL Query on the Field Group. </p>
+            </stepsection>
+            <step>
+                <cmd>Edit an existing <b>Field Group</b> or create a new one by clicking the <b>New
+                        Field Group</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the filter in the <b>SOQL Query</b> field.</cmd>
+                <info><image href="../../assets/screenshots/forms/soql_query_forms_spr16.png"
+                        width="700" id="image_kjp_zhp_qv"/></info>
+                <info><b>Example: <codeph>AccountID = 'a0M61000001DHMS'</codeph></b><p>
+                        <note>Global variables used to pass in values to the SOQL query:<ul
+                                id="ul_orq_1xx_pv">
+                                <li><b> An active user’s Account ID:
+                                            <codeph>{{usr.AccountId}}</codeph></b></li>
+                                <li><b> An active user’s Contact ID:
+                                            <codeph>{{usr.ContactId}}</codeph></b></li>
+                                <li><b> An active user’s ID: <codeph>{{usr.Id}}</codeph></b></li>
+                            </ul></note>
+                    </p></info>
+            </step>
+            <stepsection><b>Database Options</b></stepsection>
+            <step id="step_zxm_lnt_xs">
+                <cmd>Select the <b>Mapped Object</b> from the picklist, and if applicable, select
+                    the <b>Parent Field Group</b> to map the object to a different <b>Field
+                        Group</b>.</cmd>
+                <info>The <b>Mapped Relationship Field</b> picklist is populated based upon the
+                    selected <b>Parent Field Group</b> and allows users to map form responses to the
+                    mapped object. </info>
+                <info>Check the <b>Allow Multiple Entries</b> checkbox to allow the form user to
+                    enter multiple responses for the <b>Field Group</b>. For example, enable
+                    <b>Allow Multiple Entries</b> to grant the form user the ability to add
+                    multiple accounts or contacts.</info>
+            </step>
+            <step id="step_u2n_lnt_xs">
+                <cmd>Select the applicable <b>Database Operation</b> and click the <b>Save</b>
+                    button.</cmd>
+                <choices id="choices_nyl_z42_z5">
+                    <choice><b>Upsert</b> compares the form data to the Object records and allows
+                        the form user to make updates to an existing record. </choice>
+                    <choice><b>Insert</b> creates a new record for every successful form
+                        submission.</choice>
+                </choices>
+            </step>
+            <stepsection><b>Field Configuration</b><p><image
+                        href="../../assets/screenshots/forms/new_field_form_builder_win16.png"
+                        width="700" id="image_jls_sq2_z5"/></p></stepsection>
+            <step>
+                <cmd>After saving the Field Group, click the <b>New Field</b> button and enter the
+                    <b>Field Label</b>.</cmd>
+                <info>The <b>Field Label</b> displays as the question or statement that attendees
+                    are asked to evaluate. Select the <b>Is Required</b> checkbox to ensure
+                    attendees provide a response.</info>
+            </step>
+            <step>
+                <cmd>Select a value or option from the <b>Type</b> picklist.</cmd>
+                <info>The system will validate field contents prior to submission. For example, when
+                    the <b>Type</b> is set to <b>Email</b>, a validation error will occur if the
+                    entered form response is not in the format of a valid email. </info>
+                <info>The <b>Type</b> restricts the options available for linking to fields of the
+                    related object. </info>
+                <info>If the <b>Type</b> is a single or multi-select picklist and is <b>not</b>
+                    linked to a field on the related object, enter the available <b>Options</b>. </info>
+                <info><image href="../../assets/screenshots/forms/new_field_label_modal_win16.png"
+                    width="700" id="image_jqg_dt2_z5"/></info>
+                <info>If the <b>Type</b> is a single or multi-select picklist and is mapped to a
+                    field on the related object, then <b>Options</b> will autopopulate. Next, select
+                    the <b>Database Operation</b> on the field and click the <b>Save</b>
+                    button.</info>
+            </step>
+            <step>
+                <cmd>Click the <b>Preview</b> button to return the newly created form from the
+                    viewpoint of a <b>Community Portal</b> user.</cmd>
+            </step>
+        </steps>
+        <result>A form has been created using enhanced data bindings. Additionally, <xref
+                href="passing_soql_filter.dita#task_qkb_gfy_pv">pass a SOQL Filter using a URL
+                Parameter</xref>.</result>
+    </taskbody>
+</task>

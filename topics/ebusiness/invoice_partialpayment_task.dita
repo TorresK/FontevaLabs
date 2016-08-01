@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_d5q_nhr_sr">
+    <title>Applying Partial Payments to an Invoice</title>
+    <abstract>Staff users can apply partial payments to an invoice in order to meet their
+        organization's current needs.</abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Invoice</b>tab within the <b>eBusiness
+                    application</b>.</cmd>
+                <choices>
+                    <choice>Alternatively, search for the invoice number or contact/account in the
+                        <b>Global Search Bar</b>. Select the name of the person or organization
+                        in the <b>Customer Account</b> field. Select the invoice that requires
+                        payment in the <i>Invoice</i> related list. Click the <b>Apply Payment</b>
+                        button.</choice>
+                </choices>
+            </step>
+            <step>
+                <cmd>In the <b>View</b> picklist, select the invoices with a status of <b>Posted</b>
+                    and click the <b>Go</b> button.</cmd>
+            </step>
+            <step>
+                <cmd>Select the invoice that requires payment and click the <b>Apply Payment</b>
+                    button.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the amount to be paid in the <i>Items Total</i> field. Click <b>Process
+                    Payment</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Select payment method and enter the required values.
+                    Select the <b>Save</b> checkbox to save payment information.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>Pay</b> button to apply a partial payment to the selected
+                    invoice.</cmd>
+            </step>
+        </steps>
+        <result>
+            <p>The associated Sales Order record updates the ePayment and the Receipt transaction
+                history following the partial payment. The total amount due on the invoice is
+                updated to reflect the remaining balance.</p>
+        </result>
+    </taskbody>
+</task>

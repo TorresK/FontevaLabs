@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_tjm_3z1_ks">
+    <title>Renewing a Subscription</title>
+    <abstract>Subscriptions are renewed directly from the Sales Order record. Upgraded subscriptions
+        or memberships cannot be renewed.</abstract>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Navigate to the <b>Subscriptions</b> tab in the <b>eBusiness</b> app and select
+                    the <b>Subscription ID</b> to be renewed.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <b>Renew</b> button. </cmd>
+                <info>A new Sales Order is automatically created, along with a new Sales Order Line.
+                    The <b>Posting Entity</b> is set to <b>Receipt</b> and the <b>Schedule Type</b>
+                    is set to <b>Simple Receipt</b>.</info>
+            </step>
+            <step>
+                <cmd>Select <b>Closed</b> from the <b>Status</b> picklist and click <b>Save</b>. </cmd>
+                <info>If the <b>Posting Entity</b> is set to <b>Receipt</b>, payment is required in
+                    order to complete the renewal request. Click the <b>Sales Receipt</b> button,
+                    enter payment information, and click <b>Pay</b>.</info>
+                <stepresult>The <b>Posting Status</b> on the Sales Order record automatically
+                    updates to <b>Posted</b> to reflect payment.</stepresult>
+            </step>
+        </steps>
+        <result>The subscription is renewed and the transaction is journaled into the
+                GL.<note>Renewing a subscription does not create a new subscription unless the item
+                is changed on the Sales Order Line record. This renewal is interpreted as an
+                    <b>Upgrade</b>, therefore a new subscription is created with a future start
+                date.</note></result>
+        <postreq>Admins can additionally:<ul id="ul_fv2_fnn_ht">
+                <li><xref href="amending_subscriptions.dita#task_bfx_lj3_ft">Amend
+                        Subscriptions</xref></li>
+                <li><xref href="modifying_subscriptions_backend.dita#task_a13_4rm_ht">Modify
+                        Subscriptions</xref></li>
+            </ul></postreq>
+    </taskbody>
+</task>
+

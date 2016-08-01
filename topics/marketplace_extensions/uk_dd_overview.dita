@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_bzb_grt_qv">
+ <title>UK Direct Debit</title>
+ <abstract>Developed specifically for UK customers, <b>UK Direct Debit</b> provides consumers in the
+  United Kingdom with an additional payment option. When enabled, a customer may establish an
+  agreement to schedule regular payments to be directly withdrawn from bank account. <p><b>The
+    Direct Debit payment method is intended for subscription items only</b>. These are sums of money
+   pledged over time, periodicals with a set number of issues, or membership fees. The frequency of
+   payments, amount, and duration are controlled by the Subscription Plan. <b>Termed, Lifetime, and
+    Calendar subscriptions, as well as subscriptions enabled for Deferred Revenue, can be set up to
+    process Direct Debit payments.</b></p><p><b>The System Admin must first install the UK Direct
+    Debit package from the Fonteva Marketplace in addition to the latest core MemberNation packages.
+    </b><note>Direct Debit does not currently support invoice installment schedules. Direct Debit
+    only supports cash basis payments.</note></p></abstract>
+</concept>
