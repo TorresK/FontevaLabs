@@ -4,14 +4,6 @@
  <title>Marketplace Extensions</title>
  <topichead navtitle="Marketplace Extensions">
   <topicref href="marketplace_intro.dita">
-   <topicref href="abstracts/abstracts_overview.dita">
-    <topicref href="abstracts/create_abstract_call.dita"/>
-    <topicref href="abstracts/abstract_call_topics.dita">
-     <topicref href="abstracts/abstract_call_topics.dita"/>
-    </topicref>
-    <topicref href="abstracts/abstract_submission.dita"/>
-    <topicref href="abstracts/abstract_review.dita"/>
-   </topicref>
    <topicref href="ar_by_item_win16.dita"/>
    <topicref href="directory_builder/directory_builder_overview.dita">
     <topicref href="directory_builder/directory_builder_setup.dita"/>
